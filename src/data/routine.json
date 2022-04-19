@@ -6,7 +6,7 @@
                 "name": "Section 1",
                 "groups": [
                     {
-                        "name": "Group A",
+                        "name": "A",
                         "days": [
                             {
                                 "name": "Sunday",
@@ -147,7 +147,7 @@
                         ]
                     },
                     {
-                        "name": "Group B",
+                        "name": "B",
                         "days": [
                             {
                                 "name": "Sunday",
@@ -288,7 +288,7 @@
                         ]
                     },
                     {
-                        "name": "Group C",
+                        "name": "C",
                         "days": [
                             {
                                 "name": "Sunday",
@@ -434,7 +434,7 @@
                 "name": "Section 2",
                 "groups": [
                     {
-                        "name": "Group D",
+                        "name": "D",
                         "days": [
                             {
                                 "name": "Sunday",
@@ -575,7 +575,7 @@
                         ]
                     },
                     {
-                        "name": "Group E",
+                        "name": "E",
                         "days": [
                             {
                                 "name": "Sunday",
@@ -716,7 +716,7 @@
                         ]
                     },
                     {
-                        "name": "Group F",
+                        "name": "F",
                         "days": [
                             {
                                 "name": "Sunday",
@@ -862,7 +862,7 @@
                 "name": "Section 3",
                 "groups": [
                     {
-                        "name": "Group G",
+                        "name": "G",
                         "days": [
                             {
                                 "name": "Sunday",
@@ -1003,7 +1003,7 @@
                         ]
                     },
                     {
-                        "name": "Group H",
+                        "name": "H",
                         "days": [
                             {
                                 "name": "Sunday",
@@ -1144,7 +1144,7 @@
                         ]
                     },
                     {
-                        "name": "Group I",
+                        "name": "I",
                         "days": [
                             {
                                 "name": "Sunday",
