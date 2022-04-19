@@ -18,8 +18,14 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.6.2",
     "@mui/material": "^5.6.2",
+    "ansi-html": "^0.0.9",
+    "async": "^3.2.3",
+    "browserslist": "^4.20.2",
     "gatsby": "^2.0.17",
+    "immer": "^9.0.12",
+    "node-fetch": "^2.6.7",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "ws": "^8.5.0"
   }
 }
