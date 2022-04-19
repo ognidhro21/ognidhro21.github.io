@@ -113,7 +113,11 @@ const Routines = () => {
     <div className="routines">
       <ThemeProvider theme={theme}>
         {info.saved ? (
-          <Container>
+          <Container
+            sx={{
+              mb: "4rem",
+            }}
+          >
             <Typography
               variant="h3"
               sx={{
@@ -183,6 +187,7 @@ const Routines = () => {
                       label="Section"
                       onChange={handleSectionChange}
                       autoWidth
+                      size="small"
                     >
                       {routines[routineid].sections.map((section, index) => (
                         <MenuItem key={index} value={index}>
@@ -200,6 +205,7 @@ const Routines = () => {
                       label="Group"
                       onChange={handleGroupChange}
                       autoWidth
+                      size="small"
                     >
                       {routines[routineid].sections[section].groups.map(
                         (group, index) => (
@@ -219,6 +225,7 @@ const Routines = () => {
                       label="Day"
                       onChange={handleDayChange}
                       autoWidth
+                      size="small"
                     >
                       {routines[routineid].sections[section].groups[
                         group
