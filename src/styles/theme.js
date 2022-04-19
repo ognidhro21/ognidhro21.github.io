@@ -64,7 +64,23 @@ const theme = createTheme({
     },
   },
   shape: {
-    borderRadius: 16,
+    borderRadius: 0,
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 16,
+        },
+      },
+    },
+    MuiSelect: {
+      styleOverrides: {
+        root: {
+          borderRadius: 16,
+        },
+      },
+    },
   },
   typography: {
     h1: {

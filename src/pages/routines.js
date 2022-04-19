@@ -17,7 +17,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import React from "react";
 import { useState, useEffect } from "react";
 import routines from "../data/routine.json";
-import { Class, RoutineAppbar } from "../components";
+import { Class, RoutineAppbar, Footer } from "../components";
 import "../styles/index.css";
 
 import theme from "../styles/theme";
@@ -119,6 +119,7 @@ const Routines = () => {
           <Container
             sx={{
               mb: "4rem",
+              minHeight: "100vh",
             }}
           >
             <Typography
@@ -355,6 +356,7 @@ const Routines = () => {
             </Grid>
           </>
         )}
+        <Footer />
       </ThemeProvider>
     </div>
   );
