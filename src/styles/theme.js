@@ -11,6 +11,7 @@ import {
   lightGreen,
   indigo,
   brown,
+  blueGrey,
 } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -57,6 +58,9 @@ const theme = createTheme({
     },
     br: {
       main: brown[500],
+    },
+    blg: {
+      main: blueGrey[500],
     },
   },
   shape: {

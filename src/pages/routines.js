@@ -66,7 +66,10 @@ const Routines = () => {
     setSection(info.section);
     setGroup(info.group);
   }
-
+  function resetInfo() {
+    // reset user data by reset button
+    setInfo({ ...info, saved: false });
+  }
   useEffect(() => {
     // read user data from local storage and if it exists set the state
     const tempinfo = JSON.parse(localStorage.getItem("og21-student-info"));
@@ -167,78 +170,77 @@ const Routines = () => {
               ))}
             </List>
 
-            <RoutineAppbar>
-              <Container>
-                <Stack
-                  direction="row"
-                  flexWrap="wrap"
-                  spacing={2}
-                  sx={{
-                    my: 2,
-                  }}
+            {/*  <RoutineAppbar> */}
+            <Stack
+              direction="row"
+              flexWrap="nowrap"
+              spacing={2}
+              sx={{
+                my: 2,
+              }}
+            >
+              <FormControl sx={{ minWidth: 80 }}>
+                <InputLabel id="section-select-label">Section</InputLabel>
+                <Select
+                  labelId="section-select-label"
+                  id="section-select"
+                  value={section}
+                  label="Section"
+                  onChange={handleSectionChange}
+                  autoWidth
+                  size="small"
                 >
-                  {/* TODO make this sticky to bottom*/}
-                  <FormControl sx={{ minWidth: 80 }}>
-                    <InputLabel id="section-select-label">Section</InputLabel>
-                    <Select
-                      labelId="section-select-label"
-                      id="section-select"
-                      value={section}
-                      label="Section"
-                      onChange={handleSectionChange}
-                      autoWidth
-                      size="small"
-                    >
-                      {routines[routineid].sections.map((section, index) => (
-                        <MenuItem key={index} value={index}>
-                          {section.name}
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </FormControl>
-                  <FormControl sx={{ minWidth: 80 }}>
-                    <InputLabel id="group-select-label">Group</InputLabel>
-                    <Select
-                      labelId="group-select-label"
-                      id="group-select"
-                      value={group}
-                      label="Group"
-                      onChange={handleGroupChange}
-                      autoWidth
-                      size="small"
-                    >
-                      {routines[routineid].sections[section].groups.map(
-                        (group, index) => (
-                          <MenuItem key={index} value={index}>
-                            {group.name}
-                          </MenuItem>
-                        )
-                      )}
-                    </Select>
-                  </FormControl>
-                  <FormControl sx={{ minWidth: 80 }}>
-                    <InputLabel id="day-select-label">Day</InputLabel>
-                    <Select
-                      labelId="day-select-label"
-                      id="day-select"
-                      value={day}
-                      label="Day"
-                      onChange={handleDayChange}
-                      autoWidth
-                      size="small"
-                    >
-                      {routines[routineid].sections[section].groups[
-                        group
-                      ].days.map((day, index) => (
-                        <MenuItem key={index} value={index}>
-                          {day.name}
-                        </MenuItem>
-                      ))}
-                    </Select>
-                  </FormControl>
-                </Stack>
-              </Container>
-            </RoutineAppbar>
+                  {routines[routineid].sections.map((section, index) => (
+                    <MenuItem key={index} value={index}>
+                      {section.name}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+              <FormControl sx={{ minWidth: 80 }}>
+                <InputLabel id="group-select-label">Group</InputLabel>
+                <Select
+                  labelId="group-select-label"
+                  id="group-select"
+                  value={group}
+                  label="Group"
+                  onChange={handleGroupChange}
+                  autoWidth
+                  size="small"
+                >
+                  {routines[routineid].sections[section].groups.map(
+                    (group, index) => (
+                      <MenuItem key={index} value={index}>
+                        {group.name}
+                      </MenuItem>
+                    )
+                  )}
+                </Select>
+              </FormControl>
+              <FormControl>
+                <InputLabel id="day-select-label">Day</InputLabel>
+                <Select
+                  labelId="day-select-label"
+                  id="day-select"
+                  value={day}
+                  label="Day"
+                  onChange={handleDayChange}
+                  size="small"
+                >
+                  {routines[routineid].sections[section].groups[group].days.map(
+                    (day, index) => (
+                      <MenuItem key={index} value={index}>
+                        {day.name}
+                      </MenuItem>
+                    )
+                  )}
+                </Select>
+              </FormControl>
+            </Stack>
+            {/*}  </RoutineAppbar> */}
+            <Button variant="outlined" onClick={resetInfo}>
+              Reset Preferences
+            </Button>
           </Container>
         ) : (
           <>
@@ -270,78 +272,85 @@ const Routines = () => {
                 elevation={6}
                 square
               >
-                <Box
+                <Stack
+                  justifyContent="center"
                   sx={{
-                    my: 8,
-                    mx: 4,
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "left",
+                    height: "100%",
                   }}
                 >
-                  <Typography component="h1" variant="h5">
-                    I am in.....
-                  </Typography>
-                  <Box component="form" sx={{ mt: 1 }}>
-                    <Stack
-                      direction="row"
-                      spacing={2}
-                      sx={{
-                        mt: 2,
-                      }}
-                    >
-                      <FormControl sx={{ minWidth: 80 }}>
-                        <InputLabel id="section-select-label">
-                          Section
-                        </InputLabel>
-                        <Select
-                          labelId="section-select-label"
-                          id="section-select"
-                          value={info.section}
-                          label="Section"
-                          onChange={handleInfoChange}
-                          autoWidth
-                          name="section"
-                        >
-                          {routines[routineid].sections.map(
-                            (section, index) => (
+                  <Box
+                    sx={{
+                      my: 8,
+                      mx: 4,
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "left",
+                    }}
+                  >
+                    <Typography component="h1" variant="h5">
+                      I am in.....
+                    </Typography>
+                    <Box component="form" sx={{ mt: 1 }}>
+                      <Stack
+                        direction="row"
+                        spacing={2}
+                        sx={{
+                          mt: 2,
+                        }}
+                      >
+                        <FormControl sx={{ minWidth: 80 }}>
+                          <InputLabel id="section-select-label">
+                            Section
+                          </InputLabel>
+                          <Select
+                            labelId="section-select-label"
+                            id="section-select"
+                            value={info.section}
+                            label="Section"
+                            onChange={handleInfoChange}
+                            autoWidth
+                            name="section"
+                          >
+                            {routines[routineid].sections.map(
+                              (section, index) => (
+                                <MenuItem key={index} value={index}>
+                                  {section.name}
+                                </MenuItem>
+                              )
+                            )}
+                          </Select>
+                        </FormControl>
+                        <FormControl sx={{ minWidth: 80 }}>
+                          <InputLabel id="group-select-label">Group</InputLabel>
+                          <Select
+                            labelId="group-select-label"
+                            id="group-select"
+                            value={info.group}
+                            label="Group"
+                            onChange={handleInfoChange}
+                            autoWidth
+                            name="group"
+                          >
+                            {routines[routineid].sections[
+                              info.section
+                            ].groups.map((group, index) => (
                               <MenuItem key={index} value={index}>
-                                {section.name}
+                                {group.name}
                               </MenuItem>
-                            )
-                          )}
-                        </Select>
-                      </FormControl>
-                      <FormControl sx={{ minWidth: 80 }}>
-                        <InputLabel id="group-select-label">Group</InputLabel>
-                        <Select
-                          labelId="group-select-label"
-                          id="group-select"
-                          value={info.group}
-                          label="Group"
-                          onChange={handleInfoChange}
-                          autoWidth
-                          name="group"
-                        >
-                          {routines[routineid].sections[
-                            info.section
-                          ].groups.map((group, index) => (
-                            <MenuItem key={index} value={index}>
-                              {group.name}
-                            </MenuItem>
-                          ))}
-                        </Select>
-                      </FormControl>
-                    </Stack>
-                    <Button
-                      variant="contained"
-                      sx={{ mt: 3, mb: 2 }}
-                      onClick={handleSubmit}
-                    >
-                      Submit
-                    </Button>
+                            ))}
+                          </Select>
+                        </FormControl>
+                      </Stack>
+                      <Button
+                        variant="contained"
+                        sx={{ mt: 3, mb: 2 }}
+                        onClick={handleSubmit}
+                      >
+                        Submit
+                      </Button>
+                    </Box>
                   </Box>
-                </Box>
+                </Stack>
               </Grid>
             </Grid>
           </>

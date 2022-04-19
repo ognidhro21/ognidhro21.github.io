@@ -48,7 +48,7 @@ const Class = ({ code, start, end, practical }) => {
               {practical && (
                 <Chip
                   label="Practical"
-                  color="primary"
+                  color="success"
                   size="small"
                   icon={<ScienceIcon />}
                   sx={{
