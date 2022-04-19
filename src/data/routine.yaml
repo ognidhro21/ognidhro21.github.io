@@ -1,0 +1,45 @@
+---
+- detailedname: Level 1, Semester 2
+  sections:
+  - name: Section 1
+    groups:
+    - name: Group A
+      days:
+      - name: Sunday
+        schedules:
+        - code: acm
+          start: 8.30
+          end: 9.20
+        - code: aes
+        	start: 9.25
+          end: 10.15
+        - code: acm
+        	start: 10.20
+          end: 12.05
+          practical: true
+        - code: age
+        	start: 2.30
+          end: 3.20
+        - code: ssc
+        	start: 3.25
+          end: 4.15
+      - name: Monday
+        schedules:
+        - code: ''
+          start: ''
+          end: ''
+      - name: Tuesday
+        schedules:
+        - code: ''
+          start: ''
+          end: ''
+      - name: Wednesday
+        schedules:
+        - code: ''
+          start: ''
+          end: ''
+      - name: Thursday
+        schedules:
+        - code: ''
+          start: ''
+          end: ''

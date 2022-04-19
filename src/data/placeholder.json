@@ -1,0 +1,67 @@
+[
+    {
+        "detailedname": "",
+        "sections": [
+            {
+                "name": "",
+                "groups": [
+                    {
+                        "name": "",
+                        "days": [
+                            {
+                                "name": "Sunday",
+                                "schedules": [
+                                    {
+                                        "code": "",
+                                        "start": "",
+                                        "end": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Monday",
+                                "schedules": [
+                                    {
+                                        "code": "",
+                                        "start": "",
+                                        "end": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Tuesday",
+                                "schedules": [
+                                    {
+                                        "code": "",
+                                        "start": "",
+                                        "end": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Wednesday",
+                                "schedules": [
+                                    {
+                                        "code": "",
+                                        "start": "",
+                                        "end": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Thursday",
+                                "schedules": [
+                                    {
+                                        "code": "",
+                                        "start": "",
+                                        "end": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
