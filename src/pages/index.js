@@ -31,6 +31,7 @@ const IndexPage = () => {
         >
           <Box
             component="img"
+            className="hero-logo"
             src={O21Big}
             sx={{
               width: "50%",
