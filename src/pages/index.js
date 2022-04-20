@@ -13,6 +13,7 @@ import {
   ThemeProvider,
 } from "@mui/material";
 import { HomepageCardWide, Footer } from "../components";
+import O21Big from "../images/O21-Big.png";
 const IndexPage = () => {
   return (
     <ThemeProvider theme={Theme}>
@@ -28,23 +29,41 @@ const IndexPage = () => {
             minHeight: "80vh",
           }}
         >
-          <Typography
-            variant="h2"
-            fontWeight="bold"
+          <Box
+            component="img"
+            src={O21Big}
             sx={{
-              textTransform: "uppercase",
-              color: "var(--red-50)",
+              width: "50%",
             }}
-          >
-            Ognidhro 21 Logo
-          </Typography>
+          ></Box>
         </Box>
         <Box
           sx={{
-            minHeight: "256px",
             backgroundColor: "var(--red-50)",
+            py: 12,
           }}
-        ></Box>
+        >
+          <Container>
+            <Typography
+              variant="h4"
+              sx={{
+                display: "inline",
+              }}
+            >
+              We are
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                display: "inline",
+                ml: 1,
+              }}
+            >
+              the 21<sup>st</sup> batch of Agriculture in Patuakhali Science and
+              Technology University. <i>More text will go here.</i>
+            </Typography>
+          </Container>
+        </Box>
 
         <HomepageCardWide
           link="/routines"

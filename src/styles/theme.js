@@ -14,6 +14,7 @@ import {
   blueGrey,
 } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import "@fontsource/montserrat/variable.css";
 
 const theme = createTheme({
   palette: {
@@ -84,25 +85,30 @@ const theme = createTheme({
   },
   typography: {
     h1: {
-      fontFamily: "EB Garamond",
-      fontWeight: "bold",
+      fontFamily: "MontserratVariable",
+      fontWeight: "900",
+      textTransform: "uppercase",
     },
 
     h2: {
-      fontFamily: "EB Garamond",
-      fontWeight: "bold",
+      fontFamily: "MontserratVariable",
+      fontWeight: "900",
+      textTransform: "uppercase",
     },
     h3: {
-      fontFamily: "EB Garamond",
-      fontWeight: "bold",
+      fontFamily: "MontserratVariable",
+      fontWeight: "800",
+      textTransform: "uppercase",
     },
     h4: {
-      fontWeight: "bold",
-      fontFamily: "EB Garamond",
+      fontWeight: "800",
+      fontFamily: "MontserratVariable",
+      textTransform: "uppercase",
     },
     h5: {
-      fontWeight: "bold",
-      fontFamily: "EB Garamond",
+      fontWeight: "800",
+      fontFamily: "MontserratVariable",
+      textTransform: "uppercase",
     },
   },
 });

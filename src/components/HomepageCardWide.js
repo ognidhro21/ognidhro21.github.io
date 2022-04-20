@@ -5,10 +5,12 @@ import {
   Card,
   CardActionArea,
   CardContent,
+  Container,
+  Box,
 } from "@mui/material";
 const HomepageCardWide = ({ link, bgcolor, title, subtitle }) => {
   return (
-    <Paper elevation={3}>
+    <Paper>
       <Card
         sx={{
           width: "100%",
@@ -21,18 +23,18 @@ const HomepageCardWide = ({ link, bgcolor, title, subtitle }) => {
             backgroundColor: bgcolor,
           }}
         >
-          <CardContent
-            sx={{
-              p: 5,
-            }}
-          >
-            <Typography gutterBottom variant="h5" component="div">
-              {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {subtitle}
-            </Typography>
-          </CardContent>
+          <Container>
+            <CardContent>
+              <Box sx={{ py: 2, width: "100%" }}>
+                <Typography gutterBottom variant="h5" component="div">
+                  {title}
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  {subtitle}
+                </Typography>
+              </Box>
+            </CardContent>
+          </Container>
         </CardActionArea>
       </Card>
     </Paper>
