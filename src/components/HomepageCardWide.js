@@ -47,7 +47,7 @@ const HomepageCardWide = ({ link, bgcolor, title, subtitle }) => {
                 right: "0%",
                 display: "inline",
                 zIndex: -1,
-                color: "white",
+                color: "background.paper",
               }}
             >
               {title}

@@ -12,6 +12,13 @@ a{
     color: var(--red-a400);
     text-decoration: none;
 }
+.routines{
+    user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+}
 /* media query for desktop*/
 @media only screen and (min-width: 992px) {
     .hero-logo{

@@ -89,7 +89,7 @@ const Class = ({ code, start, end, practical }) => {
           <Typography
             variant="h1"
             sx={{
-              color: "white",
+              color: "background.paper",
               position: "absolute",
               top: "-50%",
               right: "0%",
