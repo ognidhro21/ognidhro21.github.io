@@ -120,133 +120,135 @@ const Routines = () => {
     <div className="routines">
       <ThemeProvider theme={theme}>
         {info.saved ? (
-          <Container
+          <Box
             sx={{
-              mb: "4rem",
               minHeight: "100vh",
+              backgroundColor: "primary.background",
             }}
           >
-            <Typography
-              variant="h3"
-              sx={{
-                mb: 3,
-              }}
-            >
-              Routines
-            </Typography>
-            <FormControl fullWidth>
-              <InputLabel id="routine-select-label">Name</InputLabel>
-              <Select
-                labelId="routine-select-label"
-                id="routine-select"
-                value={routineid}
-                label="Name"
-                onChange={handleChange}
+            <Container>
+              <Typography
+                variant="h3"
+                sx={{
+                  mb: 3,
+                }}
               >
-                {routines.map((routine, index) => (
-                  <MenuItem key={index} value={index}>
-                    {routine.detailedname}
-                  </MenuItem>
-                ))}
-              </Select>
-            </FormControl>
-
-            <Typography
-              variant="h4"
-              sx={{
-                mt: 4,
-                mb: 0,
-                p: 0,
-              }}
-            >
-              {selectedDay}
-            </Typography>
-            <List sx={{ width: "100%", bgcolor: "background.paper" }}>
-              {routines[routineid].sections[section].groups[group].days[
-                day
-              ].schedules.map((routine, index) => (
-                <Class
-                  key={index}
-                  code={routine.code}
-                  start={routine.start}
-                  end={routine.end}
-                  practical={routine.practical}
-                />
-              ))}
-            </List>
-
-            {/*  <RoutineAppbar> */}
-            <Stack
-              direction="row"
-              flexWrap="nowrap"
-              spacing={2}
-              sx={{
-                my: 2,
-              }}
-            >
-              <FormControl sx={{ minWidth: 80 }}>
-                <InputLabel id="section-select-label">Section</InputLabel>
+                Routines
+              </Typography>
+              <FormControl fullWidth>
+                <InputLabel id="routine-select-label">Name</InputLabel>
                 <Select
-                  labelId="section-select-label"
-                  id="section-select"
-                  value={section}
-                  label="Section"
-                  onChange={handleSectionChange}
-                  autoWidth
-                  size="small"
+                  labelId="routine-select-label"
+                  id="routine-select"
+                  value={routineid}
+                  label="Name"
+                  onChange={handleChange}
                 >
-                  {routines[routineid].sections.map((section, index) => (
+                  {routines.map((routine, index) => (
                     <MenuItem key={index} value={index}>
-                      {section.name}
+                      {routine.detailedname}
                     </MenuItem>
                   ))}
                 </Select>
               </FormControl>
-              <FormControl sx={{ minWidth: 80 }}>
-                <InputLabel id="group-select-label">Group</InputLabel>
-                <Select
-                  labelId="group-select-label"
-                  id="group-select"
-                  value={group}
-                  label="Group"
-                  onChange={handleGroupChange}
-                  autoWidth
-                  size="small"
-                >
-                  {routines[routineid].sections[section].groups.map(
-                    (group, index) => (
+
+              <Typography
+                variant="h4"
+                sx={{
+                  mt: 4,
+                  mb: 0,
+                  p: 0,
+                }}
+              >
+                {selectedDay}
+              </Typography>
+              <List sx={{ width: "100%" }}>
+                {routines[routineid].sections[section].groups[group].days[
+                  day
+                ].schedules.map((routine, index) => (
+                  <Class
+                    key={index}
+                    code={routine.code}
+                    start={routine.start}
+                    end={routine.end}
+                    practical={routine.practical}
+                  />
+                ))}
+              </List>
+
+              {/*  <RoutineAppbar> */}
+              <Stack
+                direction="row"
+                flexWrap="nowrap"
+                spacing={2}
+                sx={{
+                  my: 2,
+                }}
+              >
+                <FormControl sx={{ minWidth: 80 }}>
+                  <InputLabel id="section-select-label">Section</InputLabel>
+                  <Select
+                    labelId="section-select-label"
+                    id="section-select"
+                    value={section}
+                    label="Section"
+                    onChange={handleSectionChange}
+                    autoWidth
+                    size="small"
+                  >
+                    {routines[routineid].sections.map((section, index) => (
                       <MenuItem key={index} value={index}>
-                        {group.name}
+                        {section.name}
                       </MenuItem>
-                    )
-                  )}
-                </Select>
-              </FormControl>
-              <FormControl>
-                <InputLabel id="day-select-label">Day</InputLabel>
-                <Select
-                  labelId="day-select-label"
-                  id="day-select"
-                  value={day}
-                  label="Day"
-                  onChange={handleDayChange}
-                  size="small"
-                >
-                  {routines[routineid].sections[section].groups[group].days.map(
-                    (day, index) => (
+                    ))}
+                  </Select>
+                </FormControl>
+                <FormControl sx={{ minWidth: 80 }}>
+                  <InputLabel id="group-select-label">Group</InputLabel>
+                  <Select
+                    labelId="group-select-label"
+                    id="group-select"
+                    value={group}
+                    label="Group"
+                    onChange={handleGroupChange}
+                    autoWidth
+                    size="small"
+                  >
+                    {routines[routineid].sections[section].groups.map(
+                      (group, index) => (
+                        <MenuItem key={index} value={index}>
+                          {group.name}
+                        </MenuItem>
+                      )
+                    )}
+                  </Select>
+                </FormControl>
+                <FormControl>
+                  <InputLabel id="day-select-label">Day</InputLabel>
+                  <Select
+                    labelId="day-select-label"
+                    id="day-select"
+                    value={day}
+                    label="Day"
+                    onChange={handleDayChange}
+                    size="small"
+                  >
+                    {routines[routineid].sections[section].groups[
+                      group
+                    ].days.map((day, index) => (
                       <MenuItem key={index} value={index}>
                         {day.name}
                       </MenuItem>
-                    )
-                  )}
-                </Select>
-              </FormControl>
-            </Stack>
-            {/*}  </RoutineAppbar> */}
-            <Button variant="outlined" onClick={resetInfo}>
-              Reset Preferences
-            </Button>
-          </Container>
+                    ))}
+                  </Select>
+                </FormControl>
+              </Stack>
+              {/*}  </RoutineAppbar> */}
+              <Button variant="outlined" onClick={resetInfo}>
+                Reset Preferences
+              </Button>
+            </Container>
+          </Box>
         ) : (
           <>
             <Grid container component="main" sx={{ height: "100vh" }}>

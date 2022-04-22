@@ -16,38 +16,63 @@ const HomepageCardWide = ({ link, bgcolor, title, subtitle }) => {
           width: "100%",
           mb: 2,
           boxShadow: "none",
-          backgroundColor: `${bgcolor}`,
           borderRadius: 3,
+          overflow: "hidden",
         }}
         elevation="0"
       >
         <CardContent>
-          <Box sx={{ py: 2, width: "100%", zIndex: 1, position: "relative" }}>
+          <Box
+            sx={{
+              py: 2,
+              width: "100%",
+              zIndex: 1,
+              position: "relative",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
             <Box
               sx={{
                 zIndex: 2,
               }}
             >
-              <Typography variant="h5" component="div">
+              <Typography
+                variant="h5"
+                sx={{
+                  bgcolor: "background.paper",
+                  display: "inline-block",
+                }}
+              >
                 {title}
               </Typography>
-              <Typography gutterBottom variant="body1" color="text.secondary">
+              <br />
+              <Typography
+                gutterBottom
+                variant="body1"
+                color="text.secondary"
+                sx={{
+                  bgcolor: "background.paper",
+                  display: "inline-block",
+                }}
+              >
                 {subtitle}
               </Typography>
-              <Link to={link}>
-                <Button variant="contained">GO!</Button>
-              </Link>
             </Box>
+            <Link to={link}>
+              <Button variant="contained">GO!</Button>
+            </Link>
             <Typography
               variant="h1"
               sx={{
+                color: `${bgcolor}`,
                 fontSize: "1200%",
                 position: "absolute",
                 top: "-20%",
-                right: "0%",
+                left: "0%",
                 display: "inline",
                 zIndex: -1,
-                color: "background.paper",
+                opacity: 0.4,
               }}
             >
               {title}

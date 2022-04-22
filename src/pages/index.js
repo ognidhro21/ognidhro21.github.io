@@ -11,9 +11,13 @@ import {
   CardActionArea,
   CardContent,
   ThemeProvider,
+  Grid,
+  Item,
 } from "@mui/material";
+
 import { HomepageCardWide, Footer } from "../components";
 import O21Big from "../images/O21-Big.png";
+import NoteImg from "../images/taking-notes-undraw.png";
 const IndexPage = () => {
   return (
     <ThemeProvider theme={Theme}>
@@ -40,34 +44,46 @@ const IndexPage = () => {
         </Box>
         <Box
           sx={{
-            backgroundColor: "var(--red-50)",
-            py: 12,
+            py: 6,
           }}
         >
           <Container>
-            <Typography
-              variant="h4"
-              sx={{
-                display: "inline",
-              }}
+            <Grid
+              container
+              spacing={2}
+              justifyContent="center"
+              alignItems="center"
             >
-              We are
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{
-                display: "inline",
-                ml: 1,
-              }}
-            >
-              the 21<sup>st</sup> batch of Agriculture in Patuakhali Science and
-              Technology University. <i>More text will go here.</i>
-            </Typography>
+              <Grid item xs={12} md={4}>
+                <Typography
+                  variant="h4"
+                  sx={{
+                    display: "inline",
+                  }}
+                >
+                  We are
+                </Typography>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    display: "inline",
+                    ml: 1,
+                  }}
+                >
+                  the 21<sup>st</sup> batch of Agriculture in Patuakhali Science
+                  and Technology University. <i>More text will go here.</i>
+                </Typography>
+              </Grid>
+              <Grid item md={8}>
+                <Box component="img" src={NoteImg} sx={{ width: "100%" }}></Box>
+              </Grid>
+            </Grid>
           </Container>
         </Box>
         <Box
           sx={{
             py: 3,
+            backgroundColor: "var(--red-50)",
           }}
         >
           <HomepageCardWide
@@ -78,7 +94,7 @@ const IndexPage = () => {
           />
           <HomepageCardWide
             link="https://facebook.com/pg/ognidhro21/"
-            bgcolor="primary.light"
+            bgcolor="b.main"
             title="Facebook Page"
             subtitle="Get latest updates from Ognidhro 21!"
           />

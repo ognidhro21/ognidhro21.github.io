@@ -22,48 +22,49 @@ const theme = createTheme({
     primary: {
       main: "#ff1744",
       light: red[100],
+      background: red[50],
     },
     text: {
       primary: "#263238",
     },
     g: {
-      main: green[100],
+      main: green[500],
     },
     b: {
-      main: blue[100],
+      main: blue[500],
     },
     c: {
-      main: cyan[100],
+      main: cyan[500],
     },
     l: {
-      main: lime[100],
+      main: lime[500],
     },
     y: {
-      main: yellow[100],
+      main: yellow[500],
     },
     p: {
-      main: purple[100],
+      main: purple[500],
     },
     dp: {
-      main: deepPurple[100],
+      main: deepPurple[500],
     },
     o: {
-      main: orange[100],
+      main: orange[500],
     },
     do: {
-      main: deepOrange[100],
+      main: deepOrange[500],
     },
     lg: {
-      main: lightGreen[100],
+      main: lightGreen[500],
     },
     i: {
-      main: indigo[100],
+      main: indigo[500],
     },
     br: {
-      main: brown[100],
+      main: brown[500],
     },
     blg: {
-      main: blueGrey[100],
+      main: blueGrey[500],
     },
   },
   shape: {

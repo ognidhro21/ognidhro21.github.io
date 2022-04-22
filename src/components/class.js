@@ -16,57 +16,68 @@ const Class = ({ code, start, end, practical }) => {
     return classInfo;
   }
   return (
-    <>
-      <ListItem
-        alignItems="flex-start"
+    <ListItem
+      alignItems="flex-start"
+      sx={{
+        px: 0,
+        backgroundColor: "primary.background",
+        mb: 2,
+        borderLeft: "4px solid",
+        borderLeftColor: `${getClassInfo(code).color}.main`,
+        backgroundColor: "background.paper",
+        borderRadius: 4,
+        overflow: "hidden",
+      }}
+    >
+      <Box
         sx={{
-          px: 0,
-          my: 2,
+          width: "100%",
+          height: "100%",
+          px: 2,
+          zIndex: 1,
+          position: "relative",
         }}
       >
-        <Box
+        <ListItemText
+          primary={
+            <React.Fragment>
+              <Typography
+                variant="h6"
+                component="span"
+                sx={{
+                  bgcolor: "background.paper",
+                }}
+              >
+                {code}
+              </Typography>
+              {practical && (
+                <Chip
+                  label="Practical"
+                  color="success"
+                  size="small"
+                  icon={<ScienceIcon />}
+                  sx={{
+                    ml: 2,
+                    mb: 1,
+                  }}
+                />
+              )}
+            </React.Fragment>
+          }
           sx={{
-            width: "100%",
-            height: "100%",
-            py: 1,
-            px: 2,
-            position: "relative",
-            zIndex: 1,
-            borderRadius: 3,
-            position: "relative",
-            zIndex: 1,
-            bgcolor: `${getClassInfo(code).color}.main`,
+            textTransform: "uppercase",
+            p: 0,
           }}
-        >
-          <ListItemText
-            primary={
-              <React.Fragment>
-                <Typography variant="h6" component="span">
-                  {code}
-                </Typography>
-                {practical && (
-                  <Chip
-                    label="Practical"
-                    color="success"
-                    size="small"
-                    icon={<ScienceIcon />}
-                    sx={{
-                      ml: 2,
-                      mb: 1,
-                    }}
-                  />
-                )}
-              </React.Fragment>
-            }
-            sx={{
-              textTransform: "uppercase",
-              p: 0,
-              zIndex: 2,
-            }}
-            secondary={
-              <React.Fragment>
+          secondary={
+            <React.Fragment>
+              <Box
+                sx={{
+                  bgcolor: "background.paper",
+                  display: "inline-block",
+                }}
+              >
                 <Typography
-                  sx={{ display: "inline" }}
+                  sx={{ display: "inline-block" }}
                   component="span"
                   variant="body1"
                   color="text.primary"
@@ -78,30 +89,31 @@ const Class = ({ code, start, end, practical }) => {
                   variant="body2"
                   sx={{
                     textTransform: "capitalize",
-                    display: "inline",
+                    display: "inline-block",
                   }}
                 >
                   {getClassInfo(code).name}
                 </Typography>
-              </React.Fragment>
-            }
-          />
-          <Typography
-            variant="h1"
-            sx={{
-              color: "background.paper",
-              position: "absolute",
-              top: "-50%",
-              right: "0%",
-              zIndex: -1,
-              fontSize: "1000%",
-            }}
-          >
-            {code}
-          </Typography>
-        </Box>
-      </ListItem>
-    </>
+              </Box>
+            </React.Fragment>
+          }
+        />
+        <Typography
+          variant="h1"
+          sx={{
+            color: `${getClassInfo(code).color}.main`,
+            position: "absolute",
+            top: "-80%",
+            right: "0%",
+            zIndex: -1,
+            fontSize: "1000%",
+            opacity: 0.4,
+          }}
+        >
+          {code}
+        </Typography>
+      </Box>
+    </ListItem>
   );
 };
 
