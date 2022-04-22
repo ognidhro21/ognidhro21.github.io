@@ -3,5 +3,12 @@ module.exports = {
     title: `Ognidhro 21`,
     siteUrl: `https://ognidhro21.github.io/`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/`, `/routines/`, `/blog/*`],
+      },
+    },
+  ],
 };

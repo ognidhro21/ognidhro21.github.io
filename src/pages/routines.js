@@ -96,7 +96,11 @@ const Routines = () => {
         dayIndex = 0;
       }
     } else {
-      dayIndex = today;
+      if (today >= 5) {
+        dayIndex = 0;
+      } else {
+        dayIndex = today;
+      }
     }
     setDay(dayIndex);
   }, []);

@@ -24,6 +24,7 @@
     "browserslist": "^4.20.2",
     "engine.io": "^6.2.0",
     "gatsby": "^4.12.1",
+    "gatsby-plugin-offline": "^5.12.1",
     "immer": "^9.0.12",
     "mem": "^9.0.2",
     "node-fetch": "^2.6.7",
