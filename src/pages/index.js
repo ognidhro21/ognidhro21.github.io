@@ -65,19 +65,24 @@ const IndexPage = () => {
             </Typography>
           </Container>
         </Box>
-
-        <HomepageCardWide
-          link="/routines"
-          bgcolor="var(--green-200)"
-          title="Routines"
-          subtitle="Check out the routine of the Ognidhro 21!"
-        />
-        <HomepageCardWide
-          link="https://facebook.com/pg/ognidhro21/"
-          bgcolor="var(--red-200)"
-          title="Facebook Page"
-          subtitle="Get latest updates from Ognidhro 21!"
-        />
+        <Box
+          sx={{
+            py: 3,
+          }}
+        >
+          <HomepageCardWide
+            link="/routines"
+            bgcolor="g.main"
+            title="Routines"
+            subtitle="Check out the routine of the Ognidhro 21!"
+          />
+          <HomepageCardWide
+            link="https://facebook.com/pg/ognidhro21/"
+            bgcolor="primary.light"
+            title="Facebook Page"
+            subtitle="Get latest updates from Ognidhro 21!"
+          />
+        </Box>
       </Paper>
       <Footer />
     </ThemeProvider>

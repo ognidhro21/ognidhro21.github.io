@@ -12,6 +12,7 @@ import {
   indigo,
   brown,
   blueGrey,
+  red,
 } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 import "@fontsource/montserrat/variable.css";
@@ -20,48 +21,49 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#ff1744",
+      light: red[100],
     },
     text: {
       primary: "#263238",
     },
     g: {
-      main: green[500],
+      main: green[100],
     },
     b: {
-      main: blue[500],
+      main: blue[100],
     },
     c: {
-      main: cyan[500],
+      main: cyan[100],
     },
     l: {
-      main: lime[500],
+      main: lime[100],
     },
     y: {
-      main: yellow[500],
+      main: yellow[100],
     },
     p: {
-      main: purple[500],
+      main: purple[100],
     },
     dp: {
-      main: deepPurple[500],
+      main: deepPurple[100],
     },
     o: {
-      main: orange[500],
+      main: orange[100],
     },
     do: {
-      main: deepOrange[500],
+      main: deepOrange[100],
     },
     lg: {
-      main: lightGreen[500],
+      main: lightGreen[100],
     },
     i: {
-      main: indigo[500],
+      main: indigo[100],
     },
     br: {
-      main: brown[500],
+      main: brown[100],
     },
     blg: {
-      main: blueGrey[500],
+      main: blueGrey[100],
     },
   },
   shape: {

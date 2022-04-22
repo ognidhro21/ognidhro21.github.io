@@ -1,43 +1,61 @@
 import React from "react";
 import {
   Typography,
-  Paper,
   Card,
-  CardActionArea,
   CardContent,
   Container,
   Box,
+  Button,
 } from "@mui/material";
+import { Link } from "gatsby";
 const HomepageCardWide = ({ link, bgcolor, title, subtitle }) => {
   return (
-    <Paper>
+    <Container>
       <Card
         sx={{
           width: "100%",
           mb: 2,
+          boxShadow: "none",
+          backgroundColor: `${bgcolor}`,
+          borderRadius: 3,
         }}
+        elevation="0"
       >
-        <CardActionArea
-          href={link}
-          sx={{
-            backgroundColor: bgcolor,
-          }}
-        >
-          <Container>
-            <CardContent>
-              <Box sx={{ py: 2, width: "100%" }}>
-                <Typography gutterBottom variant="h5" component="div">
-                  {title}
-                </Typography>
-                <Typography variant="body1" color="text.secondary">
-                  {subtitle}
-                </Typography>
-              </Box>
-            </CardContent>
-          </Container>
-        </CardActionArea>
+        <CardContent>
+          <Box sx={{ py: 2, width: "100%", zIndex: 1, position: "relative" }}>
+            <Box
+              sx={{
+                zIndex: 2,
+              }}
+            >
+              <Typography variant="h5" component="div">
+                {title}
+              </Typography>
+              <Typography gutterBottom variant="body1" color="text.secondary">
+                {subtitle}
+              </Typography>
+              <Link to={link}>
+                <Button variant="contained">GO!</Button>
+              </Link>
+            </Box>
+            <Typography
+              variant="h1"
+              sx={{
+                fontSize: "2000%",
+                position: "absolute",
+                top: "-50%",
+                left: "0%",
+                display: "inline",
+                zIndex: -1,
+                color: "white",
+              }}
+            >
+              {title}
+            </Typography>
+          </Box>
+        </CardContent>
       </Card>
-    </Paper>
+    </Container>
   );
 };
 
