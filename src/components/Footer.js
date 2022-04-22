@@ -1,36 +1,25 @@
 import React from "react";
-import {
-  Typography,
-  Container,
-  Box,
-  Paper,
-  Card,
-  CardActionArea,
-  CardContent,
-  ThemeProvider,
-  Link,
-} from "@mui/material";
+import { Typography, Box } from "@mui/material";
+import { Link } from "gatsby";
 const Footer = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "var(--red-a400)",
+        backgroundColor: "var(--red-100)",
         width: "100%",
+        borderTop: "4px solid var(--red-a400)",
       }}
     >
       <Typography
-        variant="h6"
-        fontWeight="bold"
+        variant="h5"
         sx={{
           textTransform: "uppercase",
-          color: "var(--red-50)",
           py: 3,
           px: 2,
+          fontWeight: "bold",
         }}
       >
-        <Link href="/" color="#fff">
-          Ognidhro 21
-        </Link>
+        <Link to="/">Home</Link>
       </Typography>
     </Box>
   );

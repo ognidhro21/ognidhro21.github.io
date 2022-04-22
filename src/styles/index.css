@@ -8,7 +8,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    color: var(--red-a400);
+    text-decoration: none;
+}
 /* media query for desktop*/
 @media only screen and (min-width: 992px) {
     .hero-logo{

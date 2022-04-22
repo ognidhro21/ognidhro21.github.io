@@ -13,7 +13,7 @@ import {
   brown,
   blueGrey,
 } from "@mui/material/colors";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 import "@fontsource/montserrat/variable.css";
 
 const theme = createTheme({

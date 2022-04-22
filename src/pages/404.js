@@ -1,54 +1,58 @@
-import * as React from "react"
-import { Link } from "gatsby"
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
+import * as React from "react";
+import "../styles/material-colors.css";
+import "../styles/index.css";
+import Theme from "../styles/theme";
+import {
+  Typography,
+  Container,
+  Box,
+  ThemeProvider,
+  Stack,
+  Button,
+} from "@mui/material";
+import { Link } from "gatsby";
+import { Footer } from "../components";
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <ThemeProvider theme={Theme}>
+      <Box
+        sx={{
+          minHeight: "99vh",
+          backgroundColor: "var(--red-50)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <Typography variant="h1" sx={{ textAlign: "center" }}>
+          OOPS!
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            textAlign: "center",
+            fontSize: "130%",
+            position: "relative",
+            top: "-48px",
+            left: "79px",
+            backgroundColor: "var(--red-50)",
+            display: "inline-block",
+            borderRadius: "16px",
+            padding: "0px 8px",
+          }}
+        >
+          Page Not Found
+        </Typography>
+        <Link to="/">
+          <Button variant="contained" color="primary">
+            Go Home
+          </Button>
+        </Link>
+      </Box>
+    </ThemeProvider>
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
