@@ -44,7 +44,7 @@ const HomepageCardWide = ({ link, bgcolor, title, subtitle }) => {
                 fontSize: "1200%",
                 position: "absolute",
                 top: "-20%",
-                left: "0%",
+                right: "0%",
                 display: "inline",
                 zIndex: -1,
                 color: "white",
