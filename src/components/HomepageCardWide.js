@@ -41,9 +41,9 @@ const HomepageCardWide = ({ link, bgcolor, title, subtitle }) => {
             <Typography
               variant="h1"
               sx={{
-                fontSize: "2000%",
+                fontSize: "1200%",
                 position: "absolute",
-                top: "-50%",
+                top: "-20%",
                 left: "0%",
                 display: "inline",
                 zIndex: -1,
