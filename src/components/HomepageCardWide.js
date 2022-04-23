@@ -19,7 +19,6 @@ const HomepageCardWide = ({ link, bgcolor, title, subtitle }) => {
           borderRadius: 3,
           overflow: "hidden",
         }}
-        elevation="0"
       >
         <CardContent>
           <Box
@@ -37,31 +36,15 @@ const HomepageCardWide = ({ link, bgcolor, title, subtitle }) => {
                 zIndex: 2,
               }}
             >
-              <Typography
-                variant="h5"
-                sx={{
-                  bgcolor: "background.paper",
-                  display: "inline-block",
-                }}
-              >
-                {title}
-              </Typography>
-              <br />
-              <Typography
-                gutterBottom
-                variant="body1"
-                color="text.secondary"
-                sx={{
-                  bgcolor: "background.paper",
-                  display: "inline-block",
-                }}
-              >
+              <Typography variant="h5">{title}</Typography>
+              <Typography gutterBottom variant="body1" color="text.secondary">
                 {subtitle}
               </Typography>
+              <Link to={link}>
+                <Button variant="contained">GO!</Button>
+              </Link>
             </Box>
-            <Link to={link}>
-              <Button variant="contained">GO!</Button>
-            </Link>
+
             <Typography
               variant="h1"
               sx={{
@@ -72,7 +55,7 @@ const HomepageCardWide = ({ link, bgcolor, title, subtitle }) => {
                 left: "0%",
                 display: "inline",
                 zIndex: -1,
-                opacity: 0.4,
+                opacity: 0.1,
               }}
             >
               {title}

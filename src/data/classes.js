@@ -2,44 +2,37 @@ export default [
   {
     code: "acm",
     name: "Agricultural Chemistry",
-    color: "g",
-    hexcolor: "#A5D6A7",
+    color: "g.main",
   },
   {
     code: "hrt",
     name: "Horticulture",
-    color: "b",
-    hexcolor: "#2196F3",
+    color: "b.main",
   },
   {
     code: "ssc",
     name: "Soil Science",
-    color: "c",
-    hexcolor: "#00BCD4",
+    color: "c.main",
   },
   {
     code: "agr",
     name: "Agronomy",
-    color: "i",
-    hexcolor: "#3F51B5",
+    color: "i.main",
   },
 
   {
     code: "aes",
     name: "Agricultural Economics",
-    color: "y",
-    hexcolor: "#FFEB3B",
+    color: "y.main",
   },
   {
     code: "bcm",
     name: "Biomolecular Chemistry",
-    color: "br",
-    hexcolor: "#D7CCC8",
+    color: "br.main",
   },
   {
     code: "age",
     name: "Agricultural Engineering",
-    color: "l",
-    hexcolor: "#CDDC39",
+    color: "l.main",
   },
 ];

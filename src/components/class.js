@@ -7,6 +7,7 @@ import {
   Badge,
   ThemeProvider,
   Box,
+  Stack,
 } from "@mui/material";
 import ScienceIcon from "@mui/icons-material/Science";
 import Classes from "../data/classes";
@@ -15,6 +16,7 @@ const Class = ({ code, start, end, practical }) => {
     const classInfo = Classes.find((c) => c.code === code);
     return classInfo;
   }
+
   return (
     <ListItem
       alignItems="flex-start"
@@ -23,7 +25,7 @@ const Class = ({ code, start, end, practical }) => {
         backgroundColor: "primary.background",
         mb: 2,
         borderLeft: "4px solid",
-        borderLeftColor: `${getClassInfo(code).color}.main`,
+        borderLeftColor: `${getClassInfo(code).color}`,
         backgroundColor: "background.paper",
         borderRadius: 4,
         overflow: "hidden",
@@ -53,7 +55,7 @@ const Class = ({ code, start, end, practical }) => {
               {practical && (
                 <Chip
                   label="Practical"
-                  color="success"
+                  color="primary"
                   size="small"
                   icon={<ScienceIcon />}
                   sx={{
@@ -70,26 +72,21 @@ const Class = ({ code, start, end, practical }) => {
           }}
           secondary={
             <React.Fragment>
-              <Box
-                sx={{
-                  bgcolor: "background.paper",
-                  display: "inline-block",
-                }}
-              >
+              <Box>
                 <Typography
-                  sx={{ display: "inline-block" }}
+                  sx={{ display: "inline" }}
                   component="span"
                   variant="body1"
                   color="text.primary"
                 >
                   {`${start} - ${end}`}
-                  {" | "}
+                  {" |  "}
                 </Typography>
                 <Typography
                   variant="body2"
                   sx={{
                     textTransform: "capitalize",
-                    display: "inline-block",
+                    display: "inline",
                   }}
                 >
                   {getClassInfo(code).name}
@@ -101,13 +98,13 @@ const Class = ({ code, start, end, practical }) => {
         <Typography
           variant="h1"
           sx={{
-            color: `${getClassInfo(code).color}.main`,
+            color: `${getClassInfo(code).color}`,
             position: "absolute",
             top: "-80%",
             right: "0%",
             zIndex: -1,
             fontSize: "1000%",
-            opacity: 0.4,
+            opacity: 0.1,
           }}
         >
           {code}
