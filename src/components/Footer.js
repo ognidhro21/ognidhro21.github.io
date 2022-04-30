@@ -5,9 +5,8 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "var(--red-100)",
+        backgroundColor: "background",
         width: "100%",
-        borderTop: "4px solid var(--red-a400)",
       }}
     >
       <Typography

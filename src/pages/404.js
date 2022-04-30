@@ -1,7 +1,4 @@
 import * as React from "react";
-import "../styles/material-colors.css";
-import "../styles/index.css";
-import Theme from "../styles/theme";
 import {
   Typography,
   Container,
@@ -11,11 +8,11 @@ import {
   Button,
 } from "@mui/material";
 import { Link } from "gatsby";
-import { Footer } from "../components";
+import { Layout } from "../components";
 // markup
 const NotFoundPage = () => {
   return (
-    <ThemeProvider theme={Theme}>
+    <Layout>
       <Box
         sx={{
           minHeight: "99vh",
@@ -51,7 +48,7 @@ const NotFoundPage = () => {
           </Button>
         </Link>
       </Box>
-    </ThemeProvider>
+    </Layout>
   );
 };
 

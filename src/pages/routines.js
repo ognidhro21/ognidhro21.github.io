@@ -13,14 +13,10 @@ import {
   Paper,
   Button,
 } from "@mui/material";
-import { ThemeProvider } from "@mui/material/styles";
 import React from "react";
 import { useState, useEffect } from "react";
 import routines from "../data/routine.json";
-import { Class, RoutineAppbar, Footer } from "../components";
-import "../styles/index.css";
-
-import theme from "../styles/theme";
+import { Class, Layout } from "../components";
 
 const Routines = () => {
   const [routineid, setRoutineid] = useState(0);
@@ -118,7 +114,7 @@ const Routines = () => {
   });
   return (
     <div className="routines">
-      <ThemeProvider theme={theme}>
+      <Layout>
         {info.saved ? (
           <Box
             sx={{
@@ -362,8 +358,7 @@ const Routines = () => {
             </Grid>
           </>
         )}
-        <Footer />
-      </ThemeProvider>
+      </Layout>
     </div>
   );
 };
