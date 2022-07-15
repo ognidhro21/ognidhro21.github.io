@@ -1,5 +1,5 @@
 import fs from 'fs';
-export function get() {
+export async function get() {
 	// our markdown files lie in src/posts.
 	let postTitles = fs
 		.readdirSync(`src/data/schedules/routines`)

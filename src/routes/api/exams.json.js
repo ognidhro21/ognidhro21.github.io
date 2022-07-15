@@ -1,9 +1,10 @@
 import fs from 'fs';
-export function get() {
+export async function get() {
 	// our markdown files lie in src/posts.
 	let postTitles = fs
 		.readdirSync(`src/data/schedules/exams/theory`)
 		.map((fileName) => fileName.replace('.json', ''));
+	console.log(postTitles);
 	let exams = [];
 	postTitles.forEach((element) => {
 		const src = `src/data/schedules/exams/theory/${element}.json`;
