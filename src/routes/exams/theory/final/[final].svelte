@@ -2,6 +2,16 @@
 	import { aMOrPM, isCompleted } from '$lib/time/date';
 	import Container from '../../../../components/shared/Container.svelte';
 	import FinalCard from '../../../../components/shared/schedules/ExamCards/FinalCard.svelte';
+
+	export async function load({ params, fetch }) {
+		const slug = params.final;
+		const json = await fetch(`./${slug}.json`).then((res) => res.json());
+		return {
+			props: {
+				json
+			}
+		};
+	}
 </script>
 
 <script>

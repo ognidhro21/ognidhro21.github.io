@@ -14,10 +14,7 @@ export function get({ params }) {
 	// parse the json content
 	const json = JSON.parse(content);
 
-	// return the json content
 	return {
-		status: 200,
-		headers: {},
-		body: { json }
+		body: json
 	};
 }

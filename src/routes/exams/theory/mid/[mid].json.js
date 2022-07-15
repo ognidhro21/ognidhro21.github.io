@@ -16,8 +16,6 @@ export function get({ params }) {
 
 	// return the json content
 	return {
-		status: 200,
-		headers: {},
-		body: { json }
+		body: json
 	};
 }
