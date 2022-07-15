@@ -2,9 +2,10 @@
 	import { aMOrPM, isCompleted } from '$lib/time/date';
 	import Container from '../../../../components/shared/Container.svelte';
 	import MidCard from '../../../../components/shared/schedules/ExamCards/MidCard.svelte';
-	export async function load({ params, fetch }) {
+	export async function load({ params }) {
 		const slug = params.mid;
-		const json = await fetch(`./${slug}.json`).then((res) => res.json());
+
+		const json = await import(`../../../../data/schedules/exams/theory/${slug}.json`);
 		return {
 			props: {
 				json
