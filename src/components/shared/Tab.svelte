@@ -1,6 +1,4 @@
 <script>
-	import Button from './Button.svelte';
-
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();
 	export let items = [];
