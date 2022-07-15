@@ -1,5 +1,5 @@
 <script>
-	import { Button } from 'agnostic-svelte';
+	import Button from './Button.svelte';
 
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();

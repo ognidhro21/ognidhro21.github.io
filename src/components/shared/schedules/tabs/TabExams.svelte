@@ -1,6 +1,4 @@
 <script>
-	import { Disclose } from 'agnostic-svelte';
-
 	export let tabindex = 1;
 	export let examsList;
 </script>

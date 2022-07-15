@@ -1,5 +1,5 @@
 <script>
-	import { Button } from 'agnostic-svelte';
+	import Button from '../../shared/Button.svelte';
 	import Container from '../../shared/Container.svelte';
 	import SchedImg from '../../../images/well_done_undraw.svg';
 	import FBImg from '../../../images/social_undraw.svg';

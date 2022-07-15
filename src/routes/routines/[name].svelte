@@ -1,5 +1,5 @@
 <script context="module">
-	import { Button, Select } from 'agnostic-svelte';
+	import Button from '../../components/shared/Button.svelte';
 	import Container from '../../components/shared/Container.svelte';
 	export async function load({ params, fetch }) {
 		const slug = params.name;

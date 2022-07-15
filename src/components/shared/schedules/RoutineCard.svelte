@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
-	import { Tag } from 'agnostic-svelte';
 	import c2T from '../../../lib/codeToTitle';
+	import Badge from '../Badge.svelte';
 	export let schedule;
 	$: name = c2T(schedule.code);
 </script>
@@ -15,7 +15,7 @@
 		<h5>
 			<span>{schedule.start} - </span> <span>{schedule.end}</span>
 		</h5>
-		{#if schedule.practical}<Tag shape="rounded" type="warning">Practical</Tag> {/if}
+		{#if schedule.practical}<Badge shape="rounded" type="warning">Practical</Badge> {/if}
 	</div>
 </div>
 

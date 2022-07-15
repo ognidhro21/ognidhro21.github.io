@@ -1,5 +1,4 @@
 <script>
-	import { Button } from 'agnostic-svelte';
 	import { goto } from '$app/navigation';
 	import Container from '../components/shared/Container.svelte';
 	import About from '../components/fragments/homepage/About.svelte';

@@ -1,7 +1,6 @@
 <script context="module">
 	import { fly } from 'svelte/transition';
 	import { aMOrPM, isCompleted } from '$lib/time/date';
-	import { Tag } from 'agnostic-svelte';
 </script>
 
 <script>

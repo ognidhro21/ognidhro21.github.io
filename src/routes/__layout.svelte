@@ -1,5 +1,9 @@
 <script>
-	import 'agnostic-svelte/css/common.min.css';
+	import '../styles/css/common.min.css';
+	import '../styles/css/common.properties.min.css';
+	import '../styles/css/common.resets.min.css';
+	import '../styles/css/common.utilities.min.css';
+	import '../styles/css/opinions.min.css';
 	import '../styles/agnostic-overrides.css';
 	import '../styles/select.css';
 	import { fade, fly } from 'svelte/transition';
