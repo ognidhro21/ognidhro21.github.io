@@ -2,7 +2,7 @@
 	import { aMOrPM, isCompleted } from '$lib/time/date';
 	import Container from '../../../../components/shared/Container.svelte';
 	export async function load({ params, fetch }) {
-		const slug = params.final;
+		const slug = params.name;
 		const examDetail = await fetch(`./${slug}.json`).then((res) => res.json());
 		return {
 			props: {
@@ -16,7 +16,8 @@
 	import FinalCard from '../../../../components/shared/schedules/ExamCards/FinalCard.svelte';
 
 	export let examDetail;
-	const { name, detailedname, exams, startTime, year } = examDetail;
+	const { detailedname, examDetails } = examDetail;
+	const { startTime, year, exams } = examDetails;
 	let expired = [];
 	let upNext = [];
 

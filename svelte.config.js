@@ -8,8 +8,14 @@ const config = {
 			assets: 'build',
 			fallback: null
 		}),
+		browser: {
+			hydrate: true,
+			router: false
+		},
 		prerender: {
-			default: true
+			default: true,
+			crawl: true,
+			enabled: true
 		}
 	}
 };

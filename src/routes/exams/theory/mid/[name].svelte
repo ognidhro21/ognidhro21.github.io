@@ -1,8 +1,10 @@
 <script context="module">
 	import { aMOrPM, isCompleted } from '$lib/time/date';
 	import Container from '../../../../components/shared/Container.svelte';
+	import MidCard from '../../../../components/shared/schedules/ExamCards/MidCard.svelte';
+
 	export async function load({ params, fetch }) {
-		const slug = params.mid;
+		const slug = params.name;
 		const examDetail = await fetch(`./${slug}.json`).then((res) => res.json());
 		return {
 			props: {
@@ -13,10 +15,9 @@
 </script>
 
 <script>
-	import MidCard from '../../../../components/shared/schedules/ExamCards/MidCard.svelte';
-
 	export let examDetail;
-	const { detailedname, exams, startTime, year, endTime } = examDetail;
+	const { detailedname, examDetails } = examDetail;
+	const { startTime, year, endTime, exams } = examDetails;
 	let expired = [];
 	let upNext = [];
 	exams.forEach((e) => {
@@ -42,7 +43,7 @@
 	{#if expired.length > 0}
 		<h4>Completed</h4>
 		{#each expired as exam (exam.code)}
-			<MidCard {exam} {startTime} {year} {endTime} completed={true} />
+			<MidCard {exam} {startTime} {endTime} completed={true} />
 		{/each}
 	{/if}
 </Container>
