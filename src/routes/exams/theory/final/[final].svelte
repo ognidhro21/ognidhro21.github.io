@@ -1,23 +1,14 @@
 <script context="module">
 	import { aMOrPM, isCompleted } from '$lib/time/date';
 	import Container from '../../../../components/shared/Container.svelte';
-	export async function load({ params, fetch }) {
-		const slug = params.name;
-		const examDetail = await fetch(`./${slug}.json`).then((res) => res.json());
-		return {
-			props: {
-				examDetail
-			}
-		};
-	}
+	import FinalCard from '../../../../components/shared/schedules/ExamCards/FinalCard.svelte';
 </script>
 
 <script>
-	import FinalCard from '../../../../components/shared/schedules/ExamCards/FinalCard.svelte';
-
-	export let examDetail;
-	const { detailedname, examDetails } = examDetail;
-	const { startTime, year, exams } = examDetails;
+	export let json;
+	const { detailedname, schedules } = json;
+	const { final } = schedules;
+	const { startTime, year, exams } = final;
 	let expired = [];
 	let upNext = [];
 

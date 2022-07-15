@@ -9,14 +9,13 @@
 	<h2>Exams</h2>
 
 	{#each examsList as r, i}
-		<Disclose title={r.detailedname}>
-			<a href={`/exams/theory/final/${r.name}`}>
-				<h4>Final</h4>
-			</a>
-			<a href={`/exams/theory/mid/${r.name}`}>
-				<h4>Mid Term</h4>
-			</a>
-		</Disclose>
+		<h4>{r.detailedname}</h4>
+		<a href={`/exams/theory/final/${r.name}`}>
+			<h4>Final</h4>
+		</a>
+		<a href={`/exams/theory/mid/${r.name}`}>
+			<h4>Mid Term</h4>
+		</a>
 	{/each}
 </div>
 
