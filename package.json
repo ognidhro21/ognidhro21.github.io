@@ -1,41 +1,29 @@
 {
-  "name": "ognidhro21",
-  "version": "1.0.0",
-  "private": true,
-  "description": "ognidhro21",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "local": "gatsby develop --host $(ifconfig | awk '/inet 192\\.168\\.[0-9]+\\.[0-9]+/{print $2}') --port 8000",
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "@fontsource/montserrat": "^4.5.7",
-    "@graphql-tools/url-loader": "^7.9.14",
-    "@mui/icons-material": "^5.6.2",
-    "@mui/material": "^5.6.2",
-    "ansi-html": "^0.0.9",
-    "async": "^3.2.3",
-    "browserslist": "^4.20.2",
-    "cross-fetch": "^3.1.5",
-    "engine.io": "^6.2.0",
-    "gatsby": "^4.12.1",
-    "gatsby-plugin-offline": "^5.12.1",
-    "immer": "^9.0.12",
-    "mem": "^9.0.2",
-    "node-fetch": "^3.2.3",
-    "node-forge": "^1.3.1",
-    "postcss": "^8.4.12",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "ws": "^8.5.0",
-    "yargs-parser": "^21.0.1"
-  }
+	"name": "ognidhro21.github.io",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"package": "svelte-kit package",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"local": "vite dev --host"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.6.2",
+		"prettier-plugin-svelte": "^2.7.0",
+		"svelte": "^3.44.0",
+		"vite": "^3.0.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"agnostic-svelte": "^1.1.27"
+	}
 }

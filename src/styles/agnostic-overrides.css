@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Montserrat:700');
+:root {
+  --agnostic-font-family: font-family: 'Roboto', sans-serif;
+  /* In light mode we willl have white text against a dark green background. */
+  --agnostic-light-modelight: #ffebee;
+  --agnostic-primary-modelight: #ff1744;
+  --agnostic-primary-hover-modelight: #ef5350;
+  /* In dark mode we'll invert the text color and use a much lighter shade of green */
+  --agnostic-primary-modedark: #ff1744;
+  --agnostic-light-modedark: #2b2b2b;
+  --agnostic-primary-hover-modedark: #ef5350;
+  --agnostic-focus-ring-outline-color: var(--agnostic-primary-modelight);
+  --plain: #fff;
+  
+}
+/* But, if user's set their OS to prefer dark, we instead use that */
+@media (prefers-color-scheme: dark) {
+  :root{--agnostic-primary: var(--agnostic-primary-modedark);
+    --agnostic-light: var(--agnostic-light-modedark);
+    --plain: #121212;
+  }
+}
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  background-color: var(--agnostic-light);
+}
+
+p {margin-bottom: 1rem;}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+h1,h2,h3{
+  text-transform: uppercase;
+}
+h1 {
+  margin-top: 0;
+  font-size: 1.802rem;
+}
+
+h2 {font-size: 1.602rem;}
+
+h3 {font-size: 1.424rem;}
+
+h4 {font-size: 1.266rem;}
+
+h5 {font-size: 1.125rem;}
+
+small, .text_small {font-size: 0.889rem;}
