@@ -38,12 +38,13 @@
 		group: 2,
 		saved: false
 	};
-
+	$: saved = false;
 	onMount(() => {
 		if ($DATA) {
 			info.section = $DATA[0].section;
 			info.group = $DATA[0].group;
 			info.saved = $DATA[0].saved;
+			saved = info.saved;
 		}
 	});
 	function updateSection() {
@@ -60,6 +61,7 @@
 	}
 	function saveInfo() {
 		info.saved = true;
+		saved = true;
 		$DATA[0] = info;
 	}
 	function resetInfo() {
@@ -68,13 +70,13 @@
 			group: 2,
 			saved: false
 		};
-
+		saved = false;
 		$DATA[0] = info;
 	}
 </script>
 
 <Container>
-	{#if info.saved}
+	{#if saved}
 		<section class="mbe24 tabs">
 			<Tab {items} {selected} on:tabChanged={tabChanged} />
 			{#if selected === 'Classes'}
