@@ -92,7 +92,7 @@
 			</div>
 		</div>
 	</div>
-	<h3>{sections[section].groups[group].days[day].name}</h3>
+	<!-- <h3>{sections[section].groups[group].days[day].name}</h3> -->
 	{#each infos as schedule}
 		<RoutineCard {schedule} />
 	{/each}
