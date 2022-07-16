@@ -23,7 +23,7 @@
 	{#if image}
 		<meta property="og:image" content={image.url} />
 		<meta property="og:image:secure_url" content={image.url} />
-		<meta property="og:image:alt" content={image.alt} />
+		<meta property="og:image:alt" content={image.url} />
 	{/if}
 	{#if squareImage}
 		<meta property="og:image" content={squareImage.url} />
