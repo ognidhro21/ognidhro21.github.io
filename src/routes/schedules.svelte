@@ -80,8 +80,9 @@
 
 <SEO title={`Schedules`} />
 <Container>
+	<Button mode="primary" isRounded on:click={resetInfo}>Reset Info</Button>
 	{#if saved}
-		<section class="mbe24 tabs">
+		<section class="mbe24 mbs12 tabs">
 			<Tab {items} {selected} on:tabChanged={tabChanged} />
 			{#if selected === 'Classes'}
 				<TabClasses {routinesList} />
@@ -91,9 +92,8 @@
 				<TabEvents />
 			{/if}
 		</section>
-		<Button mode="primary" isRounded on:click={resetInfo}>Reset Info</Button>
 	{:else}
-		<div class="save-info flex items-center  self-center">
+		<div class="save-info flex items-center  self-center mbs12">
 			<div class="img-container">
 				<img src={InfoImg} alt="" />
 			</div>
