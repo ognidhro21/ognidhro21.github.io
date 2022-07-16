@@ -1,15 +1,25 @@
 <script>
 	import Container from '../../shared/Container.svelte';
 	import logo from '../../../images/O21-Big.png';
+	import BG from '../../../images/OgnidhroHero.svg';
 </script>
 
-<Container fluid bgColor="var(--agnostic-primary-modelight)"
-	><div class="hero">
-		<img src={logo} alt="" />
-	</div></Container
->
+<div class="hero-container">
+	<Container fluid bgColor="transparent"
+		><div class="hero">
+			<img src={logo} alt="" />
+		</div>
+	</Container>
+	<div class="curve">
+		<img src={BG} alt="" />
+	</div>
+</div>
 
 <style>
+	.hero-container {
+		position: relative;
+		background: linear-gradient(0deg, var(--plain) 25%, var(--agnostic-primary) 25%);
+	}
 	.hero {
 		min-height: 90vh;
 		width: 100%;
@@ -17,21 +27,36 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		z-index: 2;
 	}
-	img {
+	.hero img {
 		width: 70%;
 	}
-
+	.curve {
+		position: absolute;
+		bottom: 0;
+		z-index: 1;
+		width: 100%;
+	}
+	.curve img {
+		width: 100%;
+	}
 	/* media for tablet */
 	@media (min-width: 768px) {
-		img {
+		.hero img {
 			width: 50%;
+		}
+		.hero-container {
+			background: linear-gradient(0deg, var(--plain) 35%, var(--agnostic-primary) 35%);
 		}
 	}
 	/* media for tablet */
-	@media (min-width: 1024px) {
-		img {
+	@media (min-width: 1000px) {
+		.hero img {
 			width: 40%;
+		}
+		.hero-container {
+			background: linear-gradient(0deg, var(--plain) 55%, var(--agnostic-primary) 55%);
 		}
 	}
 </style>

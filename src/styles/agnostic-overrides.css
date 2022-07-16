@@ -21,6 +21,10 @@
   }
 }
 
+*{
+  box-sizing: border-box;
+}
+
 html {font-size: 100%;} /*16px*/
 
 body {
@@ -28,6 +32,7 @@ body {
   font-weight: 400;
   line-height: 1.75;
   background-color: var(--agnostic-light);
+  overflow-x: hidden;
 }
 
 p {margin-bottom: 1rem;}
@@ -57,3 +62,4 @@ h4 {font-size: 1.266rem;}
 h5 {font-size: 1.125rem;}
 
 small, .text_small {font-size: 0.889rem;}
+

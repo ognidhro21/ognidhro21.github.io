@@ -1,0 +1,52 @@
+.routine-card h2,
+.routine-card h3,
+.routine-card h4,
+.routine-card h5,
+.routine-card p {
+	margin: 0;
+}
+.routine-card {
+	padding: 1rem;
+	background: var(--plain);
+	margin-top: 0.8rem;
+	border-radius: 0.8rem;
+	box-shadow: 0px 0px 12px 1px rgba(243, 114, 114, 0.09);
+	position: relative;
+	overflow: hidden;
+}
+.routine-card h4 {
+	text-transform: uppercase;
+}
+
+.routine-card p {
+	margin-top: 0.5rem;
+}
+/*  only in examcards */
+.routine-card .title {
+	max-width: 60%;
+}
+.routine-card .time {
+	text-align: right;
+}
+.routine-card.completed {
+	opacity: 0.4;
+}
+.routine-card.completed h4,
+.routine-card.completed p {
+	text-decoration: line-through;
+}
+.routine-card .abs {
+	font-size: 800%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: var(--agnostic-dark);
+	opacity: 0.05;
+	font-weight: 900;
+	line-height: 1;
+	/* cant be selected */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
