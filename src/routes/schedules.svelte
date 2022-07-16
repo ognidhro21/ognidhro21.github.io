@@ -105,7 +105,11 @@
 						{/each}
 					</select>
 				</div>
-				<Button mode="primary" isRounded on:click={saveInfo}>Submit</Button>
+				<!-- refresh current page -->
+
+				<a href="/schedules" target="_self">
+					<Button mode="primary" isRounded on:click={saveInfo}>Submit</Button></a
+				>
 			</div>
 		</div>
 	{/if}
