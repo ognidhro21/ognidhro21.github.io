@@ -7,7 +7,7 @@
 	export async function load({ params }) {
 		const slug = params.name;
 
-		const routine = await import(`../../data/routines/${slug}.json`);
+		const routine = await import(`../../data/schedules/routines/${slug}.json`);
 		return {
 			props: {
 				routine
