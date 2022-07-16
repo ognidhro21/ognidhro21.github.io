@@ -1,7 +1,6 @@
 <script>
-	import defaultFeaturedImage from '$lib/assets/home/home.jpg';
-	import defaultOgImage from '$lib/assets/home/home-open-graph.jpg';
-	import defaultOgSquareImage from '$lib/assets/home/home-open-graph-square.jpg';
+	import defaultOgImage from '../../../images/OgnidhroCover.png';
+	import defaultOgSquareImage from '../../../images/OgnidhroCoverSquare.png';
 
 	import website from '$lib/config/website';
 	import OpenGraph from './OpenGraph.svelte';
@@ -37,7 +36,7 @@
 
 	// imported props with fallback defaults
 	export let featuredImage = {
-		url: defaultFeaturedImage,
+		url: defaultOgImage,
 		alt: defaultAlt,
 		width: 672,
 		height: 448,
