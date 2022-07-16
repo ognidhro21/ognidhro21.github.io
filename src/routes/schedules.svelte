@@ -78,7 +78,7 @@
 	}
 </script>
 
-<SEO title="Schedules" />
+<SEO title={`Schedules`} />
 <Container>
 	{#if saved}
 		<section class="mbe24 tabs">

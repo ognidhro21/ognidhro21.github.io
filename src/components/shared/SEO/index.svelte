@@ -1,10 +1,12 @@
-<script>
-	import defaultOgImage from '../../../images/OgnidhroCover.png';
-	import defaultOgSquareImage from '../../../images/OgnidhroCoverSquare.png';
+<script context="module">
+	import defaultOgImage from '$lib/images/OgnidhroCover.png';
+	import defaultOgSquareImage from '$lib/images/OgnidhroCoverSquare.png';
 
 	import website from '$lib/config/website';
 	import OpenGraph from './OpenGraph.svelte';
+</script>
 
+<script>
 	const {
 		author,
 		entity,
@@ -15,11 +17,7 @@
 		siteShortTitle,
 		siteTitle,
 		siteUrl,
-		githubPage,
-		linkedinProfile,
-		telegramUsername,
-		tiktokUsername,
-		twitterUsername
+		githubPage
 	} = website;
 
 	export let article = false;
@@ -27,9 +25,9 @@
 	export let entityMeta = null;
 	export let lastUpdated;
 	export let datePublished;
-	export let metadescription;
+	export let metadescription =
+		'Website for the Ognidhro 21, the 21st batch of Faculty of Agriculture, PSTU';
 	export let slug;
-	export let timeToRead = 0;
 	export let title;
 
 	const defaultAlt = 'default image';
@@ -83,11 +81,7 @@
 		title: pageTitle,
 		url,
 		facebookPage,
-		githubPage,
-		linkedinProfile,
-		telegramUsername,
-		tiktokUsername,
-		twitterUsername
+		githubPage
 	};
 </script>
 
@@ -98,6 +92,5 @@
 		name="robots"
 		content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 	/>
-	<link rel="canonical" href={url} />
 </svelte:head>
 <OpenGraph {...openGraphProps} />
