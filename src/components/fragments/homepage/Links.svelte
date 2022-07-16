@@ -87,7 +87,6 @@
 	/* media for mobile */
 	@media (max-width: 768px) {
 		.card img {
-			width: 50%;
 			opacity: 0.1;
 		}
 	}

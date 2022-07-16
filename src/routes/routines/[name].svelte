@@ -60,9 +60,6 @@
 	<div class="header">
 		<div class="flex-fix flex justify-between  mbe12 content-center">
 			<h2 class="m0">{detailedname}</h2>
-			<a href="/schedules">
-				<Button mode="primary" isRounded>Change</Button>
-			</a>
 		</div>
 		<div class="inputs flex">
 			<div>

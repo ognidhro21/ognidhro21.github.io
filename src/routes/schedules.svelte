@@ -25,7 +25,7 @@
 	import SEO from '../components/shared/SEO/index.svelte';
 
 	let items = ['Classes', 'Exams', 'Events'];
-	let selected = items[0];
+	let selected = items[1];
 	function tabChanged(e) {
 		selected = e.detail;
 	}
