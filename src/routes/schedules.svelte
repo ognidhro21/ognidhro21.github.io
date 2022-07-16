@@ -80,8 +80,8 @@
 
 <SEO title={`Schedules`} />
 <Container>
-	<Button mode="primary" isRounded on:click={resetInfo}>Reset Info</Button>
 	{#if saved}
+		<Button mode="primary" isRounded on:click={resetInfo}>Reset Info</Button>
 		<section class="mbe24 mbs12 tabs">
 			<Tab {items} {selected} on:tabChanged={tabChanged} />
 			{#if selected === 'Classes'}
