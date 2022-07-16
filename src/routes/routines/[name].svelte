@@ -3,6 +3,7 @@
 	import Container from '../../components/shared/Container.svelte';
 	import { onMount } from 'svelte';
 	import RoutineCard from '../../components/shared/schedules/RoutineCard.svelte';
+	import SEO from '../../components/shared/SEO/index.svelte';
 
 	export async function load({ params }) {
 		const slug = params.name;
@@ -19,7 +20,7 @@
 <script>
 	import DATA from '../../stores/PersistantInfo';
 	export let routine;
-	const { detailedname, sections } = routine;
+	const { name, detailedname, sections } = routine;
 
 	let day = 0;
 	let section = 1;
@@ -54,6 +55,7 @@
 	});
 </script>
 
+<SEO title={`Routine - ${name}`} />
 <Container>
 	<div class="header">
 		<div class="flex-fix flex justify-between  mbe12 content-center">

@@ -8,12 +8,14 @@
 
 	{#each examsList as r, i}
 		<h4>{r.detailedname}</h4>
-		<a href={`/exams/theory/final/${r.name}`}>
-			<h4>Final</h4>
-		</a>
-		<a href={`/exams/theory/mid/${r.name}`}>
-			<h4>Mid Term</h4>
-		</a>
+		<div class="flex">
+			<a class="mie24" href={`/exams/theory/final/${r.name}`}>
+				<h4>Final</h4>
+			</a>
+			<a href={`/exams/theory/mid/${r.name}`}>
+				<h4>Mid Term</h4>
+			</a>
+		</div>
 	{/each}
 </div>
 

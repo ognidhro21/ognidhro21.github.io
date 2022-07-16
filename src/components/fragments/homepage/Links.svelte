@@ -78,7 +78,9 @@
 		right: 0;
 		opacity: 1;
 		z-index: 1;
+		transition: all 0.3s ease-in-out;
 	}
+
 	.texts {
 		z-index: 2;
 	}

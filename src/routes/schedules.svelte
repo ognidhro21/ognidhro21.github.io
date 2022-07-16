@@ -22,6 +22,7 @@
 	import Button from '../components/shared/Button.svelte';
 	import DATA from '../stores/PersistantInfo';
 	import { onMount } from 'svelte';
+	import SEO from '../components/shared/SEO/index.svelte';
 
 	let items = ['Classes', 'Exams', 'Events'];
 	let selected = items[0];
@@ -77,6 +78,7 @@
 	}
 </script>
 
+<SEO title="Schedules" />
 <Container>
 	{#if saved}
 		<section class="mbe24 tabs">

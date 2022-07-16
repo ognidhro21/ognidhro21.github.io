@@ -2,6 +2,8 @@
 	import { aMOrPM, isCompleted } from '$lib/time/date';
 	import Container from '../../../../components/shared/Container.svelte';
 	import MidCard from '../../../../components/shared/schedules/ExamCards/MidCard.svelte';
+	import SEO from '../../../../components/shared/SEO/index.svelte';
+
 	export async function load({ params }) {
 		const slug = params.mid;
 
@@ -16,7 +18,7 @@
 
 <script>
 	export let json;
-	const { detailedname, schedules } = json;
+	const { name, detailedname, schedules } = json;
 	const { mid } = schedules;
 	const { startTime, year, endTime, exams } = mid;
 	let expired = [];
@@ -30,6 +32,8 @@
 		}
 	});
 </script>
+
+<SEO title={`Class Test - ${name}`} />
 
 <Container>
 	<h3>
