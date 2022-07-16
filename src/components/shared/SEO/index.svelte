@@ -4,7 +4,7 @@
 
 	import website from '$lib/config/website';
 	import OpenGraph from './OpenGraph.svelte';
-	import { base } from '$app/base';
+	import { base } from '$app/paths';
 </script>
 
 <script>
