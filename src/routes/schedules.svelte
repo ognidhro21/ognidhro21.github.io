@@ -45,6 +45,8 @@
 			info.group = $DATA[0].group;
 			info.saved = $DATA[0].saved;
 			saved = info.saved;
+		} else {
+			$DATA[0] = info;
 		}
 	});
 	function updateSection() {
