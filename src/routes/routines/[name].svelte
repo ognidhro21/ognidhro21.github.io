@@ -3,9 +3,11 @@
 	import Container from '../../components/shared/Container.svelte';
 	import { onMount } from 'svelte';
 	import RoutineCard from '../../components/shared/schedules/RoutineCard.svelte';
-	export async function load({ params, fetch }) {
+
+	export async function load({ params }) {
 		const slug = params.name;
-		const routine = await fetch(`./${slug}.json`).then((res) => res.json());
+
+		const routine = await import(`../../data/routines/${slug}.json`);
 		return {
 			props: {
 				routine
