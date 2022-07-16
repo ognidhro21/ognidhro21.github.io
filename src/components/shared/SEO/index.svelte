@@ -4,6 +4,7 @@
 
 	import website from '$lib/config/website';
 	import OpenGraph from './OpenGraph.svelte';
+	import { base } from '$app/base';
 </script>
 
 <script>
@@ -34,18 +35,18 @@
 
 	// imported props with fallback defaults
 	export let featuredImage = {
-		url: defaultOgImage,
+		url: base + defaultOgImage,
 		alt: defaultAlt,
 		width: 672,
 		height: 448,
 		caption: 'Home page'
 	};
 	export let ogImage = {
-		url: defaultOgImage,
+		url: base + defaultOgImage,
 		alt: defaultAlt
 	};
 	export let ogSquareImage = {
-		url: defaultOgSquareImage,
+		url: base + defaultOgSquareImage,
 		alt: defaultAlt
 	};
 
