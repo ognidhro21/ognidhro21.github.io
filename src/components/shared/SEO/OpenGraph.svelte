@@ -16,7 +16,6 @@
 <svelte:head>
 	<meta property="og:site_name" content={siteTitle} />
 	<meta property="og:locale" content={ogLanguage} />
-	<meta property="og:url" content={url} />
 	<meta property="og:type" content={article ? 'article' : 'website'} />
 	<meta property="og:title" content={pageTitle} />
 	<meta property="og:description" content={metadescription} />

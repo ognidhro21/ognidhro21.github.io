@@ -31,7 +31,7 @@
 		width: 100%;
 	}
 	.text {
-		width: 1000%;
+		width: 100%;
 	}
 
 	/* media for tablet */

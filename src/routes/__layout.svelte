@@ -25,7 +25,6 @@
 <style>
 	.layout {
 		min-height: 90vh;
-		width: 100%;
 		position: relative;
 	}
 	footer {
