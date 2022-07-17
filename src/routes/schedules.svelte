@@ -121,6 +121,8 @@
 	.tabs {
 		background-color: var(--plain);
 		padding: 1rem;
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+		min-height: 70vh;
 		border-radius: 1rem;
 	}
 	.save-info {
@@ -129,6 +131,7 @@
 		padding: 1rem;
 		gap: 1rem;
 		min-height: 80vh;
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 		justify-content: space-between;
 	}
 	.inputs {

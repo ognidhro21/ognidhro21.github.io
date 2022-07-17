@@ -22,7 +22,7 @@
 		box-sizing: border-box;
 		display: flex;
 		width: 100%;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 1rem;
@@ -31,16 +31,16 @@
 		width: 100%;
 	}
 	.text {
-		width: 40%;
+		width: 1000%;
 	}
 
 	/* media for tablet */
-	@media (max-width: 768px) {
+	@media (min-width: 768px) {
 		.contents {
-			flex-direction: column;
+			flex-direction: row;
 		}
 		.text {
-			width: 100%;
+			width: 40%;
 		}
 	}
 </style>

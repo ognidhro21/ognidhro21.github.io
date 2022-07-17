@@ -1,9 +1,23 @@
 <script>
 	export let tabindex = 1;
+	import { fade, fly } from 'svelte/transition';
 	export let examsList;
 </script>
 
-<div id="panel-2" class="tab-panel" role="tabpanel" {tabindex}>
+<div
+	id="panel-2"
+	class="tab-panel"
+	role="tabpanel"
+	{tabindex}
+	in:fly={{
+		y: 100,
+		duration: 350,
+		delay: 120 + 100
+	}}
+	out:fade={{
+		duration: 120
+	}}
+>
 	<h2>Exams</h2>
 
 	{#each examsList as r, i}

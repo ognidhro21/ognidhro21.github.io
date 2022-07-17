@@ -5,8 +5,8 @@
 </script>
 
 <div class="hero-container">
-	<Container fluid bgColor="transparent"
-		><div class="hero">
+	<Container fluid bgColor="transparent">
+		<div class="hero">
 			<img src={logo} alt="" />
 		</div>
 	</Container>
@@ -23,7 +23,6 @@
 	.hero {
 		min-height: 90vh;
 		width: 100%;
-		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -31,6 +30,7 @@
 	}
 	.hero img {
 		width: 70%;
+		z-index: 2;
 	}
 	.curve {
 		position: absolute;

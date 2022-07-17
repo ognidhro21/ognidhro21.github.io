@@ -28,23 +28,33 @@
 	.tabbuttons {
 		max-width: 1024px;
 		height: 100%;
-		margin: 0 auto;
+		background-color: rgba(0, 0, 0, 0.036);
+		border-bottom: 1px solid var(--agnostic-primary);
+		margin: -1rem;
+		margin-top: 0;
+		padding: 0 1rem;
 	}
 	button {
 		display: inline-block;
 		width: auto;
 		height: 100%;
 		border: none;
-		padding: 1rem;
+		padding: 0.4rem 1rem;
 		background-color: transparent;
 		transition: all 0.2s ease-in-out;
 	}
 	button:hover:not(.active) {
-		border-bottom: 1px solid var(--agnostic-primary);
+		background-color: rgba(255, 0, 0, 0.099);
+
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
 	}
 	.active {
-		border-radius: 0.2rem;
-		border-bottom: 4px solid var(--agnostic-primary);
+		background-color: var(--agnostic-primary);
+		color: var(--agnostic-light-modelight);
+		/* top border radius */
+		border-top-left-radius: 1rem;
+		border-top-right-radius: 1rem;
 	}
 	/* button has active class and hovering */
 </style>

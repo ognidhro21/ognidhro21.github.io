@@ -76,18 +76,19 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		opacity: 1;
+		opacity: 0.1;
 		z-index: 1;
 		transition: all 0.3s ease-in-out;
+		max-width: fit-content;
 	}
 
 	.texts {
 		z-index: 2;
 	}
 	/* media for mobile */
-	@media (max-width: 768px) {
+	@media (min-width: 768px) {
 		.card img {
-			opacity: 0.1;
+			opacity: 1;
 		}
 	}
 </style>
