@@ -23,6 +23,7 @@
 	import DATA from '../stores/PersistantInfo';
 	import { onMount } from 'svelte';
 	import SEO from '../components/shared/SEO/index.svelte';
+	import Anim from '../components/shared/Anim.svelte';
 
 	let items = ['Classes', 'Exams', 'Events'];
 	let selected = items[1];
@@ -79,43 +80,45 @@
 </script>
 
 <SEO title={`Schedules`} />
-<Container>
-	{#if saved}
-		<Button mode="primary" isRounded on:click={resetInfo}>Reset Info</Button>
-		<section class="mbe24 mbs12 tabs">
-			<Tab {items} {selected} on:tabChanged={tabChanged} />
-			{#if selected === 'Classes'}
-				<TabClasses {routinesList} />
-			{:else if selected === 'Exams'}
-				<TabExams {examsList} />
-			{:else if selected === 'Events'}
-				<TabEvents />
-			{/if}
-		</section>
-	{:else}
-		<div class="save-info flex items-center  self-center mbs12">
-			<div class="img-container">
-				<img src={InfoImg} alt="" />
-			</div>
-			<div class="inputs mbe12">
-				<div class="mbe24">
-					<label for="groups">I am in...</label>
-					<h4 class="m0 mbe12">Section {info.section + 1}</h4>
-					<select name="groups" id="groups" bind:value={selectedGroup} on:change={updateSection}>
-						{#each groups as group, i}
-							<option value={i}>Group {group}</option>
-						{/each}
-					</select>
+<Anim>
+	<Container>
+		{#if saved}
+			<Button mode="primary" isRounded on:click={resetInfo}>Reset Info</Button>
+			<section class="mbe24 mbs12 tabs">
+				<Tab {items} {selected} on:tabChanged={tabChanged} />
+				{#if selected === 'Classes'}
+					<TabClasses {routinesList} />
+				{:else if selected === 'Exams'}
+					<TabExams {examsList} />
+				{:else if selected === 'Events'}
+					<TabEvents />
+				{/if}
+			</section>
+		{:else}
+			<div class="save-info flex items-center  self-center mbs12">
+				<div class="img-container">
+					<img src={InfoImg} alt="" />
 				</div>
-				<!-- refresh current page -->
+				<div class="inputs mbe12">
+					<div class="mbe24">
+						<label for="groups">I am in...</label>
+						<h4 class="m0 mbe12">Section {info.section + 1}</h4>
+						<select name="groups" id="groups" bind:value={selectedGroup} on:change={updateSection}>
+							{#each groups as group, i}
+								<option value={i}>Group {group}</option>
+							{/each}
+						</select>
+					</div>
+					<!-- refresh current page -->
 
-				<a href="/schedules" target="_self">
-					<Button mode="primary" isRounded on:click={saveInfo}>Submit</Button></a
-				>
+					<a href="/schedules" target="_self">
+						<Button mode="primary" isRounded on:click={saveInfo}>Submit</Button></a
+					>
+				</div>
 			</div>
-		</div>
-	{/if}
-</Container>
+		{/if}
+	</Container>
+</Anim>
 
 <style>
 	.tabs {

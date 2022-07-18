@@ -1,5 +1,4 @@
 <script context="module">
-	import Button from '../../components/shared/Button.svelte';
 	import Container from '../../components/shared/Container.svelte';
 	import { onMount } from 'svelte';
 	import RoutineCard from '../../components/shared/schedules/RoutineCard.svelte';
@@ -18,6 +17,7 @@
 </script>
 
 <script>
+	import Anim from '../../components/shared/Anim.svelte';
 	import DATA from '../../stores/PersistantInfo';
 	export let routine;
 	const { name, detailedname, sections } = routine;
@@ -56,44 +56,46 @@
 </script>
 
 <SEO title={`Routine - ${name}`} />
-<Container>
-	<div class="header">
-		<div class="flex-fix flex justify-between  mbe12 content-center">
-			<h2 class="m0">{detailedname}</h2>
-		</div>
-		<div class="inputs flex">
-			<div>
-				<label for="sections">Section</label>
-				<select name="sections" id="sections" bind:value={section}>
-					{#each sections as section, i}
-						<option value={i}>{i + 1}</option>
-					{/each}
-				</select>
+<Anim>
+	<Container>
+		<div class="header">
+			<div class="flex-fix flex justify-between  mbe12 content-center">
+				<h2 class="m0">{detailedname}</h2>
 			</div>
-			<div>
-				<label for="groups">Group</label>
-				<select name="groups" id="groups" bind:value={group}>
-					{#each sections[section].groups as group, i}
-						<option value={i}>{group.name}</option>
-					{/each}
-				</select>
-			</div>
+			<div class="inputs flex">
+				<div>
+					<label for="sections">Section</label>
+					<select name="sections" id="sections" bind:value={section}>
+						{#each sections as section, i}
+							<option value={i}>{i + 1}</option>
+						{/each}
+					</select>
+				</div>
+				<div>
+					<label for="groups">Group</label>
+					<select name="groups" id="groups" bind:value={group}>
+						{#each sections[section].groups as group, i}
+							<option value={i}>{group.name}</option>
+						{/each}
+					</select>
+				</div>
 
-			<div>
-				<label for="sections">Day</label>
-				<select name="days" id="days" bind:value={day}>
-					{#each sections[section].groups[group].days as day, i}
-						<option value={i}>{day.name}</option>
-					{/each}
-				</select>
+				<div>
+					<label for="sections">Day</label>
+					<select name="days" id="days" bind:value={day}>
+						{#each sections[section].groups[group].days as day, i}
+							<option value={i}>{day.name}</option>
+						{/each}
+					</select>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- <h3>{sections[section].groups[group].days[day].name}</h3> -->
-	{#each infos as schedule}
-		<RoutineCard {schedule} />
-	{/each}
-</Container>
+		<!-- <h3>{sections[section].groups[group].days[day].name}</h3> -->
+		{#each infos as schedule}
+			<RoutineCard {schedule} />
+		{/each}
+	</Container>
+</Anim>
 
 <style>
 	.header {

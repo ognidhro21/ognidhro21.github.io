@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
 :root {
   --agnostic-font-family: font-family: 'Roboto', sans-serif;
   /* In light mode we willl have white text against a dark green background. */
@@ -15,7 +16,8 @@
 }
 /* But, if user's set their OS to prefer dark, we instead use that */
 @media (prefers-color-scheme: dark) {
-  :root{--agnostic-primary: var(--agnostic-primary-modedark);
+  :root{
+    --agnostic-primary: var(--agnostic-primary-modedark);
     --agnostic-light: var(--agnostic-light-modedark);
     --plain: #121212;
   }
@@ -41,7 +43,7 @@ p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.3;
 }

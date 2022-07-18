@@ -1,6 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import c2T from '../../../lib/codeToTitle';
+	import Anim from '../Anim.svelte';
 	import Badge from '../Badge.svelte';
 	import './Card.css';
 	export let schedule;

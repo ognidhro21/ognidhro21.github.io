@@ -28,7 +28,6 @@
 	.tabbuttons {
 		max-width: 1024px;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.036);
 		border-bottom: 1px solid var(--agnostic-primary);
 		margin: -1rem;
 		margin-top: 0;

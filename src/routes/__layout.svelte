@@ -6,8 +6,6 @@
 	import '../styles/css/opinions.min.css';
 	import '../styles/agnostic-overrides.css';
 	import '../styles/select.css';
-	import { fade, fly } from 'svelte/transition';
-	import Navbar from '../components/shared/Navbar.svelte';
 </script>
 
 <div class="layout">
@@ -16,8 +14,8 @@
 <footer>
 	<div class="content">
 		<div class="links">
-			<a href="/">Home</a>
-			<a href="/schedules">Schedules</a>
+			<a href="/" sveltekit:noscroll>Home</a>
+			<a href="/schedules" sveltekit:noscroll>Schedules</a>
 		</div>
 	</div>
 </footer>

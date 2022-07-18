@@ -23,7 +23,7 @@
 <Container>
 	<div class="cards">
 		{#each links as link}
-			<a href={link.path} class="card">
+			<a href={link.path} class="card" sveltekit:noscroll>
 				<div class="texts">
 					<h3>{link.title}</h3>
 					<p>{link.details}</p>
@@ -68,7 +68,6 @@
 	}
 	.card:hover {
 		box-shadow: 0px 0px 45px 14px rgba(141, 38, 38, 0.1);
-		transform: rotate(1deg) scale(1.1);
 		z-index: 2;
 		text-decoration: none;
 	}
@@ -89,6 +88,9 @@
 	@media (min-width: 768px) {
 		.card img {
 			opacity: 1;
+		}
+		.card:hover {
+			transform: rotate(1deg) scale(1.1);
 		}
 	}
 </style>

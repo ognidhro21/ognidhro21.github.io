@@ -2,6 +2,7 @@
 	import Container from '../../shared/Container.svelte';
 	import logo from '../../../images/O21-Big.png';
 	import BG from '../../../images/OgnidhroHero.svg';
+	import Anim from '../../shared/Anim.svelte';
 </script>
 
 <div class="hero-container">
@@ -10,9 +11,11 @@
 			<img src={logo} alt="" />
 		</div>
 	</Container>
-	<div class="curve">
-		<img src={BG} alt="" />
-	</div>
+	<Anim>
+		<div class="curve">
+			<img src={BG} alt="" />
+		</div>
+	</Anim>
 </div>
 
 <style>

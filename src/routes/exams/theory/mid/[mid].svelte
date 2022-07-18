@@ -17,6 +17,8 @@
 </script>
 
 <script>
+	import Anim from '../../../../components/shared/Anim.svelte';
+
 	export let json;
 	const { name, detailedname, schedules } = json;
 	const { mid } = schedules;
@@ -34,21 +36,22 @@
 </script>
 
 <SEO title={`Class Test - ${name}`} />
-
-<Container>
-	<h3>
-		{detailedname} Mid Term
-	</h3>
-	{#if upNext.length > 0}
-		<h4>Up Next</h4>
-		{#each upNext as exam (exam.code)}
-			<MidCard {exam} {startTime} {year} {endTime} />
-		{/each}
-	{/if}
-	{#if expired.length > 0}
-		<h4>Completed</h4>
-		{#each expired as exam (exam.code)}
-			<MidCard {exam} {startTime} {endTime} completed={true} />
-		{/each}
-	{/if}
-</Container>
+<Anim>
+	<Container>
+		<h3>
+			{detailedname} Mid Term
+		</h3>
+		{#if upNext.length > 0}
+			<h4>Up Next</h4>
+			{#each upNext as exam (exam.code)}
+				<MidCard {exam} {startTime} {year} {endTime} />
+			{/each}
+		{/if}
+		{#if expired.length > 0}
+			<h4>Completed</h4>
+			{#each expired as exam (exam.code)}
+				<MidCard {exam} {startTime} {endTime} completed={true} />
+			{/each}
+		{/if}
+	</Container>
+</Anim>
