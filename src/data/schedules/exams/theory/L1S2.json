@@ -9,37 +9,37 @@
             "exams": [
                 {
                     "code": "SSC",
-                    "date": "25 May",
+                    "date": "25 Apr",
                     "title": "Soil Survey and Classification"
                 },
                 {
                     "code": "HRT",
-                    "date": "26 May",
+                    "date": "26 Apr",
                     "title": "Ornamental Horticulture"
                 },
                 {
                     "code": "BCM",
-                    "date": "29 May",
+                    "date": "29 Apr",
                     "title": "Biomolecular Chemistry"
                 },
                 {
                     "code": "ACM",
-                    "date": "30 May",
+                    "date": "30 Apr",
                     "title": "Organic Chemistry"
                 },
                 {
                     "code": "AES",
-                    "date": "31 May",
+                    "date": "31 Apr",
                     "title": "Production Economics and Marketing"
                 },
                 {
                     "code": "AGE",
-                    "date": "01 Jul",
+                    "date": "01 Jun",
                     "title": "Fundamentals of Agricultural Engineering"
                 },
                 {
                     "code": "AGR",
-                    "date": "02 Jul",
+                    "date": "02 Jun",
                     "title": "Principles and Practices of Agronomy"
                 }
             ]
