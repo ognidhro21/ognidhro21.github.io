@@ -18,7 +18,8 @@
 		siteShortTitle,
 		siteTitle,
 		siteUrl,
-		githubPage
+		githubPage,
+		themeColor
 	} = website;
 
 	export let article = false;
@@ -93,5 +94,8 @@
 		name="robots"
 		content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 	/>
+	<meta name="theme-color" content={themeColor} />
+	<link rel="apple-touch-icon" href="/icons/icon-128x128.png" />
+	<link rel="manifest" href="/manifest.json" />
 </svelte:head>
 <OpenGraph {...openGraphProps} />

@@ -10,7 +10,8 @@
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"local": "vite dev --host",
-		"deploy": "node ./gh-pages.js"
+		"deploy": "node ./gh-pages.js",
+		"generate:manifest": "node ./generate-manifest.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
@@ -25,5 +26,8 @@
 		"svelte": "^3.44.0",
 		"vite": "^3.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"sharp": "^0.30.7"
+	}
 }
