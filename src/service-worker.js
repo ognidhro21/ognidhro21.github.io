@@ -4,9 +4,15 @@ const worker = self;
 const CACHE_NAME = `static-cache-${version}`;
 
 const to_cache = build.concat(files);
-
+const addResourcesToCache = async (resources) => {
+	const cache = await caches.open('v1');
+	await cache.addAll(resources);
+};
 worker.addEventListener('install', (event) => {
 	console.log('[ServiceWorker] Install');
+	event.waitUntil(
+		addResourcesToCache(['/schedules/', '/schedules/index.html', '/data/', '/data/*'])
+	);
 
 	event.waitUntil(
 		caches.open(CACHE_NAME).then((cache) => {
