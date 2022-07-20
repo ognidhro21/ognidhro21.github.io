@@ -8,7 +8,7 @@ const website = {
 	siteTitle: 'Ognidhro 21',
 	siteShortTitle: 'Ognidhro 21',
 	siteUrl: import.meta.env ? /** @type {string} */ (import.meta.env.VITE_SITE_URL) : '',
-	icon: 'static/512.png',
+	icon: 'static/ognidhro-rounded.png',
 	backgroundColor: '#ffebee',
 	themeColor: '#ff1744',
 	contactEmail: import.meta.env ? import.meta.env.VITE_CONTACT_EMAIL : '',
