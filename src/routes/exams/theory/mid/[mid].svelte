@@ -41,17 +41,40 @@
 		<h3>
 			{detailedname} Mid Term
 		</h3>
+		<hr />
 		{#if upNext.length > 0}
-			<h4>Up Next</h4>
+			<h4>Up Next ({upNext.length})</h4>
 			{#each upNext as exam (exam.code)}
 				<MidCard {exam} {startTime} {year} {endTime} />
 			{/each}
 		{/if}
-		{#if expired.length > 0}
-			<h4>Completed</h4>
-			{#each expired as exam (exam.code)}
-				<MidCard {exam} {startTime} {endTime} completed={true} />
-			{/each}
+		{#if expired.length > 0 && expired.length < exams.length}
+			<details class="disclose mbs24">
+				<summary class="disclose-title">Completed ({expired.length})</summary>
+				<div class="disclose-panel">
+					{#each expired as exam (exam.code)}
+						<MidCard {exam} {startTime} {year} completed={true} />
+					{/each}
+				</div>
+			</details>
+		{/if}
+		{#if expired.length === exams.length}
+			<details class="disclose mbs24" open>
+				<summary class="disclose-title">Completed ({expired.length})</summary>
+				<div class="disclose-panel">
+					{#each expired as exam (exam.code)}
+						<MidCard {exam} {startTime} {year} completed={true} />
+					{/each}
+				</div>
+			</details>
 		{/if}
 	</Container>
 </Anim>
+
+<style>
+	.disclose-title {
+		font-size: 1.3rem;
+		font-weight: bold;
+		cursor: pointer;
+	}
+</style>

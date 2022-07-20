@@ -1,5 +1,4 @@
-<script>
-	import { goto } from '$app/navigation';
+<script context="module">
 	import About from '../components/fragments/homepage/About.svelte';
 	import Hero from '../components/fragments/homepage/Hero.svelte';
 	import Links from '../components/fragments/homepage/Links.svelte';

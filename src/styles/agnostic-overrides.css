@@ -12,6 +12,7 @@
   --agnostic-primary-hover-modedark: #ef5350;
   --agnostic-focus-ring-outline-color: var(--agnostic-primary-modelight);
   --plain: #fff;
+  --plain-opacity: rgba(255, 255, 255, 0.31);
   
 }
 /* But, if user's set their OS to prefer dark, we instead use that */
@@ -20,6 +21,8 @@
     --agnostic-primary: var(--agnostic-primary-modedark);
     --agnostic-light: var(--agnostic-light-modedark);
     --plain: #121212;
+  --plain-opacity: rgba(0, 0, 0, 0.31);
+
   }
 }
 
