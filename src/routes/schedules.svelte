@@ -24,8 +24,23 @@
 	import SEO from '../components/shared/SEO/index.svelte';
 	import Anim from '../components/shared/Anim.svelte';
 
-	let items = ['Classes', 'Exams', 'Events'];
-	let selected = items[1];
+	let item = ['Classes', 'Exams', 'Events'];
+	let items = [
+		{
+			name: 'Classes',
+			icon: 'clock'
+		},
+		{
+			name: 'Exams',
+			icon: 'book'
+		},
+		{
+			name: 'Events',
+			icon: 'table'
+		}
+	];
+
+	let selected = items[1].name;
 	function tabChanged(e) {
 		selected = e.detail;
 	}

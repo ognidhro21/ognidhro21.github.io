@@ -1,8 +1,9 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
+	import Icon from './Icon.svelte';
 	const dispatch = createEventDispatcher();
 	export let items = [];
-	export let selected = items[0];
+	export let selected = items[0].name;
 </script>
 
 <div class="tab">
@@ -10,12 +11,13 @@
 		{#each items as item}
 			<button
 				sveltekit:noscroll
-				class:active={selected === item}
+				class:active={selected === item.name}
 				on:click={() => {
-					dispatch('tabChanged', item);
+					dispatch('tabChanged', item.name);
 				}}
 			>
-				{item}
+				<Icon name={item.icon} width={18} height={18} />
+				<p>{item.name}</p>
 			</button>
 		{/each}
 	</div>
@@ -32,15 +34,31 @@
 		margin: -1rem;
 		margin-top: 0;
 		padding: 0 1rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		overflow-y: scroll;
+		align-items: flex-end;
+	}
+	.tabbuttons::-webkit-scrollbar {
+		display: none;
 	}
 	button {
-		display: inline-block;
-		width: auto;
+		width: fit-content;
 		height: 100%;
 		border: none;
-		padding: 0.4rem 1rem;
+		padding: 0.4rem 0.6rem;
 		background-color: transparent;
 		transition: all 0.2s ease-in-out;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 0.3rem;
+	}
+	button p {
+		margin: 0;
+		line-height: 1;
 	}
 	button:hover:not(.active) {
 		background-color: rgba(255, 0, 0, 0.099);
@@ -54,6 +72,7 @@
 		/* top border radius */
 		border-top-left-radius: 1rem;
 		border-top-right-radius: 1rem;
+		padding: 0.5rem 0.6rem;
 	}
 	/* button has active class and hovering */
 </style>

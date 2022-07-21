@@ -5,22 +5,23 @@
 	import Calender from '../../images/icons/Calender.svg';
 	import LOGO from '../../images/OG21Nav.svg';
 	import DATA from '../../stores/NoticeInfo';
+	import Icon from './Icon.svelte';
 
 	const nav = [
 		{
 			title: 'Home',
 			path: '/',
-			icon: Home
+			icon: 'home'
 		},
 		{
 			title: 'Schedules',
 			path: '/schedules',
-			icon: Calender
+			icon: 'calendar'
 		},
 		{
 			title: 'Notices',
 			path: '/notices',
-			icon: Bell,
+			icon: 'bell',
 			showDot: true
 		}
 	];
@@ -34,7 +35,7 @@
 		{#each nav as link}
 			<a href={link.path} class:active={$page.url.pathname === link.path} sveltekit:noscroll>
 				<div class="link-container">
-					<img src={link.icon} alt="" />
+					<Icon name={link.icon} />
 					<p>{link.title}</p>
 				</div>
 				{#if $DATA.newlyAdded.length > 0 && link.showDot}
@@ -77,6 +78,7 @@
 
 	.active .link-container {
 		border-bottom: 2px solid var(--agnostic-primary);
+		color: var(--agnostic-primary);
 	}
 	.link-container {
 		display: flex;
@@ -87,9 +89,7 @@
 		cursor: pointer;
 		position: relative;
 	}
-	.link-container img {
-		width: 1.5rem;
-	}
+
 	.link-container p {
 		margin: 0;
 		padding: 0;
