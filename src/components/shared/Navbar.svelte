@@ -25,14 +25,10 @@
 		}
 	];
 	let y;
-	$: Hide = () => {
-		const b = y === 0 && $page.path.url === '/';
-		return b;
-	};
 </script>
 
 <svelte:window bind:scrollY={y} />
-<nav class:sticky={y > 66} class:hide={$page.url.pathname === '/'}>
+<nav class:sticky={y > 22} class:hide={$page.url.pathname === '/'}>
 	<img src={LOGO} alt="OG21" />
 	<div class="links">
 		{#each nav as link}
@@ -76,10 +72,10 @@
 		transition: all 0.3s ease-in-out;
 		position: relative;
 		color: var(--agnostic-dark-modelight);
-		margin: 0.4rem 0;
+		padding: 0.4rem 0;
 	}
 
-	.active {
+	.active .link-container {
 		border-bottom: 2px solid var(--agnostic-primary);
 	}
 	.link-container {
