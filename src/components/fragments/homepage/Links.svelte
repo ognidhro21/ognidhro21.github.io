@@ -27,7 +27,7 @@
 				<div class="texts">
 					<h3>{link.title}</h3>
 					<p>{link.details}</p>
-					<Button mode="primary" isCapsule>Go!</Button>
+					<Button mode="primary" isRounded>Go!</Button>
 				</div>
 				<img src={link.bgImg} alt="" />
 			</a>
