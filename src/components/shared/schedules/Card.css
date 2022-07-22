@@ -13,13 +13,23 @@
 	box-shadow: 0px 0px 20px 4px rgba(57, 28, 28, 0.058);
 	position: relative;
 	overflow: hidden;
+
+	/* cant be selected */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 .routine-card h4 {
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 }
 
 .routine-card p {
 	margin-top: 0.5rem;
+	line-height: 1.1;
 }
 /*  only in examcards */
 .routine-card .title {
@@ -28,8 +38,15 @@
 .routine-card .time {
 	text-align: right;
 }
+.routine-card .time span {
+	margin-top: 0.5rem;
+}
 .routine-card.completed {
 	background-color: var(--plain-opacity);
+	box-shadow: none;
+}
+.routine-card.practical {
+	border-left: 0.2rem solid var(--agnostic-primary);
 }
 .routine-card .abs {
 	font-size: 800%;
@@ -40,9 +57,4 @@
 	opacity: 0.05;
 	font-weight: 900;
 	line-height: 1;
-	/* cant be selected */
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 }

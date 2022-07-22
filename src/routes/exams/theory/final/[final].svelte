@@ -1,7 +1,8 @@
 <script context="module">
-	import { aMOrPM, isCompleted } from '$lib/time/date';
+	import { isCompleted } from '$lib/time/date';
 	import Container from '../../../../components/shared/Container.svelte';
-	import FinalCard from '../../../../components/shared/schedules/ExamCards/FinalCard.svelte';
+	import Anim from '../../../../components/shared/Anim.svelte';
+	import ExamCard from '../../../../components/shared/schedules/ExamCard.svelte';
 	import SEO from '../../../../components/shared/SEO/index.svelte';
 	export async function load({ params }) {
 		const slug = params.final;
@@ -15,8 +16,6 @@
 </script>
 
 <script>
-	import Anim from '../../../../components/shared/Anim.svelte';
-
 	export let json;
 	const { name, detailedname, schedules } = json;
 	const { final } = schedules;
@@ -44,7 +43,7 @@
 		{#if upNext.length > 0}
 			<h4>Up Next ({upNext.length})</h4>
 			{#each upNext as exam (exam.code)}
-				<FinalCard {exam} {startTime} {year} />
+				<ExamCard {exam} {startTime} endTime={exam.credit + startTime} {year} />
 			{/each}
 		{/if}
 		{#if expired.length > 0 && expired.length < exams.length}
@@ -52,7 +51,13 @@
 				<summary class="disclose-title">Completed ({expired.length})</summary>
 				<div class="disclose-panel">
 					{#each expired as exam (exam.code)}
-						<FinalCard {exam} {startTime} {year} completed={true} />
+						<ExamCard
+							{exam}
+							{startTime}
+							endTime={exam.credit + startTime}
+							{year}
+							completed={true}
+						/>
 					{/each}
 				</div>
 			</details>
@@ -62,7 +67,13 @@
 				<summary class="disclose-title">Completed ({expired.length})</summary>
 				<div class="disclose-panel">
 					{#each expired as exam (exam.code)}
-						<FinalCard {exam} {startTime} {year} completed={true} />
+						<ExamCard
+							{exam}
+							{startTime}
+							endTime={exam.credit + startTime}
+							{year}
+							completed={true}
+						/>
 					{/each}
 				</div>
 			</details>

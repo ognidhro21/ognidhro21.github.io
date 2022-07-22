@@ -1,13 +1,14 @@
 <script context="module">
 	import { fly } from 'svelte/transition';
-	import { aMOrPM, isCompleted } from '$lib/time/date';
-	import '../Card.css';
+	import { aMOrPM } from '$lib/time/date';
+	import './Card.css';
 </script>
 
 <script>
 	export let exam;
-	const { code, date, credit, title } = exam;
+	const { code, date, title } = exam;
 	export let startTime;
+	export let endTime;
 	export let completed = false;
 </script>
 
@@ -21,7 +22,7 @@
 			{date}
 		</h4>
 		<p>
-			<span>{aMOrPM(startTime)} - </span> <span>{aMOrPM(startTime + credit)}</span>
+			<span>{aMOrPM(startTime)} - </span> <span>{aMOrPM(endTime)}</span>
 		</p>
 	</div>
 	<h2 class="abs">

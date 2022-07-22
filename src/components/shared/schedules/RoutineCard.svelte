@@ -6,18 +6,21 @@
 	import './Card.css';
 	export let schedule;
 	$: name = c2T(schedule.code);
+	$: practical = schedule.practical;
 </script>
 
-<div class="routine-card flex flex-row justify-between align-center" transition:fly>
+<div class="routine-card flex flex-row justify-between align-center" class:practical transition:fly>
 	<div class="title flex flex-column">
-		<h4>{schedule.code}</h4>
+		<h4>
+			{schedule.code}
+			{#if schedule.practical}<Badge shape="rounded" type="warning">Practical</Badge> {/if}
+		</h4>
 		<p>{name}</p>
 	</div>
 	<div class="time flex flex-column items-end justify-center">
 		<h5>
 			<span>{schedule.start} - </span> <span>{schedule.end}</span>
 		</h5>
-		{#if schedule.practical}<Badge shape="rounded" type="warning">Practical</Badge> {/if}
 	</div>
 	<h2 class="abs">
 		{schedule.code}
