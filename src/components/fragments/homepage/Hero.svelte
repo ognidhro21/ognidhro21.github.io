@@ -1,6 +1,6 @@
 <script>
 	import Container from '../../shared/Container.svelte';
-	import logo from '../../../images/O21-Big.svg';
+	import logo from '../../../images/O21-Big.png';
 	import BG from '../../../images/OgnidhroHero.svg';
 	import Anim from '../../shared/Anim.svelte';
 </script>

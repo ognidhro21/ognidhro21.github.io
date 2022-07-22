@@ -64,6 +64,7 @@
 		align-items: center;
 		max-width: 1024px;
 		margin: 0 auto;
+		padding: 0 1rem;
 	}
 	.nav-container > div {
 		display: flex;
@@ -138,7 +139,7 @@
 			margin-top: -66px;
 		}
 	}
-	@media (max-width: 1024px) {
+	@media (max-width: 1023px) {
 		nav {
 			bottom: 0;
 			position: fixed;

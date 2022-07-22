@@ -78,14 +78,14 @@
 		opacity: 0.1;
 		z-index: 1;
 		transition: all 0.3s ease-in-out;
-		max-width: fit-content;
+		max-width: 50%;
 	}
 
 	.texts {
 		z-index: 2;
 	}
 	/* media for mobile */
-	@media (min-width: 768px) {
+	@media (min-width: 625px) {
 		.card img {
 			opacity: 1;
 		}
