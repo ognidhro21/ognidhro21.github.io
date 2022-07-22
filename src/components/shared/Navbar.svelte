@@ -1,8 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import Home from '../../images/icons/Home.svg';
-	import Bell from '../../images/icons/Bell.svg';
-	import Calender from '../../images/icons/Calender.svg';
 	import LOGO from '../../images/OG21Nav.svg';
 	import DATA from '../../stores/NoticeInfo';
 	import Icon from './Icon.svelte';
@@ -30,21 +27,23 @@
 
 <svelte:window bind:scrollY={y} />
 <nav class:sticky={y > 22} class:hide={$page.url.pathname === '/'}>
-	<img src={LOGO} alt="OG21" />
-	<div class="links">
-		{#each nav as link}
-			<a href={link.path} class:active={$page.url.pathname === link.path} sveltekit:noscroll>
-				<div class="link-container">
-					<Icon name={link.icon} />
-					<p>{link.title}</p>
-				</div>
-				{#if $DATA.newlyAdded.length > 0 && link.showDot}
-					<div class="dot">
-						<p>.</p>
+	<div class="nav-container">
+		<img src={LOGO} alt="OG21" />
+		<div class="links">
+			{#each nav as link}
+				<a href={link.path} class:active={$page.url.pathname === link.path} sveltekit:noscroll>
+					<div class="link-container">
+						<Icon name={link.icon} />
+						<p>{link.title}</p>
 					</div>
-				{/if}
-			</a>
-		{/each}
+					{#if $DATA.newlyAdded.length > 0 && link.showDot}
+						<div class="dot">
+							<p>.</p>
+						</div>
+					{/if}
+				</a>
+			{/each}
+		</div>
 	</div>
 </nav>
 
@@ -56,12 +55,17 @@
 		z-index: 999;
 		overflow: hidden;
 		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 		transition: all 0.2s ease-in-out;
 	}
-	nav > div {
+	.nav-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	.nav-container > div {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -113,10 +117,12 @@
 	@media (min-width: 1024px) {
 		nav {
 			top: -100%;
-			padding: 0 12rem;
 		}
-		nav > img {
-			width: 7rem;
+		.nav-container {
+			justify-content: space-between;
+		}
+		.nav-container > img {
+			height: 3rem;
 		}
 		.sticky {
 			position: fixed;
@@ -139,7 +145,7 @@
 			justify-content: center;
 			box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 		}
-		nav > img {
+		.nav-container > img {
 			display: none;
 		}
 	}

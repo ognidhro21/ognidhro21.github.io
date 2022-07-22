@@ -29,11 +29,7 @@
 	text-align: right;
 }
 .routine-card.completed {
-	opacity: 0.4;
-}
-.routine-card.completed h4,
-.routine-card.completed p {
-	text-decoration: line-through;
+	background-color: var(--plain-opacity);
 }
 .routine-card .abs {
 	font-size: 800%;

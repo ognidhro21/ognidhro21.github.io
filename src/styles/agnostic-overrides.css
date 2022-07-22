@@ -7,9 +7,9 @@
   --agnostic-primary-modelight: #ff1744;
   --agnostic-primary-hover-modelight: #ef5350;
   /* In dark mode we'll invert the text color and use a much lighter shade of green */
-  --agnostic-primary-modedark: #ff1744;
+  --agnostic-primary-modedark: var(--agnostic-primary-modelight);
   --agnostic-light-modedark: #2b2b2b;
-  --agnostic-primary-hover-modedark: #ef5350;
+  --agnostic-primary-hover-modedark: var(--agnostic-primary-hover-modelight);
   --agnostic-focus-ring-outline-color: var(--agnostic-primary-modelight);
   --plain: #fff;
   --plain-opacity: rgba(255, 255, 255, 0.31);

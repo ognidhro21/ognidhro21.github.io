@@ -1,6 +1,6 @@
 <script>
 	import Container from '../../shared/Container.svelte';
-	import logo from '../../../images/O21-Big.png';
+	import logo from '../../../images/O21-Big.svg';
 	import BG from '../../../images/OgnidhroHero.svg';
 	import Anim from '../../shared/Anim.svelte';
 </script>
@@ -32,7 +32,7 @@
 		z-index: 2;
 	}
 	.hero img {
-		width: 70%;
+		width: 60%;
 		z-index: 2;
 	}
 	.curve {
@@ -45,9 +45,9 @@
 		width: 100%;
 	}
 	/* media for tablet */
-	@media (min-width: 768px) {
+	@media (min-width: 568px) {
 		.hero img {
-			width: 50%;
+			width: 25vw;
 		}
 		.hero-container {
 			background: linear-gradient(0deg, var(--plain) 35%, var(--agnostic-primary) 35%);
@@ -56,7 +56,7 @@
 	/* media for tablet */
 	@media (min-width: 1000px) {
 		.hero img {
-			width: 40%;
+			width: 20vw;
 		}
 		.hero-container {
 			background: linear-gradient(0deg, var(--plain) 55%, var(--agnostic-primary) 55%);
