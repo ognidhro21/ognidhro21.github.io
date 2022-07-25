@@ -3,13 +3,21 @@
 	import Container from '../../shared/Container.svelte';
 	import SchedImg from '../../../images/well_done_undraw.svg';
 	import FBImg from '../../../images/social_undraw.svg';
+	import Brand from '../../../images/brand_guide_undraw.svg';
 
 	const links = [
 		{
 			path: '/schedules',
 			title: 'Schedules',
-			details: 'Check out the routine of the Ognidhro 21!',
+			details: 'Check out the routine of Ognidhro 21',
 			bgImg: SchedImg
+		},
+		{
+			path: '/brand-guidelines',
+			title: 'Brand Guidelines',
+			details: 'Brand Guidelines of Ognidhro 21',
+			bgImg: Brand,
+			scroll: true
 		},
 		{
 			path: 'https://www.facebook.com/ognidhro21/',
@@ -23,14 +31,25 @@
 <Container>
 	<div class="cards">
 		{#each links as link}
-			<a href={link.path} class="card" sveltekit:noscroll>
-				<div class="texts">
-					<h3>{link.title}</h3>
-					<p>{link.details}</p>
-					<Button mode="primary" isRounded>Go!</Button>
-				</div>
-				<img src={link.bgImg} alt="" />
-			</a>
+			{#if link.scroll}
+				<a href={link.path} class="card">
+					<div class="texts">
+						<h3>{link.title}</h3>
+						<p>{link.details}</p>
+						<Button mode="primary" isRounded>Go!</Button>
+					</div>
+					<img src={link.bgImg} alt="" />
+				</a>
+			{:else}
+				<a href={link.path} class="card" sveltekit:noscroll>
+					<div class="texts">
+						<h3>{link.title}</h3>
+						<p>{link.details}</p>
+						<Button mode="primary" isRounded>Go!</Button>
+					</div>
+					<img src={link.bgImg} alt="" />
+				</a>
+			{/if}
 		{/each}
 	</div>
 </Container>

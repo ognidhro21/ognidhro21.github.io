@@ -37,9 +37,11 @@
 		display: flex;
 		flex-direction: row;
 		gap: 1rem;
+		align-items: center;
 	}
 	.image img {
-		width: 40%;
+		max-width: 40%;
+		height: auto;
 	}
 	.desc {
 		width: 100%;
@@ -58,6 +60,7 @@
 		.image {
 			max-width: 30%;
 			flex-direction: column;
+			align-items: flex-start;
 		}
 		.image img {
 			width: 100%;

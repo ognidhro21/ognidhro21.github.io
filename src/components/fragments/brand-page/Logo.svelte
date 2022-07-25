@@ -1,13 +1,18 @@
 <script>
+	import Button from '../../shared/Button.svelte';
 	import BAD from './logos/bad-logos.png';
-	import LogoItem from './logos/LogoItem.svelte';
 	import OET from './logos/OET.svelte';
 	import Oeti from './logos/OETI.svelte';
 	import Oetsr from './logos/OETSR.svelte';
 	import Oetss from './logos/OETSS.svelte';
 </script>
 
-<h2>Logo Use Cases</h2>
+<div class="mbe64">
+	<h2 class="mbe12">Logo Use Cases</h2>
+	<a href="https://drive.google.com/drive/folders/1hVwpDRTC2UO1HTsN0FS0SPROjlrWvM-P?usp=sharing">
+		<Button mode="primary">Download the logos</Button>
+	</a>
+</div>
 <OET />
 <Oeti />
 <Oetss />
