@@ -16,6 +16,7 @@
 		background-color: var(--agnostic-light-modelight);
 		border: 1px solid #000;
 		padding: 1rem;
+		color: var(--agnostic-primary);
 	}
 	h4 {
 		margin: 0;

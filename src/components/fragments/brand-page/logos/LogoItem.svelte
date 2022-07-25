@@ -10,7 +10,8 @@
 
 <div class="logo-item" style="background-color:{data.bgCol}; color: {data.color}">
 	<div class="image">
-		<img src={data.img} alt="" />
+		<img src={data.img} alt="" class="mbe12" />
+		<h4>{data.title}</h4>
 	</div>
 	<div class="desc">
 		<p>
@@ -18,23 +19,51 @@
 		</p>
 	</div>
 </div>
+<hr />
 
 <style>
 	.logo-item {
 		width: 100%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		align-items: center;
 		padding: 1rem;
 		gap: 1rem;
 	}
+	.logo-item * {
+		margin: 0;
+	}
 	.image {
-		max-width: 30%;
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
 	}
 	.image img {
+		width: 40%;
+	}
+	.desc {
 		width: 100%;
 	}
 	.desc p {
 		margin: 0;
+	}
+
+	/*  media query for tablet */
+	@media (min-width: 625px) {
+		.logo-item {
+			flex-direction: row;
+			align-items: center;
+			gap: 1rem;
+		}
+		.image {
+			max-width: 30%;
+			flex-direction: column;
+		}
+		.image img {
+			width: 100%;
+		}
+		.desc {
+			max-width: 70%;
+		}
 	}
 </style>

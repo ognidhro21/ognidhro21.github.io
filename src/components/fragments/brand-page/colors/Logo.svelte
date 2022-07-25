@@ -28,6 +28,7 @@
 	}
 	.logo-colors .lavender {
 		border: 1px solid rgb(0, 0, 0);
+		color: var(--agnostic-primary);
 	}
 	.logo-colors > div {
 		padding: 1rem;
