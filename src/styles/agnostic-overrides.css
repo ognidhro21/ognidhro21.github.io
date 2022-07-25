@@ -40,12 +40,11 @@ body {
   overflow-x: hidden;
 }
 
-p {margin-bottom: 1rem;}
 
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.38rem;
+  margin: 2rem 0 1.38rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.3;
