@@ -37,7 +37,7 @@
 	}
 	.color {
 		display: flex;
-		padding: 1rem;
+		padding: 0.4rem 1rem;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;

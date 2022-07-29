@@ -1,5 +1,4 @@
 <script>
-	import Palette from './Palette.svelte';
 	import Background from './Palettes/Background.svelte';
 	import Black from './Palettes/Black.svelte';
 	import Danger from './Palettes/Danger.svelte';
@@ -23,7 +22,7 @@
 <style>
 	.palettes {
 		display: grid;
-		gap: 1rem;
+		gap: 0.5rem;
 		/* 2 col on mobile, 4 on destop */
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
