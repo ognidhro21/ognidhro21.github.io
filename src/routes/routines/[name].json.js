@@ -1,10 +1,10 @@
 import fs from 'fs';
-export function get({ params }) {
-	// we could get the dynamic slug from the parameter of get.
+export function GET({ params }) {
+	// we could GET the dynamic slug from the parameter of GET.
 	const { name } = params;
 
 	const src = `src/data/schedules/routines/${name}.json`;
-	// get the json content
+	// GET the json content
 	const content = fs.readFileSync(src, 'utf8');
 	// parse the json content
 	const json = JSON.parse(content);

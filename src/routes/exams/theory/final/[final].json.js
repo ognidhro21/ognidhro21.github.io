@@ -1,6 +1,6 @@
 import fs from 'fs';
-export function get({ params }) {
-	// we could get the dynamic slug from the parameter of get.
+export function GET({ params }) {
+	// we could GET the dynamic slug from the parameter of GET.
 	const { final } = params;
 	let fileName;
 	if (final) {
@@ -9,7 +9,7 @@ export function get({ params }) {
 		fileName = 'L1S2';
 	}
 	const src = `src/data/schedules/exams/theory/${fileName}.json`;
-	// get the json content
+	// GET the json content
 	const content = fs.readFileSync(src, 'utf8');
 	// parse the json content
 	const json = JSON.parse(content);
