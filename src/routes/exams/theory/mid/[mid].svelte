@@ -53,7 +53,7 @@
 				<summary class="disclose-title">Completed ({expired.length})</summary>
 				<div class="disclose-panel">
 					{#each expired as exam (exam.code)}
-						<ExamCard {exam} {startTime} {year} {endTime} completed={true} />
+						<ExamCard {exam} {startTime} {year} {endTime} completed={true} id={name} />
 					{/each}
 				</div>
 			</details>
@@ -63,7 +63,7 @@
 				<summary class="disclose-title">Completed ({expired.length})</summary>
 				<div class="disclose-panel">
 					{#each expired as exam (exam.code)}
-						<ExamCard {exam} {startTime} {year} {endTime} completed={true} />
+						<ExamCard {exam} {startTime} {year} {endTime} completed={true} id={name} />
 					{/each}
 				</div>
 			</details>

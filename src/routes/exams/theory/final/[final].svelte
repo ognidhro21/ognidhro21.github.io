@@ -57,6 +57,7 @@
 							endTime={exam.credit + startTime}
 							{year}
 							completed={true}
+							id={name}
 						/>
 					{/each}
 				</div>
@@ -73,6 +74,7 @@
 							endTime={exam.credit + startTime}
 							{year}
 							completed={true}
+							id={name}
 						/>
 					{/each}
 				</div>
