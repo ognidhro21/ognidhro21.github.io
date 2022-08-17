@@ -1,7 +1,8 @@
 import adapter from '@sveltejs/adapter-vercel';
+import { mdsvex } from 'mdsvex';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.svelte', '.md'],
+	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
 		adapter: adapter(),
 
@@ -13,9 +14,11 @@ const config = {
 			default: true
 		}
 	},
-	mdsvex: {
-		extensions: ['.md']
-	}
+	preprocess: [
+		mdsvex({
+			extensions: ['.md']
+		})
+	]
 };
 
 export default config;

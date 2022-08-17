@@ -1,6 +1,9 @@
-export async function load({ fetch }) {
-	const noticeList = await fetch(`/api/notices.json`).then((res) => res.json());
-	return {
-		noticeList
-	};
-}
+// // src/routes/blog/+page.server.js
+// export const load = async ({ url }) => {
+// 	const response = await fetch(`${url.origin}/api/posts`);
+// 	const noticeList = await response.json();
+
+// 	return {
+// 		noticeList
+// 	};
+// };

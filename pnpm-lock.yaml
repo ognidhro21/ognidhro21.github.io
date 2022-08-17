@@ -10,6 +10,7 @@ specifiers:
   eslint-plugin-svelte3: ^4.0.0
   feather-icons: ^4.29.0
   gh-pages: ^4.0.0
+  marked: ^4.0.18
   mdsvex: ^0.10.6
   prettier: ^2.7.1
   prettier-plugin-svelte: ^2.7.0
@@ -19,6 +20,7 @@ specifiers:
 
 dependencies:
   feather-icons: 4.29.0
+  marked: 4.0.18
   mdsvex: 0.10.6_svelte@3.49.0
   sharp: 0.30.7
 
@@ -1396,6 +1398,12 @@ packages:
     dependencies:
       semver: 6.3.0
     dev: true
+
+  /marked/4.0.18:
+    resolution: {integrity: sha512-wbLDJ7Zh0sqA0Vdg6aqlbT+yPxqLblpAZh1mK2+AO2twQkPywvvqQNfEPVwSSRjZ7dZcdeVBIAgiO7MMp3Dszw==}
+    engines: {node: '>= 12'}
+    hasBin: true
+    dev: false
 
   /mdsvex/0.10.6_svelte@3.49.0:
     resolution: {integrity: sha512-aGRDY0r5jx9+OOgFdyB9Xm3EBr9OUmcrTDPWLB7a7g8VPRxzPy4MOBmcVYgz7ErhAJ7bZ/coUoj6aHio3x/2mA==}

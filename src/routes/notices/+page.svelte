@@ -1,74 +1,56 @@
 <script>
-	// throw new Error(
-	// 	'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
-	// );
-	import DATA from '../../stores/NoticeInfo';
-	import SEO from '../../components/shared/SEO/index.svelte';
-	import { onMount } from 'svelte';
-	import Anim from '../../components/shared/Anim.svelte';
 	import Container from '../../components/shared/Container.svelte';
-	import NoticeCard from '../../components/shared/notices/NoticeCard.svelte';
+
 	export let data;
-	$: noticeList = data.noticeList;
-
-	let noticeIds = [];
-
-	let shownList = [];
-	let newlyAdded = [];
-
-	onMount(() => {
-		newlyAdded = noticeList.filter((notice) => {
-			return !$DATA.shownIds.includes(notice.id);
-		});
-		noticeList.forEach((element) => {
-			noticeIds = [element.id, ...noticeIds];
-		});
-
-		shownList = $DATA.shownIds.map((id) => {
-			// skip newlyAdded
-			if (newlyAdded.find((notice) => notice.id === id)) {
-				return null;
-			}
-			return noticeList.find((notice) => notice.id === id);
-		});
-		$DATA.shownIds = noticeIds;
-
-		// remove from $DATA.shownIds those that are not in noticeList
-		$DATA.shownIds = $DATA.shownIds.filter((id) => {
-			return noticeList.find((notice) => notice.id === id);
-		});
-		$DATA.newlyAdded = [];
-	});
 </script>
 
-<SEO title="Notices" />
-<Anim>
-	<Container>
-		<h3>Notices</h3>
-		<hr />
-		{#if newlyAdded.length > 0}
-			<h4>Unseen</h4>
-			<div class="notices-container">
-				{#each newlyAdded as notice}
-					<NoticeCard shown={false} data={notice} />
-				{/each}
-			</div>
-		{/if}
-		{#if shownList.length > 0}
-			<h4>Seen</h4>
-			<div class="notices-container">
-				{#each shownList as notice}
-					<NoticeCard shown={true} data={notice} />
-				{/each}
-			</div>
-		{/if}
-	</Container>
-</Anim>
+<Container>
+	<h2>Notices</h2>
+	{#each data.noticeList as post}
+		<a href={post.path}>
+			<img src={post.meta.featuredImg} alt="" />
+			<h2>
+				{post.meta.title}
+			</h2>
+			<p>{post.meta.excerpt}</p>
+		</a>
+	{/each}
+</Container>
 
 <style>
-	h3,
-	h4 {
+	a {
+		padding: 1rem;
+		border-radius: 0.4rem;
+		transition: all 0.2s ease-in-out;
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		background-color: var(--plain);
+		z-index: 2;
+	}
+	a h2,
+	a p {
 		margin: 0;
-		margin-top: 1rem;
+		color: var(--agnostic-dark);
+	}
+
+	a:hover {
+		text-decoration: none;
+		box-shadow: 0px 0px 45px 4px rgba(141, 38, 38, 0.1);
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0.1;
+		z-index: -1;
+	}
+	@media (min-width: 625px) {
+		a:hover {
+			transform: rotate(1deg) scale(1.1);
+		}
 	}
 </style>

@@ -1,9 +1,9 @@
-/**
- * @type {import("@svelte/kit").Load}
- */
-export async function load({ fetch }) {
-	const noticeList = await fetch(`/api/notices.json`).then((res) => res.json());
+// src/routes/blog/+page.server.js
+export const load = async ({ url }) => {
+	const response = await fetch(`${url.origin}/api/notices`);
+	const noticeList = await response.json();
+
 	return {
 		noticeList
 	};
-}
+};
