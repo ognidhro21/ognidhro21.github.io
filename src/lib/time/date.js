@@ -1,3 +1,17 @@
+const months = [
+	'January',
+	'February',
+	'March',
+	'April',
+	'May',
+	'June',
+	'July',
+	'August',
+	'September',
+	'October',
+	'November',
+	'December'
+];
 function convertToAMOrPM(time) {
 	if (time > 12) {
 		return time - 12 + 'PM';
@@ -18,4 +32,38 @@ function checkIfDateOver(year, date, time) {
 	}
 	return false;
 }
-export { convertToAMOrPM as aMOrPM, checkIfDateOver as isCompleted };
+function checkIsInProgress(day, startTime, endTime) {
+	// if today is note the day from input, return
+	var currentDate = new Date();
+	var inProgress = false;
+	if (currentDate.getDay() != day) {
+		return -1;
+	}
+	var date = currentDate.getDate();
+	var month = months[currentDate.getMonth()];
+	var year = currentDate.getFullYear();
+
+	var combined = `${month}-${date}-${year}`;
+	var start = `${combined}, ${startTime}`;
+	var end = `${combined}, ${endTime}`;
+
+	var startDate = new Date(start);
+	var endDate = new Date(end);
+	console.log(startDate, currentDate, endDate);
+	if (currentDate - startDate > 0 && currentDate - endDate < 0) {
+		inProgress = true;
+		var progress = ((currentDate - startDate) / (endDate - startDate)) * 100;
+		return progress;
+	}
+	const data = {
+		inProgress: inProgress,
+		progress: progress
+	};
+	return -1;
+}
+
+export {
+	convertToAMOrPM as aMOrPM,
+	checkIfDateOver as isCompleted,
+	checkIsInProgress as isInProgress
+};

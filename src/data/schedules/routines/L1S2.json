@@ -806,8 +806,8 @@
                             "schedules": [
                                 {
                                     "code": "bcm",
-                                    "start": "8:30",
-                                    "end": "9:20"
+                                    "start": "15:30",
+                                    "end": "16:20"
                                 },
                                 {
                                     "code": "hrt",

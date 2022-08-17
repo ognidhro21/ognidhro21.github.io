@@ -58,3 +58,6 @@
 	font-weight: 900;
 	line-height: 1;
 }
+.routine-card.inProgress {
+	border: 2px solid var(--agnostic-primary);
+}

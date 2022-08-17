@@ -3,8 +3,8 @@
 	// 	'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
 	// );
 
-	import Container from '../../../components/shared/Container.svelte';
 	import { onMount } from 'svelte';
+	import Container from '../../../components/shared/Container.svelte';
 	import RoutineCard from '../../../components/shared/schedules/RoutineCard.svelte';
 	import SEO from '../../../components/shared/SEO/index.svelte';
 	import Anim from '../../../components/shared/Anim.svelte';
@@ -83,7 +83,7 @@
 		</div>
 		<!-- <h3>{sections[section].groups[group].days[day].name}</h3> -->
 		{#each infos as schedule}
-			<RoutineCard {schedule} id={name} />
+			<RoutineCard {schedule} id={name} {day} />
 		{/each}
 	</Container>
 </Anim>
