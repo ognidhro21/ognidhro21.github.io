@@ -1,23 +1,16 @@
-<script context="module">
-	import DATA from '../stores/NoticeInfo';
-	import SEO from '../components/shared/SEO/index.svelte';
-	export async function load({ fetch }) {
-		const noticeList = await fetch(`/api/notices.json`).then((res) => res.json());
-		return {
-			props: {
-				noticeList
-			}
-		};
-	}
-</script>
-
 <script>
+	// throw new Error(
+	// 	'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
+	// );
+	import DATA from '../../stores/NoticeInfo';
+	import SEO from '../../components/shared/SEO/index.svelte';
 	import { onMount } from 'svelte';
-	import Anim from '../components/shared/Anim.svelte';
-	import Container from '../components/shared/Container.svelte';
-	import NoticeCard from '../components/shared/notices/NoticeCard.svelte';
+	import Anim from '../../components/shared/Anim.svelte';
+	import Container from '../../components/shared/Container.svelte';
+	import NoticeCard from '../../components/shared/notices/NoticeCard.svelte';
+	export let data;
+	$: noticeList = data.noticeList;
 
-	export let noticeList;
 	let noticeIds = [];
 
 	let shownList = [];

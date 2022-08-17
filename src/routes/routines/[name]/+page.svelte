@@ -1,25 +1,16 @@
-<script context="module">
-	import Container from '../../components/shared/Container.svelte';
-	import { onMount } from 'svelte';
-	import RoutineCard from '../../components/shared/schedules/RoutineCard.svelte';
-	import SEO from '../../components/shared/SEO/index.svelte';
-
-	export async function load({ params }) {
-		const slug = params.name;
-
-		const routine = await import(`../../data/schedules/routines/${slug}.json`);
-		return {
-			props: {
-				routine
-			}
-		};
-	}
-</script>
-
 <script>
-	import Anim from '../../components/shared/Anim.svelte';
-	import DATA from '../../stores/PersistantInfo';
-	export let routine;
+	// throw new Error(
+	// 	'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
+	// );
+
+	import Container from '../../../components/shared/Container.svelte';
+	import { onMount } from 'svelte';
+	import RoutineCard from '../../../components/shared/schedules/RoutineCard.svelte';
+	import SEO from '../../../components/shared/SEO/index.svelte';
+	import Anim from '../../../components/shared/Anim.svelte';
+	import DATA from '../../../stores/PersistantInfo';
+	export let data;
+	const routine = data.routine;
 	const { name, detailedname, sections } = routine;
 
 	let day = 0;

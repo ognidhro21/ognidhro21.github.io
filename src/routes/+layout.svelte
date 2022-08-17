@@ -1,14 +1,3 @@
-<script context="module">
-	export async function load({ fetch }) {
-		const noticeList = await fetch(`/api/notices.json`).then((res) => res.json());
-		return {
-			props: {
-				noticeList
-			}
-		};
-	}
-</script>
-
 <script>
 	import '../styles/css/common.min.css';
 	import '../styles/css/common.properties.min.css';
@@ -23,7 +12,8 @@
 	import { navigating } from '$app/stores';
 	import { Jumper } from 'svelte-loading-spinners';
 
-	export let noticeList;
+	export let data;
+	$: noticeList = data.noticeList;
 
 	let newlyAdded = [];
 	onMount(() => {
@@ -37,11 +27,11 @@
 <div class="main">
 	<Navbar />
 	<div class="layout">
-		{#if !$navigating}
-			<slot />
-		{:else}
-			<Jumper size="60" color="#FF3E00" unit="px" duration="1s" />
-		{/if}
+		<!-- {#if loading} -->
+		<!-- <Jumper size="60" color="#FF3E00" unit="px" duration="1s" /> -->
+		<!-- {:else} -->
+		<slot />
+		<!-- {/if} -->
 	</div>
 </div>
 

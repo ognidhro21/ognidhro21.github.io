@@ -1,4 +1,4 @@
-<script context="module">
+<script>
 	import About from '../components/fragments/homepage/About.svelte';
 	import Hero from '../components/fragments/homepage/Hero.svelte';
 	import Links from '../components/fragments/homepage/Links.svelte';

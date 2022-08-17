@@ -1,22 +1,15 @@
-<script context="module">
-	import { isCompleted } from '$lib/time/date';
-	import Container from '../../../../components/shared/Container.svelte';
-	import Anim from '../../../../components/shared/Anim.svelte';
-	import ExamCard from '../../../../components/shared/schedules/ExamCard.svelte';
-	import SEO from '../../../../components/shared/SEO/index.svelte';
-	export async function load({ params }) {
-		const slug = params.final;
-		const json = await import(`../../../../data/schedules/exams/theory/${slug}.json`);
-		return {
-			props: {
-				json
-			}
-		};
-	}
-</script>
-
 <script>
-	export let json;
+	// throw new Error(
+	// 	'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
+	// );
+	import { isCompleted } from '$lib/time/date';
+	import Container from '../../../../../components/shared/Container.svelte';
+	import Anim from '../../../../../components/shared/Anim.svelte';
+	import ExamCard from '../../../../../components/shared/schedules/ExamCard.svelte';
+	import SEO from '../../../../../components/shared/SEO/index.svelte';
+	export let data;
+	const json = data.json;
+
 	const { name, detailedname, schedules } = json;
 	const { final } = schedules;
 	const { startTime, year, exams } = final;

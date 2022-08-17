@@ -1,24 +1,10 @@
-<script context="module">
-	import SEO from '../components/shared/SEO/index.svelte';
-	import Error from '../images/error_undraw.svg';
-	export async function load({ error, status }) {
-		return {
-			props: {
-				error,
-				status
-			}
-		};
-	}
-</script>
-
 <script>
+	import { page } from '$app/stores';
 	import Container from '../components/shared/Container.svelte';
-
-	export let error;
-	export let status;
+	import SEO from '../components/shared/SEO/index.svelte';
 </script>
 
-<SEO title={status} />
+<SEO title={$page.status} />
 <Container>
 	<div class="error-container">
 		<div class="texts">
@@ -27,8 +13,8 @@
 				<p>An error just occured</p>
 			</div>
 			<div class="error-texts">
-				<p>{error.message}</p>
-				<p>Status code: <span>{status}</span></p>
+				<p>{$page.error.message}</p>
+				<p>Status code: <span>{$page.status}</span></p>
 			</div>
 			<div class="bottom">
 				<h2>Anyway,</h2>
@@ -43,7 +29,6 @@
 
 <style>
 	.error-container h2,
-	.error-container h3,
 	.error-container p {
 		margin: 0;
 	}

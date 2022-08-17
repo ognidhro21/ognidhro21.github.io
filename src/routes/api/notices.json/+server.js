@@ -1,3 +1,4 @@
+import { json as json$1 } from '@sveltejs/kit';
 import fs from 'fs';
 export async function GET() {
 	// our markdown files lie in src/posts.
@@ -13,5 +14,8 @@ export async function GET() {
 	});
 
 	let body = notices;
-	return { body };
+
+	// Suggestion (check for correctness before using):
+	return json$1(body);
+	//return { body };
 }

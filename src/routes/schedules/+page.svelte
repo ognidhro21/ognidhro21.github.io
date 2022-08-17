@@ -1,29 +1,20 @@
-<script context="module">
-	export async function load({ fetch }) {
-		const routinesList = await fetch(`/api/routines.json`).then((res) => res.json());
-		const examsList = await fetch(`/api/exams.json`).then((res) => res.json());
-		return {
-			props: {
-				routinesList,
-				examsList
-			}
-		};
-	}
-</script>
-
 <script>
-	import TabClasses from '../components/shared/schedules/tabs/TabClasses.svelte';
-	import TabExams from '../components/shared/schedules/tabs/TabExams.svelte';
-	import TabEvents from '../components/shared/schedules/tabs/TabEvents.svelte';
-	import Container from '../components/shared/Container.svelte';
-	import Tab from '../components/shared/Tab.svelte';
-	import InfoImg from '../images/update_info_undraw.svg';
-	import Button from '../components/shared/Button.svelte';
-	import DATA from '../stores/PersistantInfo';
-	import { onMount } from 'svelte';
-	import SEO from '../components/shared/SEO/index.svelte';
-	import Anim from '../components/shared/Anim.svelte';
+	// throw new Error(
+	// 	'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
+	// );
 
+	import TabClasses from '../../components/shared/schedules/tabs/TabClasses.svelte';
+	import TabExams from '../../components/shared/schedules/tabs/TabExams.svelte';
+	import TabEvents from '../../components/shared/schedules/tabs/TabEvents.svelte';
+	import Container from '../../components/shared/Container.svelte';
+	import Tab from '../../components/shared/Tab.svelte';
+	import InfoImg from '../../images/update_info_undraw.svg';
+	import Button from '../../components/shared/Button.svelte';
+	import DATA from '../../stores/PersistantInfo';
+	import { onMount } from 'svelte';
+	import SEO from '../../components/shared/SEO/index.svelte';
+	import Anim from '../../components/shared/Anim.svelte';
+	export let data;
 	let item = ['Classes', 'Exams', 'Events'];
 	let items = [
 		{
@@ -45,8 +36,8 @@
 		selected = e.detail;
 	}
 
-	export let routinesList;
-	export let examsList;
+	$: routinesList = data.routinesList;
+	$: examsList = data.examsList;
 	const groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
 	let selectedGroup = 5;
 	$: info = {

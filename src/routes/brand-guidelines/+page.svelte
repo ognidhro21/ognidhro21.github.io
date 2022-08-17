@@ -1,10 +1,10 @@
 <script>
-	import Colors from '../components/fragments/brand-page/Colors.svelte';
-	import Logo from '../components/fragments/brand-page/Logo.svelte';
-	import Typography from '../components/fragments/brand-page/Typography.svelte';
-	import Anim from '../components/shared/Anim.svelte';
-	import Container from '../components/shared/Container.svelte';
-	import SEO from '../components/shared/SEO/index.svelte';
+	import Colors from '../../components/fragments/brand-page/Colors.svelte';
+	import Logo from '../../components/fragments/brand-page/Logo.svelte';
+	import Typography from '../../components/fragments/brand-page/Typography.svelte';
+	import Anim from '../../components/shared/Anim.svelte';
+	import Container from '../../components/shared/Container.svelte';
+	import SEO from '../../components/shared/SEO/index.svelte';
 </script>
 
 <Anim>
