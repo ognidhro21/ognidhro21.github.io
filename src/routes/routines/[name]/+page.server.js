@@ -1,3 +1,6 @@
+/**
+ * @type {import("@svelte/kit").Load}
+ */
 export async function load({ params }) {
 	const slug = params.name;
 
