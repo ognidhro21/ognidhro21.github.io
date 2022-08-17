@@ -67,3 +67,10 @@ h5 {font-size: 1.125rem;}
 
 small, .text_small {font-size: 0.889rem;}
 
+blockquote{
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-style: italic;
+  font-size: large;
+}

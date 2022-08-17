@@ -18,12 +18,12 @@
 			return !$DATA.shownIds.includes(notice.meta.id);
 		});
 		noticeList.forEach((element) => {
-			noticeIds = [element.id, ...noticeIds];
+			noticeIds = [element.meta.id, ...noticeIds];
 		});
 
 		shownList = $DATA.shownIds.map((id) => {
 			// skip newlyAdded
-			if (newlyAdded.find((notice) => notice.meta.id === id)) {
+			if (newlyAdded.find((notice) => notice.id === id)) {
 				return null;
 			}
 			return noticeList.find((notice) => notice.meta.id === id);

@@ -10,16 +10,15 @@
 	import DATA from '../stores/NoticeInfo';
 	import { onMount } from 'svelte';
 
-	// export let data;
-	// $: noticeList = data.noticeList;
+	export let data;
 
-	// let newlyAdded = [];
-	// onMount(() => {
-	// 	newlyAdded = data.noticeList.filter((notice) => {
-	// 		return !$DATA.shownIds.includes(notice.meta.id);
-	// 	});
-	// 	$DATA.newlyAdded = newlyAdded;
-	// });
+	let newlyAdded = [];
+	onMount(() => {
+		newlyAdded = data.noticeList.filter((notice) => {
+			return !$DATA.shownIds.includes(notice.meta.id);
+		});
+		$DATA.newlyAdded = newlyAdded;
+	});
 </script>
 
 <div class="main">
