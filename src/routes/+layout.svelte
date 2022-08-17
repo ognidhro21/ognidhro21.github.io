@@ -9,8 +9,6 @@
 	import Navbar from '../components/shared/Navbar.svelte';
 	import DATA from '../stores/NoticeInfo';
 	import { onMount } from 'svelte';
-	import { navigating } from '$app/stores';
-	import { Jumper } from 'svelte-loading-spinners';
 
 	export let data;
 	$: noticeList = data.noticeList;
