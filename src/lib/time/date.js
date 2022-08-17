@@ -13,6 +13,7 @@ const months = [
 	'December'
 ];
 function convertToAMOrPM(time) {
+	// time is in this format: hh
 	if (time > 12) {
 		return time - 12 + 'PM';
 	} else if (time == 12) {
@@ -22,6 +23,15 @@ function convertToAMOrPM(time) {
 	} else {
 		return time + 'AM';
 	}
+}
+function convertTo12(time) {
+	// time is in this format: hh:mm
+	var hour = time.split(':')[0];
+	var minute = time.split(':')[1];
+	if (hour > 12) {
+		return hour - 12 + ':' + minute;
+	}
+	return hour + ':' + minute;
 }
 function checkIfDateOver(year, date, time) {
 	var input = `${date}, ${year} ${time}`;
@@ -55,15 +65,12 @@ function checkIsInProgress(day, startTime, endTime) {
 		var progress = ((currentDate - startDate) / (endDate - startDate)) * 100;
 		return progress;
 	}
-	const data = {
-		inProgress: inProgress,
-		progress: progress
-	};
 	return -1;
 }
 
 export {
 	convertToAMOrPM as aMOrPM,
 	checkIfDateOver as isCompleted,
-	checkIsInProgress as isInProgress
+	checkIsInProgress as isInProgress,
+	convertTo12
 };

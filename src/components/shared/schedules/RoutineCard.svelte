@@ -1,7 +1,7 @@
 <script>
 	import { fly } from 'svelte/transition';
 	import { getName, getTitle } from '$lib/courses';
-	import { isInProgress } from '$lib/time/date';
+	import { isInProgress, convertTo12 } from '$lib/time/date';
 
 	import Badge from '../Badge.svelte';
 	import './Card.css';
@@ -26,7 +26,7 @@
 	</div>
 	<div class="time flex flex-column items-end justify-center">
 		<h5>
-			<span>{schedule.start} - </span> <span>{schedule.end}</span>
+			<span>{convertTo12(schedule.start)} - </span> <span>{convertTo12(schedule.end)}</span>
 		</h5>
 		{#if schedule.practical}<Badge shape="rounded" type="warning">Practical</Badge> {/if}
 	</div>
