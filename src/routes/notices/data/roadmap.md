@@ -8,6 +8,7 @@ excerpt: >
 featuredImg: "https://images.unsplash.com/photo-1581291519195-ef11498d1cf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
 ---
 ## Features
+---
 
 ### Done
 
@@ -24,3 +25,9 @@ featuredImg: "https://images.unsplash.com/photo-1581291519195-ef11498d1cf2?ixlib
 - [ ] None
 ### Planned
 - [ ] Don't know
+
+## Improvements
+---
+
+### Planned
+- [ ] Change the hero section to something more elegant (Obstacles: Can't find suitable text)

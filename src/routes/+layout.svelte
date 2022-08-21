@@ -1,4 +1,6 @@
 <script>
+	import NProgress from 'nprogress';
+	import { navigating } from '$app/stores';
 	import '../styles/css/common.min.css';
 	import '../styles/css/common.properties.min.css';
 	import '../styles/css/common.resets.min.css';
@@ -10,6 +12,18 @@
 	import DATA from '../stores/NoticeInfo';
 	import { onMount } from 'svelte';
 
+	NProgress.configure({
+		minimum: 0.16,
+		showSpinner: true
+	});
+	$: {
+		if ($navigating) {
+			NProgress.start();
+		}
+		if (!$navigating) {
+			NProgress.done();
+		}
+	}
 	export let data;
 
 	let newlyAdded = [];
