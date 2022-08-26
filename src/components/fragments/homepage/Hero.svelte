@@ -31,7 +31,7 @@
 		justify-content: center;
 		z-index: 2;
 	}
-	.hero img {
+	.hero > img {
 		width: 60%;
 		z-index: 2;
 	}
@@ -42,11 +42,11 @@
 		width: 100%;
 	}
 	.curve img {
-		width: 100%;
+		width: 100vw;
 	}
 	/* media for tablet */
 	@media (min-width: 568px) {
-		.hero img {
+		.hero > img {
 			width: 25vw;
 		}
 		.hero-container {
@@ -55,7 +55,7 @@
 	}
 	/* media for tablet */
 	@media (min-width: 1000px) {
-		.hero img {
+		.hero > img {
 			width: 20vw;
 		}
 		.hero-container {

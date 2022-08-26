@@ -2,10 +2,8 @@
 	import NProgress from 'nprogress';
 	import { navigating } from '$app/stores';
 	import '../styles/css/common.min.css';
-	import '../styles/css/common.properties.min.css';
-	import '../styles/css/common.resets.min.css';
-	import '../styles/css/common.utilities.min.css';
 	import '../styles/css/opinions.min.css';
+	import '../styles/normalize.css';
 	import '../styles/agnostic-overrides.css';
 	import '../styles/select.css';
 	import Navbar from '../components/shared/Navbar.svelte';
