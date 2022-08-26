@@ -1,3 +1,9 @@
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [OGNIDHRO EKUSH](#ognidhro-ekush)
+- [DOCUMENTATION](#documentation)
+  - [Changing the default tab in the schedules page](#changing-the-default-tab-in-the-schedules-page)
+  - [Adding new routine](#adding-new-routine)
 
 # OGNIDHRO EKUSH
 Source code of website of Ognidhro Ekush
