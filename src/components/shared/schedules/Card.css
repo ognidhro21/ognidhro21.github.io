@@ -55,7 +55,7 @@
 	right: 0;
 	color: var(--agnostic-dark);
 	opacity: 0.05;
-	font-weight: 900;
+	font-weight: 300;
 	line-height: 1;
 }
 .routine-card.inProgress {

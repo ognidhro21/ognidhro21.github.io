@@ -50,7 +50,7 @@
 	.error-container .top h2 {
 		font-size: 400%;
 		color: var(--agnostic-primary);
-		font-weight: 900;
+		font-weight: 300;
 		line-height: 1.1;
 	}
 	.error-container .error-texts {
