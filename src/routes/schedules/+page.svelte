@@ -1,8 +1,4 @@
 <script>
-	// throw new Error(
-	// 	'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
-	// );
-
 	import TabClasses from '../../components/shared/schedules/tabs/TabClasses.svelte';
 	import TabExams from '../../components/shared/schedules/tabs/TabExams.svelte';
 	import TabEvents from '../../components/shared/schedules/tabs/TabEvents.svelte';
@@ -31,7 +27,7 @@
 		}
 	];
 
-	let selected = items[1].name;
+	let selected = items[0].name;
 	function tabChanged(e) {
 		selected = e.detail;
 	}
