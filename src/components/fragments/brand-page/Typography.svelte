@@ -91,20 +91,10 @@
 </div>
 
 <style>
-	.header {
-		margin-bottom: 1rem;
-	}
-	.header h4 {
-		margin: 0;
-	}
 	.details {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		margin-top: 1rem;
-	}
-	.details * {
-		margin: 0;
 	}
 </style>

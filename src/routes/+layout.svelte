@@ -3,8 +3,8 @@
 	import { navigating } from '$app/stores';
 	import '../styles/css/common.min.css';
 	import '../styles/css/opinions.min.css';
-	import '../styles/normalize.css';
 	import '../styles/agnostic-overrides.css';
+	// import '../styles/material-type.css';
 	import '../styles/select.css';
 	import Navbar from '../components/shared/Navbar.svelte';
 	import DATA from '../stores/NoticeInfo';
