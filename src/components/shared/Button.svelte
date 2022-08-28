@@ -115,12 +115,11 @@
 			transparent 7%
 		);
 		background-color: var(--agnostic-btn-bgcolor, var(--agnostic-gray-light));
-		border-color: #1313132a;
-		/* border-color: #131313, var(--agnostic-btn-bgcolor, var(--agnostic-gray-light)); */
+		border-color: var(--agnostic-btn-bgcolor, var(--agnostic-gray-light));
 
 		/* seems like a reasonable default as chrome picks `outset` which results in a weird 3d effect */
 		border-style: solid;
-		border-width: var(--agnostic-btn-border-size, 2px);
+		border-width: var(--agnostic-btn-border-size, 1px);
 		font-family: var(--agnostic-btn-font-family, var(--agnostic-font-family-body));
 		font-weight: var(--agnostic-btn-font-weight, 400);
 		font-size: var(--agnostic-btn-font-size, 1rem);
