@@ -1,6 +1,6 @@
 <script context="module">
-	import defaultOgImage from '../../../images/OgnidhroCover.png';
-	import defaultOgSquareImage from '../../../images/OgnidhroCoverSquare.png';
+	import defaultOgImage from '/OgnidhroCover.png';
+	import defaultOgSquareImage from '/OgnidhroCoverSquare.png';
 
 	import website from '$lib/config/website';
 	import OpenGraph from './OpenGraph.svelte';
