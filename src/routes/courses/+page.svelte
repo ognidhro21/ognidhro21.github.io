@@ -13,10 +13,11 @@
 				{#each d as k}
 					<div class="card">
 						<h4>{k.title}</h4>
-						<!-- <a href={`/courses/${k.id}-${k.title}-theory`}>Theory</a> -->
 						<!-- wont be added for now -->
+
+						<!-- <a href={`/courses/${k.id}-${k.title}-theory`}>Theory</a> -->
 						{#if !k.onlytheory}
-							<a href={k.title}>Practical</a>
+							<!-- <a href={k.title}>Practical</a> -->
 							<p>{getCode(k.title).code}</p>
 						{/if}
 					</div>
