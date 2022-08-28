@@ -108,12 +108,19 @@
 	.btn-skin,
 	.btn {
 		color: var(--agnostic-btn-font-color, var(--agnostic-dark));
+		background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.301) 0%,
+			rgba(0, 0, 0, 0.301) 7%,
+			transparent 7%
+		);
 		background-color: var(--agnostic-btn-bgcolor, var(--agnostic-gray-light));
-		border-color: var(--agnostic-btn-bgcolor, var(--agnostic-gray-light));
+		border-color: #1313132a;
+		/* border-color: #131313, var(--agnostic-btn-bgcolor, var(--agnostic-gray-light)); */
 
 		/* seems like a reasonable default as chrome picks `outset` which results in a weird 3d effect */
 		border-style: solid;
-		border-width: var(--agnostic-btn-border-size, 1px);
+		border-width: var(--agnostic-btn-border-size, 2px);
 		font-family: var(--agnostic-btn-font-family, var(--agnostic-font-family-body));
 		font-weight: var(--agnostic-btn-font-weight, 400);
 		font-size: var(--agnostic-btn-font-size, 1rem);
@@ -129,7 +136,6 @@
 		outline: none;
 		box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.1);
 	}
-
 	.btn:visited {
 		color: var(--agnostic-btn-font-color, var(--agnostic-dark));
 	}
@@ -137,6 +143,7 @@
 	.btn:hover {
 		opacity: 85%;
 		text-decoration: none;
+		box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1);
 	}
 
 	.btn:active {
@@ -185,7 +192,7 @@
 
 	.btn-primary {
 		background-color: var(--agnostic-btn-primary, var(--agnostic-primary));
-		border-color: var(--agnostic-btn-primary, var(--agnostic-primary));
+		/* border-color: var(--agnostic-btn-primary, var(--agnostic-primary)); */
 		color: var(--agnostic-btn-primary-color, var(--agnostic-light));
 	}
 
