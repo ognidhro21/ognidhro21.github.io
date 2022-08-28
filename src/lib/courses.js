@@ -4,7 +4,7 @@ export const courses = [
 	{
 		code: 'meeting',
 		name: '',
-		titles: [{ id: 'L2S1', title: 'Meeting/Seminar/Presentation' }]
+		titles: [{ id: 'L2S1', title: 'Meeting / Seminar / Presentation' }]
 	},
 	//============================ACM============================
 	{
