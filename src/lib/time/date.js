@@ -59,7 +59,6 @@ function checkIsInProgress(day, startTime, endTime) {
 
 	var startDate = new Date(start);
 	var endDate = new Date(end);
-	console.log(startDate, currentDate, endDate);
 	if (currentDate - startDate > 0 && currentDate - endDate < 0) {
 		inProgress = true;
 		var progress = ((currentDate - startDate) / (endDate - startDate)) * 100;

@@ -2,6 +2,7 @@
 	import website from '$lib/config/website';
 	import OpenGraph from './OpenGraph.svelte';
 	import { base } from '$app/paths';
+	import { page } from '$app/stores';
 </script>
 
 <script>
@@ -33,18 +34,18 @@
 
 	// imported props with fallback defaults
 	export let featuredImage = {
-		url: '/OgnidhroCover.png',
+		url: $page.url.origin + '/OgnidhroCover.png',
 		alt: defaultAlt,
 		width: 672,
 		height: 448,
 		caption: 'Home page'
 	};
 	export let ogImage = {
-		url: '/OgnidhroCover.png',
+		url: $page.url.origin + '/OgnidhroCover.png',
 		alt: defaultAlt
 	};
 	export let ogSquareImage = {
-		url: '/OgnidhroCoverSquare.png',
+		url: $page.url.origin + '/OgnidhroCoverSquare.png',
 		alt: defaultAlt
 	};
 

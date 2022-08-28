@@ -19,6 +19,8 @@
 	<meta property="og:type" content={article ? 'article' : 'website'} />
 	<meta property="og:title" content={pageTitle} />
 	<meta property="og:description" content={metadescription} />
+	<meta property="og:url" content={url} />
+
 	{#if image}
 		<meta property="og:image" content={image.url} />
 		<meta property="og:image:secure_url" content={image.url} />
