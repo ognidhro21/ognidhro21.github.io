@@ -1,7 +1,4 @@
 <script context="module">
-	import defaultOgImage from '/OgnidhroCover.png';
-	import defaultOgSquareImage from '/OgnidhroCoverSquare.png';
-
 	import website from '$lib/config/website';
 	import OpenGraph from './OpenGraph.svelte';
 	import { base } from '$app/paths';
@@ -36,18 +33,18 @@
 
 	// imported props with fallback defaults
 	export let featuredImage = {
-		url: base + defaultOgImage,
+		url: '/OgnidhroCover.png',
 		alt: defaultAlt,
 		width: 672,
 		height: 448,
 		caption: 'Home page'
 	};
 	export let ogImage = {
-		url: base + defaultOgImage,
+		url: '/OgnidhroCover.png',
 		alt: defaultAlt
 	};
 	export let ogSquareImage = {
-		url: base + defaultOgSquareImage,
+		url: '/OgnidhroCoverSquare.png',
 		alt: defaultAlt
 	};
 
