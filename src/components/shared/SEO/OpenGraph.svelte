@@ -20,7 +20,8 @@
 	<meta property="og:title" content={pageTitle} />
 	<meta property="og:description" content={metadescription} />
 	<meta property="og:url" content={url} />
-
+	<meta property="og:image:width" content="1440" />
+	<meta property="og:image:height" content="1220" />
 	{#if image}
 		<meta property="og:image" content={image.url} />
 		<meta property="og:image:secure_url" content={image.url} />
