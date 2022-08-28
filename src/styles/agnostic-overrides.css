@@ -85,6 +85,10 @@ blockquote{
   font-style: italic;
   font-size: large;
 }
+
+ol, ul{
+  padding: 0 2rem 1rem 2rem ;
+}
 /* Make clicks pass-through */
 #nprogress {
   pointer-events: none;

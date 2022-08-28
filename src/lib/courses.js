@@ -1,5 +1,11 @@
 /* eslint-disable no-unused-vars */
 export const courses = [
+	//============================MEETING=====================
+	{
+		code: 'meeting',
+		name: '',
+		titles: [{ id: 'L2S1', title: 'Meeting/Seminar/Presentation' }]
+	},
 	//============================ACM============================
 	{
 		code: 'acm',
@@ -10,7 +16,7 @@ export const courses = [
 	{
 		code: 'aes',
 		name: 'Agricultural Economics and Sociology',
-		titles: [{ id: 'L1S2', title: 'Production Economics and Marketing' }]
+		titles: [{ id: 'L1S2', title: 'Production Economics and Marketing', onlytheory: true }]
 	},
 	//============================AGB============================
 	{
@@ -36,15 +42,15 @@ export const courses = [
 		name: 'Agronomy',
 		titles: [
 			{ id: 'L1S2', title: 'Principle and Practices of Agronomy' },
-			{ id: 'L2S2', title: 'Seeds Science and Technology' },
+			{ id: 'L2S1', title: 'Seeds Science and Technology' },
 			{ id: 'L2S2', title: 'Weed Science' }
 		]
 	},
 	//============================ARD============================
 	{
 		code: 'ard',
-		title: 'Agricultural Extenstion and Rural Development',
-		titles: [{ id: 'L2S1', title: 'Fundamentals of Agricultural Extension' }]
+		name: 'Agricultural Extension and Rural Development',
+		titles: [{ id: 'L2S1', title: 'Fundamentals of Agricultural Extension', onlytheory: true }]
 	},
 	//============================BCM============================
 	{
@@ -118,4 +124,8 @@ function getCourseName(code) {
 	return course.name;
 }
 
-export { getCourseTitle as getTitle, getCourseName as getName };
+function getCourseCode(courseTitle) {
+	return 'TODO';
+}
+
+export { getCourseTitle as getTitle, getCourseName as getName, getCourseCode as getCode };

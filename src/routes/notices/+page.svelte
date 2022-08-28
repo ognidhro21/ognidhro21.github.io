@@ -56,7 +56,7 @@
 
 <style>
 	a {
-		padding: 1rem;
+		padding: 2rem;
 		border-radius: 0.4rem;
 		transition: all 0.2s ease-in-out;
 		display: block;

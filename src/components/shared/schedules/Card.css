@@ -21,7 +21,7 @@
 	user-select: none;
 }
 .routine-card h4 {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
@@ -57,6 +57,7 @@
 	opacity: 0.05;
 	font-weight: 300;
 	line-height: 1;
+	text-transform: uppercase;
 }
 .routine-card.inProgress {
 	border: 2px solid var(--agnostic-primary);

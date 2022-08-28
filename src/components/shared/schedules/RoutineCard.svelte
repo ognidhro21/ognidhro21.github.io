@@ -9,7 +9,7 @@
 	export let schedule;
 	export let id;
 	export let day;
-	const practical = schedule.practical;
+	$: practical = schedule.practical;
 
 	$: name = getName(schedule.code);
 	$: title = getTitle(schedule.code, id);
