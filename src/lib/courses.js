@@ -41,7 +41,7 @@ export const courses = [
 		code: 'agr',
 		name: 'Agronomy',
 		titles: [
-			{ id: 'L1S2', title: 'Principle and Practices of Agronomy' },
+			{ id: 'L1S2', title: 'Principles and Practice of Agronomy' },
 			{ id: 'L2S1', title: 'Seeds Science and Technology' },
 			{ id: 'L2S2', title: 'Weed Science' }
 		]

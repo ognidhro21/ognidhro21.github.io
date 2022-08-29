@@ -16,7 +16,12 @@
 	$: progressData = isInProgress(day, schedule.start, schedule.end);
 </script>
 
-<div class="routine-card flex flex-row justify-between align-center" class:practical transition:fly>
+<div
+	class="routine-card flex flex-row justify-between align-center"
+	class:practical
+	transition:fly
+	class:isInProgress={progressData !== -1}
+>
 	<div class="title flex flex-column">
 		<h4>
 			{name}
@@ -35,11 +40,27 @@
 		{schedule.code}
 	</h2>
 	{#if progressData !== -1}
+		<div class="progress-bg" style="width:{progressData}% ;">
+			<p>.</p>
+		</div>
 		<progress id="progressBar" max="100" value={progressData} />
 	{/if}
 </div>
 
 <style>
+	.isInProgress {
+		box-shadow: 0px 0px 14px rgba(141, 7, 7, 0.295);
+	}
+	.progress-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		background-color: rgba(255, 0, 0, 0.144);
+	}
+	.progress-bg > p {
+		opacity: 0;
+	}
 	#progressBar {
 		position: absolute;
 		left: 0;

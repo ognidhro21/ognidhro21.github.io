@@ -23,7 +23,14 @@
 			path: 'https://www.facebook.com/ognidhro21/',
 			title: 'Find us on Facebook',
 			details: 'Like us on Facebook to keep up with the updates!',
-			bgImg: FBImg
+			bgImg: FBImg,
+			target: '_blank'
+		},
+		{
+			path: 'https://github.com/ognidhro21/ognidhro21.github.io',
+			title: 'Source Code',
+			details: 'The code of this site',
+			target: '_blank'
 		}
 	];
 </script>
@@ -31,25 +38,16 @@
 <Container>
 	<div class="cards">
 		{#each links as link}
-			{#if link.scroll}
-				<a href={link.path} class="card">
-					<div class="texts">
-						<h3>{link.title}</h3>
-						<p>{link.details}</p>
-						<Button mode="primary" isRounded>Go!</Button>
-					</div>
+			<a href={link.path} class="card" sveltekit:noscroll={link.scroll} target={link.target}>
+				<div class="texts">
+					<h3>{link.title}</h3>
+					<p>{link.details}</p>
+					<Button mode="primary" isRounded>Go!</Button>
+				</div>
+				{#if link.bgImg}
 					<img src={link.bgImg} alt="" />
-				</a>
-			{:else}
-				<a href={link.path} class="card" sveltekit:noscroll>
-					<div class="texts">
-						<h3>{link.title}</h3>
-						<p>{link.details}</p>
-						<Button mode="primary" isRounded>Go!</Button>
-					</div>
-					<img src={link.bgImg} alt="" />
-				</a>
-			{/if}
+				{/if}
+			</a>
 		{/each}
 	</div>
 </Container>

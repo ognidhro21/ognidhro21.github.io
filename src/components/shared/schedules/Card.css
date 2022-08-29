@@ -27,13 +27,16 @@
 	gap: 0.5rem;
 }
 
-.routine-card p {
+.routine-card .title p {
 	margin-top: 0.5rem;
 	line-height: 1.1;
 }
 /*  only in examcards */
 .routine-card .title {
 	max-width: 60%;
+}
+.routine-card .title > p::only-child {
+	margin: 0;
 }
 .routine-card .time {
 	text-align: right;
@@ -58,7 +61,4 @@
 	font-weight: 300;
 	line-height: 1;
 	text-transform: uppercase;
-}
-.routine-card.inProgress {
-	border: 2px solid var(--agnostic-primary);
 }
