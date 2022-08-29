@@ -49,7 +49,7 @@
 	box-shadow: none;
 }
 .routine-card.practical {
-	border-left: 0.2rem solid var(--agnostic-primary);
+	/* border-left: 0.2rem solid var(--agnostic-primary); */
 }
 .routine-card .abs {
 	font-size: 800%;
