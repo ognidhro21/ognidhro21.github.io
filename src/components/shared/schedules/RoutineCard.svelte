@@ -1,6 +1,6 @@
 <script>
 	import { fly } from 'svelte/transition';
-	import { getName, getTitle } from '$lib/courses';
+	import { getName, getTitle, getFullCode } from '$lib/courses';
 	import { isInProgress, convertTo12 } from '$lib/time/date';
 
 	import Badge from '../Badge.svelte';
@@ -10,7 +10,7 @@
 	export let id;
 	export let day;
 	$: practical = schedule.practical;
-
+	$: CODE = getFullCode(id, schedule.code, schedule.practical);
 	$: name = getName(schedule.code);
 	$: title = getTitle(schedule.code, id);
 	$: progressData = isInProgress(day, schedule.start, schedule.end);
@@ -23,16 +23,14 @@
 	class:isInProgress={progressData !== -1}
 >
 	<div class="title flex flex-column">
-		<h4>
-			{name}
-		</h4>
+		<p><b> {name}</b> <span>{CODE}</span></p>
 		<!-- <p>{schedule.code}</p> -->
 		<p>{title}</p>
 	</div>
 	<div class="time flex flex-column items-end justify-center">
-		<h5>
+		<p>
 			<span>{convertTo12(schedule.start)} - </span> <span>{convertTo12(schedule.end)}</span>
-		</h5>
+		</p>
 		{#if schedule.practical}<Badge shape="rounded" type="warning">Practical</Badge> {/if}
 	</div>
 

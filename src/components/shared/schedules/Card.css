@@ -8,17 +8,22 @@
 .routine-card {
 	padding: 1rem;
 	background: var(--plain);
-	margin-top: 1rem;
-	border-radius: 0.8rem;
 	box-shadow: 0px 0px 20px 4px rgba(57, 28, 28, 0.058);
 	position: relative;
 	overflow: hidden;
-
 	/* cant be selected */
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	border-bottom: 1px solid rgba(24, 12, 12, 0.582);
+}
+.routine-card:first-child {
+	border-radius: 0.6rem 0.6rem 0 0;
+}
+.routine-card:last-child {
+	border-bottom: none;
+	border-radius: 0 0 0.6rem 0.6rem;
 }
 .routine-card h4 {
 	/* text-transform: uppercase; */
@@ -41,9 +46,7 @@
 .routine-card .time {
 	text-align: right;
 }
-.routine-card .time span {
-	margin-top: 0.5rem;
-}
+
 .routine-card.completed {
 	background-color: var(--plain-opacity);
 	box-shadow: none;

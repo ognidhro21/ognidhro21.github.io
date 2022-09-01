@@ -128,4 +128,22 @@ function getCourseCode(courseTitle) {
 	return 'TODO';
 }
 
-export { getCourseTitle as getTitle, getCourseName as getName, getCourseCode as getCode };
+/**
+ *
+ * @param {string} id
+ * @param {string} code
+ * @param {boolean} practical
+ */
+function getFullCourseCode(id, code, practical) {
+	code = code.toUpperCase();
+	// trimming LS from {L1S2}
+	var numbers = id.replace(/[^0-9.]/g, '');
+	const trail = practical ? 2 : 1;
+	return `${code}${numbers}${trail}`;
+}
+export {
+	getCourseTitle as getTitle,
+	getCourseName as getName,
+	getCourseCode as getCode,
+	getFullCourseCode as getFullCode
+};

@@ -3,12 +3,12 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
+		"dev:host": "vite dev --host",
 		"build": "vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"local": "vite dev --host",
 		"deploy": "node ./gh-pages.js",
 		"generate:manifest": "node ./generate-manifest.js"
 	},
