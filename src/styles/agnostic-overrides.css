@@ -20,7 +20,7 @@
     --agnostic-primary: var(--agnostic-primary-modedark);
     --agnostic-light: var(--agnostic-light-modedark);
     --plain: #121212;
-  --plain-opacity: rgba(0, 0, 0, 0.31);
+    --plain-opacity: rgba(0, 0, 0, 0.31);
 
   }
 }

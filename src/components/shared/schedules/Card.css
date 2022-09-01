@@ -16,7 +16,8 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	border-bottom: 1px solid rgba(24, 12, 12, 0.582);
+	border-bottom: 1px solid rgba(15, 1, 1, 0.199);
+	z-index: 1;
 }
 .routine-card:first-child {
 	border-radius: 0.6rem 0.6rem 0 0;
