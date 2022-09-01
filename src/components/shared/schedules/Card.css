@@ -17,7 +17,6 @@
 	-ms-user-select: none;
 	user-select: none;
 	border-bottom: 1px solid rgba(15, 1, 1, 0.199);
-	z-index: 1;
 }
 .routine-card:first-child {
 	border-radius: 0.6rem 0.6rem 0 0;
@@ -36,6 +35,9 @@
 .routine-card .title p {
 	margin-top: 0.5rem;
 	line-height: 1.1;
+}
+.routine-card .title p span {
+	font-weight: 300;
 }
 /*  only in examcards */
 .routine-card .title {
@@ -61,8 +63,8 @@
 	top: 0;
 	right: 0;
 	color: var(--agnostic-dark);
-	opacity: 0.05;
-	font-weight: 300;
+	opacity: 0.03;
+	font-weight: 900;
 	line-height: 1;
 	text-transform: uppercase;
 }

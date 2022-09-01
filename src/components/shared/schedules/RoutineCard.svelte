@@ -49,6 +49,7 @@
 	.isInProgress {
 		box-shadow: 0px 0px 14px rgba(141, 7, 7, 0.295);
 		z-index: 2;
+		transform: scale(1.02);
 	}
 	.progress-bg {
 		position: absolute;

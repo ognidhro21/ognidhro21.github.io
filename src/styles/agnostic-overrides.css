@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 :root {
   --agnostic-font-family: font-family: 'Roboto', sans-serif;
   /* In light mode we willl have white text against a dark green background. */
