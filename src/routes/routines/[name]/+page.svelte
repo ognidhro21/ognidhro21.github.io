@@ -1,15 +1,10 @@
 <script>
-	// throw new Error(
-	// 	'@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)'
-	// );
-
 	import { onMount } from 'svelte';
 	import Container from '../../../components/shared/Container.svelte';
 	import RoutineCard from '../../../components/shared/schedules/RoutineCard.svelte';
 	import SEO from '../../../components/shared/SEO/index.svelte';
 	import Anim from '../../../components/shared/Anim.svelte';
 	import DATA from '../../../stores/PersistantInfo';
-	import ScheduleCard from '../../../components/shared/schedules/ScheduleCard.svelte';
 	export let data;
 	const routine = data.routine;
 	const { name, detailedname, sections } = routine;
@@ -82,7 +77,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- <h3>{sections[section].groups[group].days[day].name}</h3> -->
+		<h3>{sections[section].groups[group].days[day].name}</h3>
 		{#each infos as schedule}
 			<RoutineCard {schedule} id={name} {day} />
 		{/each}
