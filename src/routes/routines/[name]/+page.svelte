@@ -9,6 +9,7 @@
 	import SEO from '../../../components/shared/SEO/index.svelte';
 	import Anim from '../../../components/shared/Anim.svelte';
 	import DATA from '../../../stores/PersistantInfo';
+	import ScheduleCard from '../../../components/shared/schedules/ScheduleCard.svelte';
 	export let data;
 	const routine = data.routine;
 	const { name, detailedname, sections } = routine;
@@ -93,8 +94,9 @@
 		padding: 1rem;
 		background: var(--plain);
 		margin-top: 0.8rem;
-		margin-bottom: 2rem;
+		border-radius: 0.3rem 0.3rem 0 0;
 	}
+
 	.inputs {
 		gap: 0.6rem;
 	}

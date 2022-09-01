@@ -8,7 +8,7 @@
 .routine-card {
 	padding: 1rem;
 	background: var(--plain);
-	box-shadow: 0px 0px 20px 4px rgba(57, 28, 28, 0.058);
+	/* box-shadow: 0px 0px 20px 4px rgba(57, 28, 28, 0.058); */
 	position: relative;
 	overflow: hidden;
 	/* cant be selected */
@@ -18,9 +18,7 @@
 	user-select: none;
 	border-bottom: 1px solid rgba(15, 1, 1, 0.199);
 }
-.routine-card:first-child {
-	border-radius: 0.6rem 0.6rem 0 0;
-}
+
 .routine-card:last-child {
 	border-bottom: none;
 	border-radius: 0 0 0.6rem 0.6rem;
@@ -40,9 +38,7 @@
 	font-weight: 300;
 }
 /*  only in examcards */
-.routine-card .title {
-	max-width: 60%;
-}
+
 .routine-card .title > p::only-child {
 	margin: 0;
 }

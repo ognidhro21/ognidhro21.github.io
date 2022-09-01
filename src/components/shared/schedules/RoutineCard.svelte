@@ -16,22 +16,14 @@
 	$: progressData = isInProgress(day, schedule.start, schedule.end);
 </script>
 
-<div
-	class="routine-card flex flex-row justify-between align-center"
-	class:practical
-	transition:fly
-	class:isInProgress={progressData !== -1}
->
-	<div class="title flex flex-column">
-		<p><b> {name}</b> <span>{CODE}</span></p>
-		<!-- <p>{schedule.code}</p> -->
-		<p>{title}</p>
-	</div>
-	<div class="time flex flex-column items-end justify-center">
-		<p>
-			<span>{convertTo12(schedule.start)} - </span> <span>{convertTo12(schedule.end)}</span>
-		</p>
+<div class="routine-card" class:practical transition:fly class:isInProgress={progressData !== -1}>
+	<p><b> {name}</b> <span>{CODE}</span></p>
+	<div class="title flex flex-row justify-between">
+		<h5>{convertTo12(schedule.start)} - {convertTo12(schedule.end)}</h5>
 		{#if schedule.practical}<Badge shape="rounded" type="warning">Practical</Badge> {/if}
+	</div>
+	<div class="time flex flex-row items-center justify-between">
+		<p>{title}</p>
 	</div>
 
 	<h2 class="abs">
@@ -50,6 +42,7 @@
 		box-shadow: 0px 0px 14px rgba(141, 7, 7, 0.295);
 		z-index: 2;
 		transform: scale(1.02);
+		border-radius: 0.6rem;
 	}
 	.progress-bg {
 		position: absolute;

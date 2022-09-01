@@ -16,20 +16,12 @@
 	$: title = getTitle(code, id);
 </script>
 
-<div class="routine-card flex flex-row justify-between align-center" class:completed transition:fly>
-	<div class="title flex flex-column">
-		<h4>{name}</h4>
-		<p>{title}</p>
+<div class="routine-card" class:completed transition:fly>
+	<h4>{name}</h4>
+	<p>{title}</p>
+	<div class="flex flex-row justify-between items-center">
+		<p>{aMOrPM(startTime)} - {aMOrPM(endTime)}</p>
+		<h4>{date}</h4>
 	</div>
-	<div class="time flex flex-column items-end justify-center">
-		<h4>
-			{date}
-		</h4>
-		<p>
-			<span>{aMOrPM(startTime)} - </span> <span>{aMOrPM(endTime)}</span>
-		</p>
-	</div>
-	<h2 class="abs">
-		{code}
-	</h2>
+	<h2 class="abs">{code}</h2>
 </div>
