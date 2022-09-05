@@ -744,8 +744,8 @@
                                 },
                                 {
                                     "code": "plp",
-                                    "start": "14:15",
-                                    "end": "15:45",
+                                    "start": "14:30",
+                                    "end": "16:00",
                                     "practical": true
                                 }
                             ]
@@ -753,12 +753,6 @@
                         {
                             "name": "Monday",
                             "schedules": [
-                                {
-                                    "code": "agb",
-                                    "start": "9:00",
-                                    "end": "10:35",
-                                    "practical": true
-                                },
                                 {
                                     "code": "ard",
                                     "start": "10:40",
@@ -825,6 +819,12 @@
                                     "code": "bcm",
                                     "start": "12:20",
                                     "end": "13:05"
+                                },
+                                {
+                                    "code": "agb",
+                                    "start": "14:15",
+                                    "end": "15:45",
+                                    "practical": true
                                 }
                             ]
                         },
