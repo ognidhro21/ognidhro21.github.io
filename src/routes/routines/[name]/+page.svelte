@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 	import Container from '../../../components/shared/Container.svelte';
 	import RoutineCard from '../../../components/shared/schedules/RoutineCard.svelte';
 	import SEO from '../../../components/shared/SEO/index.svelte';
@@ -19,7 +20,7 @@
 		const d = new Date();
 		const today = d.getDay();
 		const hour = d.getHours();
-		if (hour >= 14) {
+		if (hour >= 16) {
 			const nextDay = today + 1;
 			dayIndex = nextDay;
 			if (nextDay >= 5) {
@@ -37,8 +38,13 @@
 	$: infos = sections[section].groups[group].days[day].schedules;
 	onMount(() => {
 		setDay();
-		section = $DATA[0].section;
-		group = $DATA[0].group;
+		if ($DATA[0].saved === true) {
+			section = $DATA[0].section;
+			group = $DATA[0].group;
+		} else {
+			// preferred grp isnot set so forcefully redirects to schedules page
+			goto('/schedules');
+		}
 	});
 </script>
 
