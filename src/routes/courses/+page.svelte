@@ -7,11 +7,11 @@
 	let items = [
 		{
 			name: 'Semester',
-			icon: 'clock'
+			icon: 'calendar'
 		},
 		{
 			name: 'Department',
-			icon: 'book'
+			icon: 'list'
 		}
 	];
 	$: selected = items[0].name;

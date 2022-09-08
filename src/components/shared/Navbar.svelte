@@ -151,6 +151,10 @@
 			justify-content: center;
 			box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 		}
+		nav .links {
+			width: 100%;
+			justify-content: center;
+		}
 		.nav-container > img {
 			display: none;
 		}
