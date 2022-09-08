@@ -764,9 +764,10 @@
                                     "end": "12:15"
                                 },
                                 {
-                                    "code": "meeting",
+                                    "code": "stt",
                                     "start": "12:20",
-                                    "end": "13:05"
+                                    "end": "13:50",
+                                    "practical": true
                                 }
                             ]
                         },
@@ -831,12 +832,6 @@
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "stt",
-                                    "start": "9:00",
-                                    "end": "10:35",
-                                    "practical": true
-                                },
                                 {
                                     "code": "bcm",
                                     "start": "10:40",
