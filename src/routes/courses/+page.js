@@ -15,6 +15,11 @@ export const load = async ({ url }) => {
 		}
 		res.push(arr);
 	}
+	res.sort((a, b) => {
+		if (a[0].id > b[0].id) 1;
+		else if (a[0].id < b[0].id) return -1;
+		return 0;
+	});
 	return {
 		res
 	};
