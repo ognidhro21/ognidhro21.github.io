@@ -7,7 +7,7 @@
 	let items = [
 		{
 			name: 'Semester',
-			icon: 'calendar'
+			icon: 'layers'
 		},
 		{
 			name: 'Department',
