@@ -1,6 +1,7 @@
 <script>
 	import Anim from '../../Anim.svelte';
 	export let tabindex = 2;
+	import './TabData.css';
 </script>
 
 <Anim>

@@ -70,7 +70,7 @@
 		width: 100%;
 		height: 100%;
 		background-color: var(--plain);
-		border-radius: 1rem;
+		border-radius: var(--border-radius);
 		padding: 2rem 1rem;
 		display: flex;
 		flex-direction: column;

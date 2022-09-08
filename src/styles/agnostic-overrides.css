@@ -12,6 +12,7 @@
   --agnostic-focus-ring-outline-color: var(--agnostic-primary-modelight);
   --plain: #fff;
   --plain-opacity: rgba(255, 255, 255, 0.31);
+  --border-radius:0.4rem;
   
 }
 /* But, if user's set their OS to prefer dark, we instead use that */
@@ -163,3 +164,6 @@ ol, ul{
   100% { transform: rotate(360deg); }
 }
 
+summary{
+  cursor: pointer;
+}

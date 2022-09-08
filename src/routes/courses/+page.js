@@ -15,7 +15,6 @@ export const load = async ({ url }) => {
 		}
 		res.push(arr);
 	}
-
 	return {
 		res
 	};

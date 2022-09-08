@@ -24,15 +24,10 @@
 </div>
 
 <style>
-	.tab {
-		width: 100%;
-	}
 	.tabbuttons {
 		max-width: 1024px;
 		height: 100%;
 		border-bottom: 1px solid var(--agnostic-primary);
-		margin: -1rem;
-		margin-top: 0;
 		padding: 0 1rem;
 		display: flex;
 		flex-direction: row;

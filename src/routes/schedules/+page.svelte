@@ -10,8 +10,8 @@
 	import { onMount } from 'svelte';
 	import SEO from '../../components/shared/SEO/index.svelte';
 	import Anim from '../../components/shared/Anim.svelte';
+	import Tabs from '../../components/shared/Tabs.svelte';
 	export let data;
-	let item = ['Classes', 'Exams', 'Events'];
 	let items = [
 		{
 			name: 'Classes',
@@ -84,9 +84,8 @@
 <Anim>
 	<Container>
 		{#if saved}
-			<Button mode="primary" isRounded on:click={resetInfo}>Change Default Group</Button>
-			<section class="mbe24 mbs12 tabs">
-				<Tab {items} {selected} on:tabChanged={tabChanged} />
+			<Tabs {items} {selected} on:tabChanged={tabChanged}>
+				<!-- <Tab {items} {selected} on:tabChanged={tabChanged} /> -->
 				{#if selected === 'Classes'}
 					<TabClasses {routinesList} />
 				{:else if selected === 'Exams'}
@@ -94,7 +93,8 @@
 				{:else if selected === 'Events'}
 					<TabEvents />
 				{/if}
-			</section>
+			</Tabs>
+			<Button mode="primary mbs12" isRounded on:click={resetInfo}>Change Default Group</Button>
 		{:else}
 			<div class="save-info flex items-center  self-center mbs12">
 				<div class="img-container">

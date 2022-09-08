@@ -15,6 +15,6 @@
 		padding-block-end: var(--fluid-2);
 		padding-inline-start: var(--fluid-8);
 		padding-inline-end: var(--fluid-8);
-		border-radius: 200px;
+		border-radius: var(--border-radius);
 	}
 </style>

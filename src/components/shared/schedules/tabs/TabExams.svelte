@@ -2,6 +2,7 @@
 	export let tabindex = 1;
 	import Anim from '../../Anim.svelte';
 	export let examsList;
+	import './TabData.css';
 </script>
 
 <Anim>

@@ -1,6 +1,7 @@
 <script>
 	export let tabindex = 0;
 	import Anim from '../../Anim.svelte';
+	import './TabData.css';
 	export let routinesList;
 </script>
 
