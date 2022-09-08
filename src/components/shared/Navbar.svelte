@@ -16,6 +16,11 @@
 			icon: 'calendar'
 		},
 		{
+			title: 'Courses',
+			path: '/courses',
+			icon: 'info'
+		},
+		{
 			title: 'Notices',
 			path: '/notices',
 			icon: 'bell',

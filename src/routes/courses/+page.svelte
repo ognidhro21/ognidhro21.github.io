@@ -73,6 +73,9 @@
 	.card {
 		border-bottom: 1px solid black;
 	}
+	details {
+		padding: 1rem 0;
+	}
 	details:last-child,
 	details > div > .card:last-child {
 		border: none;
