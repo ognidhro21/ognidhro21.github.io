@@ -17,7 +17,6 @@ specifiers:
   prettier-plugin-svelte: ^2.7.0
   sharp: ^0.30.7
   svelte: ^3.49.0
-  svelte-accordion: 0.0.0-development
   vite: ^3.1.0
 
 dependencies:
@@ -39,7 +38,6 @@ devDependencies:
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_o3ioganyptcsrh6x4hnxvjkpqi
   svelte: 3.49.0
-  svelte-accordion: 0.0.0-development
   vite: 3.1.0
 
 packages:
@@ -2205,10 +2203,6 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
-    dev: true
-
-  /svelte-accordion/0.0.0-development:
-    resolution: {integrity: sha512-G/I5WgeQJ6DaDLxlg+Ic0h23fHkx6AeKP8IVL+nrnjt28NKyhoOfKcHWZqDgDthB4a6T9m+9wkd6QXioyf9Z9Q==}
     dev: true
 
   /svelte-hmr/0.14.12_svelte@3.49.0:
