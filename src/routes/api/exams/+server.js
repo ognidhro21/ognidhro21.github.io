@@ -1,4 +1,3 @@
-import { json as json$1 } from '@sveltejs/kit';
 import fs from 'fs';
 export async function GET() {
 	// our markdown files lie in src/posts.
@@ -17,6 +16,12 @@ export async function GET() {
 	});
 
 	let body = exams;
-	// Suggestion (check for correctness before using):
-	return json$1(body);
+
+	const responseOptions = {
+		status: 200,
+		headers: {
+			'content-type': 'application/json'
+		}
+	};
+	return new Response(JSON.stringify(body), responseOptions);
 }

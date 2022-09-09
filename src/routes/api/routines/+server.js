@@ -1,4 +1,3 @@
-import { json as json$1 } from '@sveltejs/kit';
 import fs from 'fs';
 export async function GET() {
 	// our markdown files lie in src/posts.
@@ -17,8 +16,11 @@ export async function GET() {
 	});
 
 	let body = names;
-	//throw new Error("@migration task: Migrate this return statement (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292701)");
-	// Suggestion (check for correctness before using):
-	return json$1(body);
-	//return { body };
+	const responseOptions = {
+		status: 200,
+		headers: {
+			'content-type': 'application/json'
+		}
+	};
+	return new Response(JSON.stringify(body), responseOptions);
 }
