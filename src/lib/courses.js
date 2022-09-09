@@ -206,6 +206,7 @@ function getCourseCode(courseTitle) {
  * @param {boolean} practical
  */
 function getFullCourseCode(id, code, practical) {
+	if (code === 'meeting') return 'MEETING';
 	code = code.toUpperCase();
 	// trimming LS from {L1S2}
 	var numbers = id.replace(/[^0-9.]/g, '');

@@ -4,15 +4,7 @@ import { mdsvex } from 'mdsvex';
 const config = {
 	extensions: ['.svelte', '.md', '.svx'],
 	kit: {
-		adapter: adapter(),
-
-		// prerender
-		prerender: {
-			enabled: true,
-			crawl: true,
-			entries: ['*'],
-			default: true
-		}
+		adapter: adapter()
 	},
 	preprocess: [
 		mdsvex({

@@ -11,6 +11,7 @@
   --agnostic-primary-hover-modedark: var(--agnostic-primary-hover-modelight);
   --agnostic-focus-ring-outline-color: var(--agnostic-primary-modelight);
   --plain: #fff;
+  --plain-invert:#131313;
   --plain-opacity: rgba(255, 255, 255, 0.31);
   --border-radius:0.4rem;
   
@@ -21,6 +22,7 @@
     --agnostic-primary: var(--agnostic-primary-modedark);
     --agnostic-light: var(--agnostic-light-modedark);
     --plain: #121212;
+    --plain-invert: #fff;
     --plain-opacity: rgba(0, 0, 0, 0.31);
 
   }
@@ -164,6 +166,22 @@ ol, ul{
   100% { transform: rotate(360deg); }
 }
 
+
+details[open] summary{
+  background-color: var(--plain);
+  scale: 1.01;
+  box-shadow: 0px 0px 20px 4px rgba(57, 28, 28, 0.058);
+  transition: all 0.25s ease-in-out;
+  z-index: 2;
+}
 summary{
   cursor: pointer;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+.disclose,details{
+  padding: 0;
+}
+.disclose summary{
+  padding: 1rem ;
 }
