@@ -1,4 +1,4 @@
-export async function load({ url }) {
+export const load = async ({ url }) => {
 	const routinesRes = await fetch(`${url.origin}/api/routines`);
 	const routinesList = await routinesRes.json();
 	const examsRes = await fetch(`${url.origin}/api/exams`);
@@ -7,4 +7,4 @@ export async function load({ url }) {
 		routinesList,
 		examsList
 	};
-}
+};
