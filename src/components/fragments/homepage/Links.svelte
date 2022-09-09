@@ -38,7 +38,7 @@
 <Container>
 	<div class="cards">
 		{#each links as link}
-			<a href={link.path} class="card" sveltekit:noscroll={link.scroll} target={link.target}>
+			<a href={link.path} class="card" data-sveltekit-noscroll={link.scroll} target={link.target}>
 				<div class="texts">
 					<h3>{link.title}</h3>
 					<p>{link.details}</p>

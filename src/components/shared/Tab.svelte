@@ -10,7 +10,7 @@
 	<div class="tabbuttons">
 		{#each items as item}
 			<button
-				sveltekit:noscroll
+				data-sveltekit-noscroll
 				class:active={selected === item.name}
 				on:click={() => {
 					dispatch('tabChanged', item.name);

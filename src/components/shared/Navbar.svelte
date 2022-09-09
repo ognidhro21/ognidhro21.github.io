@@ -36,7 +36,7 @@
 		<img src={LOGO} alt="OG21" />
 		<div class="links">
 			{#each nav as link}
-				<a href={link.path} class:active={$page.url.pathname === link.path} sveltekit:noscroll>
+				<a href={link.path} class:active={$page.url.pathname === link.path} data-sveltekit-noscroll>
 					<div class="link-container">
 						<Icon name={link.icon} />
 						<p>{link.title}</p>
