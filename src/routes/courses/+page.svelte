@@ -21,7 +21,7 @@
 	}
 	// opened Accordion
 	let openedAccordion = 1;
-	const toggleAccordion = (e) => (openedAccordion = e.detail == openedAccordion ? 0 : e.detail);
+	const toggleAccordion = (e) => (openedAccordion = e.detail);
 </script>
 
 <Container>
@@ -30,7 +30,7 @@
 			<Accordions>
 				{#each data.res as d, i}
 					<Accordion id={i} {openedAccordion} on:accordionSelected={toggleAccordion}>
-						<span slot="title" class="title"><h2>{d[0].id}</h2></span>
+						<span slot="title" class="title"><h2>{d[0].id} {i}</h2></span>
 						<span>
 							{#each d as k}
 								{#if getCode(k.title) !== 'meeting'}
