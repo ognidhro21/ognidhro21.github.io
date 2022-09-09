@@ -2,10 +2,7 @@ import { sveltekit } from '@sveltejs/kit/vite';
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [sveltekit()],
-	optimizeDeps: {
-		include: ['Button']
-	}
+	plugins: [sveltekit()]
 };
 
 export default config;
