@@ -1,6 +1,8 @@
 export async function load({ url }) {
-	const routinesList = await fetch(`${url.origin}/api/routines`).then((res) => res.json());
-	const examsList = await fetch(`${url.origin}/api/exams`).then((res) => res.json());
+	const routinesRes = await fetch(`${url.origin}/api/routines`);
+	const routinesList = await routinesRes.json();
+	const examsRes = await fetch(`${url.origin}/api/exams`);
+	const examsList = await examsRes.json();
 	return {
 		routinesList,
 		examsList
