@@ -3,7 +3,6 @@
 	import TabExams from '../../components/shared/schedules/tabs/TabExams.svelte';
 	import TabEvents from '../../components/shared/schedules/tabs/TabEvents.svelte';
 	import Container from '../../components/shared/Container.svelte';
-	import Tab from '../../components/shared/Tab.svelte';
 	import InfoImg from '../../images/update_info_undraw.svg';
 	import Button from '../../components/shared/Button.svelte';
 	import DATA from '../../stores/PersistantInfo';
