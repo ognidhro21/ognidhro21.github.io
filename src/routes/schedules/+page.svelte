@@ -118,6 +118,7 @@
 			</div>
 		{/if}
 	</Container>
+	{@html JSON.stringify(data.routinesList)}
 </Anim>
 
 <style>
