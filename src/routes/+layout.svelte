@@ -10,9 +10,6 @@
 	import DATA from '../stores/NoticeInfo';
 	import { onMount } from 'svelte';
 
-	export const prerender = true;
-	export const hydrate = false;
-
 	NProgress.configure({
 		minimum: 0.16,
 		showSpinner: true
