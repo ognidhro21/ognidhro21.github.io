@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap');
 :root {
   --agnostic-font-family: font-family: 'Roboto', sans-serif;
   /* In light mode we willl have white text against a dark green background. */
@@ -11,7 +12,7 @@
   --agnostic-primary-hover-modedark: var(--agnostic-primary-hover-modelight);
   --agnostic-focus-ring-outline-color: var(--agnostic-primary-modelight);
   --plain: #fff;
-  --plain-invert:#131313;
+  --plain-invert:#13131350;
   --plain-opacity: rgba(255, 255, 255, 0.31);
   --border-radius:0.4rem;
   
@@ -22,7 +23,7 @@
     --agnostic-primary: var(--agnostic-primary-modedark);
     --agnostic-light: var(--agnostic-light-modedark);
     --plain: #121212;
-    --plain-invert: #fff;
+    --plain-invert: #ffffff50;
     --plain-opacity: rgba(0, 0, 0, 0.31);
 
   }
@@ -47,7 +48,7 @@ p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
   margin: 2rem 0 1.38rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: Montserrat, 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.3;
 }

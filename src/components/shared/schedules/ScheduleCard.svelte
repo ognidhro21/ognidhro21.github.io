@@ -20,7 +20,7 @@
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-		border-bottom: 1px solid rgba(15, 1, 1, 0.199);
+		border-bottom: 1px solid var(--plain-invert);
 	}
 	.top-section > div,
 	.bottom-section > * {

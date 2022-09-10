@@ -50,8 +50,8 @@
 
 <SEO title={`Routine - ${name}`} />
 <Anim>
-	<Container>
-		<div class="header">
+	<Container fluid>
+		<div class="header mbe24">
 			<div class="flex-fix flex justify-between  mbe12 content-center">
 				<h2 class="m0">{detailedname}</h2>
 			</div>
@@ -83,7 +83,9 @@
 				</div>
 			</div>
 		</div>
-		<h3>{sections[section].groups[group].days[day].name}</h3>
+		<!-- <h3 class="mbe0">{sections[section].groups[group].days[day].name}</h3> -->
+	</Container>
+	<Container fluid>
 		{#each infos as schedule}
 			<RoutineCard {schedule} id={name} {day} />
 		{/each}

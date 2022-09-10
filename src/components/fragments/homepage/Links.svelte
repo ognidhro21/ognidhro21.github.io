@@ -35,14 +35,14 @@
 	];
 </script>
 
-<Container>
+<Container fluid>
 	<div class="cards">
 		{#each links as link}
 			<a href={link.path} class="card" data-sveltekit-noscroll={link.scroll} target={link.target}>
 				<div class="texts">
 					<h3>{link.title}</h3>
 					<p>{link.details}</p>
-					<Button mode="primary" isRounded>Go!</Button>
+					<!-- <Button mode="primary" isRounded>Go!</Button> -->
 				</div>
 				{#if link.bgImg}
 					<img src={link.bgImg} alt="" />
@@ -63,14 +63,13 @@
 	.cards {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
 		padding: 4rem 0;
 	}
 	.card {
 		width: 100%;
 		height: 100%;
 		background-color: var(--plain);
-		border-radius: var(--border-radius);
+		/* border-radius: var(--border-radius); */
 		padding: 2rem 1rem;
 		display: flex;
 		flex-direction: column;
@@ -81,12 +80,19 @@
 		color: var(--agnostic-dark);
 		position: relative;
 		overflow: hidden;
-		border: 1px solid #fff;
+		border-bottom: 1px solid var(--plain-invert);
 	}
 	.card:hover {
 		box-shadow: 0px 0px 45px 14px rgba(141, 38, 38, 0.1);
 		z-index: 2;
 		text-decoration: none;
+	}
+	.card:first-child {
+		border-radius: var(--border-radius) var(--border-radius) 0 0;
+	}
+	.card:last-child {
+		border-radius: 0 0 var(--border-radius) var(--border-radius);
+		border-bottom: none;
 	}
 	.card img {
 		position: absolute;

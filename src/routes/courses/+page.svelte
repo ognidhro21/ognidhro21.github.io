@@ -78,7 +78,7 @@
 
 <style>
 	.card {
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid var(--plain-invert);
 		padding: 1rem;
 	}
 

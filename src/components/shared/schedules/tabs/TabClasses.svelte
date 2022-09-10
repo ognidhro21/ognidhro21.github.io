@@ -8,25 +8,14 @@
 <Anim>
 	<div id="panel-1" class="tab-panel" role="tabpanel" {tabindex}>
 		<h2>Classes</h2>
-		<div class="reverse">
-			{#each routinesList as r, i}
+		{#each routinesList as r, i}
+			<div class="entry">
 				<a href={`/routines/${r.name}`}>
-					<h4>
+					<h3>
 						{r.detailedname}
-					</h4>
+					</h3>
 				</a>
-			{/each}
-		</div>
+			</div>
+		{/each}
 	</div>
 </Anim>
-
-<style>
-	h4 {
-		margin: 0;
-		margin-top: 1rem;
-	}
-	.reverse {
-		display: flex;
-		flex-direction: column-reverse;
-	}
-</style>

@@ -19,11 +19,11 @@
 		{
 			name: 'Exams',
 			icon: 'book'
-		},
-		{
-			name: 'Events',
-			icon: 'table'
 		}
+		// {
+		// 	name: 'Events',
+		// 	icon: 'table'
+		// }
 	];
 
 	let selected = items[0].name;

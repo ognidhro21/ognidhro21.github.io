@@ -28,7 +28,7 @@
 <style>
 	.collapsible-header {
 		cursor: pointer;
-		padding: 1rem;
+		padding: 2rem 1rem;
 		display: flex;
 		flex-direction: row;
 		align-items: center;

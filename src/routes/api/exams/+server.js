@@ -7,12 +7,17 @@ export async function GET() {
 	};
 	let pS = import.meta.glob('../../../data/schedules/exams/theory/*.json');
 	const iterable = Object.entries(pS);
-	const exams = await Promise.all(
+	let exams = await Promise.all(
 		iterable.map(async ([path, resolver]) => {
 			const res = await resolver();
 			const { name, detailedname } = res;
 			return { name, detailedname };
 		})
 	);
+	exams.sort((a, b) => {
+		if (a.name < b.name) 1;
+		else if (a.name > b.name) return -1;
+		return 0;
+	});
 	return new Response(JSON.stringify(exams), responseOptions);
 }
