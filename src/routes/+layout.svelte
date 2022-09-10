@@ -9,6 +9,7 @@
 	import Navbar from '../components/shared/Navbar.svelte';
 	import DATA from '../stores/NoticeInfo';
 	import { onMount } from 'svelte';
+	import Analytics from '../components/shared/Analytics.svelte';
 
 	NProgress.configure({
 		minimum: 0.16,
@@ -33,6 +34,7 @@
 	});
 </script>
 
+<Analytics />
 <div class="main">
 	<Navbar />
 	<div class="layout">
