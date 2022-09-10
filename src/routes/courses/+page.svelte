@@ -30,12 +30,13 @@
 			<Accordions>
 				{#each data.res as d, i}
 					<Accordion id={i} {openedAccordion} on:accordionSelected={toggleAccordion}>
-						<span slot="title" class="title"><h2>{d[0].id}</h2></span>
+						<span slot="title" class="title"><h4>{d[0].id}</h4></span>
 						<span>
 							{#each d as k}
 								{#if getCode(k.title) !== 'meeting'}
 									<div class="card">
-										<h4>{k.title}</h4>
+										<p>{k.title}</p>
+										<br />
 										<!-- wont be added for now -->
 										<!-- <a href={`/courses/${k.id}-${k.title}-theory`}>Theory</a> -->
 										<p>{getFullCode(d[0].id, getCode(k.title), false)}</p>
@@ -59,12 +60,12 @@
 							{openedAccordion}
 							on:accordionSelected={toggleAccordion}
 						>
-							<span slot="title" class="title"><h2>{course.name}</h2></span>
+							<span slot="title" class="title"><h4>{course.name}</h4></span>
 							<span>
 								{#each course.titles as title}
 									<div class="card">
 										<p>{title.id}</p>
-										<h4>{title.title}</h4>
+										<p>{title.title}</p>
 									</div>
 								{/each}
 							</span>
@@ -82,13 +83,16 @@
 		padding: 1rem;
 	}
 
-	.card h4 {
+	.card p {
 		margin: 0;
 	}
 	.card p {
 		display: inline;
 		margin-right: 1rem;
 		font-weight: 300;
+	}
+	.card p:first-child {
+		font-weight: bold;
 	}
 	.card p:last-child {
 		margin-right: 0;
@@ -97,7 +101,7 @@
 		margin-right: 1rem;
 	}
 
-	span h2 {
+	span h4 {
 		margin: 0;
 	}
 </style>
