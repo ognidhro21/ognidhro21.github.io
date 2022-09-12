@@ -157,7 +157,7 @@
 			width: 100%;
 			justify-content: center;
 		}
-		.nav-container > img {
+		.nav-container a img {
 			display: none;
 		}
 	}
