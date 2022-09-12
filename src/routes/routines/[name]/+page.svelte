@@ -6,6 +6,7 @@
 	import SEO from '../../../components/shared/SEO/index.svelte';
 	import Anim from '../../../components/shared/Anim.svelte';
 	import DATA from '../../../stores/PersistantInfo';
+	import AddToHome from '../../../components/shared/AddToHome.svelte';
 	export let data;
 	const routine = data.routine;
 	const { name, detailedname, sections } = routine;
@@ -51,6 +52,7 @@
 <SEO title={`Routine - ${name}`} />
 <Anim>
 	<Container fluid>
+		<AddToHome />
 		<div class="header mbe24">
 			<div class="flex-fix flex justify-between  mbe12 content-center">
 				<h2 class="m0">{detailedname}</h2>
