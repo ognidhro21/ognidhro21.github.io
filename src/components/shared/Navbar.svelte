@@ -33,7 +33,9 @@
 <svelte:window bind:scrollY={y} />
 <nav class:sticky={y > 22} class:hide={$page.url.pathname === '/'}>
 	<div class="nav-container">
-		<img src={LOGO} alt="OG21" />
+		<a href="/">
+			<img src={LOGO} alt="OG21" />
+		</a>
 		<div class="links">
 			{#each nav as link}
 				<a href={link.path} class:active={$page.url.pathname === link.path} data-sveltekit-noscroll>
@@ -127,7 +129,7 @@
 		.nav-container {
 			justify-content: space-between;
 		}
-		.nav-container > img {
+		.nav-container a img {
 			height: 3rem;
 		}
 		.sticky {
