@@ -115,7 +115,7 @@
 			transparent 7%
 		);
 		background-color: var(--agnostic-btn-bgcolor, var(--agnostic-gray-light));
-		border-color: var(--agnostic-btn-bgcolor, var(--agnostic-gray-light));
+		/* border-color: var(--agnostic-btn-bgcolor, var(--agnostic-gray-light)); */
 
 		/* seems like a reasonable default as chrome picks `outset` which results in a weird 3d effect */
 		border-style: solid;
@@ -133,7 +133,7 @@
 		text-decoration: none;
 		text-align: center;
 		outline: none;
-		box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.1);
+		/* box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.1); */
 	}
 	.btn:visited {
 		color: var(--agnostic-btn-font-color, var(--agnostic-dark));

@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import LOGO from '../../images/OG21Nav.svg';
+	import LOGO from '../../images/OG21Nav.png';
 	import DATA from '../../stores/NoticeInfo';
 	import Icon from './Icon.svelte';
 
