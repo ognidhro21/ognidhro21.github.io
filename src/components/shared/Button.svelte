@@ -114,7 +114,7 @@
 			rgba(0, 0, 0, 0.301) 7%,
 			transparent 7%
 		);
-		background-color: var(--agnostic-btn-bgcolor, var(--agnostic-gray-light));
+		background-color: var(--agnostic-btn-bgcolor, var(--plain));
 		/* border-color: var(--agnostic-btn-bgcolor, var(--agnostic-gray-light)); */
 
 		/* seems like a reasonable default as chrome picks `outset` which results in a weird 3d effect */
