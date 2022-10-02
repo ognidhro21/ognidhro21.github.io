@@ -7,8 +7,6 @@
 </script>
 
 <SEO title={`Home`} />
-<Anim>
-	<Hero />
-	<About />
-	<Links />
-</Anim>
+<Hero />
+<About />
+<Links />

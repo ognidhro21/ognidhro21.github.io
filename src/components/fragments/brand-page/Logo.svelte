@@ -10,7 +10,7 @@
 <div class="mbe64">
 	<h2 class="mbe12">Logo Use Cases</h2>
 	<a href="https://drive.google.com/drive/folders/1hVwpDRTC2UO1HTsN0FS0SPROjlrWvM-P?usp=sharing">
-		<Button mode="primary">Download the logos</Button>
+		<button mode="primary">Download the logos</button>
 	</a>
 </div>
 <OET />

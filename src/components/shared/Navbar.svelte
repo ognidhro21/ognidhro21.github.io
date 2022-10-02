@@ -13,7 +13,7 @@
 		{
 			title: 'Schedules',
 			path: '/schedules',
-			icon: 'calendar'
+			icon: 'event'
 		},
 		{
 			title: 'Courses',
@@ -23,7 +23,7 @@
 		{
 			title: 'Notices',
 			path: '/notices',
-			icon: 'bell',
+			icon: 'notifications',
 			showDot: true
 		}
 	];
@@ -31,134 +31,39 @@
 </script>
 
 <svelte:window bind:scrollY={y} />
-<nav class:sticky={y > 22} class:hide={$page.url.pathname === '/'}>
-	<div class="nav-container">
-		<a href="/">
-			<img src={LOGO} alt="OG21" />
+
+<nav class="m l left">
+	<a href="/">
+		<img src={LOGO} alt="OG21" style="max-width: 100%;" />
+	</a>
+	{#each nav as link}
+		<a href={link.path} class:active={$page.url.pathname === link.path} data-sveltekit-noscroll>
+			<i class:fill={$page.url.pathname === link.path}>{link.icon}</i>
+			<p>{link.title}</p>
+			{#if $DATA.newlyAdded.length > 0 && link.showDot}
+				<div class="dot">
+					<p>.</p>
+				</div>
+			{/if}
 		</a>
-		<div class="links">
-			{#each nav as link}
-				<a href={link.path} class:active={$page.url.pathname === link.path} data-sveltekit-noscroll>
-					<div class="link-container">
-						<Icon name={link.icon} />
-						<p>{link.title}</p>
-					</div>
-					{#if $DATA.newlyAdded.length > 0 && link.showDot}
-						<div class="dot">
-							<p>.</p>
-						</div>
-					{/if}
-				</a>
-			{/each}
-		</div>
-	</div>
+	{/each}
 </nav>
-
-<style>
-	nav {
-		right: 0;
-		left: 0;
-		background-color: var(--agnostic-light-modelight);
-		z-index: 999;
-		overflow: hidden;
-		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-		transition: all 0.2s ease-in-out;
-	}
-	.nav-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		max-width: 1024px;
-		margin: 0 auto;
-		padding: 0 1rem;
-	}
-	.nav-container > div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 1rem;
-	}
-	nav a {
-		display: block;
-		text-decoration: none;
-		transition: all 0.3s ease-in-out;
-		position: relative;
-		color: var(--agnostic-dark-modelight);
-		padding: 0.4rem 0;
-	}
-
-	.active .link-container {
-		border-bottom: 2px solid var(--agnostic-primary);
-		color: var(--agnostic-primary);
-	}
-	.link-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		transition: all 0.3s ease-in-out;
-		cursor: pointer;
-		position: relative;
-	}
-
-	.link-container p {
-		margin: 0;
-		padding: 0;
-	}
-	.dot {
-		position: absolute;
-		right: 1rem;
-		top: 0;
-		width: 1rem;
-		height: 1rem;
-		background-color: var(--agnostic-primary);
-		border-radius: 50%;
-		transition: all 0.3s ease-in-out;
-		color: var(--agnostic-primary);
-	}
-	.dot p {
-		display: none;
-	}
-
-	/* media for tab and bigger */
-	@media (min-width: 1024px) {
-		nav {
-			top: -100%;
-		}
-		.nav-container {
-			justify-content: space-between;
-		}
-		.nav-container a img {
-			height: 3rem;
-		}
-		.sticky {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-		}
-		.sticky + :global(div) {
-			padding-top: 66px;
-		}
-		.hide + :global(div) {
-			margin-top: -66px;
-		}
-	}
-	@media (max-width: 1023px) {
-		nav {
-			bottom: 0;
-			position: fixed;
-			justify-content: center;
-			box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
-		}
-		nav .links {
-			width: 100%;
-			justify-content: center;
-		}
-		.nav-container a img {
-			display: none;
-		}
-	}
-</style>
+<nav class="s bottom">
+	{#each nav as link}
+		<a href={link.path} class:active={$page.url.pathname === link.path} data-sveltekit-noscroll>
+			<i class:fill={$page.url.pathname === link.path}>{link.icon}</i>
+			<p>{link.title}</p>
+			{#if $DATA.newlyAdded.length > 0 && link.showDot}
+				<span class="badge">New</span>
+			{/if}
+		</a>
+	{/each}
+</nav>
+<!-- <header class="responsive fixed primary black-text " id="top-app-bar1">
+	<nav>
+		<p class="max" />
+		<button class="transparent circle"><i>light_mode</i></button>
+		<button class="transparent circle"><i>notifications</i></button>
+		<button class="transparent circle"><i>more_vert</i></button>
+	</nav>
+</header> -->

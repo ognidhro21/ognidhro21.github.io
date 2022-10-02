@@ -5,17 +5,15 @@
 	export let routinesList;
 </script>
 
-<Anim>
-	<div id="panel-1" class="tab-panel" role="tabpanel" {tabindex}>
-		<h2>Classes</h2>
-		{#each routinesList as r, i}
-			<div class="entry">
-				<a href={`/routines/${r.name}`}>
-					<h3>
-						{r.detailedname}
-					</h3>
-				</a>
-			</div>
-		{/each}
-	</div>
-</Anim>
+<div id="panel-1" class="page active" role="tabpanel" {tabindex}>
+	<h3>Classes</h3>
+	{#each routinesList as r, i}
+		<article class="padding">
+			<a href={`/routines/${r.name}`}>
+				<h4>
+					{r.detailedname}
+				</h4>
+			</a>
+		</article>
+	{/each}
+</div>

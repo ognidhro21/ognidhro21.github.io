@@ -6,21 +6,13 @@
 	import Button from '../../../components/shared/Button.svelte';
 </script>
 
-<div class="hero-container">
-	<Container fluid bgColor="transparent">
-		<div class="hero">
-			<img src={logo} alt="" />
-			<a href="/routines/L2S1" class="btn-secondary">
-				<Button>L2S1 Routine</Button>
-			</a>
-		</div>
-	</Container>
-	<Anim>
-		<div class="curve">
-			<img src={BG} alt="" />
-		</div>
-	</Anim>
-</div>
+<Container>
+	<div class="hero">
+		<img src={logo} alt="" />
+		<div class="medium-space" />
+		<a href="/routines/L2S1" class="button primary">L2S1 Routine </a>
+	</div>
+</Container>
 
 <style>
 	.hero-container {

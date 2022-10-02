@@ -1,29 +1,27 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
-	import Icon from './Icon.svelte';
 	const dispatch = createEventDispatcher();
 	export let items = [];
 	export let selected = items[0].name;
 </script>
 
-<div class="tab">
-	<div class="tabbuttons">
-		{#each items as item}
-			<button
-				data-sveltekit-noscroll
-				class:active={selected === item.name}
-				on:click={() => {
-					dispatch('tabChanged', item.name);
-				}}
-			>
-				<Icon name={item.icon} width={18} height={18} />
-				<p>{item.name}</p>
-			</button>
-		{/each}
-	</div>
+<div class="tabs left-align">
+	{#each items as item}
+		<!-- svelte-ignore a11y-missing-attribute -->
+		<a
+			data-sveltekit-noscroll
+			class:active={selected === item.name}
+			on:click={() => {
+				dispatch('tabChanged', item.name);
+			}}
+		>
+			<i>{item.icon}</i>
+			<span>{item.name}</span>
+		</a>
+	{/each}
 </div>
 
-<style>
+<!-- <style>
 	.tabbuttons {
 		max-width: 1024px;
 		height: 100%;
@@ -70,4 +68,4 @@
 		padding: 0.5rem 0.6rem;
 	}
 	/* button has active class and hovering */
-</style>
+</style> -->

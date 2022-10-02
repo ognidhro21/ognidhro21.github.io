@@ -5,22 +5,20 @@
 	import './TabData.css';
 </script>
 
-<Anim>
-	<div id="panel-2" class="tab-panel" role="tabpanel" {tabindex}>
-		<h2>Exams</h2>
+<div id="panel-2" class="page active" role="tabpanel" {tabindex}>
+	<h3>Exams</h3>
 
-		{#each examsList as r, i}
-			<div class="entry">
-				<h3>{r.detailedname}</h3>
-				<div class="flex">
-					<a class="mie24" href={`/exams/theory/final/${r.name}`}>
-						<h4>Final</h4>
-					</a>
-					<a href={`/exams/theory/mid/${r.name}`}>
-						<h4>Mid Term</h4>
-					</a>
-				</div>
-			</div>
-		{/each}
-	</div>
-</Anim>
+	{#each examsList as r, i}
+		<article class="padding ">
+			<h5>{r.detailedname}</h5>
+			<nav class="no-space">
+				<a class="button border left-round" href={`/exams/theory/final/${r.name}`}>
+					<span>Final</span>
+				</a>
+				<a class="button border right-round" href={`/exams/theory/mid/${r.name}`}>
+					<span>Mid</span>
+				</a>
+			</nav>
+		</article>
+	{/each}
+</div>

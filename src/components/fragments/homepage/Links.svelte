@@ -12,13 +12,13 @@
 			details: 'Check out the routine of Ognidhro 21',
 			bgImg: SchedImg
 		},
-		{
-			path: '/brand-guidelines',
-			title: 'Brand Guidelines',
-			details: 'Brand Guidelines of Ognidhro 21',
-			bgImg: Brand,
-			scroll: true
-		},
+		// {
+		// 	path: '/brand-guidelines',
+		// 	title: 'Brand Guidelines',
+		// 	details: 'Brand Guidelines of Ognidhro 21',
+		// 	bgImg: Brand,
+		// 	scroll: true
+		// },
 		{
 			path: 'https://www.facebook.com/ognidhro21/',
 			title: 'Find us on Facebook',
@@ -36,84 +36,35 @@
 </script>
 
 <Container fluid>
-	<div class="cards">
-		{#each links as link}
-			<a href={link.path} class="card" data-sveltekit-noscroll={link.scroll} target={link.target}>
-				<div class="texts">
-					<h3>{link.title}</h3>
-					<p>{link.details}</p>
-					<!-- <Button mode="primary" isRounded>Go!</Button> -->
-				</div>
-				{#if link.bgImg}
-					<img src={link.bgImg} alt="" />
-				{/if}
-			</a>
-		{/each}
-	</div>
+	{#each links as link}
+		<article>
+			<h5>{link.title}</h5>
+			<p>{link.details}</p>
+			<nav>
+				<a
+					class="button border"
+					href={link.path}
+					data-sveltekit-noscroll={link.scroll}
+					target={link.target}>Go!</a
+				>
+			</nav>
+			<img src={link.bgImg} alt="" />
+		</article>
+	{/each}
 </Container>
 
 <style>
-	* {
-		margin: 0;
-	}
-	p {
-		line-height: 1.1;
-		margin-bottom: 1rem;
-	}
-	.cards {
-		display: flex;
-		flex-direction: column;
-		padding: 4rem 0;
-	}
-	.card {
-		width: 100%;
-		height: 100%;
-		background-color: var(--plain);
-		/* border-radius: var(--border-radius); */
-		padding: 2rem 1rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		transition: all 0.3s ease-in-out;
-		z-index: 1;
-		color: var(--agnostic-dark);
+	article {
 		position: relative;
 		overflow: hidden;
-		border-bottom: 1px solid var(--plain-invert);
-	}
-	.card:hover {
-		box-shadow: 0px 0px 45px 14px rgba(141, 38, 38, 0.1);
 		z-index: 2;
-		text-decoration: none;
 	}
-	.card:first-child {
-		border-radius: var(--border-radius) var(--border-radius) 0 0;
-	}
-	.card:last-child {
-		border-radius: 0 0 var(--border-radius) var(--border-radius);
-		border-bottom: none;
-	}
-	.card img {
+	article img {
 		position: absolute;
-		top: 0;
 		right: 0;
-		opacity: 0.1;
-		z-index: 1;
-		transition: all 0.3s ease-in-out;
-		max-width: 50%;
-	}
-
-	.texts {
-		z-index: 2;
-	}
-	/* media for mobile */
-	@media (min-width: 625px) {
-		.card img {
-			opacity: 1;
-		}
-		.card:hover {
-			transform: rotate(1deg) scale(1.1);
-		}
+		top: 0;
+		z-index: -1;
+		max-width: 50vw;
+		opacity: 0.4;
 	}
 </style>

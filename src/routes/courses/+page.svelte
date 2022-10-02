@@ -34,9 +34,8 @@
 						<span>
 							{#each d as k}
 								{#if getCode(k.title) !== 'meeting'}
-									<div class="card">
-										<p>{k.title}</p>
-										<br />
+									<article class="padding">
+										<h5>{k.title}</h5>
 										<!-- wont be added for now -->
 										<!-- <a href={`/courses/${k.id}-${k.title}-theory`}>Theory</a> -->
 										<p>{getFullCode(d[0].id, getCode(k.title), false)}</p>
@@ -44,7 +43,7 @@
 											<!-- <a href={k.title}>Practical</a> -->
 											<p>{getFullCode(d[0].id, getCode(k.title), true)}</p>
 										{/if}
-									</div>
+									</article>
 								{/if}
 							{/each}
 						</span>
@@ -63,10 +62,10 @@
 							<span slot="title" class="title"><h4>{course.name}</h4></span>
 							<span>
 								{#each course.titles as title}
-									<div class="card">
-										<p>{title.id}</p>
+									<article class="padding">
+										<h5>{title.id}</h5>
 										<p>{title.title}</p>
-									</div>
+									</article>
 								{/each}
 							</span>
 						</Accordion>
