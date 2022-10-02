@@ -93,11 +93,7 @@
 				<h6>Ognidhro 21</h6>
 				<div>v3.0.3</div>
 			</div>
-			<button on:click={toggleMenu} class="transparent circle"
-				><i style="font-family: &quot;Material Symbols Outlined&quot;, Bangla507, sans-serif;"
-					>close</i
-				></button
-			>
+			<button on:click={toggleMenu} class="transparent circle"><i>close</i></button>
 		</nav>
 	</header>
 	<a
@@ -108,8 +104,7 @@
 	>
 		<i>light_mode</i><span>Light / Dark</span>
 	</a>
-	<a class="row round" on:click={resetGroup} href="/schedules"
-		><i>palette</i><span>Change Group</span></a
+	<a class="row round" on:click={resetGroup} href="/"><i>upload_file</i><span>Change Group</span></a
 	>
 
 	<div class="small-divider" />
