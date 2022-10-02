@@ -96,6 +96,7 @@
 			<button on:click={toggleMenu} class="transparent circle"><i>close</i></button>
 		</nav>
 	</header>
+	<a class="row round" href="/"><i>home</i><span>Home</span></a>
 	<a
 		class="row round"
 		on:click={() => {
@@ -106,6 +107,5 @@
 	</a>
 	<a class="row round" on:click={resetGroup} href="/"><i>upload_file</i><span>Change Group</span></a
 	>
-
 	<div class="small-divider" />
 </div>
