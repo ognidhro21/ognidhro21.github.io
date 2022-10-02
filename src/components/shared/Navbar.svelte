@@ -97,6 +97,7 @@
 		</nav>
 	</header>
 	<a class="row round" href="/"><i>home</i><span>Home</span></a>
+	<div class="small-divider" />
 	<a
 		class="row round"
 		on:click={() => {
@@ -107,5 +108,4 @@
 	</a>
 	<a class="row round" on:click={resetGroup} href="/"><i>upload_file</i><span>Change Group</span></a
 	>
-	<div class="small-divider" />
 </div>
