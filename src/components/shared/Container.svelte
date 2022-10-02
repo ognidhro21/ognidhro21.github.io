@@ -7,7 +7,7 @@
 </main>
 
 <style>
-	main {
+	main.responsive {
 		padding-top: 24rem;
 	}
 	main.responsive {
