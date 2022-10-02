@@ -34,7 +34,7 @@
 						<span>
 							{#each d as k}
 								{#if getCode(k.title) !== 'meeting'}
-									<article class="padding">
+									<div class="padding">
 										<h5>{k.title}</h5>
 										<!-- wont be added for now -->
 										<!-- <a href={`/courses/${k.id}-${k.title}-theory`}>Theory</a> -->
@@ -43,7 +43,8 @@
 											<!-- <a href={k.title}>Practical</a> -->
 											<p>{getFullCode(d[0].id, getCode(k.title), true)}</p>
 										{/if}
-									</article>
+									</div>
+									<div class="small-divider" />
 								{/if}
 							{/each}
 						</span>
@@ -73,6 +74,7 @@
 				{/each}
 			</Accordions>
 		{/if}
+		<div class="space" />
 	</Tabs>
 </Container>
 
