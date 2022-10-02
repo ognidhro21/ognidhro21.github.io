@@ -1,15 +1,18 @@
 <script>
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import LOGO from '../../images/OG21Nav.png';
 	import DATA from '../../stores/NoticeInfo';
+	import DARK from '../../stores/DarkMode';
+	import GROUP from '../../stores/PersistantInfo';
 	import Icon from './Icon.svelte';
 
 	const nav = [
-		{
-			title: 'Home',
-			path: '/',
-			icon: 'home'
-		},
+		// {
+		// 	title: 'Home',
+		// 	path: '#modal-menu',
+		// 	icon: 'menu'
+		// },
 		{
 			title: 'Schedules',
 			path: '/schedules',
@@ -28,6 +31,19 @@
 		}
 	];
 	let y;
+	let menu = false;
+	function toggleMenu() {
+		menu = !menu;
+	}
+	async function resetGroup() {
+		let info = {
+			section: 1,
+			group: 2,
+			saved: false
+		};
+		$GROUP[0] = info;
+		// goto('/schedules');
+	}
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -35,6 +51,11 @@
 <nav class="m l left">
 	<a href="/">
 		<img src={LOGO} alt="OG21" style="max-width: 100%;" />
+	</a>
+	<!-- svelte-ignore a11y-missing-attribute -->
+	<a on:click={toggleMenu} class="none">
+		<i>menu</i>
+		<p>Menu</p>
 	</a>
 	{#each nav as link}
 		<a href={link.path} class:active={$page.url.pathname === link.path} data-sveltekit-noscroll>
@@ -49,6 +70,10 @@
 	{/each}
 </nav>
 <nav class="s bottom">
+	<a on:click={toggleMenu} class="none">
+		<i>menu</i>
+		<p>Menu</p>
+	</a>
 	{#each nav as link}
 		<a href={link.path} class:active={$page.url.pathname === link.path} data-sveltekit-noscroll>
 			<i class:fill={$page.url.pathname === link.path}>{link.icon}</i>
@@ -59,11 +84,33 @@
 		</a>
 	{/each}
 </nav>
-<!-- <header class="responsive fixed primary black-text " id="top-app-bar1">
-	<nav>
-		<p class="max" />
-		<button class="transparent circle"><i>light_mode</i></button>
-		<button class="transparent circle"><i>notifications</i></button>
-		<button class="transparent circle"><i>more_vert</i></button>
-	</nav>
-</header> -->
+<div class="overlay" class:active={menu} on:click={toggleMenu} />
+<div class="modal left" id="modal-menu" class:active={menu}>
+	<header class="fixed">
+		<nav>
+			<!-- <img src={LOGO} alt="OG21" style="max-width: 100%;" /> -->
+			<div class="max">
+				<h6>Ognidhro 21</h6>
+				<div>v3.0.3</div>
+			</div>
+			<button on:click={toggleMenu} class="transparent circle"
+				><i style="font-family: &quot;Material Symbols Outlined&quot;, Bangla507, sans-serif;"
+					>close</i
+				></button
+			>
+		</nav>
+	</header>
+	<a
+		class="row round"
+		on:click={() => {
+			$DARK = !$DARK;
+		}}
+	>
+		<i>light_mode</i><span>Light / Dark</span>
+	</a>
+	<a class="row round" on:click={resetGroup} href="/schedules"
+		><i>palette</i><span>Change Group</span></a
+	>
+
+	<div class="small-divider" />
+</div>

@@ -10,6 +10,7 @@
 	import '../styles/colors.css';
 	import Navbar from '../components/shared/Navbar.svelte';
 	import DATA from '../stores/NoticeInfo';
+	import dark from '../stores/DarkMode';
 	import { onMount } from 'svelte';
 	import Analytics from '../components/shared/Analytics.svelte';
 
@@ -37,20 +38,23 @@
 </script>
 
 <Analytics />
-<div class="main">
-	<div class="layout">
-		<Navbar />
-		<!-- {#if loading} -->
-		<!-- <Jumper size="60" color="#FF3E00" unit="px" duration="1s" /> -->
-		<!-- {:else} -->
-		<slot />
-		<!-- {/if} -->
+<body class:dark={$dark}>
+	<div class="main">
+		<div class="layout">
+			<Navbar />
+
+			<!-- {#if loading} -->
+			<!-- <Jumper size="60" color="#FF3E00" unit="px" duration="1s" /> -->
+			<!-- {:else} -->
+			<slot />
+			<!-- {/if} -->
+		</div>
 	</div>
-</div>
+</body>
 
 <style>
 	.layout {
-		min-height: 90vh;
+		min-height: 100vh;
 		position: relative;
 		margin-bottom: 4rem;
 	}
