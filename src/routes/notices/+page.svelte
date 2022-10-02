@@ -40,7 +40,6 @@
 
 <SEO title="Notices" />
 <Container>
-	<h3>Notices</h3>
 	{#each data.noticeList as post}
 		<article class="padding">
 			<!-- <img src={post.meta.featuredImg} alt="" /> -->

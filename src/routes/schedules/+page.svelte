@@ -83,7 +83,6 @@
 <Container>
 	{#if saved}
 		<!-- <button mode="primary mb12" isRounded on:click={resetInfo}>Change Default Group</button> -->
-		<div class="medium-space" />
 		<Tabs {items} {selected} on:tabChanged={tabChanged}>
 			<!-- <Tab {items} {selected} on:tabChanged={tabChanged} /> -->
 			{#if selected === 'Classes'}

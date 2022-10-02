@@ -6,8 +6,6 @@
 </script>
 
 <div id="panel-2" class="page active" role="tabpanel" {tabindex}>
-	<h3>Exams</h3>
-
 	{#each examsList as r, i}
 		<article class="padding ">
 			<h5>{r.detailedname}</h5>
