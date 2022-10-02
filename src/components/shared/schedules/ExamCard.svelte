@@ -2,7 +2,6 @@
 	import { fly } from 'svelte/transition';
 	import { aMOrPM } from '$lib/time/date';
 	import { getName, getTitle } from '$lib/courses';
-	import './Card.css';
 </script>
 
 <script>
@@ -16,12 +15,14 @@
 	$: title = getTitle(code, id);
 </script>
 
-<div class="routine-card" class:completed transition:fly>
-	<h4>{name}</h4>
-	<p>{title}</p>
-	<div class="flex flex-row justify-between items-center">
-		<p>{aMOrPM(startTime)} - {aMOrPM(endTime)}</p>
-		<h4>{date}</h4>
+<div class="row" class:completed transition:fly>
+	<div class="max">
+		<h5>{name}</h5>
+		<p>{title}</p>
 	</div>
-	<h2 class="abs">{code}</h2>
+	<div>
+		<p>{aMOrPM(startTime)} - {aMOrPM(endTime)}</p>
+		<h5>{date}</h5>
+	</div>
 </div>
+<div class="medium-divider" />

@@ -26,40 +26,38 @@
 </script>
 
 <SEO title={`Class Test - ${name}`} />
-<Anim>
-	<Container>
-		<h3>
-			{detailedname} Mid Term
-		</h3>
-		<hr />
-		{#if upNext.length > 0}
-			<h4>Up Next ({upNext.length})</h4>
-			{#each upNext as exam (exam.code)}
-				<ExamCard {exam} {startTime} {year} {endTime} />
+<Container>
+	<h4>
+		{detailedname} Mid Term
+	</h4>
+	<div class="large-space" />
+
+	{#if upNext.length > 0}
+		<h4>Up Next ({upNext.length})</h4>
+		<div class="medium-space" />
+		{#each upNext as exam (exam.code)}
+			<ExamCard {exam} {startTime} {year} {endTime} />
+		{/each}
+	{/if}
+	{#if expired.length > 0 && expired.length < exams.length}
+		<h4>Completed ({expired.length})</h4>
+		<div class="medium-space" />
+		<div>
+			{#each expired as exam (exam.code)}
+				<ExamCard {exam} {startTime} {year} {endTime} completed={true} id={name} />
 			{/each}
-		{/if}
-		{#if expired.length > 0 && expired.length < exams.length}
-			<details class="disclose mbs24">
-				<summary class="disclose-title">Completed ({expired.length})</summary>
-				<div class="disclose-panel">
-					{#each expired as exam (exam.code)}
-						<ExamCard {exam} {startTime} {year} {endTime} completed={true} id={name} />
-					{/each}
-				</div>
-			</details>
-		{/if}
-		{#if expired.length === exams.length}
-			<details class="disclose mbs24" open>
-				<summary class="disclose-title">Completed ({expired.length})</summary>
-				<div class="disclose-panel">
-					{#each expired as exam (exam.code)}
-						<ExamCard {exam} {startTime} {year} {endTime} completed={true} id={name} />
-					{/each}
-				</div>
-			</details>
-		{/if}
-	</Container>
-</Anim>
+		</div>
+	{/if}
+	{#if expired.length === exams.length}
+		<h4>Completed ({expired.length})</h4>
+		<div class="medium-space" />
+		<div>
+			{#each expired as exam (exam.code)}
+				<ExamCard {exam} {startTime} {year} {endTime} completed={true} id={name} />
+			{/each}
+		</div>
+	{/if}
+</Container>
 
 <style>
 	.disclose-title {

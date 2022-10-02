@@ -13,11 +13,10 @@
 	$: progressData = isInProgress(day, schedule.start, schedule.end);
 </script>
 
-<article class="row padding">
-	<!-- <i class="light-green-text">check_circle</i> -->
+<div class="row padding">
 	<div class="max">
 		<h6>
-			{name} - {CODE}{#if schedule.practical}<span class="badge round top">PRACTICAL</span>{/if}
+			{name} - {CODE}
 		</h6>
 
 		<h5>{convertTo12(schedule.start)} - {convertTo12(schedule.end)}</h5>
@@ -27,4 +26,11 @@
 		class="progress left"
 		style={`clip-path: polygon(0% 0%, 0% 100%, ${progressData}% 100%, ${progressData}% 0%);`}
 	/>
-</article>
+	{#if schedule.practical}
+		<div class="row">
+			<i class="light-green-text">biotech</i>
+			<span class=" round ">PRACTICAL</span>
+		</div>
+	{/if}
+</div>
+<div class="small-divider" />

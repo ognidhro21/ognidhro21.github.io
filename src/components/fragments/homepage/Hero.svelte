@@ -20,7 +20,7 @@
 		background: linear-gradient(0deg, var(--plain) 25%, var(--agnostic-primary) 25%);
 	}
 	.hero {
-		min-height: 90vh;
+		min-height: 50vh;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
