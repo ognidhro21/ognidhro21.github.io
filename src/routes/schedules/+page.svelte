@@ -14,7 +14,7 @@
 	let items = [
 		{
 			name: 'Classes',
-			icon: 'clock'
+			icon: 'schedule'
 		},
 		{
 			name: 'Exams',
@@ -80,84 +80,43 @@
 </script>
 
 <SEO title={`Schedules`} />
-<Anim>
-	<Container>
-		{#if saved}
-			<Tabs {items} {selected} on:tabChanged={tabChanged}>
-				<!-- <Tab {items} {selected} on:tabChanged={tabChanged} /> -->
-				{#if selected === 'Classes'}
-					<TabClasses {routinesList} />
-				{:else if selected === 'Exams'}
-					<TabExams {examsList} />
-				{:else if selected === 'Events'}
-					<TabEvents />
-				{/if}
-			</Tabs>
-			<Button mode="primary mbs12" isRounded on:click={resetInfo}>Change Default Group</Button>
-		{:else}
-			<div class="save-info flex items-center  self-center mbs12">
-				<div class="img-container">
-					<img src={InfoImg} alt="" />
-				</div>
-				<div class="inputs mbe12">
-					<div class="mbe24">
-						<label for="groups">I am in...</label>
-						<h4 class="m0 mbe12">Section {info.section + 1}</h4>
-						<select name="groups" id="groups" bind:value={selectedGroup} on:change={updateSection}>
-							{#each groups as group, i}
-								<option value={i}>Group {group}</option>
-							{/each}
-						</select>
-					</div>
-					<!-- refresh current page -->
-
-					<!-- <a href="/schedules" target="_self"> -->
-					<Button mode="primary" isRounded on:click={saveInfo}>Submit</Button>
-					<!-- </a> -->
-				</div>
+<Container>
+	{#if saved}
+		<button mode="primary mb12" isRounded on:click={resetInfo}>Change Default Group</button>
+		<div class="medium-space" />
+		<Tabs {items} {selected} on:tabChanged={tabChanged}>
+			<!-- <Tab {items} {selected} on:tabChanged={tabChanged} /> -->
+			{#if selected === 'Classes'}
+				<TabClasses {routinesList} />
+			{:else if selected === 'Exams'}
+				<TabExams {examsList} />
+			{:else if selected === 'Events'}
+				<TabEvents />
+			{/if}
+		</Tabs>
+	{:else}
+		<div class="grid  middle-align">
+			<div class="l6 s12">
+				<img src={InfoImg} alt="" />
 			</div>
-		{/if}
-	</Container>
-</Anim>
+			<div class="inputs l6 s12">
+				<div class="field suffix">
+					<h4>Section {info.section + 1}</h4>
+					<select name="groups" id="groups" bind:value={selectedGroup} on:change={updateSection}>
+						{#each groups as group, i}
+							<option value={i}>Group {group}</option>
+						{/each}
+					</select>
+				</div>
+				<div class="large-space" />
+				<button on:click={saveInfo}>Submit</button>
+			</div>
+		</div>
+	{/if}
+</Container>
 
 <style>
-	.tabs {
-		background-color: var(--plain);
-		padding: 1rem;
-		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-		min-height: 70vh;
-		border-radius: 1rem;
-	}
-	.save-info {
-		border-radius: 1rem;
-		background-color: var(--plain);
-		padding: 1rem;
-		gap: 1rem;
-		min-height: 80vh;
-		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-		justify-content: space-between;
-	}
-	.inputs {
-		min-width: 50%;
-	}
-	.inputs label {
-		display: block;
-		margin-bottom: 0.5rem;
-		font-weight: bold;
-		text-transform: uppercase;
-		font-size: 140%;
-	}
-	.save-info img {
+	img {
 		width: 100%;
-	}
-	/* media for mobile */
-	@media (max-width: 475px) {
-		.inputs {
-			min-width: 100%;
-		}
-		.save-info {
-			flex-direction: column;
-			justify-content: end;
-		}
 	}
 </style>

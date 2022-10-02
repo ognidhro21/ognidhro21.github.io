@@ -7,15 +7,17 @@
 <Container>
 	<h1 class="mbs24">{data.title}</h1>
 	<img src={data.featuredImg} alt="" />
-	<section class="post">
+	<article class="post">
 		{@html data.content}
-	</section>
+	</article>
 </Container>
 
 <style>
-	.post {
-		margin-bottom: 2rem;
-		padding: 1rem;
-		background-color: var(--plain);
+	img {
+		max-width: 100%;
+	}
+	ul,
+	ol {
+		list-style: none;
 	}
 </style>

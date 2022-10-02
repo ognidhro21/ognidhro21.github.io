@@ -50,49 +50,52 @@
 </script>
 
 <SEO title={`Routine - ${name}`} />
-<Anim>
-	<Container fluid>
-		<AddToHome />
-		<div class="header mbe24">
-			<div class="flex-fix flex justify-between  mbe12 content-center">
-				<h2 class="m0">{detailedname}</h2>
-			</div>
-			<div class="inputs flex">
-				<div>
+<Container fluid>
+	<AddToHome />
+	<div class="header mbe24">
+		<div class="flex-fix flex justify-between  mbe12 content-center">
+			<h4 class="m0">{detailedname}</h4>
+		</div>
+		<div class="grid">
+			<div class="s4 l4">
+				<div class="field suffix">
 					<label for="sections">Section</label>
 					<select name="sections" id="sections" bind:value={section}>
 						{#each sections as section, i}
 							<option value={i}>{i + 1}</option>
 						{/each}
 					</select>
+					<i>arrow_drop_down</i>
 				</div>
-				<div>
+			</div>
+			<div class="s3 l4">
+				<div class="field suffix">
 					<label for="groups">Group</label>
 					<select name="groups" id="groups" bind:value={group}>
 						{#each sections[section].groups as group, i}
 							<option value={i}>{group.name}</option>
 						{/each}
 					</select>
+					<i>arrow_drop_down</i>
 				</div>
-
-				<div>
+			</div>
+			<div class="s5 l4">
+				<div class="field suffix">
 					<label for="sections">Day</label>
 					<select name="days" id="days" bind:value={day}>
 						{#each sections[section].groups[group].days as day, i}
 							<option value={i}>{day.name}</option>
 						{/each}
 					</select>
+					<i>arrow_drop_down</i>
 				</div>
 			</div>
 		</div>
-		<!-- <h3 class="mbe0">{sections[section].groups[group].days[day].name}</h3> -->
-	</Container>
-	<Container fluid>
 		{#each infos as schedule}
 			<RoutineCard {schedule} id={name} {day} />
 		{/each}
-	</Container>
-</Anim>
+	</div>
+</Container>
 
 <style>
 	.header {

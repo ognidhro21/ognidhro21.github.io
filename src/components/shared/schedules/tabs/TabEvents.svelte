@@ -5,7 +5,7 @@
 </script>
 
 <Anim>
-	<div id="panel-3" class="tab-panel" role="tabpanel" {tabindex}>
+	<div id="panel-3" class="page padding active" role="tabpanel" {tabindex}>
 		<h3>Events will be displayed here.</h3>
 	</div>
 </Anim>
