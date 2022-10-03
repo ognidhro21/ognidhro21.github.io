@@ -10,7 +10,7 @@
 	<div class="hero">
 		<img src={logo} alt="" />
 		<div class="medium-space" />
-		<a href="/routines/L2S1" class="button primary">L2S1 Routine </a>
+		<a href="/routines/L2S1" class="button primary small-elevate">L2S1 Routine </a>
 	</div>
 </Container>
 
