@@ -1,12 +1,8 @@
 <script>
+	import 'beercss';
 	import NProgress from 'nprogress';
 	import { navigating } from '$app/stores';
-	// import '../styles/css/common.min.css';
-	// import '../styles/css/opinions.min.css';
-	// import '../styles/agnostic-overrides.css';
-	// import '../styles/material-type.css';
-	// import '../styles/select.css';
-	import '../styles/beercss/beer.min.css';
+	// import '../styles/beercss/beer.min.css';
 	import '../styles/colors.css';
 	import Navbar from '../components/shared/Navbar.svelte';
 	import DATA from '../stores/NoticeInfo';

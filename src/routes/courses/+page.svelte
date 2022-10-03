@@ -44,7 +44,7 @@
 											<p>{getFullCode(d[0].id, getCode(k.title), true)}</p>
 										{/if}
 									</div>
-									<div class="small-divider" />
+									<!-- <div class="small-divider" /> -->
 								{/if}
 							{/each}
 						</span>
@@ -63,10 +63,10 @@
 							<span slot="title" class="title"><h4>{course.name}</h4></span>
 							<span>
 								{#each course.titles as title}
-									<article class="padding">
+									<div class="padding">
 										<h5>{title.id}</h5>
 										<p>{title.title}</p>
-									</article>
+									</div>
 								{/each}
 							</span>
 						</Accordion>

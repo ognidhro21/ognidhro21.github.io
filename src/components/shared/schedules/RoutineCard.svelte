@@ -18,7 +18,6 @@
 		<h6>
 			{name} - {CODE}
 		</h6>
-
 		<h5>{convertTo12(schedule.start)} - {convertTo12(schedule.end)}</h5>
 		<p>{title}</p>
 	</div>
@@ -28,9 +27,16 @@
 	/>
 	{#if schedule.practical}
 		<div class="row">
-			<i class="light-green-text">biotech</i>
-			<span class=" round ">PRACTICAL</span>
+			<i class="error-text large">biotech</i>
+			<!-- <span class="error round small-padding">PRACTICAL</span> -->
 		</div>
 	{/if}
 </div>
-<div class="small-divider" />
+<!-- <div class="space" /> -->
+
+<!-- <div class="small-divider" /> -->
+<style>
+	.max > * {
+		margin-bottom: 4rem;
+	}
+</style>

@@ -5,7 +5,7 @@
 	import './TabData.css';
 </script>
 
-<div id="panel-2" class="page active" role="tabpanel" {tabindex}>
+<div id="panel-2" class="page active left" role="tabpanel" {tabindex}>
 	{#each examsList as r, i}
 		<article class="padding ">
 			<h5>{r.detailedname}</h5>

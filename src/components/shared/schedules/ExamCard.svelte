@@ -21,8 +21,8 @@
 		<p>{title}</p>
 	</div>
 	<div>
-		<p>{aMOrPM(startTime)} - {aMOrPM(endTime)}</p>
-		<h5>{date}</h5>
+		<p class="right-align">{aMOrPM(startTime)} - {aMOrPM(endTime)}</p>
+		<h5 class="right-align">{date}</h5>
 	</div>
 </div>
-<div class="medium-divider" />
+<div class="medium-space" />
