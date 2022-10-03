@@ -37,16 +37,13 @@
 		day = dayIndex;
 	}
 	$: infos = sections[section].groups[group].days[day].schedules;
-	onMount(() => {
+	$: {
 		setDay();
 		if ($DATA[0].saved === true) {
 			section = $DATA[0].section;
 			group = $DATA[0].group;
-		} else {
-			// preferred grp isnot set so forcefully redirects to schedules page
-			goto('/schedules');
 		}
-	});
+	}
 </script>
 
 <SEO title={`Routine - ${name}`} />
