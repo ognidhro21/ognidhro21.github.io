@@ -113,7 +113,7 @@
 	{/each}
 </nav>
 <div class="overlay" />
-<div class="modal " id="modal-menu">
+<div class="modal left " id="modal-menu">
 	<header class="fixed">
 		<nav>
 			<!-- <img src={LOGO} alt="OG21" style="max-width: 100%;" /> -->
@@ -124,7 +124,7 @@
 			<button data-ui="#modal-menu" class="transparent circle"><i>close</i></button>
 		</nav>
 	</header>
-	<a class="row round" href="/"><i>home</i><span>Home</span></a>
+	<a class="row round" href="/" data-ui="#modal-menu"><i>home</i><span>Home</span></a>
 	<div class="small-divider" />
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a
@@ -162,7 +162,6 @@
 			</select>
 			<i>arrow_drop_down</i>
 		</div>
-		<div class="large-space" />
 		<button on:click={saveInfo} data-ui="#modal-reset-grp">Submit</button>
 	</div>
 </div>
