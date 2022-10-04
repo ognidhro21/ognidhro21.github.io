@@ -5,6 +5,7 @@
 	export let schedule;
 	export let id;
 	export let day;
+
 	$: practical = schedule.practical;
 	$: CODE = getFullCode(id, schedule.code, schedule.practical);
 	$: name = getName(schedule.code);
@@ -20,10 +21,12 @@
 		<h5>{convertTo12(schedule.start)} - {convertTo12(schedule.end)}</h5>
 		<p>{title}</p>
 	</div>
-	<div
-		class="progress left"
-		style={`clip-path: polygon(0% 0%, 0% 100%, ${progressData}% 100%, ${progressData}% 0%);`}
-	/>
+	{#if progressData !== -1}
+		<div
+			class="progress left"
+			style={`clip-path: polygon(0% 0%, 0% 100%, ${progressData}% 100%,  ${progressData}% 0%);`}
+		/>
+	{/if}
 	{#if schedule.practical}
 		<div class="row">
 			<i class="error-text large">biotech</i>

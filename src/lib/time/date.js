@@ -43,10 +43,10 @@ function checkIfDateOver(year, date, time) {
 	return false;
 }
 function checkIsInProgress(day, startTime, endTime) {
-	// if today is note the day from input, return
+	// if today is not the day from input, return
 	var currentDate = new Date();
 	var inProgress = false;
-	if (currentDate.getDay() != day) {
+	if (currentDate.getDay() !== day) {
 		return -1;
 	}
 	var date = currentDate.getDate();
@@ -60,13 +60,11 @@ function checkIsInProgress(day, startTime, endTime) {
 	var startDate = new Date(start);
 	var endDate = new Date(end);
 	if (currentDate - startDate > 0 && currentDate - endDate < 0) {
-		inProgress = true;
 		var progress = ((currentDate - startDate) / (endDate - startDate)) * 100;
 		return progress;
 	}
 	return -1;
 }
-
 export {
 	convertToAMOrPM as aMOrPM,
 	checkIfDateOver as isCompleted,
