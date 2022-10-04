@@ -1,13 +1,10 @@
 <script>
-	import { onMount } from 'svelte';
-	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import LOGO from '../../images/OG21Nav.png';
 	import DATA from '../../stores/NoticeInfo';
 	import DARK from '../../stores/DarkMode';
 	import GROUP from '../../stores/PersistantInfo';
-	import Icon from './Icon.svelte';
-
+	import website from '../../lib/config/website';
 	const nav = [
 		// {
 		// 	title: 'Home',
@@ -117,9 +114,9 @@
 	<header class="fixed">
 		<nav>
 			<!-- <img src={LOGO} alt="OG21" style="max-width: 100%;" /> -->
-			<div class="max">
-				<h6>Ognidhro 21</h6>
-				<div>v3.0.3</div>
+			<div class="max row">
+				<h6 class="max">Ognidhro 21</h6>
+				<div>v{website.version}</div>
 			</div>
 		</nav>
 	</header>
