@@ -1,5 +1,4 @@
 <script>
-	import { fly } from 'svelte/transition';
 	import { getName, getTitle, getFullCode } from '$lib/courses';
 	import { isInProgress, convertTo12 } from '$lib/time/date';
 
