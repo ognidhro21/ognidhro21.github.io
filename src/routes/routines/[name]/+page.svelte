@@ -3,9 +3,9 @@
 	import Container from '../../../components/shared/Container.svelte';
 	import RoutineCard from '../../../components/shared/schedules/RoutineCard.svelte';
 	import SEO from '../../../components/shared/SEO/index.svelte';
-	import Anim from '../../../components/shared/Anim.svelte';
 	import DATA from '../../../stores/PersistantInfo';
 	import AddToHome from '../../../components/shared/AddToHome.svelte';
+
 	export let data;
 	const routine = data.routine;
 	const { name, detailedname, sections } = routine;
@@ -16,7 +16,7 @@
 
 	function setDay() {
 		// set next day as default if current time is greater than 5 pm
-		var dayIndex;
+		let dayIndex;
 		const d = new Date();
 		const today = d.getDay();
 		const hour = d.getHours();
@@ -35,7 +35,6 @@
 		}
 		day = dayIndex;
 	}
-	$: infos = sections[section].groups[group].days[day].schedules;
 	onMount(() => {
 		setDay();
 		if ($DATA[0].saved === true) {
@@ -43,6 +42,7 @@
 			group = $DATA[0].group;
 		}
 	});
+	$: infos = sections[section].groups[group].days[day].schedules;
 </script>
 
 <SEO title={`Routine - ${name}`} />
@@ -58,6 +58,7 @@
 							<option value={i}>{i + 1}</option>
 						{/each}
 					</select>
+					<!-- svelte-ignore a11y-label-has-associated-control -->
 					<label class="active">Section</label>
 					<i>arrow_drop_down</i>
 				</div>
@@ -69,6 +70,8 @@
 							<option value={i}>{group.name}</option>
 						{/each}
 					</select>
+					<!-- svelte-ignore a11y-label-has-associated-control -->
+
 					<label class="active">Group</label>
 					<i>arrow_drop_down</i>
 				</div>
@@ -80,6 +83,8 @@
 							<option value={i}>{day.name}</option>
 						{/each}
 					</select>
+					<!-- svelte-ignore a11y-label-has-associated-control -->
+
 					<label class="active">Day</label>
 					<i>arrow_drop_down</i>
 				</div>
