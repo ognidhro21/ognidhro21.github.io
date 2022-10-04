@@ -51,7 +51,7 @@
 	<article class="header small-elevate page active left">
 		<h4>{detailedname}</h4>
 		<div class="grid">
-			<div class="s3 l4">
+			<div class="s4 l4">
 				<div class="field label suffix">
 					<select name="sections" id="sections" bind:value={section}>
 						{#each sections as section, i}
@@ -71,16 +71,15 @@
 						{/each}
 					</select>
 					<!-- svelte-ignore a11y-label-has-associated-control -->
-
 					<label class="active">Group</label>
 					<i>arrow_drop_down</i>
 				</div>
 			</div>
-			<div class="s5 l4">
+			<div class="s4 l4">
 				<div class="field label suffix">
 					<select name="days" id="days" bind:value={day}>
 						{#each sections[section].groups[group].days as day, i}
-							<option value={i}>{day.name}</option>
+							<option value={i}>{day.name.substring(0, 3)}</option>
 						{/each}
 					</select>
 					<!-- svelte-ignore a11y-label-has-associated-control -->
