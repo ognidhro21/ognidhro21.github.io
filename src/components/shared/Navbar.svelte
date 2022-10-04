@@ -113,7 +113,7 @@
 	{/each}
 </nav>
 <div class="overlay" />
-<div class="modal left " id="modal-menu">
+<div class="modal bottom" id="modal-menu">
 	<header class="fixed">
 		<nav>
 			<!-- <img src={LOGO} alt="OG21" style="max-width: 100%;" /> -->
@@ -121,7 +121,6 @@
 				<h6>Ognidhro 21</h6>
 				<div>v3.0.3</div>
 			</div>
-			<button data-ui="#modal-menu" class="transparent circle"><i>close</i></button>
 		</nav>
 	</header>
 	<a class="row round" href="/" data-ui="#modal-menu"><i>home</i><span>Home</span></a>

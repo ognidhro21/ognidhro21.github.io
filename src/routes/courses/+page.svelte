@@ -77,32 +77,3 @@
 		<div class="space" />
 	</Tabs>
 </Container>
-
-<style>
-	.card {
-		border-bottom: 1px solid var(--plain-invert);
-		padding: 1rem;
-	}
-
-	.card p {
-		margin: 0;
-	}
-	.card p {
-		display: inline;
-		margin-right: 1rem;
-		font-weight: 300;
-	}
-	.card p:first-child {
-		font-weight: bold;
-	}
-	.card p:last-child {
-		margin-right: 0;
-	}
-	.card a {
-		margin-right: 1rem;
-	}
-
-	span h4 {
-		margin: 0;
-	}
-</style>
