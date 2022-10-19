@@ -36,7 +36,7 @@
 		<h4>Up Next ({upNext.length})</h4>
 		<div class="medium-space" />
 		{#each upNext as exam (exam.code)}
-			<ExamCard {exam} {startTime} {year} {endTime} />
+			<ExamCard {exam} {startTime} {year} {endTime} id={name} />
 		{/each}
 	{/if}
 	{#if expired.length > 0 && expired.length < exams.length}

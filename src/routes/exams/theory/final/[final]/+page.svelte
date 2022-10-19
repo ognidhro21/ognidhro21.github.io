@@ -12,18 +12,20 @@
 
 	const { name, detailedname, schedules } = json;
 	const { final } = schedules;
-	const { startTime, year, exams } = final;
+	const { startTime, year, exams, message } = final;
 	let expired = [];
 	let upNext = [];
 
-	exams.forEach((e) => {
-		const isExpired = isCompleted(year, e.date, startTime + e.credit);
-		if (isExpired) {
-			expired = [...expired, e];
-		} else {
-			upNext = [...upNext, e];
-		}
-	});
+	if (!exams.message) {
+		exams.forEach((e) => {
+			const isExpired = isCompleted(year, e.date, startTime + e.credit);
+			if (isExpired) {
+				expired = [...expired, e];
+			} else {
+				upNext = [...upNext, e];
+			}
+		});
+	}
 </script>
 
 <SEO title={`Final - ${name}`} />
@@ -32,45 +34,48 @@
 		{detailedname} Final
 	</h4>
 	<div class="large-space" />
-
-	{#if upNext.length > 0}
-		<h4>Up Next ({upNext.length})</h4>
-		<div class="medium-space" />
-		{#each upNext as exam (exam.code)}
-			<ExamCard {exam} {startTime} endTime={exam.credit + startTime} {year} />
-		{/each}
-	{/if}
-	{#if expired.length > 0 && expired.length < exams.length}
-		<h4>Completed ({expired.length})</h4>
-		<div class="medium-space" />
-		<div>
-			{#each expired as exam (exam.code)}
-				<ExamCard
-					{exam}
-					{startTime}
-					endTime={exam.credit + startTime}
-					{year}
-					completed={true}
-					id={name}
-				/>
+	{#if message}
+		<h2>{message}</h2>
+	{:else}
+		{#if upNext.length > 0}
+			<h4>Up Next ({upNext.length})</h4>
+			<div class="medium-space" />
+			{#each upNext as exam (exam.code)}
+				<ExamCard {exam} {startTime} endTime={exam.credit + startTime} {year} />
 			{/each}
-		</div>
-	{/if}
-	{#if expired.length === exams.length}
-		<h4>Completed ({expired.length})</h4>
-		<div class="medium-space" />
-		<div class="disclose-panel">
-			{#each expired as exam (exam.code)}
-				<ExamCard
-					{exam}
-					{startTime}
-					endTime={exam.credit + startTime}
-					{year}
-					completed={true}
-					id={name}
-				/>
-			{/each}
-		</div>
+		{/if}
+		{#if expired.length > 0 && expired.length < exams.length}
+			<h4>Completed ({expired.length})</h4>
+			<div class="medium-space" />
+			<div>
+				{#each expired as exam (exam.code)}
+					<ExamCard
+						{exam}
+						{startTime}
+						endTime={exam.credit + startTime}
+						{year}
+						completed={true}
+						id={name}
+					/>
+				{/each}
+			</div>
+		{/if}
+		{#if expired.length === exams.length}
+			<h4>Completed ({expired.length})</h4>
+			<div class="medium-space" />
+			<div class="disclose-panel">
+				{#each expired as exam (exam.code)}
+					<ExamCard
+						{exam}
+						{startTime}
+						endTime={exam.credit + startTime}
+						{year}
+						completed={true}
+						id={name}
+					/>
+				{/each}
+			</div>
+		{/if}
 	{/if}
 </Container>
 

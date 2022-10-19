@@ -7,7 +7,16 @@
 		<div class="medium-space" />
 		<img src={logo} alt="" />
 		<div class="medium-space" />
-		<a href="/routines/L2S1" class="button primary small-elevate">L2S1 Routine </a>
+
+		<nav class="no-space">
+			<div class="small-padding border left-round">
+				<span>L2S1</span>
+			</div>
+			<a href="/exams/theory/mid/L2S1" class="button primary small-elevate no-round"
+				>Mid Schedules
+			</a>
+			<a href="/routines/L2S1" class="button border primary-border right-round">Class Routine </a>
+		</nav>
 	</div>
 </div>
 

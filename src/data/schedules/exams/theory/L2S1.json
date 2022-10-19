@@ -1,0 +1,53 @@
+{
+    "name": "L2S1",
+    "detailedname": "Level 2 Semester 1",
+    "schedules": {
+        "mid": {
+            "startTime": 12,
+            "endTime": 13,
+            "year": "2022",
+            "exams": [
+                {
+                    "code": "STT",
+                    "date": "20 Oct"
+                },
+                {
+                    "code": "ENT",
+                    "date": "23 Oct"
+                },
+                {
+                    "code": "BCM",
+                    "date": "25 Oct"
+                },
+                {
+                    "code": "AGR",
+                    "date": "26 Oct"
+                },
+                {
+                    "code": "AGB",
+                    "date": "30 Oct"
+                },
+                {
+                    "code": "PLP",
+                    "date": "31 Oct"
+                },
+                {
+                    "code": "ARD",
+                    "date": "01 Nov"
+                }
+            ]
+        },
+        "final": {
+            "message": "Not implemented yet!",
+            "startTime": 10,
+            "year": "2022",
+            "exams": [
+                {
+                    "code": "ACM",
+                    "date": "30 Jun",
+                    "credit": 2
+                }
+            ]
+        }
+    }
+}

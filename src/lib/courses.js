@@ -220,3 +220,5 @@ export {
 	getCourseCode as getCode,
 	getFullCourseCode as getFullCode
 };
+
+console.log(getCourseTitle('STT', 'L2S1'));

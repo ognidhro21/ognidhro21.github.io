@@ -6,7 +6,7 @@
 
 <script>
 	export let exam;
-	const { code, date } = exam;
+	let { code, date } = exam;
 	export let startTime;
 	export let endTime;
 	export let completed = false;
