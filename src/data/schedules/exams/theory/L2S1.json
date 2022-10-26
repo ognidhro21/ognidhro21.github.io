@@ -25,7 +25,9 @@
                 },
                 {
                     "code": "ARD",
-                    "date": "27 Nov"
+                    "date": "27 Nov",
+                    "overrideTime": "10:30",
+                    "overrideEndTime": "11:30"
                 },
                 {
                     "code": "AGB",

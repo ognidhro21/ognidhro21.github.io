@@ -21,7 +21,11 @@
 		<p>{title}</p>
 	</div>
 	<div>
-		<p class="right-align">{aMOrPM(startTime)} - {aMOrPM(endTime)}</p>
+		{#if exam.overrideTime}
+			<p class="right-align">{aMOrPM(exam.overrideTime)} - {aMOrPM(exam.overrideEndTime)}</p>
+		{:else}
+			<p class="right-align">{aMOrPM(startTime)} - {aMOrPM(endTime)}</p>
+		{/if}
 		<h5 class="right-align">{date}</h5>
 	</div>
 </div>
