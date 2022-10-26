@@ -38,9 +38,7 @@
 	<div class="main">
 		<div class="layout">
 			<Navbar />
-			<div class="mt">
-				<slot />
-			</div>
+			<slot />
 		</div>
 	</div>
 </body>
@@ -50,8 +48,5 @@
 		min-height: 100vh;
 		position: relative;
 		margin-bottom: 4rem;
-	}
-	.mt {
-		margin-top: 128rem;
 	}
 </style>

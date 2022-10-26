@@ -17,20 +17,21 @@
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",
+		"beercss": "^2.2.11",
 		"eslint": "^8.21.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"feather-icons": "^4.29.0",
 		"gh-pages": "^4.0.0",
+		"marked": "^4.0.18",
+		"mdsvex": "^0.10.6",
 		"nprogress": "^0.2.0",
 		"prettier": "^2.7.1",
 		"prettier-plugin-svelte": "^2.7.0",
+		"sharp": "^0.30.7",
 		"svelte": "latest",
-		"vite": "latest",
-		"beercss": "^2.2.11",
-		"feather-icons": "^4.29.0",
-		"marked": "^4.0.18",
-		"mdsvex": "^0.10.6",
-		"sharp": "^0.30.7"
+		"svelte-vertical-timeline": "^0.0.2",
+		"vite": "latest"
 	},
 	"type": "module"
 }
