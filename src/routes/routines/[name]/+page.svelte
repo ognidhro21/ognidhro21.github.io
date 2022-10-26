@@ -93,3 +93,9 @@
 		<RoutineCard {schedule} id={name} {day} />
 	{/each}
 </Container>
+
+<style>
+	.header {
+		margin-bottom: 16rem;
+	}
+</style>

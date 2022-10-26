@@ -29,4 +29,11 @@
 		<h5 class="right-align">{date}</h5>
 	</div>
 </div>
-<div class="medium-space" />
+<!-- <div class="medium-space" /> -->
+<div class="large-divider" />
+
+<style>
+	.row {
+		border-radius: 4rem;
+	}
+</style>

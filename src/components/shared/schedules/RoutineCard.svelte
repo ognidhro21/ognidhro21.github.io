@@ -13,7 +13,7 @@
 	$: progressData = isInProgress(day, schedule.start, schedule.end);
 </script>
 
-<div class="row padding" class:primary-container={practical}>
+<div class="row padding " class:primary-container={practical}>
 	<div class="max">
 		<h6>
 			{name} - {CODE}
@@ -38,6 +38,11 @@
 
 <!-- <div class="small-divider" /> -->
 <style>
+	.row {
+		border-bottom: 1px grey solid;
+		margin-top: 0;
+		border-radius: 4rem;
+	}
 	.max > * {
 		margin-bottom: 4rem;
 	}
