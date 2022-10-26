@@ -38,12 +38,9 @@
 	<div class="main">
 		<div class="layout">
 			<Navbar />
-
-			<!-- {#if loading} -->
-			<!-- <Jumper size="60" color="#FF3E00" unit="px" duration="1s" /> -->
-			<!-- {:else} -->
-			<slot />
-			<!-- {/if} -->
+			<div class="mt">
+				<slot />
+			</div>
 		</div>
 	</div>
 </body>
@@ -53,5 +50,8 @@
 		min-height: 100vh;
 		position: relative;
 		margin-bottom: 4rem;
+	}
+	.mt {
+		margin-top: 128rem;
 	}
 </style>
