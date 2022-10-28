@@ -1,0 +1,35 @@
+---
+layout: material
+title: Short note about Compositae
+course: AGB
+---
+
+**Habit:** Herbs and shrubs
+
+**Leaves:** Simples, alternate or opposite, rarely compound
+
+**Flowers:** Are two of kinds, central ones -> disc floret; marginal ones -> ray floret
+
+##### Disc florets
+
+*Regular, tubular, bi-sexual,* epigynous. 
+
+**Calyx:** often modified in a cluster of hair called *pappus* or in scale.
+
+**Corolla:** Petals (5), gamopetalous, *tubular*.
+
+**Androecium:** Stamens (5), epipetalous, syngenesious.
+
+**Gynoecium:** Carpels (2), syncarpous, ovary inferior.
+
+##### Ray florets
+
+*Zygomorphic, uni-sexual, ligulate*, epigynous. 
+
+**Calyx:** usually modified in a cluster of hair called *pappus* or in scale.
+
+**Corolla:** Petals (5), gamopetalous, *ligulate*.
+
+**Androecium:** Stamens (5), epipetalous, syngenesious.
+
+**Gynoecium:** Carpels (2), syncarpous, ovary inferior.

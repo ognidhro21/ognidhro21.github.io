@@ -3,7 +3,9 @@
 </script>
 
 <main class="responsive">
-	<a href="/materials">Go back</a>
-	<h5>{title}</h5>
+	<a href="/materials" class="button no-margin border secondary-border">Go back</a>
+	<div class="small-space" />
+	<h4>{title}</h4>
+	<div class="medium-space" />
 	<slot />
 </main>
