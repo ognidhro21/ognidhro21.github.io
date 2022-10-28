@@ -4,7 +4,7 @@
 
 <main class="responsive">
 	<a href="/materials">Go back</a>
-	<h3>{title}</h3>
+	<h5>{title}</h5>
 	<article>
 		<slot />
 	</article>
