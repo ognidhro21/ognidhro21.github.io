@@ -8,7 +8,11 @@ const config = {
 	},
 	preprocess: [
 		mdsvex({
-			extensions: ['.md','.svx']
+			extensions: ['.md', '.svx'],
+			layout: {
+				material: 'src/templates/material.svelte',
+				_: 'src/templates/default.svelte'
+			}
 		})
 	]
 };

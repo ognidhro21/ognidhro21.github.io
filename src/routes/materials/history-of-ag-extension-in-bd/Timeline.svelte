@@ -94,31 +94,28 @@
 	];
 </script>
 
-<main class="responsive">
-	<h4>Historical Background of Agricultural Extension in Bangladesh</h4>
-	<Timeline position="alternate">
-		{#each options as option}
-			<TimelineItem>
-				<TimelineOppositeContent slot="opposite-content">
-					<h5 class="primary-text">{option.time}</h5>
-				</TimelineOppositeContent>
-				<TimelineSeparator>
-					<TimelineDot />
-					<TimelineConnector />
-				</TimelineSeparator>
-				<TimelineContent>
-					<h6>{option.title}</h6>
-					{#if option.description}
-						<p>{option.description}</p>
-					{/if}
-				</TimelineContent>
-			</TimelineItem>
-		{/each}
-	</Timeline>
-	<article>
-		<p>Composed from sheets of Badhon Mam ❤️</p>
-	</article>
-</main>
+<Timeline position="alternate">
+	{#each options as option}
+		<TimelineItem>
+			<TimelineOppositeContent slot="opposite-content">
+				<h5 class="primary-text">{option.time}</h5>
+			</TimelineOppositeContent>
+			<TimelineSeparator>
+				<TimelineDot />
+				<TimelineConnector />
+			</TimelineSeparator>
+			<TimelineContent>
+				<h6>{option.title}</h6>
+				{#if option.description}
+					<p>{option.description}</p>
+				{/if}
+			</TimelineContent>
+		</TimelineItem>
+	{/each}
+</Timeline>
+<article>
+	<p>Composed from sheets of Badhon Mam ❤️</p>
+</article>
 
 <style>
 	h5,

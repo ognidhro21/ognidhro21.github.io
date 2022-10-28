@@ -22,10 +22,9 @@
 			icon: 'info'
 		},
 		{
-			title: 'Notices',
-			path: '/notices',
-			icon: 'notifications',
-			showDot: true
+			title: 'Materials',
+			path: '/materials',
+			icon: 'collections_bookmark'
 		}
 	];
 	let y;
@@ -85,11 +84,6 @@
 		<a href={link.path} class:active={$page.url.pathname === link.path} data-sveltekit-noscroll>
 			<i class:fill={$page.url.pathname === link.path}>{link.icon}</i>
 			<p>{link.title}</p>
-			{#if $DATA.newlyAdded.length > 0 && link.showDot}
-				<div class="dot">
-					<p>.</p>
-				</div>
-			{/if}
 		</a>
 	{/each}
 </nav>
@@ -103,9 +97,6 @@
 		<a href={link.path} class:active={$page.url.pathname === link.path} data-sveltekit-noscroll>
 			<i class:fill={$page.url.pathname === link.path}>{link.icon}</i>
 			<p>{link.title}</p>
-			{#if $DATA.newlyAdded.length > 0 && link.showDot}
-				<span class="badge">New</span>
-			{/if}
 		</a>
 	{/each}
 </nav>
@@ -121,6 +112,9 @@
 		</nav>
 	</header>
 	<a class="row round" href="/" data-ui="#modal-menu"><i>home</i><span>Home</span></a>
+	<a class="row round" href="/notices" data-ui="#modal-menu"
+		><i>notifications</i><span>Notices</span></a
+	>
 	<div class="small-divider" />
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a

@@ -35,11 +35,11 @@
 
 <Analytics />
 <body class:dark={$dark}>
-	<div class="main">
-		<div class="layout">
-			<Navbar />
-			<slot />
-		</div>
+	<div class="layout">
+		<Navbar />
+		<div class="large-space" />
+		<div class="large-space" />
+		<slot />
 	</div>
 </body>
 
