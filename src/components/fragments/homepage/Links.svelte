@@ -1,16 +1,12 @@
 <script>
 	import Button from '../../shared/Button.svelte';
 	import Container from '../../shared/Container.svelte';
-	import SchedImg from '../../../images/well_done_undraw.svg';
-	import FBImg from '../../../images/social_undraw.svg';
-	import Brand from '../../../images/brand_guide_undraw.svg';
 
 	const links = [
 		{
 			path: '/schedules',
 			title: 'Schedules',
-			details: 'Check out the routine of Ognidhro 21',
-			bgImg: SchedImg
+			details: 'Check out the routine of Ognidhro 21'
 		},
 		// {
 		// 	path: '/brand-guidelines',
@@ -23,7 +19,6 @@
 			path: 'https://www.facebook.com/ognidhro21/',
 			title: 'Find us on Facebook',
 			details: 'Like us on Facebook to keep up with the updates!',
-			bgImg: FBImg,
 			target: '_blank'
 		},
 		{
@@ -48,7 +43,6 @@
 					target={link.target}>Go!</a
 				>
 			</nav>
-			<img src={link.bgImg} alt="" />
 		</article>
 	{/each}
 </Container>
@@ -58,13 +52,5 @@
 		position: relative;
 		overflow: hidden;
 		z-index: 2;
-	}
-	article img {
-		position: absolute;
-		right: 0;
-		top: 0;
-		z-index: -1;
-		max-width: 50vw;
-		opacity: 0.4;
 	}
 </style>
