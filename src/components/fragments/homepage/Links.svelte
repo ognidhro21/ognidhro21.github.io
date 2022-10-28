@@ -1,5 +1,4 @@
 <script>
-	import Button from '../../shared/Button.svelte';
 	import Container from '../../shared/Container.svelte';
 
 	const links = [
@@ -31,20 +30,22 @@
 </script>
 
 <Container fluid>
-	{#each links as link}
-		<article>
-			<h5>{link.title}</h5>
-			<p>{link.details}</p>
-			<nav>
-				<a
-					class="button border"
-					href={link.path}
-					data-sveltekit-noscroll={link.scroll}
-					target={link.target}>Go!</a
-				>
-			</nav>
-		</article>
-	{/each}
+	<div class="grid">
+		{#each links as link}
+			<article class="no-margin s12 l4">
+				<h5>{link.title}</h5>
+				<p>{link.details}</p>
+				<nav>
+					<a
+						class="button border"
+						href={link.path}
+						data-sveltekit-noscroll={link.scroll}
+						target={link.target}>Go!</a
+					>
+				</nav>
+			</article>
+		{/each}
+	</div>
 </Container>
 
 <style>
@@ -52,5 +53,8 @@
 		position: relative;
 		overflow: hidden;
 		z-index: 2;
+	}
+	.grid {
+		margin-block: 64rem;
 	}
 </style>

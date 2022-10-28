@@ -11,8 +11,8 @@
 </script>
 
 <Container>
+	<h6 class="s6 l3 center-align">Powered and made with</h6>
 	<section class="grid">
-		<h6 class="s6 l3">Powered and made with</h6>
 		{#each stacks as { name, href }}
 			<a class="s6 l3" {href}>{name}</a>
 		{/each}
