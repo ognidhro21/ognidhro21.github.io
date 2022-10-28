@@ -22,7 +22,7 @@
 </div>
 
 <style>
-	div.responsive {
+	.responsive {
 		min-height: 50vh;
 	}
 	.hero a {

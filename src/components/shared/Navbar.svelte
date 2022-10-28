@@ -139,7 +139,7 @@
 			<div class="max">
 				<h6>Change Default Group</h6>
 			</div>
-			<button data-ui="#modal-menu" class="transparent circle"><i>close</i></button>
+			<button data-ui="#modal-reset-grp" class="transparent circle"><i>close</i></button>
 		</nav>
 	</header>
 	<div class="inputs">
