@@ -1,12 +1,12 @@
 <script>
 	import Container from '../../../components/shared/Container.svelte';
+	import PageContainer from '../../../components/shared/PageContainer.svelte';
 
 	export let data;
 	const { ranks, info } = data.results.default;
 </script>
 
-<Container>
-	<h4>{info.detailedname} Classification</h4>
+<PageContainer title="{info.detailedname} Classification">
 	{#each ranks as { ID, GPA }, index}
 		<div class="one row justify-between tertiary-border" class:primary-container={index === 0}>
 			<div class="max">
@@ -20,7 +20,7 @@
 			<p>{GPA}</p>
 		</div>
 	{/each}
-</Container>
+</PageContainer>
 
 <style>
 	.one {

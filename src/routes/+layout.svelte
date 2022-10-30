@@ -37,8 +37,6 @@
 <body class:dark={$dark}>
 	<div class="layout">
 		<Navbar />
-		<div class="large-space" />
-		<div class="large-space" />
 		<slot />
 	</div>
 </body>

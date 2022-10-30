@@ -5,6 +5,7 @@
 	import SEO from '../../components/shared/SEO/index.svelte';
 	import { onMount } from 'svelte';
 	import Anim from '../../components/shared/Anim.svelte';
+	import PageContainer from '../../components/shared/PageContainer.svelte';
 
 	export let data;
 
@@ -39,7 +40,7 @@
 </script>
 
 <SEO title="Notices" />
-<Container>
+<PageContainer title="Notices" icon="notifications">
 	{#each data.noticeList as post}
 		<article class="padding">
 			<!-- <img src={post.meta.featuredImg} alt="" /> -->
@@ -50,4 +51,4 @@
 			<a href={post.path} class="button border no-margin">More</a>
 		</article>
 	{/each}
-</Container>
+</PageContainer>

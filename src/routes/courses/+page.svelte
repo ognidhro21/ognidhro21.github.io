@@ -3,6 +3,7 @@
 	import Container from '../../components/shared/Container.svelte';
 	import Tabs from '../../components/shared/Tabs.svelte';
 	import { Accordions, Accordion } from '../../components/shared/Accordion';
+	import PageContainer from '../../components/shared/PageContainer.svelte';
 	export let data;
 	const current = 'L2S1';
 	let items = [
@@ -24,7 +25,7 @@
 	const toggleAccordion = (e) => (openedAccordion = e.detail);
 </script>
 
-<Container>
+<PageContainer title="Courses" icon="info">
 	<Tabs {items} {selected} on:tabChanged={tabChanged}>
 		{#if selected === 'Semester'}
 			<Accordions>
@@ -76,4 +77,4 @@
 		{/if}
 		<div class="space" />
 	</Tabs>
-</Container>
+</PageContainer>

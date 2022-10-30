@@ -27,16 +27,14 @@
 </script>
 
 <SEO title={`Final - ${name}`} />
-<Container>
-	<ExamLayout
-		{exams}
-		{expired}
-		{upNext}
-		{detailedname}
-		{message}
-		{startTime}
-		{year}
-		{name}
-		type="Final"
-	/>
-</Container>
+<ExamLayout
+	{exams}
+	{expired}
+	{upNext}
+	{detailedname}
+	{message}
+	{startTime}
+	{year}
+	{name}
+	type="Final"
+/>

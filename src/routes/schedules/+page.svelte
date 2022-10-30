@@ -10,6 +10,7 @@
 	import SEO from '../../components/shared/SEO/index.svelte';
 	import Anim from '../../components/shared/Anim.svelte';
 	import Tabs from '../../components/shared/Tabs.svelte';
+	import PageContainer from '../../components/shared/PageContainer.svelte';
 	export let data;
 	let items = [
 		{
@@ -80,7 +81,7 @@
 </script>
 
 <SEO title={`Schedules`} />
-<Container>
+<PageContainer title="Schedules" icon="event">
 	{#if saved}
 		<!-- <button mode="primary mb12" isRounded on:click={resetInfo}>Change Default Group</button> -->
 		<Tabs {items} {selected} on:tabChanged={tabChanged}>
@@ -112,7 +113,7 @@
 			</div>
 		</div>
 	{/if}
-</Container>
+</PageContainer>
 
 <style>
 	img {

@@ -1,11 +1,11 @@
 <script>
+	import PageContainer from '../components/shared/PageContainer.svelte';
+
 	export let title = '';
 </script>
 
-<main class="responsive">
+<PageContainer {title}>
 	<a href="/materials" class="button no-margin border secondary-border">Go back</a>
 	<div class="small-space" />
-	<h4>{title}</h4>
-	<div class="medium-space" />
 	<slot />
-</main>
+</PageContainer>

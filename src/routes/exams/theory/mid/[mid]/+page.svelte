@@ -24,17 +24,15 @@
 </script>
 
 <SEO title={`Class Test - ${name}`} />
-<Container>
-	<ExamLayout
-		{exams}
-		{expired}
-		{upNext}
-		{detailedname}
-		{message}
-		{startTime}
-		{year}
-		{name}
-		{endTime}
-		type="Mid"
-	/>
-</Container>
+<ExamLayout
+	{exams}
+	{expired}
+	{upNext}
+	{detailedname}
+	{message}
+	{startTime}
+	{year}
+	{name}
+	{endTime}
+	type="Mid"
+/>

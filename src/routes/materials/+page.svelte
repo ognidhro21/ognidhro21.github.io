@@ -1,9 +1,11 @@
 <script>
+	import PageContainer from '../../components/shared/PageContainer.svelte';
+
 	export let data;
 	const { materialsList } = data;
 </script>
 
-<main class="responsive">
+<PageContainer title="Materials" icon="collections_bookmark">
 	<div class="grid">
 		{#each materialsList as material}
 			<article class="s12 m6 l4 no-margin">
@@ -17,7 +19,7 @@
 			</article>
 		{/each}
 	</div>
-</main>
+</PageContainer>
 
 <style>
 	h6,
