@@ -12,7 +12,9 @@
 		{/if}
 		<span>{title}</span>
 	</h4>
-	<slot />
+	<section class="page left active">
+		<slot />
+	</section>
 </Container>
 
 <style>
