@@ -1,0 +1,12 @@
+---
+layout: material
+title: History of Mycology
+course: PLP
+---
+
+<script>
+	import Timeline from './Timeline.svelte';
+</script>
+
+
+<Timeline />
