@@ -16,10 +16,6 @@
                     "date": "23 Oct"
                 },
                 {
-                    "code": "BCM",
-                    "date": "24 Oct"
-                },
-                {
                     "code": "AGR",
                     "date": "26 Oct"
                 },
@@ -35,7 +31,11 @@
                 },
                 {
                     "code": "PLP",
-                    "date": "31 Oct"
+                    "date": "01 Nov"
+                },
+                {
+                    "code": "BCM",
+                    "date": "02 Nov"
                 }
             ]
         },
