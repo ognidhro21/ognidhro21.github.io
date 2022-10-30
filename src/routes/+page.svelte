@@ -9,6 +9,6 @@
 
 <SEO title={`Home`} />
 <Hero />
-<About />
 <Links />
+<About />
 <MadeWith />

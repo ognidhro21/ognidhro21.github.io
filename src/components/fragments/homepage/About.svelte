@@ -6,10 +6,7 @@
 <Container fluid bgColor="var(--plain)">
 	<div class="contents">
 		<div class="text">
-			<p>
-				WE ARE the 21st batch of Agriculture in Patuakhali Science and Technology University. More
-				text will go here.
-			</p>
+			<p>WE ARE the 21st batch of Agriculture in Patuakhali Science and Technology University.</p>
 		</div>
 		<div class="img">
 			<img src={IMG} alt="" />

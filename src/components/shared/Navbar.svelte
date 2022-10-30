@@ -6,11 +6,6 @@
 	import GROUP from '../../stores/PersistantInfo';
 	import website from '../../lib/config/website';
 	const nav = [
-		// {
-		// 	title: 'Home',
-		// 	path: '#modal-menu',
-		// 	icon: 'menu'
-		// },
 		{
 			title: 'Schedules',
 			path: '/schedules',
@@ -25,6 +20,33 @@
 			title: 'Materials',
 			path: '/materials',
 			icon: 'collections_bookmark'
+		}
+	];
+	const navTwo = [
+		{
+			path: '/',
+			title: 'Home',
+			icon: 'home'
+		},
+		{
+			path: '/notices',
+			title: 'Notices',
+			icon: 'notifications'
+		},
+		{
+			path: '/classification',
+			title: 'Hall of Fame',
+			icon: 'leaderboard'
+		},
+		{
+			path: 'https://www.facebook.com/ognidhro21/',
+			title: 'Find us on Facebook',
+			target: '_blank'
+		},
+		{
+			path: 'https://github.com/ognidhro21/ognidhro21.github.io',
+			title: 'Source Code',
+			target: '_blank'
 		}
 	];
 	let y;
@@ -101,7 +123,7 @@
 	{/each}
 </nav>
 <div class="overlay" />
-<div class="modal bottom" id="modal-menu">
+<div class="modal left" id="modal-menu">
 	<header class="fixed">
 		<nav>
 			<!-- <img src={LOGO} alt="OG21" style="max-width: 100%;" /> -->
@@ -111,10 +133,15 @@
 			</div>
 		</nav>
 	</header>
-	<a class="row round" href="/" data-ui="#modal-menu"><i>home</i><span>Home</span></a>
-	<a class="row round" href="/notices" data-ui="#modal-menu"
-		><i>notifications</i><span>Notices</span></a
-	>
+
+	{#each navTwo as nav}
+		<a class="row round" data-ui="#modal-menu" href={nav.path} target={nav.target}>
+			{#if nav.icon}
+				<i>{nav.icon}</i>
+			{/if}
+			<span>{nav.title}</span>
+		</a>
+	{/each}
 	<div class="small-divider" />
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a
@@ -132,6 +159,7 @@
 	>
 </div>
 
+<!-- ? ==================================MODAL===============================? -->
 <div class="modal " id="modal-reset-grp">
 	<header class="fixed">
 		<nav>

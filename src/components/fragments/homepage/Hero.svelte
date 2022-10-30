@@ -2,7 +2,7 @@
 	import logo from '../../../images/O21-Big.png';
 </script>
 
-<div class="responsive center-align middle-align primary-container">
+<div class="responsive center-align middle-align ">
 	<div class="hero ">
 		<div class="medium-space" />
 		<img src={logo} alt="" />
@@ -22,9 +22,6 @@
 </div>
 
 <style>
-	.responsive {
-		min-height: 50vh;
-	}
 	.hero a {
 		z-index: 4;
 	}

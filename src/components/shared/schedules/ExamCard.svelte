@@ -11,8 +11,10 @@
 	export let endTime;
 	export let completed = false;
 	export let id;
+	export let credit;
 	$: name = getName(code);
 	$: title = getTitle(code, id);
+	$: endTime = endTime === undefined ? startTime + credit : endTime;
 </script>
 
 <div class="row" class:completed transition:fly>
