@@ -1,0 +1,17 @@
+---
+layout: material
+title: Classification of Fungi
+---
+
+#### Traditional Classifiaction
+
+Kingdom: Fungi
+
+Division: 
+ - Myxomycota (slime molds)
+ - Eumycota
+ 	- Mastigomycotina
+	- Zygomycotina
+	- Ascomycotina
+	- Basidiomycotina
+	- Deuteromycotina
