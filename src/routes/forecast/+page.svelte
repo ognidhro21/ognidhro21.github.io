@@ -13,9 +13,9 @@
 			class:primary-container={probability >= 40}
 			class:on-primary-container={probability >= 40}
 		>
+			<p>{date}</p>
 			<div class="row">
 				<div class="max">
-					<p>{date}</p>
 					<h6>
 						Chance of Rain {probability}%
 					</h6>
