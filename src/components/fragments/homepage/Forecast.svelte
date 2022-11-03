@@ -24,10 +24,17 @@
 </Container>
 
 <style>
+	h5 {
+		margin: 0;
+	}
 	h5 > i {
 		margin-right: 12rem;
 	}
 	p > i {
 		margin-right: 6rem;
+	}
+	article,
+	.grid {
+		margin-top: 0;
 	}
 </style>
