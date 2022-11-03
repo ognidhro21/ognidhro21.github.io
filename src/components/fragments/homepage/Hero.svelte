@@ -8,15 +8,15 @@
 		<img src={logo} alt="" />
 		<div class="medium-space" />
 		<div class="fixer center-align middle-align ">
-			<nav class="no-space">
+			<!-- <nav class="no-space">
 				<span class="small-padding border left-round bold">
 					<span>L2S1</span>
-				</span>
-				<a href="/exams/theory/mid/L2S1" class="button primary small-elevate no-round"
-					>Mid Schedules
+				</span> -->
+			<a href="routines/L2S1" class="button primary small-elevate ">Class Routine</a>
+			<!-- <a href="/exams/theory/mid/L2S1" class="button border primary-border right-round">
+					Mid Schedules
 				</a>
-				<a href="/routines/L2S1" class="button border primary-border right-round">Class Routine </a>
-			</nav>
+			</nav> -->
 		</div>
 	</div>
 </div>
