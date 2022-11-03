@@ -11,7 +11,7 @@
 
 <SEO title={`Home`} />
 <Hero />
-<Links />
 <Forecast {Headline} {rain} />
+<Links />
 <About />
 <MadeWith />
