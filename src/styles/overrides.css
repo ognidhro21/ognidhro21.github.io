@@ -1,0 +1,118 @@
+:root {
+	--elevate1: 0 1rem 1rem 0 rgba(0, 0, 0, 0.14), 0 0.5rem 2.5rem 0 rgba(0, 0, 0, 0.12),
+		0 1.5rem 0.5rem -1rem rgba(0, 0, 0, 0.2);
+	--elevate2: 0 2rem 5rem 0 rgba(0, 0, 0, 0.14), 0 0.5rem 9rem 0 rgba(0, 0, 0, 0.12),
+		0 1.5rem 2.5rem -0.5rem rgba(0, 0, 0, 0.3);
+	--elevate3: 0 5rem 8rem 0 rgba(0, 0, 0, 0.14), 0 0.5rem 15.5rem 0 rgba(0, 0, 0, 0.12),
+		0 1.5rem 4.5rem 0rem rgba(0, 0, 0, 0.4);
+}
+article {
+	border-radius: 8rem;
+}
+.button,
+button {
+	color: var(--on-primary);
+	padding: 0 24rem;
+	background-color: var(--primary);
+	border-radius: 4rem;
+	transition: var(--speed3) transform, var(--speed3) border-radius, var(--speed3) padding;
+	user-select: none;
+	gap: 16rem;
+}
+.wave:after,
+.wave.light:after,
+.chip:after,
+.button:after,
+button:after {
+	content: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	border-radius: inherit;
+	width: 0%;
+	height: 0%;
+	background-position: center;
+	background-image: none;
+	opacity: 0;
+	transition: none;
+}
+.wave.dark:after,
+.button.none:after,
+button.none:after,
+.chip.border:after,
+.button.border:after,
+button.border:after,
+.chip.transparent:after,
+.button.transparent:after,
+button.transparent:after {
+	background-image: none;
+}
+
+.wave:hover:after,
+.chip:hover:after,
+.button:hover:after,
+button:hover:after,
+.wave:focus:after,
+.chip:focus:after,
+.button:focus:after,
+button:focus:after {
+	background-size: 0%;
+	opacity: 0;
+	transition: none;
+}
+.wave:active:after,
+.chip:active:after,
+.button:active:after,
+button:active:after {
+	background-size: 0%;
+	opacity: 0;
+	transition: none;
+}
+.wave:after,
+.wave.light:after,
+.chip:after,
+.button:after,
+button:after {
+	content: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	border-radius: inherit;
+	width: 0%;
+	height: 0%;
+	background-position: center;
+	background-image: none;
+	opacity: 0;
+	transition: none;
+}
+.wave.dark,
+.button.none,
+button.none,
+.chip.border,
+.button.border,
+button.border,
+.chip.transparent,
+.button.transparent,
+button.transparent {
+	scale: 1;
+	transition: scale 0.2s ease-in;
+}
+
+.wave:hover,
+.chip:hover,
+.button:hover,
+button:hover,
+.wave:focus,
+.chip:focus,
+.button:focus,
+button:focus {
+	opacity: 0.9;
+}
+.wave:active,
+.chip:active,
+.button:active,
+button:active {
+	scale: 0.97;
+}
