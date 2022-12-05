@@ -5,7 +5,7 @@
 </script>
 
 <PageContainer {title}>
-	<a href="/materials" class="button no-margin border secondary-border">Go back</a>
+	<a href="/materials" class="button no-margin border secondary-border noprint">Go back</a>
 	<div class="small-space" />
 	<slot />
 </PageContainer>

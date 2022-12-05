@@ -25,4 +25,9 @@
 		margin-top: 96rem;
 		margin-bottom: 24rem;
 	}
+	@media print {
+		h4 {
+			margin: 0;
+		}
+	}
 </style>

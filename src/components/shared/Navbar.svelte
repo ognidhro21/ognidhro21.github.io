@@ -93,7 +93,7 @@
 
 <svelte:window bind:scrollY={y} />
 
-<nav class="m l left small-elevate">
+<nav class="m l left small-elevate noprint">
 	<a href="/">
 		<img src={LOGO} alt="OG21" style="max-width: 100%;" />
 	</a>
@@ -109,7 +109,7 @@
 		</a>
 	{/each}
 </nav>
-<nav class="s bottom small-elevate">
+<nav class="s bottom small-elevate noprint">
 	<!-- svelte-ignore a11y-missing-attribute -->
 	<a data-ui="#modal-menu" class="none">
 		<i>menu</i>
