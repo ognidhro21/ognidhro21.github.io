@@ -6,34 +6,34 @@ course: plp
 ---
 
  
-#### Aspergillus
+### Aspergillus
 
 Aspergillus causes rot of figs and dates, decay of tobacco and cigars. It spoils nuts, bread, and other food-stuffs. In humid weather, it grows even on leather and cloth fabrics. This cosmopolitan genus is one of the most frequent contaminants of food.
 
 Aspergillus niger, popularly known as the black mold, is considered a ‘weed of the laboratory’ as it often contaminates the bacteriological and mycological cultures. A. niger and several other species cause decay of foodstuffs. Some of these during the process produce poisonous substance known as mycotoxinsi. They also occur in the human ear and cause Otomycosis.
 
-#### Rhizopus
+### Rhizopus
 
 *Rhizopus stolonifer* is important economically as an agent of post-harvest storage decay.
 R. stolonifer and other species of Rhizopus produce ethyl alcohol, which is the most essential fermentation product. *Rhizopus stolonifer* is also used commercially to manufacture fumaric acid and lactic acid of high purity. The presence of zinc reduces the amount of fumaric acid produced by the fungus.
 
-#### Puccinia (Rust fungi)
+### Puccinia (Rust fungi)
 
 Majority of fungi in this genus cause disease of cereals and other crops, resulting in enormous losses. In spite of the damage they cause, they seldom kill the host plant immediately. Rusts infect ferns, gymnosperms, and angiosperms and are known since ancient times. 
 
 According to Pliny (29-79 AD), rust is the greatest enemy of cereals. This statement holds true even today because the damage caused by rusts is severe but slow and prolonged.
 
-#### Alternaria
+### Alternaria
 
 AIternaria is a very common saprophytic fungus. It decomposes the dead part of the plants. A few species of Alternaria can attack on living tissues. Alternaria causes diseases in plants like early blight of potatoes and boll rots of cotton.
 
 Most species of Alternaria are plant and human parasites. At least 200/c of agricultural spoilage is caused by Alternaria species. They are also common allergens in humans, growing indoors and causing hay fever or hypersensitivity reactions that sometimes lead to asthma. They readily cause opportunistic infections in immunocompromisedii people, such as AIDS patients.
 
-#### Stemphylium
+### Stemphylium
 
 Stemphylium vesicarium fungus is widely distributed and causes leaf diseases on a variety of crops. These include, among others, brown spot of pear, leaf spot on garlic, leaf blight of onions, and purple spot disease of asparagus. Stemphylium solani causes leaf spot and blight diseases on a variety of plants, including cotton, tomatoes, green pepper and onions.
 
-#### Fusarium
+### Fusarium
 
 Fusarium oxysporum causes the most important vascular wilt diseases. Some species of Fusarium produce mycotoxins − Fumonisins and trichothecenes. It is said that these toxins may cause oesophagealiii cancer.
 
@@ -41,36 +41,36 @@ Few Fusarium species like F. solani, F. Verticilloides, F. proliferatum, F. sola
 
 F. grwninearum has been used in the U.K. to produce a high quality mycoprotein that can be fabricated into a number of meatless food. F. venenatum is produced industrially for use as human food quom in Europe and North America.
 
-#### Curvularia
+### Curvularia
 
 Curvularia lunata is best known as the causative agent of seedling blight and seed germination failure in monocotyledon crops such as sugarcane, rice, millet, and maize. also causes leaf spot on a wide variety of angiospermiv hosts, where each lesionv contains a sporulatingvi mass of fungi at its center. It causes human diseases like Phaeohyphomycosesvii, allergy, eye infection.
 
-#### Bipolaris
+### Bipolaris
 
 Bipolaris incurvata is causes blight and leaf spots in coconut trees. Bipolaris cactivora causes cactus stem rot and pitayaviii fruit rot.
 
-#### Coletotrichum
+### Coletotrichum
 
 Colletotrichum fioriniae is a fungal plant pathogen and endophyteix of fruits and foliage of many broadleaved plants worldwide. It causes diseases on agriculturally important crops, including anthracnosex of strawberry, ripe rot of grapes, bitter rot of apple, anthracnose of peach, and anthracnose of blueberry. Its ecological role in the natural environment is less well understood, other than it is a common leaf endophyte of many temperate trees and shrubs and in some cases may function as an entomopathogenxi.
 
-####  Sclerotium
+###  Sclerotium
 
 They have developed the ability to produce many such chemical compounds that are very valuable in medicine. Acid hydrolysis is used to convert alkaloids, produced by the fungus Claviceps purpurea, into D-lysergic acid which is the starting material for many pharmaceutical and recreational drugs. Many methods have been created to reduce the growth of agriculturally pathogenic sclerotia like changes in crop rotation, deeper ploughing and sifting outxii sclerotia.
 
-#### Cercospora
+### Cercospora
 
 Cercospora kikuchii is a fungal plant pathogen that affects soybeans. It results in both the Cercospora leaf blight and purple seed stain diseases on soybean and is found almost worldwide. C. kikuchii produces the toxin cercosporinxiii, as do a number of other Cercospora species.
 
-#### Pyricularia
+### Pyricularia
 
 Magnaporthe oryzae, also known as rice blast fungus, rice rotten neck, rice seedling blight, blast of rice, oval leaf spot of gramineae, pitting disease, ryegrass blast, Johnson spot, neck blast, wheat blast. It is a plant-pathogenic fungus and model organism that causes a serious disease affecting rice.
 
-#### Penicillium
+### Penicillium
 
 Penicillium is a genus of ascomycetous fungi that is part of the mycobiome of many species and is of major importance in the natural environment, in food spoilage, and in food and drug production.
 
 Penicillium chrysogenum (formerly known as Penicillium notatum) is a species of fungus in this genus, has rarely been reported as a cause of human disease. It is the source of several β-lactam antibiotics, most significantly penicillin. Some other species are used in cheesemaking.
 
-#### Pestalotiopsis
+### Pestalotiopsis
 
 Pestalotiopsis palmarum is the causative agent of a fungal disease of bananas, coconut and Date palms. The fungus causes leaf spots, petiole/rachis blights and sometimes bud rot of palms. Unlike other leaf spot and blight diseases, Pestalotiopsis palmarun attacks all parts of the leaf from the base to the tip. Whereas most diseases only infect the leaf blade or the leaf petiole.

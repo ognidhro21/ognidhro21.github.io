@@ -6,6 +6,56 @@
 	--elevate3: 0 5rem 8rem 0 rgba(0, 0, 0, 0.14), 0 0.5rem 15.5rem 0 rgba(0, 0, 0, 0.12),
 		0 1.5rem 4.5rem 0rem rgba(0, 0, 0, 0.4);
 }
+body {
+	font-size: 16rem;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+	margin-top: 16rem;
+}
+h1 {
+	font-size: 61.04rem;
+}
+h2 {
+	font-size: 48.83rem;
+}
+h3 {
+	font-size: 39.06rem;
+}
+h4 {
+	font-size: 31.25rem;
+}
+h5 {
+	font-size: 25rem;
+}
+h6 {
+	font-size: 20rem;
+}
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 47.78rem;
+	}
+	h2 {
+		font-size: 39.81rem;
+	}
+	h3 {
+		font-size: 33.18rem;
+	}
+	h4 {
+		font-size: 27.65rem;
+	}
+	h5 {
+		font-size: 23.04rem;
+	}
+	h6 {
+		font-size: 19.2rem;
+	}
+}
 article {
 	border-radius: 8rem;
 }
