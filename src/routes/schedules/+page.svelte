@@ -27,7 +27,7 @@
 		// }
 	];
 
-	let selected = items[0].name;
+	let selected = items[1].name;
 	function tabChanged(e) {
 		selected = e.detail;
 	}
