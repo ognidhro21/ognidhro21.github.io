@@ -40,13 +40,42 @@
             ]
         },
         "final": {
-            "message": "Not implemented yet!",
             "startTime": 10,
-            "year": "2022",
+            "year": "2023",
             "exams": [
                 {
-                    "code": "ACM",
-                    "date": "30 Jun",
+                    "code": "ENT",
+                    "date": "2 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "STT",
+                    "date": "8 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "ARD",
+                    "date": "11 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "AGB",
+                    "date": "18 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "PLP",
+                    "date": "22 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "BCM",
+                    "date": "25 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "AGR",
+                    "date": "29 Jan",
                     "credit": 2
                 }
             ]
