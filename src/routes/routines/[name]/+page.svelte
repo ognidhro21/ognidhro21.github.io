@@ -1,10 +1,10 @@
 <script>
 	import { onMount } from 'svelte';
-	import Container from '../../../components/shared/Container.svelte';
-	import RoutineCard from '../../../components/shared/schedules/RoutineCard.svelte';
-	import SEO from '../../../components/shared/SEO/index.svelte';
-	import DATA from '../../../stores/PersistantInfo';
-	import AddToHome from '../../../components/shared/AddToHome.svelte';
+	import Container from '$lib/components/shared/Container.svelte';
+	import RoutineCard from '$lib/components/shared/schedules/RoutineCard.svelte';
+	import SEO from '$lib/components/shared/SEO/index.svelte';
+	import DATA from '$lib//stores/PersistantInfo';
+	import AddToHome from '$lib/components/shared/AddToHome.svelte';
 
 	export let data;
 	const routine = data.routine;

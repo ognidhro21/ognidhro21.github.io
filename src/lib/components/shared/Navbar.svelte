@@ -1,10 +1,10 @@
 <script>
 	import { page } from '$app/stores';
-	import LOGO from '../../images/OG21Nav.png';
-	import DATA from '../../stores/NoticeInfo';
-	import DARK from '../../stores/DarkMode';
-	import GROUP from '../../stores/PersistantInfo';
-	import website from '../../lib/config/website';
+	import LOGO from '$lib/images/OG21Nav.png';
+	import DATA from '$lib/stores/NoticeInfo';
+	import DARK from '$lib/stores/DarkMode';
+	import GROUP from '$lib/stores/PersistantInfo';
+	import website from '$lib/config/website';
 	const nav = [
 		{
 			title: 'Schedules',

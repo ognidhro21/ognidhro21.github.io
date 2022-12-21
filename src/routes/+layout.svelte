@@ -1,13 +1,13 @@
 <script>
 	import NProgress from 'nprogress';
 	import { navigating } from '$app/stores';
-	import '../styles/overrides.css';
-	import '../styles/colors.css';
-	import Navbar from '../components/shared/Navbar.svelte';
-	import DATA from '../stores/NoticeInfo';
-	import dark from '../stores/DarkMode';
+	import '$lib/styles/overrides.css';
+	import '$lib/styles/colors.css';
+	import Navbar from '$lib/components/shared/Navbar.svelte';
+	import DATA from '$lib/stores/NoticeInfo';
+	import dark from '$lib/stores/DarkMode';
 	import { onMount } from 'svelte';
-	import Analytics from '../components/shared/Analytics.svelte';
+	import Analytics from '$lib/components/shared/Analytics.svelte';
 
 	NProgress.configure({
 		minimum: 0.16,

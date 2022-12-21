@@ -5,7 +5,7 @@ export async function GET() {
 			'content-type': 'application/json'
 		}
 	};
-	let pS = import.meta.glob('../../../data/schedules/routines/*.json');
+	let pS = import.meta.glob('$lib/data/schedules/routines/*.json');
 	const iterable = Object.entries(pS);
 	let routines = await Promise.all(
 		iterable.map(async ([path, resolver]) => {

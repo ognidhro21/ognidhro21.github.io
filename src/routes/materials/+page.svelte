@@ -1,5 +1,5 @@
 <script>
-	import PageContainer from '../../components/shared/PageContainer.svelte';
+	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 
 	export let data;
 	const { materialsList } = data;

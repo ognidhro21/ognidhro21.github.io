@@ -1,5 +1,5 @@
 <script>
-	import Container from '../../shared/Container.svelte';
+	import Container from '$lib/components/shared/Container.svelte';
 	const stacks = [
 		{ name: 'SvelteKit', href: 'https://kit.svelte.dev/' },
 		{ name: 'Arch Linux', href: 'https://archlinux.org/' },

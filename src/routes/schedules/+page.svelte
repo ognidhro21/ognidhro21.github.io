@@ -1,16 +1,13 @@
 <script>
-	import TabClasses from '../../components/shared/schedules/tabs/TabClasses.svelte';
-	import TabExams from '../../components/shared/schedules/tabs/TabExams.svelte';
-	import TabEvents from '../../components/shared/schedules/tabs/TabEvents.svelte';
-	import Container from '../../components/shared/Container.svelte';
-	import InfoImg from '../../images/update_info_undraw.svg';
-	import Button from '../../components/shared/Button.svelte';
-	import DATA from '../../stores/PersistantInfo';
+	import TabClasses from '$lib/components/shared/schedules/tabs/TabClasses.svelte';
+	import TabExams from '$lib/components/shared/schedules/tabs/TabExams.svelte';
+	import TabEvents from '$lib/components/shared/schedules/tabs/TabEvents.svelte';
+	import InfoImg from '$lib/images/update_info_undraw.svg';
+	import DATA from '$lib/stores/PersistantInfo';
 	import { onMount } from 'svelte';
-	import SEO from '../../components/shared/SEO/index.svelte';
-	import Anim from '../../components/shared/Anim.svelte';
-	import Tabs from '../../components/shared/Tabs.svelte';
-	import PageContainer from '../../components/shared/PageContainer.svelte';
+	import SEO from '$lib/components/shared/SEO/index.svelte';
+	import Tabs from '$lib/components/shared/Tabs.svelte';
+	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 	export let data;
 	let items = [
 		{

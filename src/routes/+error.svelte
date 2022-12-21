@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
-	import Container from '../components/shared/Container.svelte';
-	import SEO from '../components/shared/SEO/index.svelte';
+	import Container from '$lib/components/shared/Container.svelte';
+	import SEO from '$lib/components/shared/SEO/index.svelte';
 </script>
 
 <SEO title={$page.status} />

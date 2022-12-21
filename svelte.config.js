@@ -10,8 +10,8 @@ const config = {
 		mdsvex({
 			extensions: ['.md', '.svx'],
 			layout: {
-				material: 'src/templates/material.svelte',
-				_: 'src/templates/default.svelte'
+				material: 'src/lib/templates/material.svelte',
+				_: 'src/lib/templates/default.svelte'
 			}
 		})
 	]

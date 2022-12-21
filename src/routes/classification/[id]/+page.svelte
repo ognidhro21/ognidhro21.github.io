@@ -1,6 +1,5 @@
 <script>
-	import Container from '../../../components/shared/Container.svelte';
-	import PageContainer from '../../../components/shared/PageContainer.svelte';
+	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 
 	export let data;
 	const { ranks, info } = data.results.default;

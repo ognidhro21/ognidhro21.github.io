@@ -1,7 +1,6 @@
 <script>
-	import img from '../../images/og21-add-to-home.png';
-	import DATA from '../../stores/AddToHome';
-	import Button from './Button.svelte';
+	import img from '$lib/images/og21-add-to-home.png';
+	import DATA from '$lib/stores/AddToHome';
 
 	function closeBanner() {
 		$DATA.closed = true;

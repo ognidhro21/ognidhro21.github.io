@@ -1,9 +1,8 @@
 <script>
-	import { getFullCode, getCode, courses } from '../../lib/courses';
-	import Container from '../../components/shared/Container.svelte';
-	import Tabs from '../../components/shared/Tabs.svelte';
-	import { Accordions, Accordion } from '../../components/shared/Accordion';
-	import PageContainer from '../../components/shared/PageContainer.svelte';
+	import { getFullCode, getCode, courses } from '$lib/courses';
+	import Tabs from '$lib/components/shared/Tabs.svelte';
+	import { Accordions, Accordion } from '$lib/components/shared/Accordion';
+	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 	export let data;
 	const current = 'L2S1';
 	let items = [

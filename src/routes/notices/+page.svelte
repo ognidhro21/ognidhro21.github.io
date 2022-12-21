@@ -1,11 +1,8 @@
 <script>
-	import DATA from '../../stores/NoticeInfo';
-
-	import Container from '../../components/shared/Container.svelte';
-	import SEO from '../../components/shared/SEO/index.svelte';
 	import { onMount } from 'svelte';
-	import Anim from '../../components/shared/Anim.svelte';
-	import PageContainer from '../../components/shared/PageContainer.svelte';
+	import DATA from '$lib/stores/NoticeInfo';
+	import SEO from '$lib/components/shared/SEO/index.svelte';
+	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 
 	export let data;
 

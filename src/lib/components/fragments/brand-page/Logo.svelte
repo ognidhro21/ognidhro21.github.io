@@ -1,5 +1,4 @@
 <script>
-	import Button from '../../shared/Button.svelte';
 	import BAD from './logos/bad-logos.png';
 	import OET from './logos/OET.svelte';
 	import Oeti from './logos/OETI.svelte';

@@ -1,6 +1,6 @@
 <script>
-	import PageContainer from '../../../components/shared/PageContainer.svelte';
-	import ExamCard from '../../../components/shared/schedules/ExamCard.svelte';
+	import PageContainer from '$lib/components/shared/PageContainer.svelte';
+	import ExamCard from '$lib/components/shared/schedules/ExamCard.svelte';
 
 	export let exams;
 	export let expired;

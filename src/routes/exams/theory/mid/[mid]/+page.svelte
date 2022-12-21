@@ -1,8 +1,6 @@
 <script>
 	import { isCompleted } from '$lib/time/date';
-	import Container from '../../../../../components/shared/Container.svelte';
-	import ExamCard from '../../../../../components/shared/schedules/ExamCard.svelte';
-	import SEO from '../../../../../components/shared/SEO/index.svelte';
+	import SEO from '$lib/components/shared/SEO/index.svelte';
 	import ExamLayout from '../../ExamLayout.svelte';
 	export let data;
 	const json = data.json;

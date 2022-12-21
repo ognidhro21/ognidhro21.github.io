@@ -1,6 +1,6 @@
 <script>
-	import Container from '../../shared/Container.svelte';
-	import IMG from '../../../images/taking_notes_undraw.svg';
+	import Container from '$lib/components/shared/Container.svelte';
+	import IMG from '$lib/images/taking_notes_undraw.svg';
 </script>
 
 <Container fluid bgColor="var(--plain)">

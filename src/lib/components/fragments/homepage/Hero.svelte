@@ -1,5 +1,5 @@
 <script>
-	import logo from '../../../images/O21-Big.png';
+	import logo from '$lib/images/O21-Big.png';
 </script>
 
 <div class="responsive center-align middle-align primary-container">

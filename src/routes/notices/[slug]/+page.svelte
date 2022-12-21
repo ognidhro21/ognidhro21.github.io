@@ -1,6 +1,6 @@
 <!-- src/routes/[slug]/+page.svelte -->
 <script>
-	import Container from '../../../components/shared/Container.svelte';
+	import Container from '$lib/components/shared/Container.svelte';
 	export let data;
 </script>
 
