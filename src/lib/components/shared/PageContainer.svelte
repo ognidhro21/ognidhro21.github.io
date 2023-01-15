@@ -5,7 +5,7 @@
 	export let icon;
 </script>
 
-<main class="responsive max primary-container sticky">
+<main class="responsive max primary-container heading">
 	<Container>
 		<h3>
 			{#if icon}
@@ -15,11 +15,11 @@
 		</h3>
 	</Container>
 </main>
-<Container>
-	<section class="page left active surface">
+<main class="responsive content">
+	<section class="page left active">
 		<slot />
 	</section>
-</Container>
+</main>
 
 <style>
 	i {
@@ -28,10 +28,16 @@
 	h3 {
 		padding-top: 6rem;
 	}
-	.responsive {
+	.heading {
 		padding-bottom: 1.2rem !important;
 	}
-
+	@media only screen and (max-width: 600px) {
+		.content {
+			margin-top: -1rem;
+			background-color: var(--background);
+			border-radius: 1rem 1rem 0 0;
+		}
+	}
 	@media print {
 		h3 {
 			margin: 0;
