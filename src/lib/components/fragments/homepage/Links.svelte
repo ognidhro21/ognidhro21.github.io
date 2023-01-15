@@ -61,6 +61,6 @@
 		z-index: 2;
 	}
 	.grid {
-		margin-block: 16rem;
+		margin-block: 1rem;
 	}
 </style>

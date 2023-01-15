@@ -19,14 +19,14 @@
 
 <style>
 	i {
-		margin-right: 12rem;
+		margin-right: 0.8rem;
 	}
 	h3 {
-		margin-top: 96rem;
-		margin-bottom: 24rem;
+		margin-top: 6rem;
+		margin-bottom: 1.4rem;
 	}
 	@media print {
-		h2 {
+		h3 {
 			margin: 0;
 		}
 	}

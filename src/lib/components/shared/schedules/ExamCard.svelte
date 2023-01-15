@@ -36,6 +36,6 @@
 
 <style>
 	.row {
-		border-radius: 4rem;
+		border-radius: 0.25rem;
 	}
 </style>

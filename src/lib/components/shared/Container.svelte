@@ -8,7 +8,7 @@
 
 <style>
 	main.responsive {
-		padding-top: 24rem;
+		padding-top: 1.4rem;
 	}
 	main.responsive {
 		min-height: auto;

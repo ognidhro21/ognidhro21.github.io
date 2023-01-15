@@ -6,7 +6,7 @@
 
 <Container>
 	<h5><i>location_on</i><span> Dumki, Patuakhali</span></h5>
-	<h6>{Headline.Text}</h6>
+	<h5>{Headline.Text}</h5>
 
 	<div class="scroll row">
 		{#each rain as { probability, date }}
@@ -19,6 +19,7 @@
 			</article>
 		{/each}
 	</div>
+	<dib class="medium-space" />
 	<a href="/forecast" class="button"><i>arrow_forward</i>More</a>
 </Container>
 
@@ -27,14 +28,16 @@
 		margin: 0;
 	}
 	h5 > i {
-		margin-right: 12rem;
+		margin-right: 0.8rem;
 	}
 	p > i {
-		margin-right: 6rem;
+		margin-right: 0.4rem;
 	}
 	article,
-	.grid,
 	a {
-		margin: 0;
+		margin-top: 1rem;
+	}
+	.row {
+		padding: 1rem;
 	}
 </style>

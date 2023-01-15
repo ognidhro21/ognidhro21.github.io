@@ -15,9 +15,9 @@
 
 <div class="row padding " class:primary-container={practical}>
 	<div class="max">
-		<h6>
+		<h5>
 			{name} - {CODE}
-		</h6>
+		</h5>
 		<h5>{convertTo12(schedule.start)} - {convertTo12(schedule.end)}</h5>
 		<p>{title}</p>
 	</div>
@@ -41,9 +41,9 @@
 	.row {
 		border-bottom: 1px grey solid;
 		margin-top: 0;
-		border-radius: 4rem;
+		border-radius: 0.25rem;
 	}
 	.max > * {
-		margin-bottom: 4rem;
+		margin-bottom: 0.25rem;
 	}
 </style>

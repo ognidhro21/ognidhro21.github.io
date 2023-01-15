@@ -24,10 +24,10 @@
 <style>
 	.one {
 		border-bottom: 1px solid;
-		padding: 24rem;
+		padding: 1.3rem;
 	}
 	.primary-container {
-		padding-block: 48rem;
+		padding-block: 3rem;
 	}
 	.one.primary-container {
 		border: none;

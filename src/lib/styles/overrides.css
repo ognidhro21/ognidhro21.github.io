@@ -1,73 +1,78 @@
-:root {
-	--elevate1: 0 1rem 1rem 0 rgba(0, 0, 0, 0.14), 0 0.5rem 2.5rem 0 rgba(0, 0, 0, 0.12),
-		0 1.5rem 0.5rem -1rem rgba(0, 0, 0, 0.2);
-	--elevate2: 0 2rem 5rem 0 rgba(0, 0, 0, 0.14), 0 0.5rem 9rem 0 rgba(0, 0, 0, 0.12),
-		0 1.5rem 2.5rem -0.5rem rgba(0, 0, 0, 0.3);
-	--elevate3: 0 5rem 8rem 0 rgba(0, 0, 0, 0.14), 0 0.5rem 15.5rem 0 rgba(0, 0, 0, 0.12),
-		0 1.5rem 4.5rem 0rem rgba(0, 0, 0, 0.4);
-}
-body {
-	font-size: 16rem;
-}
-
 * + h1,
 * + h2,
 * + h3,
 * + h4,
 * + h5,
 * + h6 {
-	margin-top: 16rem;
+	margin-top: 1rem;
 }
 h1 {
-	font-size: 61.04rem;
+	font-size: 4.209rem;
 }
+
 h2 {
-	font-size: 48.83rem;
+	font-size: 3.157rem;
 }
+
 h3 {
-	font-size: 39.06rem;
+	font-size: 2.369rem;
 }
+
 h4 {
-	font-size: 31.25rem;
+	font-size: 1.777rem;
 }
+
 h5 {
-	font-size: 25rem;
+	font-size: 1.333rem;
 }
 h6 {
-	font-size: 20rem;
+	font-size: 1.2rem;
 }
+small,
+.text_small {
+	font-size: 0.75rem;
+}
+
 @media only screen and (max-width: 600px) {
 	h1 {
-		font-size: 47.78rem;
+		font-size: 2.488rem;
 	}
+
 	h2 {
-		font-size: 39.81rem;
+		font-size: 2.074rem;
 	}
+
 	h3 {
-		font-size: 33.18rem;
+		font-size: 1.728rem;
 	}
+
 	h4 {
-		font-size: 27.65rem;
+		font-size: 1.44rem;
 	}
+
 	h5 {
-		font-size: 23.04rem;
+		font-size: 1.2rem;
 	}
 	h6 {
-		font-size: 19.2rem;
+		font-size: 1.1rem;
+	}
+	small,
+	.text_small {
+		font-size: 0.833rem;
 	}
 }
 article {
-	border-radius: 8rem;
+	border-radius: 0.5rem;
 }
 .button,
 button {
 	color: var(--on-primary);
-	padding: 0 24rem;
+	padding: 0 1.3rem;
 	background-color: var(--primary);
-	border-radius: 4rem;
+	border-radius: 0.25rem;
 	transition: var(--speed3) transform, var(--speed3) border-radius, var(--speed3) padding;
 	user-select: none;
-	gap: 16rem;
+	gap: 1rem;
 }
 .wave:after,
 .wave.light:after,

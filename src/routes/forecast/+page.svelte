@@ -36,9 +36,9 @@
 		border-bottom: 1px solid;
 	}
 	.footer {
-		margin-top: 48rem;
+		margin-top: 3rem;
 	}
 	p > i {
-		margin-right: 6rem;
+		margin-right: 0.4rem;
 	}
 </style>

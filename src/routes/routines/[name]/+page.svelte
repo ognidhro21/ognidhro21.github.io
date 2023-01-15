@@ -96,6 +96,6 @@
 
 <style>
 	.header {
-		margin-bottom: 16rem;
+		margin-bottom: 1rem;
 	}
 </style>
