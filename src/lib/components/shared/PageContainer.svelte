@@ -6,12 +6,12 @@
 </script>
 
 <Container>
-	<h2>
+	<h3>
 		{#if icon}
 			<i>{icon}</i>
 		{/if}
 		<span>{title}</span>
-	</h2>
+	</h3>
 	<section class="page left active">
 		<slot />
 	</section>
@@ -21,7 +21,7 @@
 	i {
 		margin-right: 12rem;
 	}
-	h2 {
+	h3 {
 		margin-top: 96rem;
 		margin-bottom: 24rem;
 	}

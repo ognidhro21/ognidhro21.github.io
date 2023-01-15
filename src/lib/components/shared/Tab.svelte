@@ -8,6 +8,7 @@
 <div class="tabs left-align">
 	{#each items as item}
 		<!-- svelte-ignore a11y-missing-attribute -->
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<a
 			data-sveltekit-noscroll
 			class:active={selected === item.name}

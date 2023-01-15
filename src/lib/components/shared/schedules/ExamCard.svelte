@@ -28,7 +28,7 @@
 		{:else}
 			<p class="right-align">{aMOrPM(startTime)} - {aMOrPM(endTime)}</p>
 		{/if}
-		<h5 class="right-align">{date}</h5>
+		<h6 class="right-align">{date}</h6>
 	</div>
 </div>
 <!-- <div class="medium-space" /> -->
