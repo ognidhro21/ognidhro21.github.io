@@ -171,3 +171,10 @@ button:focus {
 button:active {
 	scale: 0.97;
 }
+
+main.responsive {
+	min-height: auto !important;
+}
+.max {
+	max-width: 100%;
+}

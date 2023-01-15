@@ -5,14 +5,18 @@
 	export let icon;
 </script>
 
+<main class="responsive max primary-container sticky">
+	<Container>
+		<h3>
+			{#if icon}
+				<i>{icon}</i>
+			{/if}
+			<span>{title}</span>
+		</h3>
+	</Container>
+</main>
 <Container>
-	<h3>
-		{#if icon}
-			<i>{icon}</i>
-		{/if}
-		<span>{title}</span>
-	</h3>
-	<section class="page left active">
+	<section class="page left active surface">
 		<slot />
 	</section>
 </Container>
@@ -22,9 +26,12 @@
 		margin-right: 0.8rem;
 	}
 	h3 {
-		margin-top: 6rem;
-		margin-bottom: 1.4rem;
+		padding-top: 6rem;
 	}
+	.responsive {
+		padding-bottom: 1.2rem !important;
+	}
+
 	@media print {
 		h3 {
 			margin: 0;
