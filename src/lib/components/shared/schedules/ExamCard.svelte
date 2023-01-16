@@ -17,7 +17,7 @@
 	$: endTime = endTime === undefined ? startTime + credit : endTime;
 </script>
 
-<div class="row" class:completed transition:fly>
+<div class="row padding" class:completed transition:fly>
 	<div class="max">
 		<h5>{name}</h5>
 		<p>{title}</p>
@@ -31,11 +31,10 @@
 		<h6 class="right-align">{date}</h6>
 	</div>
 </div>
-<!-- <div class="medium-space" /> -->
-<div class="large-divider" />
 
 <style>
 	.row {
 		border-radius: 0.25rem;
+		border-bottom: 1px var(--surface-variant) solid;
 	}
 </style>

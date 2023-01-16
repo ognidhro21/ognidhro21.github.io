@@ -39,7 +39,7 @@
 <!-- <div class="small-divider" /> -->
 <style>
 	.row {
-		border-bottom: 1px grey solid;
+		border-bottom: 1px var(--surface-variant) solid;
 		margin-top: 0;
 		border-radius: 0.25rem;
 	}
