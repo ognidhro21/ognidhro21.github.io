@@ -39,13 +39,13 @@
 <SEO title="Notices" />
 <PageContainer title="Notices" icon="notifications">
 	{#each data.noticeList as post}
-		<article class="padding">
+		<article class="padding no-elevate secondary-container">
 			<!-- <img src={post.meta.featuredImg} alt="" /> -->
 			<h3>
 				{post.meta.title}
 			</h3>
 			<p>{post.meta.excerpt}</p>
-			<a href={post.path} class="button border no-margin">More</a>
+			<a href={post.path} class="button secondary no-margin">More</a>
 		</article>
 	{/each}
 </PageContainer>

@@ -14,7 +14,10 @@
 </script>
 
 <!-- on:click={()=>setOpenAccordian(id)} -->
-<article class="collapsible-header padding" on:click={() => dispatch('accordionSelected', id)}>
+<article
+	class="collapsible-header padding secondary-container"
+	on:click={() => dispatch('accordionSelected', id)}
+>
 	<slot name="title" />
 	<Icon name="chevron-down" {direction} />
 </article>

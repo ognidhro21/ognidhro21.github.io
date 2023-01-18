@@ -13,7 +13,7 @@
 	$: progressData = isInProgress(day, schedule.start, schedule.end);
 </script>
 
-<div class="row padding " class:primary-container={practical}>
+<div class="row padding " class:tertiary-container={practical}>
 	<div class="max">
 		<h5>
 			{name} - {CODE}
@@ -29,7 +29,7 @@
 	{/if}
 	{#if schedule.practical}
 		<div class="row">
-			<i class="error-text large">biotech</i>
+			<i class="on-tertiary-container large">biotech</i>
 			<!-- <span class="error round small-padding">PRACTICAL</span> -->
 		</div>
 	{/if}

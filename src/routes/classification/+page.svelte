@@ -9,9 +9,9 @@
 <PageContainer icon="leaderboard" title="Hall of Fame">
 	<section class="grid">
 		{#each results as { id, detailedname }}
-			<article class="s12 m6 l4">
+			<article class="s12 m6 l4 no-elevate secondary-container">
 				<h4>{detailedname} Classification</h4>
-				<a href="/classification/{id}" class="button no-margin">View</a>
+				<a href="/classification/{id}" class="button no-margin secondary">View</a>
 			</article>
 		{/each}
 	</section>

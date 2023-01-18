@@ -31,6 +31,9 @@
 	.heading {
 		padding-bottom: 1.2rem !important;
 	}
+	.content {
+		padding-top: 1.2rem;
+	}
 	@media only screen and (max-width: 600px) {
 		.content {
 			margin-top: -1rem;

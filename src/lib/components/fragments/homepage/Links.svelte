@@ -35,12 +35,14 @@
 <Container fluid>
 	<div class="grid">
 		{#each links as link}
-			<article class="no-margin s12 l4 {link.color}">
-				<h5>{link.title}</h5>
-				<p>{link.details}</p>
+			<article class="no-margin s12 l4 secondary-container">
+				<hbox>
+					<h5>{link.title}</h5>
+					<p>{link.details}</p>
+				</hbox>
 				<nav>
 					<a
-						class="button {link.color}-container"
+						class="button secondary"
 						href={link.path}
 						data-sveltekit-noscroll={link.scroll}
 						target={link.target}>Go!</a
@@ -52,13 +54,14 @@
 </Container>
 
 <style>
-	.responsive {
-		padding-bottom: 24px;
+	.grid {
+		margin-block: 4rem;
 	}
 	article {
 		position: relative;
 		overflow: hidden;
 		z-index: 2;
+		box-shadow: none;
 	}
 	.grid {
 		margin-block: 1rem;

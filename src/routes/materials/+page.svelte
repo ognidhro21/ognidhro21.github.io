@@ -8,13 +8,13 @@
 <PageContainer title="Materials" icon="collections_bookmark">
 	<div class="grid">
 		{#each materialsList as material}
-			<article class="s12 m6 l4 no-margin">
+			<article class="s12 m6 l4 no-margin no-elevate secondary-container">
 				<div>
 					<h6 class="upper">{material.meta.course}</h6>
 					<h5>{material.meta.title}</h5>
 				</div>
 				<div>
-					<a href={material.path} class="button no-margin">View</a>
+					<a href={material.path} class="button no-margin secondary">View</a>
 				</div>
 			</article>
 		{/each}

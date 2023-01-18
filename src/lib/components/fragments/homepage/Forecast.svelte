@@ -10,17 +10,14 @@
 
 	<div class="scroll row">
 		{#each rain as { probability, date }}
-			<article
-				class:primary-container={probability >= 40}
-				class:on-primary-container={probability >= 40}
-			>
+			<article class:tertiary-container={probability >= 20}>
 				<p>{date}</p>
 				<p><i>rainy</i>{probability}%</p>
 			</article>
 		{/each}
 	</div>
 	<dib class="medium-space" />
-	<a href="/forecast" class="button"><i>arrow_forward</i>More</a>
+	<a href="/forecast" class="button secondary-container"><i>arrow_forward</i>More</a>
 </Container>
 
 <style>

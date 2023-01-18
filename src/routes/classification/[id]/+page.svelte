@@ -7,7 +7,7 @@
 
 <PageContainer title="{info.detailedname} Classification">
 	{#each ranks as { ID, GPA }, index}
-		<div class="one row justify-between tertiary-border" class:primary-container={index === 0}>
+		<div class="one row justify-between " class:tertiary-container={index === 0}>
 			<div class="max">
 				<h6>{index + 1}</h6>
 				{#each ID as id, index (id)}
@@ -23,13 +23,14 @@
 
 <style>
 	.one {
-		border-bottom: 1px solid;
+		border-bottom: 1px solid var(--surface-variant);
 		padding: 1.3rem;
 	}
-	.primary-container {
+	.tertiary-container {
 		padding-block: 3rem;
 	}
-	.one.primary-container {
+	.one.tertiary-container {
 		border: none;
+		border-radius: 1rem;
 	}
 </style>

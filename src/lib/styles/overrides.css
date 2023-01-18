@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap');
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+.button {
+	font-weight: 600 !important;
+}
 * + h1,
 * + h2,
 * + h3,
@@ -8,6 +27,7 @@
 }
 h1 {
 	font-size: 4.209rem;
+	font-weight: 700;
 }
 
 h2 {
@@ -66,14 +86,16 @@ article {
 }
 .button,
 button {
-	color: var(--on-primary);
+	/* color: var(--on-primary); */
 	padding: 0 1.3rem;
-	background-color: var(--primary);
+	/* background-color: var(--primary); */
 	border-radius: 0.25rem;
 	transition: var(--speed3) transform, var(--speed3) border-radius, var(--speed3) padding;
 	user-select: none;
 	gap: 1rem;
+	box-shadow: var(--elevate1) !important;
 }
+
 .wave:after,
 .wave.light:after,
 .chip:after,
@@ -177,4 +199,10 @@ main.responsive {
 }
 .max {
 	max-width: 100%;
+}
+hbox {
+	margin-bottom: 1rem;
+}
+hbox * {
+	margin-block: 0;
 }

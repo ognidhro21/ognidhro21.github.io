@@ -5,6 +5,7 @@
 	import SEO from '$lib/components/shared/SEO/index.svelte';
 	import DATA from '$lib//stores/PersistantInfo';
 	import AddToHome from '$lib/components/shared/AddToHome.svelte';
+	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 
 	export let data;
 	const routine = data.routine;
@@ -46,10 +47,9 @@
 </script>
 
 <SEO title={`Routine - ${name}`} />
-<Container fluid>
+<PageContainer title={detailedname}>
 	<AddToHome />
-	<article class="header small-elevate page active left">
-		<h4>{detailedname}</h4>
+	<article class="header no-elevate secondary-container page active left">
 		<div class="grid">
 			<div class="s4 l4">
 				<div class="field label suffix">
@@ -92,7 +92,7 @@
 	{#each infos as schedule}
 		<RoutineCard {schedule} id={name} {day} />
 	{/each}
-</Container>
+</PageContainer>
 
 <style>
 	.header {
