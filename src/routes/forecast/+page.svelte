@@ -9,7 +9,7 @@
 	<h5><i>location_on</i><span>Dumki</span></h5>
 	{#each weather as { probability, date, min, max, day, night }}
 		<div
-			class="forecast padding  secondary-border"
+			class="forecast padding"
 			class:primary-container={probability >= 40}
 			class:on-primary-container={probability >= 40}
 		>
@@ -33,7 +33,7 @@
 
 <style>
 	.forecast {
-		border-bottom: 1px solid;
+		border-bottom: 1px solid var(--surface-variant);
 	}
 	.footer {
 		margin-top: 3rem;
