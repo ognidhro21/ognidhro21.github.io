@@ -5,7 +5,7 @@
 </script>
 
 <Container>
-	<h5><i>location_on</i><span> Dumki, Patuakhali</span></h5>
+	<h4><i>location_on</i><span> Dumki, Patuakhali</span></h4>
 	<h5>{Headline.Text}</h5>
 
 	<div class="scroll row">
@@ -24,7 +24,7 @@
 	h5 {
 		margin: 0;
 	}
-	h5 > i {
+	h4 > i {
 		margin-right: 0.8rem;
 	}
 	p > i {

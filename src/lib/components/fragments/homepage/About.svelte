@@ -6,6 +6,8 @@
 <Container fluid bgColor="var(--plain)">
 	<div class="contents">
 		<div class="text">
+			<h2>Fostering the Future of Agriculture</h2>
+			<!-- <h3>Building a Brighter Future for Bangladesh's Agriculture</h3> -->
 			<p>
 				We, the 21st batch of Agriculture students at Patuakhali Science and Technology University,
 				would like to express our presence and introduce ourselves to you. As current students of
@@ -32,6 +34,9 @@
 	}
 	img {
 		width: 100%;
+	}
+	h2 {
+		line-height: 1.2;
 	}
 	.text {
 		width: 100%;
