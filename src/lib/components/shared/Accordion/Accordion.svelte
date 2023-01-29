@@ -37,6 +37,7 @@
 		align-items: center;
 		justify-content: space-between;
 		border-bottom: 1px solid var(--plain-invert);
+		border-radius: 1rem;
 	}
 	.collapsible-body {
 		display: block;

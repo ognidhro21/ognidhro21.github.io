@@ -89,7 +89,7 @@ button {
 	/* color: var(--on-primary); */
 	padding: 0 1.3rem;
 	/* background-color: var(--primary); */
-	border-radius: 0.25rem;
+	border-radius: 2rem;
 	transition: var(--speed3) transform, var(--speed3) border-radius, var(--speed3) padding;
 	user-select: none;
 	gap: 1rem;
