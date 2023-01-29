@@ -13,7 +13,7 @@
 					<span>L2S1</span>
 				</span> -->
 			<!-- <a href="routines/L2S1" class="button primary small-elevate ">Class Routine</a> -->
-			<a href="/exams/theory/final/L2S1" class="button primary ">L2S1 Final Exam</a>
+			<!-- <a href="/exams/theory/final/L2S1" class="button primary ">L2S1 Final Exam</a> -->
 			<!-- <a href="/exams/theory/mid/L2S1" class="button border primary-border right-round">
 					Mid Schedules
 				</a>
