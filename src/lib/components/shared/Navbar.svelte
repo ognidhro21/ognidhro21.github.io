@@ -89,6 +89,11 @@
 		$GROUP[0] = info;
 		toast = true;
 	}
+	/**
+	 *
+	 * @param id
+	 */
+	function getGroupById(id = 1901141) {}
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -180,6 +185,11 @@
 			</select>
 			<i>arrow_drop_down</i>
 		</div>
+		<!-- <div class="field label border">
+			<input type="text" pattern="[0-9]{7}" maxlength="7" />
+			<label>ID</label>
+		</div> -->
+
 		<button on:click={saveInfo} data-ui="#modal-reset-grp">Submit</button>
 	</div>
 </div>
