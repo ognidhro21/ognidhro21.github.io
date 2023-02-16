@@ -10,6 +10,7 @@
 		<!-- svelte-ignore a11y-missing-attribute -->
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<a
+			class="vertical"
 			data-sveltekit-noscroll
 			class:active={selected === item.name}
 			on:click={() => {
