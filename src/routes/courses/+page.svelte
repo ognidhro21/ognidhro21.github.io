@@ -4,7 +4,7 @@
 	import { Accordions, Accordion } from '$lib/components/shared/Accordion';
 	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 	export let data;
-	const current = 'L2S1';
+	const current = 'L2S2';
 	let items = [
 		{
 			name: 'Semester',
