@@ -4,6 +4,108 @@
     "sections": [
         {
             "name": "Section 1",
+            "days": [
+                {
+                    "name": "Sunday",
+                    "schedules": [
+                        {
+                            "code": "stt",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "ard",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "bcm",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Monday",
+                    "schedules": [
+                        {
+                            "code": "ent",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "agb",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "meeting",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tuesday",
+                    "schedules": [
+                        {
+                            "code": "bcm",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "stt",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "plp",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Wednesday",
+                    "schedules": [
+                        {
+                            "code": "agr",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "ent",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "ard",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Thursday",
+                    "schedules": [
+                        {
+                            "code": "plp",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "ent",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                }
+            ],
             "groups": [
                 {
                     "name": "A",
@@ -16,21 +118,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 },
                                 {
                                     "code": "ent",
@@ -48,21 +135,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "meeting",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -74,21 +146,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -100,21 +157,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -126,21 +168,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         }
@@ -159,21 +186,6 @@
                                     "practical": true
                                 },
                                 {
-                                    "code": "stt",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
-                                {
                                     "code": "bcm",
                                     "start": "14:15",
                                     "end": "15:45",
@@ -189,21 +201,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "meeting",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -215,21 +212,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -241,21 +223,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -267,21 +234,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         }
@@ -300,21 +252,6 @@
                                     "practical": true
                                 },
                                 {
-                                    "code": "stt",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
-                                {
                                     "code": "agb",
                                     "start": "14:15",
                                     "end": "15:45",
@@ -330,21 +267,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "meeting",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -356,21 +278,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -382,21 +289,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -408,21 +300,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         }
@@ -432,6 +309,108 @@
         },
         {
             "name": "Section 2",
+            "days": [
+                {
+                    "name": "Sunday",
+                    "schedules": [
+                        {
+                            "code": "plp",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "agb",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Monday",
+                    "schedules": [
+                        {
+                            "code": "ard",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "plp",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "meeting",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tuesday",
+                    "schedules": [
+                        {
+                            "code": "agb",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "ard",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "ent",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Wednesday",
+                    "schedules": [
+                        {
+                            "code": "agr",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "stt",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "bcm",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Thursday",
+                    "schedules": [
+                        {
+                            "code": "bcm",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "ent",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "stt",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                }
+            ],
             "groups": [
                 {
                     "name": "D",
@@ -446,21 +425,6 @@
                                     "practical": true
                                 },
                                 {
-                                    "code": "plp",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
-                                {
                                     "code": "agr",
                                     "start": "14:15",
                                     "end": "15:45",
@@ -476,21 +440,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "meeting",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -502,21 +451,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -528,21 +462,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -554,21 +473,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         }
@@ -587,21 +491,6 @@
                                     "practical": true
                                 },
                                 {
-                                    "code": "plp",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
-                                {
                                     "code": "stt",
                                     "start": "14:15",
                                     "end": "15:45",
@@ -617,21 +506,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "meeting",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -643,21 +517,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -669,21 +528,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -695,21 +539,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         }
@@ -729,21 +558,6 @@
                                 },
                                 {
                                     "code": "plp",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
-                                {
-                                    "code": "plp",
                                     "start": "14:30",
                                     "end": "16:00",
                                     "practical": true
@@ -753,16 +567,6 @@
                         {
                             "name": "Monday",
                             "schedules": [
-                                {
-                                    "code": "ard",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
                                 {
                                     "code": "stt",
                                     "start": "12:20",
@@ -779,21 +583,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
@@ -807,21 +596,6 @@
                                     "practical": true
                                 },
                                 {
-                                    "code": "agr",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
-                                {
                                     "code": "agb",
                                     "start": "14:15",
                                     "end": "15:45",
@@ -831,23 +605,7 @@
                         },
                         {
                             "name": "Thursday",
-                            "schedules": [
-                                {
-                                    "code": "bcm",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                }
-                            ]
+                            "schedules": []
                         }
                     ]
                 }
@@ -855,6 +613,108 @@
         },
         {
             "name": "Section 3",
+            "days": [
+                {
+                    "name": "Sunday",
+                    "schedules": [
+                        {
+                            "code": "agb",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "bcm",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Monday",
+                    "schedules": [
+                        {
+                            "code": "stt",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "ent",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "meeting",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tuesday",
+                    "schedules": [
+                        {
+                            "code": "ard",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "bcm",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "agb",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Wednesday",
+                    "schedules": [
+                        {
+                            "code": "stt",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "plp",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Thursday",
+                    "schedules": [
+                        {
+                            "code": "ent",
+                            "start": "10:40",
+                            "end": "11:25"
+                        },
+                        {
+                            "code": "ard",
+                            "start": "11:30",
+                            "end": "12:15"
+                        },
+                        {
+                            "code": "plp",
+                            "start": "12:20",
+                            "end": "13:05"
+                        }
+                    ]
+                }
+            ],
             "groups": [
                 {
                     "name": "G",
@@ -862,21 +722,6 @@
                         {
                             "name": "Sunday",
                             "schedules": [
-                                {
-                                    "code": "agb",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
                                 {
                                     "code": "ent",
                                     "start": "14:15",
@@ -888,21 +733,6 @@
                         {
                             "name": "Monday",
                             "schedules": [
-                                {
-                                    "code": "stt",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "meeting",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
                                 {
                                     "code": "bcm",
                                     "start": "14:15",
@@ -921,21 +751,6 @@
                                     "practical": true
                                 },
                                 {
-                                    "code": "ard",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
-                                {
                                     "code": "agb",
                                     "start": "14:15",
                                     "end": "15:45",
@@ -947,21 +762,6 @@
                             "name": "Wednesday",
                             "schedules": [
                                 {
-                                    "code": "stt",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
-                                {
                                     "code": "agr",
                                     "start": "14:15",
                                     "end": "15:45",
@@ -972,21 +772,6 @@
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "ent",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
                                 {
                                     "code": "stt",
                                     "start": "14:15",
@@ -1008,42 +793,12 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 }
                             ]
                         },
                         {
                             "name": "Monday",
                             "schedules": [
-                                {
-                                    "code": "stt",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "meeting",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
                                 {
                                     "code": "plp",
                                     "start": "14:15",
@@ -1055,21 +810,6 @@
                         {
                             "name": "Tuesday",
                             "schedules": [
-                                {
-                                    "code": "ard",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
                                 {
                                     "code": "agr",
                                     "start": "14:15",
@@ -1089,21 +829,6 @@
                                 },
                                 {
                                     "code": "stt",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
-                                {
-                                    "code": "stt",
                                     "start": "14:15",
                                     "end": "15:45",
                                     "practical": true
@@ -1113,21 +838,6 @@
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "ent",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
                                 {
                                     "code": "agb",
                                     "start": "14:15",
@@ -1143,23 +853,7 @@
                     "days": [
                         {
                             "name": "Sunday",
-                            "schedules": [
-                                {
-                                    "code": "agb",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                }
-                            ]
+                            "schedules": []
                         },
                         {
                             "name": "Monday",
@@ -1169,21 +863,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "stt",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "meeting",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 },
                                 {
                                     "code": "agr",
@@ -1197,21 +876,6 @@
                             "name": "Tuesday",
                             "schedules": [
                                 {
-                                    "code": "ard",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "agb",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
-                                {
                                     "code": "stt",
                                     "start": "14:15",
                                     "end": "15:45",
@@ -1222,21 +886,6 @@
                         {
                             "name": "Wednesday",
                             "schedules": [
-                                {
-                                    "code": "stt",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "12:20",
-                                    "end": "13:05"
-                                },
                                 {
                                     "code": "plp",
                                     "start": "14:15",
@@ -1253,21 +902,6 @@
                                     "start": "9:00",
                                     "end": "10:35",
                                     "practical": true
-                                },
-                                {
-                                    "code": "ent",
-                                    "start": "10:40",
-                                    "end": "11:25"
-                                },
-                                {
-                                    "code": "ard",
-                                    "start": "11:30",
-                                    "end": "12:15"
-                                },
-                                {
-                                    "code": "plp",
-                                    "start": "12:20",
-                                    "end": "13:05"
                                 },
                                 {
                                     "code": "ent",

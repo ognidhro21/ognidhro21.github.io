@@ -4,6 +4,108 @@
     "sections": [
         {
             "name": "Section 1",
+            "days": [
+                {
+                    "name": "Sunday",
+                    "schedules": [
+                        {
+                            "code": "acm",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "aes",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "age",
+                            "start": "14:30",
+                            "end": "15:20"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "15:25",
+                            "end": "16:15"
+                        }
+                    ]
+                },
+                {
+                    "name": "Monday",
+                    "schedules": [
+                        {
+                            "code": "hrt",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "bcm",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "age",
+                            "start": "15:25",
+                            "end": "16:15"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tuesday",
+                    "schedules": [
+                        {
+                            "code": "agr",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "acm",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "age",
+                            "start": "14:30",
+                            "end": "15:20"
+                        },
+                        {
+                            "code": "aes",
+                            "start": "15:25",
+                            "end": "16:15"
+                        }
+                    ]
+                },
+                {
+                    "name": "Wednesday",
+                    "schedules": [
+                        {
+                            "code": "hrt",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "9:25",
+                            "end": "10:15"
+                        }
+                    ]
+                },
+                {
+                    "name": "Thursday",
+                    "schedules": [
+                        {
+                            "code": "agr",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "bcm",
+                            "start": "9:25",
+                            "end": "10:15"
+                        }
+                    ]
+                }
+            ],
             "groups": [
                 {
                     "name": "A",
@@ -13,29 +115,9 @@
                             "schedules": [
                                 {
                                     "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
-                                    "code": "acm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -43,25 +125,10 @@
                             "name": "Monday",
                             "schedules": [
                                 {
-                                    "code": "hrt",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "ssc",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -69,46 +136,16 @@
                             "name": "Tuesday",
                             "schedules": [
                                 {
-                                    "code": "agr",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "acm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "hrt",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
                         {
                             "name": "Wednesday",
                             "schedules": [
-                                {
-                                    "code": "hrt",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "bcm",
                                     "start": "10:20",
@@ -120,16 +157,6 @@
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "agr",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "agr",
                                     "start": "10:20",
@@ -153,30 +180,10 @@
                             "name": "Sunday",
                             "schedules": [
                                 {
-                                    "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": " 9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "ssc",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -185,24 +192,9 @@
                             "schedules": [
                                 {
                                     "code": "hrt",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
-                                    "code": "hrt",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -210,46 +202,16 @@
                             "name": "Tuesday",
                             "schedules": [
                                 {
-                                    "code": "agr",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "acm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "bcm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
                         {
                             "name": "Wednesday",
                             "schedules": [
-                                {
-                                    "code": "hrt",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "agr",
                                     "start": "10:20",
@@ -261,16 +223,6 @@
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "agr",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "age",
                                     "start": "10:20",
@@ -294,30 +246,10 @@
                             "name": "Sunday",
                             "schedules": [
                                 {
-                                    "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": " 9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "hrt",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -325,25 +257,10 @@
                             "name": "Monday",
                             "schedules": [
                                 {
-                                    "code": "hrt",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "bcm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -351,46 +268,16 @@
                             "name": "Tuesday",
                             "schedules": [
                                 {
-                                    "code": "agr",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "acm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "ssc",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
                         {
                             "name": "Wednesday",
                             "schedules": [
-                                {
-                                    "code": "hrt",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "age",
                                     "start": "10:20",
@@ -402,16 +289,6 @@
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "agr",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "acm",
                                     "start": "10:20",
@@ -432,6 +309,108 @@
         },
         {
             "name": "Section 2",
+            "days": [
+                {
+                    "name": "Sunday",
+                    "schedules": [
+                        {
+                            "code": "aes",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "age",
+                            "start": "15:25",
+                            "end": "16:15"
+                        }
+                    ]
+                },
+                {
+                    "name": "Monday",
+                    "schedules": [
+                        {
+                            "code": "bcm",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "14:30",
+                            "end": "15:20"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tuesday",
+                    "schedules": [
+                        {
+                            "code": "acm",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "aes",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "age",
+                            "start": "14:30",
+                            "end": "15:20"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "15:25",
+                            "end": "16:15"
+                        }
+                    ]
+                },
+                {
+                    "name": "Wednesday",
+                    "schedules": [
+                        {
+                            "code": "bcm",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "hrt",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "age",
+                            "start": "15:25",
+                            "end": "16:15"
+                        }
+                    ]
+                },
+                {
+                    "name": "Thursday",
+                    "schedules": [
+                        {
+                            "code": "hrt",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "acm",
+                            "start": "9:25",
+                            "end": "10:15"
+                        }
+                    ]
+                }
+            ],
             "groups": [
                 {
                     "name": "D",
@@ -440,25 +419,10 @@
                             "name": "Sunday",
                             "schedules": [
                                 {
-                                    "code": "aes",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "bcm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -466,25 +430,10 @@
                             "name": "Monday",
                             "schedules": [
                                 {
-                                    "code": "bcm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "agr",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
@@ -492,30 +441,10 @@
                             "name": "Tuesday",
                             "schedules": [
                                 {
-                                    "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "age",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -523,41 +452,16 @@
                             "name": "Wednesday",
                             "schedules": [
                                 {
-                                    "code": "bcm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "hrt",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "acm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "hrt",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "acm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "ssc",
                                     "start": "10:20",
@@ -581,25 +485,10 @@
                             "name": "Sunday",
                             "schedules": [
                                 {
-                                    "code": "aes",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "agr",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -607,25 +496,10 @@
                             "name": "Monday",
                             "schedules": [
                                 {
-                                    "code": "bcm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "age",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
@@ -634,29 +508,9 @@
                             "schedules": [
                                 {
                                     "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
-                                    "code": "acm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -664,41 +518,16 @@
                             "name": "Wednesday",
                             "schedules": [
                                 {
-                                    "code": "bcm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "hrt",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "ssc",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "hrt",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "acm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "hrt",
                                     "start": "10:20",
@@ -722,25 +551,10 @@
                             "name": "Sunday",
                             "schedules": [
                                 {
-                                    "code": "aes",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "age",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -748,25 +562,10 @@
                             "name": "Monday",
                             "schedules": [
                                 {
-                                    "code": "bcm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "acm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
@@ -774,30 +573,10 @@
                             "name": "Tuesday",
                             "schedules": [
                                 {
-                                    "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "ssc",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -805,41 +584,16 @@
                             "name": "Wednesday",
                             "schedules": [
                                 {
-                                    "code": "bcm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "hrt",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "hrt",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "hrt",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "acm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "bcm",
                                     "start": "10:20",
@@ -860,6 +614,108 @@
         },
         {
             "name": "Section 3",
+            "days": [
+                {
+                    "name": "Sunday",
+                    "schedules": [
+                        {
+                            "code": "bcm",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "hrt",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "aes",
+                            "start": "14:30",
+                            "end": "15:20"
+                        }
+                    ]
+                },
+                {
+                    "name": "Monday",
+                    "schedules": [
+                        {
+                            "code": "agr",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "age",
+                            "start": "14:30",
+                            "end": "15:20"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tuesday",
+                    "schedules": [
+                        {
+                            "code": "aes",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "hrt",
+                            "start": "14:30",
+                            "end": "15:20"
+                        },
+                        {
+                            "code": "age",
+                            "start": "15:25",
+                            "end": "16:15"
+                        }
+                    ]
+                },
+                {
+                    "name": "Wednesday",
+                    "schedules": [
+                        {
+                            "code": "acm",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "bcm",
+                            "start": "9:25",
+                            "end": "10:15"
+                        },
+                        {
+                            "code": "age",
+                            "start": "14:30",
+                            "end": "15:20"
+                        }
+                    ]
+                },
+                {
+                    "name": "Thursday",
+                    "schedules": [
+                        {
+                            "code": "acm",
+                            "start": "8:30",
+                            "end": "9:20"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "9:25",
+                            "end": "10:15"
+                        }
+                    ]
+                }
+            ],
             "groups": [
                 {
                     "name": "G",
@@ -868,25 +724,10 @@
                             "name": "Sunday",
                             "schedules": [
                                 {
-                                    "code": "bcm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "hrt",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "acm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
@@ -894,25 +735,10 @@
                             "name": "Monday",
                             "schedules": [
                                 {
-                                    "code": "agr",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "ssc",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
@@ -920,30 +746,10 @@
                             "name": "Tuesday",
                             "schedules": [
                                 {
-                                    "code": "aes",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "hrt",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "hrt",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -951,41 +757,16 @@
                             "name": "Wednesday",
                             "schedules": [
                                 {
-                                    "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "bcm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "agr",
                                     "start": "10:20",
@@ -1009,25 +790,10 @@
                             "name": "Sunday",
                             "schedules": [
                                 {
-                                    "code": "bcm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "hrt",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "ssc",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
@@ -1035,25 +801,10 @@
                             "name": "Monday",
                             "schedules": [
                                 {
-                                    "code": "agr",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "hrt",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
@@ -1061,30 +812,10 @@
                             "name": "Tuesday",
                             "schedules": [
                                 {
-                                    "code": "aes",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "bcm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "hrt",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -1092,41 +823,16 @@
                             "name": "Wednesday",
                             "schedules": [
                                 {
-                                    "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "agr",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "age",
                                     "start": "10:20",
@@ -1150,25 +856,10 @@
                             "name": "Sunday",
                             "schedules": [
                                 {
-                                    "code": "bcm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "hrt",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "hrt",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "aes",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
@@ -1176,25 +867,10 @@
                             "name": "Monday",
                             "schedules": [
                                 {
-                                    "code": "agr",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "bcm",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
@@ -1202,30 +878,10 @@
                             "name": "Tuesday",
                             "schedules": [
                                 {
-                                    "code": "aes",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "ssc",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "agr",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "hrt",
-                                    "start": "14:30",
-                                    "end": "15:20"
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "15:25",
-                                    "end": "16:15"
                                 }
                             ]
                         },
@@ -1233,41 +889,16 @@
                             "name": "Wednesday",
                             "schedules": [
                                 {
-                                    "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "bcm",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
-                                {
                                     "code": "age",
                                     "start": "10:20",
                                     "end": "12:05",
                                     "practical": true
-                                },
-                                {
-                                    "code": "age",
-                                    "start": "14:30",
-                                    "end": "15:20"
                                 }
                             ]
                         },
                         {
                             "name": "Thursday",
                             "schedules": [
-                                {
-                                    "code": "acm",
-                                    "start": "8:30",
-                                    "end": "9:20"
-                                },
-                                {
-                                    "code": "agr",
-                                    "start": "9:25",
-                                    "end": "10:15"
-                                },
                                 {
                                     "code": "ssc",
                                     "start": "10:20",
