@@ -43,11 +43,12 @@
 			group = $DATA[0].group;
 		}
 	});
-
-	$: classes = [
-		...sections[section].groups[group].days[day].schedules,
-		...sections[section].days[day].schedules
-	];
+	// injecting practical class to true as these are from groups
+	$: practicalClasses = sections[section].groups[group].days[day].schedules.map((data) => ({
+		...data,
+		practical: true
+	}));
+	$: classes = [...practicalClasses, ...sections[section].days[day].schedules];
 	$: classes.sort(function (a, b) {
 		return Date.parse('1970/01/01 ' + a.start) - Date.parse('1970/01/01 ' + b.start);
 	});
