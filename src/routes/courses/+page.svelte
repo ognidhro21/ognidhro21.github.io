@@ -20,7 +20,7 @@
 		selected = e.detail;
 	}
 	// opened Accordion
-	let openedAccordion = 1;
+	let openedAccordion = 2;
 	const toggleAccordion = (e) => (openedAccordion = e.detail);
 </script>
 
