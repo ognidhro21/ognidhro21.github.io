@@ -1,9 +1,11 @@
 <script>
 	import Container from './Container.svelte';
-
+	import SEO from '$lib/components/shared/SEO/index.svelte';
 	export let title;
 	export let icon;
 </script>
+
+<SEO {title} />
 
 <main class="responsive max primary-container heading">
 	<Container>

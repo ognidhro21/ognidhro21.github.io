@@ -36,7 +36,6 @@
 	});
 </script>
 
-<SEO title="Notices" />
 <PageContainer title="Notices" icon="notifications">
 	{#each data.noticeList as post}
 		<article class="padding no-elevate secondary-container">

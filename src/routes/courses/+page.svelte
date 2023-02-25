@@ -1,5 +1,6 @@
 <script>
 	import { getFullCode, getCode, courses } from '$lib/courses';
+	import SEO from '$lib/components/shared/SEO/index.svelte';
 	import Tabs from '$lib/components/shared/Tabs.svelte';
 	import { Accordions, Accordion } from '$lib/components/shared/Accordion';
 	import PageContainer from '$lib/components/shared/PageContainer.svelte';

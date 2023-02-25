@@ -7,12 +7,12 @@
 	import Ongoing from '$lib/components/fragments/homepage/Ongoing.svelte';
 	import SEO from '$lib/components/shared/SEO/index.svelte';
 	export let data;
-	const { Headline, rain, ongoing } = data;
+	const { Headline, rain, classes } = data;
 </script>
 
 <SEO title={`Home`} />
 <Hero />
-<Ongoing {ongoing} />
+<Ongoing {classes} />
 <Forecast {Headline} {rain} />
 <Links />
 <About />

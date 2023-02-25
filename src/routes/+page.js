@@ -12,6 +12,7 @@ export async function load({ url }) {
 	});
 
 	// ongoing classes
-	const ongoing = await fetch(`${url.origin}/api/ongoing`).then((e) => e.json());
-	return { Headline, rain, ongoing };
+	const classes = await fetch(`${url.origin}/api/ongoing`).then((e) => e.json());
+
+	return { Headline, rain, classes };
 }

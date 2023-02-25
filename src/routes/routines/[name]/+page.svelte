@@ -53,7 +53,6 @@
 	});
 </script>
 
-<SEO title={`Routine - ${name}`} />
 <PageContainer title={detailedname}>
 	<AddToHome />
 	<article class="header no-elevate secondary-container page active left">

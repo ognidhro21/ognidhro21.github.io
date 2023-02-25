@@ -77,7 +77,6 @@
 	}
 </script>
 
-<SEO title={`Schedules`} />
 <PageContainer title="Schedules" icon="event">
 	{#if saved}
 		<!-- <button mode="primary mb12" isRounded on:click={resetInfo}>Change Default Group</button> -->

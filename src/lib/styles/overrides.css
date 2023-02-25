@@ -174,7 +174,7 @@ button.border,
 .button.transparent,
 button.transparent {
 	scale: 1;
-	transition: scale 0.2s ease-in;
+	transition: scale 0.4s linear;
 }
 
 .wave:hover,
