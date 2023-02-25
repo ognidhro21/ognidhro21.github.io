@@ -10,6 +10,6 @@
 {#if !$DATA.closed}
 	<div class="add-to-home">
 		<img src={img} alt="banner" class="mbe12" />
-		<button on:click={closeBanner}>OK SHUT UP</button>
+		<button on:click={closeBanner}>Ok</button>
 	</div>
 {/if}
