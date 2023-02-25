@@ -2,7 +2,7 @@ const facebookPageName = import.meta.env ? import.meta.env.VITE_FACEBOOK_PAGE : 
 const facebookAuthorPageName = import.meta.env ? import.meta.env.VITE_FACEBOOK_AUTHOR_PAGE : '';
 
 const website = {
-	version: '4.7.6:17-19',
+	version: '4.23.2:26',
 	author: 'Ognidhro 21',
 	ogLanguage: 'en_US',
 	siteLanguage: 'en-US',
