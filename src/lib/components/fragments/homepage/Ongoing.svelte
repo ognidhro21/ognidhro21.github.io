@@ -7,12 +7,14 @@
 	console.log(ongoing);
 </script>
 
-{#if ongoing.length !== 0}
-	<Container>
+<Container>
+	{#if ongoing.length !== 0}
 		<h3>Ongoing</h3>
 		{#each ongoing as { section, schedule }}
 			<h4>{section}</h4>
 			<RoutineCard {schedule} {day} id="L2S2" />
 		{/each}
-	</Container>
-{/if}
+	{:else}
+		<h4>No classes are in progress</h4>
+	{/if}
+</Container>
