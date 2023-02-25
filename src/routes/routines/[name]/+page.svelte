@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import Container from '$lib/components/shared/Container.svelte';
 	import RoutineCard from '$lib/components/shared/schedules/RoutineCard.svelte';
 	import SEO from '$lib/components/shared/SEO/index.svelte';
 	import DATA from '$lib//stores/PersistantInfo';

@@ -221,4 +221,4 @@ export {
 	getFullCourseCode as getFullCode
 };
 
-console.log(getCourseTitle('STT', 'L2S1'));
+// console.log(getCourseTitle('STT', 'L2S1'));

@@ -45,7 +45,6 @@ function checkIfDateOver(year, date, time) {
 function checkIsInProgress(day, startTime, endTime) {
 	// if today is not the day from input, return
 	var currentDate = new Date();
-	var inProgress = false;
 	if (currentDate.getDay() !== day) {
 		return -1;
 	}
@@ -65,6 +64,7 @@ function checkIsInProgress(day, startTime, endTime) {
 	}
 	return -1;
 }
+
 export {
 	convertToAMOrPM as aMOrPM,
 	checkIfDateOver as isCompleted,

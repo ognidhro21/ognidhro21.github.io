@@ -10,5 +10,8 @@ export async function load({ url }) {
 		const date = d.toDateString().slice(0, 3);
 		rain = [...rain, { probability, date }];
 	});
-	return { Headline, rain };
+
+	// ongoing classes
+	const ongoing = await fetch(`${url.origin}/api/ongoing`).then((e) => e.json());
+	return { Headline, rain, ongoing };
 }
