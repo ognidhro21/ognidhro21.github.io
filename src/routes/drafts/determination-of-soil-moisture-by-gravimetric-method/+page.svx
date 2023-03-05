@@ -1,0 +1,35 @@
+---
+layout: material 
+title: Determination of Soil Moisture by Gravimetric Method
+course: ssc
+---
+
+
+The moisture percentage in a field moist soil may be stated as the amount of water held by the field moist soil and is expressed as a percentage of the oven dry soil.
+
+## Apparatus required
+
+1. Aluminum dish
+2. Balance
+3. An electric oven
+4. Desiccator containing sonte desiccating chemical i.e. CaCl2
+
+## Procedure
+
+Transfer a suitable amount (about 20 g) of the moist soil into a clean, dry and previously weighed aluminum dish along with the cover. Then take the weight of the dish with the moist soil. Now, remove the lid, place the dish containing the moist soil in a well ventilated oven at 105°C, dry for 16-24 hours, (or until a constant wt. is obtained) then cover the dish with its lid, cool in a desiccator and weigh as oven dry soil.
+
+## Calculation
+
+1. The weight of the empty dish W g
+2. The weight of the dish+ Wt. of moist soil) 
+3. The weight of the dish+ Wt. of oven dry soil = Wig
+
+The amount of moisture present in the moist soil (W$$_1$$-W₂) g.
+The amount of oven dry soil - (W₂- W) g 
+Therefore, the percentage of moisture present in the moist soil:
+$$\frac{W_{1}-W_{2}}{W_{2}-W}\times 100 (\text{Expressed as oven dry basis})$$
+
+## Precautions
+
+1. Weigh the soil rapidly to avoid any loss or gain of moisture during weighing 
+2. The temperature is to be adjusted at 105°C and drying is done for a period until a constant weight is obtained.
