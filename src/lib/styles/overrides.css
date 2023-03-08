@@ -411,7 +411,9 @@ hbox * {
 	margin-block: 0;
 }
 
-.primary-container {
+.primary-container,
+.modal > a.row:hover,
+.modal > a.row.active {
 	background: linear-gradient(
 		90deg,
 		var(--primary-container-left) 0%,
