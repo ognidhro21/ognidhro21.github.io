@@ -417,7 +417,7 @@ hbox * {
 	margin-block: 0;
 }
 
-.primary-container,
+/* .primary-container,
 .modal > a.row:hover,
 .modal > a.row.active {
 	background: linear-gradient(
@@ -442,4 +442,4 @@ hbox * {
 		var(--tertiary-container-mid) 50%,
 		var(--tertiary-container) 100%
 	);
-}
+} */
