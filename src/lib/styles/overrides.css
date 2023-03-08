@@ -430,8 +430,8 @@ hbox * {
 .secondary-container {
 	background: linear-gradient(
 		270deg,
-		rgba(251, 150, 190, 1) 0%,
-		rgba(246, 177, 188, 1) 50%,
+		var(--secondary-container-left) 0%,
+		var(--secondary-container-mid) 50%,
 		var(--secondary-container) 100%
 	);
 }
