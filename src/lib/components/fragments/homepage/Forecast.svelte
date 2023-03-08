@@ -6,7 +6,7 @@
 
 <Container>
 	<h4><i>location_on</i><span> Dumki, Patuakhali</span></h4>
-	<h5>{Headline.Text}</h5>
+	<p>{Headline.Text}</p>
 
 	<div class="scroll row">
 		{#each rain as { probability, date }}
