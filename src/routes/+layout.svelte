@@ -2,7 +2,6 @@
 	import NProgress from 'nprogress';
 	import { navigating } from '$app/stores';
 	import '$lib/styles/overrides.min.css';
-	import '$lib/styles/colors.min.css';
 	import Navbar from '$lib/components/shared/Navbar.svelte';
 	import DATA from '$lib/stores/NoticeInfo';
 	import dark from '$lib/stores/DarkMode';
