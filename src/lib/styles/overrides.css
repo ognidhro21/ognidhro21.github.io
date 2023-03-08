@@ -51,6 +51,8 @@ body.dark {
 	--tertiary: #e5c18d;
 	--on-tertiary: #422c05;
 	--tertiary-container: #5b421a;
+	--tertiary-container-mid: rgba(128, 97, 26, 1);
+	--tertiary-container-left: rgba(144, 109, 35, 1);
 	--on-tertiary-container: #ffdeae;
 	--error: #ffb4ab;
 	--error-container: #93000a;
