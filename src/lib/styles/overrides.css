@@ -11,6 +11,8 @@ body.light {
 	--secondary: #775656;
 	--on-secondary: #ffffff;
 	--secondary-container: #ffdad9;
+	--secondary-container-mid: rgba(246, 177, 188, 1);
+	--secondary-container-left: rgba(251, 150, 190, 1);
 	--on-secondary-container: #2c1515;
 	--tertiary: #755a2f;
 	--on-tertiary: #ffffff;
@@ -46,7 +48,9 @@ body.dark {
 	--on-primary-container: #ffdad9;
 	--secondary: #e6bdbc;
 	--on-secondary: #442929;
-	--secondary-container: #5d3f3f;
+	--secondary-container: rgba(181, 57, 34, 1);
+	--secondary-container-mid: rgba(174, 41, 24, 1);
+	--secondary-container-left: rgba(134, 34, 34, 1);
 	--on-secondary-container: #ffdad9;
 	--tertiary: #e5c18d;
 	--on-tertiary: #422c05;
@@ -423,7 +427,14 @@ hbox * {
 		var(--primary-container) 100%
 	);
 }
-
+.secondary-container {
+	background: linear-gradient(
+		270deg,
+		rgba(251, 150, 190, 1) 0%,
+		rgba(246, 177, 188, 1) 50%,
+		var(--secondary-container) 100%
+	);
+}
 .tertiary-container {
 	background: linear-gradient(
 		90deg,
