@@ -5,7 +5,7 @@
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<div id="panel-1" class="page active left" role="tabpanel" {tabindex}>
+<div id="panel-1" class="active left" role="tabpanel" {tabindex}>
 	<div class="grid">
 		{#each routinesList as r, i}
 			<article class="padding secondary-container s12 m6 l4">
