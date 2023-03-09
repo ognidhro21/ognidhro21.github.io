@@ -31,7 +31,7 @@
 			<Accordions>
 				{#each data.res as d, i}
 					<Accordion id={i} {openedAccordion} on:accordionSelected={toggleAccordion}>
-						<span slot="title" class="title"><h4>{d[0].id}</h4></span>
+						<span slot="title" class="title"><h5>{d[0].id}</h5></span>
 						<span>
 							{#each d as k}
 								{#if getCode(k.title) !== 'meeting'}
@@ -61,7 +61,7 @@
 							{openedAccordion}
 							on:accordionSelected={toggleAccordion}
 						>
-							<span slot="title" class="title"><h4>{course.name}</h4></span>
+							<span slot="title" class="title"><h5>{course.name}</h5></span>
 							<span>
 								{#each course.titles as title}
 									<div class="padding">
