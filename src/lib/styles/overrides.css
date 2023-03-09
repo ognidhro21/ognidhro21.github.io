@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap');
 :root,
 body.light {
 	/* light */
@@ -216,7 +216,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Nunito Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h2,
 h3,
