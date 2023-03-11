@@ -43,10 +43,10 @@ body.dark {
 	/* dark */
 	--primary: #ffb3b3;
 	--on-primary: #680014;
-	--primary-container: #920021;
+	--primary-container: #ff1744;
 	--primary-container-mid: rgba(191, 15, 33, 1);
 	--primary-container-left: rgba(234, 49, 78, 1);
-	--on-primary-container: #ffdad9;
+	--on-primary-container: #fff0f0;
 	--secondary: #e6bdbc;
 	--on-secondary: #442929;
 	--secondary-container: rgba(181, 57, 34, 1);
@@ -77,8 +77,8 @@ body.dark {
 	--surface-tint: #ffb3b3;
 	--surface-tint-color: #ffb3b3;
 
-	--secondary-container: #b1f0fb;
-	--on-secondary-container: #1b242e;
+	--secondary-container: #1b242e;
+	--on-secondary-container: #b1f0fb;
 	--tertiary-container: #3be2a4;
 	--on-tertiary-container: #1b242e;
 }
