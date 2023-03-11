@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap');
-:root,
+
 body.light {
 	/* light */
 	--primary: #ff1744;
@@ -38,6 +38,7 @@ body.light {
 	--surface-tint: #bf002e;
 	--surface-tint-color: #bf002e;
 }
+:root,
 body.dark {
 	/* dark */
 	--primary: #ffb3b3;
@@ -75,6 +76,11 @@ body.dark {
 	--shadow: #000000;
 	--surface-tint: #ffb3b3;
 	--surface-tint-color: #ffb3b3;
+
+	--secondary-container: #b1f0fb;
+	--on-secondary-container: #1b242e;
+	--tertiary-container: #3be2a4;
+	--on-tertiary-container: #1b242e;
 }
 #nprogress {
 	pointer-events: none;
