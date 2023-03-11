@@ -7,7 +7,7 @@
 
 <SEO {title} />
 
-<main class="responsive max primary-container heading">
+<main class="responsive max secondary-container heading">
 	<Container>
 		<h3>
 			{#if icon}
