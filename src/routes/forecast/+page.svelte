@@ -8,11 +8,7 @@
 <PageContainer title="Forecast" icon="cloud">
 	<h5><i>location_on</i><span>Dumki</span></h5>
 	{#each weather as { probability, date, min, max, day, night }}
-		<div
-			class="forecast padding"
-			class:primary-container={probability >= 40}
-			class:on-primary-container={probability >= 40}
-		>
+		<div class="forecast padding" class:tertiary-container={probability >= 40}>
 			<p>{date}</p>
 			<div class="row">
 				<div class="max">

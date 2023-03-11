@@ -43,10 +43,10 @@ body.dark {
 	/* dark */
 	--primary: #ffb3b3;
 	--on-primary: #680014;
-	--primary-container: #920021;
+	--primary-container: #ff1744;
 	--primary-container-mid: rgba(191, 15, 33, 1);
 	--primary-container-left: rgba(234, 49, 78, 1);
-	--on-primary-container: #ffdad9;
+	--on-primary-container: #fceeee;
 	--secondary: #e6bdbc;
 	--on-secondary: #442929;
 	--secondary-container: rgba(181, 57, 34, 1);

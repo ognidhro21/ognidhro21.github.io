@@ -2,7 +2,7 @@
 	import logo from '$lib/images/O21-Big.png';
 </script>
 
-<div class="responsive center-align middle-align primary-container">
+<div class="responsive center-align middle-align secondary-container">
 	<div class="hero ">
 		<div class="medium-space" />
 		<img src={logo} alt="" />
