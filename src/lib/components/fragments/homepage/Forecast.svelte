@@ -17,7 +17,7 @@
 		{/each}
 	</div>
 	<dib class="medium-space" />
-	<a href="/forecast" class="button secondary-container"><i>arrow_forward</i>More</a>
+	<a href="/forecast" class="button secondary"><i>arrow_forward</i>More</a>
 </Container>
 
 <style>
