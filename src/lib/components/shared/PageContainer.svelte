@@ -36,13 +36,13 @@
 	.content {
 		padding-top: 1.2rem;
 	}
-	@media only screen and (max-width: 600px) {
+	/* @media only screen and (max-width: 600px) {
 		.content {
 			margin-top: -1rem;
 			background-color: var(--background);
 			border-radius: 1rem 1rem 0 0;
 		}
-	}
+	} */
 	@media print {
 		h3 {
 			margin: 0;
