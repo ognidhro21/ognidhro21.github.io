@@ -2,7 +2,7 @@
 	import logo from '$lib/images/O21-Big.png';
 </script>
 
-<div class="responsive center-align middle-align secondary-container">
+<div class="hero-container responsive center-align middle-align">
 	<div class="hero ">
 		<div class="medium-space" />
 		<img src={logo} alt="" />
@@ -25,6 +25,42 @@
 <style>
 	.responsive {
 		min-height: 50vh;
+	}
+	.hero-container {
+		background: linear-gradient(
+				135deg,
+				var(--body) 21px,
+				#ff1744 22px,
+				#ff1744 24px,
+				transparent 24px,
+				transparent 67px,
+				#ff1744 67px,
+				#ff1744 69px,
+				transparent 69px
+			),
+			linear-gradient(
+					225deg,
+					var(--body) 21px,
+					#ff1744 22px,
+					#ff1744 24px,
+					transparent 24px,
+					transparent 67px,
+					#ff1744 67px,
+					#ff1744 69px,
+					transparent 69px
+				)
+				0 64px;
+		background-size: 128px 64px;
+		background-color: var(--body);
+		animation: bgchange 7s infinite;
+	}
+	@keyframes bgchange {
+		from {
+			background-size: 128px 128px;
+		}
+		to {
+			background-size: 64px 128px;
+		}
 	}
 	.hero a {
 		z-index: 4;
