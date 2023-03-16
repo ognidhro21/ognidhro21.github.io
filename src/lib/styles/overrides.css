@@ -77,10 +77,12 @@ body.dark {
 	--surface-tint: #ffb3b3;
 	--surface-tint-color: #ffb3b3;
 
+	--primary: #ff1744;
+	--on-primary: #ffffff;
 	--secondary-container: #1b242e;
-	--on-secondary-container: #b1f0fb;
-	--tertiary-container: #3be2a4;
-	--on-tertiary-container: #1b242e;
+	--on-secondary-container: #ebfcff;
+	--tertiary-container: #e2bb3b;
+	--on-tertiary-container: #1e1d0f;
 }
 #nprogress {
 	pointer-events: none;
