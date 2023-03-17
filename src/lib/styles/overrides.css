@@ -313,7 +313,12 @@ button {
 	gap: 1rem;
 	box-shadow: var(--elevate1) !important;
 }
-
+button:focus,
+.button:focus,
+a:focus {
+	outline: 0;
+	box-shadow: 0 0 0 2px var(--on-primary) !important;
+}
 .wave:after,
 .wave.light:after,
 .chip:after,
@@ -400,9 +405,7 @@ button.transparent {
 .button:hover,
 button:hover,
 .wave:focus,
-.chip:focus,
-.button:focus,
-button:focus {
+.chip:focus {
 	opacity: 0.9;
 }
 .wave:active,

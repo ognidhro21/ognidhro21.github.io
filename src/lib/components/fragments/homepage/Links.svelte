@@ -1,4 +1,5 @@
 <script>
+	import CardAnchor from '$lib/components/shared/CardAnchor.svelte';
 	import Container from '$lib/components/shared/Container.svelte';
 
 	const links = [
@@ -35,20 +36,14 @@
 <Container fluid>
 	<div class="grid">
 		{#each links as link}
-			<article class="no-margin s12 l4 secondary-container">
-				<hbox>
-					<h5>{link.title}</h5>
-					<p>{link.details}</p>
-				</hbox>
-				<nav>
-					<a
-						class="button secondary"
-						href={link.path}
-						data-sveltekit-noscroll={link.scroll}
-						target={link.target}>Go!</a
-					>
-				</nav>
-			</article>
+			<CardAnchor href={link.path} target={link.target}>
+				<span slot="title">
+					{link.title}
+				</span>
+				<span slot="subtitle">
+					{link.details}
+				</span>
+			</CardAnchor>
 		{/each}
 	</div>
 </Container>
