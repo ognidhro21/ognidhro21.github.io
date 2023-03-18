@@ -224,4 +224,4 @@ export {
 	getFullCourseCode as getFullCode
 };
 
-console.log(getCourseCode('Fundamentals of Statistics'));
+// console.log(getCourseCode('Fundamentals of Statistics'));
