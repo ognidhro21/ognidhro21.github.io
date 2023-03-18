@@ -168,7 +168,7 @@ export const courses = [
  * @returns {string} The title of the specified course, or an error message if the course or title is not found.
  */
 function getCourseTitle(code, id) {
-	const course = courses.find((c) => c.code.toLowerCase === code);
+	const course = courses.find((c) => c.code === code.toLowerCase());
 	if (!course) return 'Course not found, add it';
 	const title = course.titles.find((t) => t.id === id);
 	if (!title) return 'Course title not found, add it';
@@ -176,11 +176,7 @@ function getCourseTitle(code, id) {
 }
 
 function getCourseName(code) {
-	// make code lowercase
-	// in case input is not lower case
-	code = code.toLowerCase();
-
-	const course = courses.find((c) => c.code === code);
+	const course = courses.find((c) => c.code === code.toLowerCase());
 	if (!course) return 'Course not found, add it';
 	return course.name;
 }
