@@ -30,7 +30,7 @@
 		animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 	}
 	.skeleton-loading .primary-container {
-		background-color: #ffffff42 !important;
+		background-color: var(--surface-variant) !important;
 		margin-bottom: 1rem;
 		border-radius: 1rem;
 	}

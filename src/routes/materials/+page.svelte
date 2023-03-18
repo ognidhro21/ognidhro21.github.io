@@ -30,5 +30,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		border-radius: 0.2rem !important;
 	}
 </style>

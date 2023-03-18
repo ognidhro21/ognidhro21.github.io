@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap');
 
+:root,
 body.light {
 	/* light */
 	--primary: #ff1744;
 	--on-primary: #ffffff;
 	--primary-container: #ffdad9;
-	--primary-container-mid: rgba(247, 168, 176, 1);
-	--primary-container-left: rgba(255, 141, 145, 1);
 	--on-primary-container: #400009;
-	--secondary: #775656;
-	--on-secondary: #ffffff;
-	--secondary-container: #ffdad9;
-	--secondary-container-mid: rgba(246, 177, 188, 1);
-	--secondary-container-left: rgba(251, 150, 190, 1);
-	--on-secondary-container: #2c1515;
+	--secondary: #ffa3aa;
+	--on-secondary: #000000;
+	--secondary-container: #dfd2d1;
+	--on-secondary-container: #160c01;
 	--tertiary: #755a2f;
 	--on-tertiary: #ffffff;
-	--tertiary-container: #ffdeae;
-	--tertiary-container-mid: rgba(255, 212, 148, 1);
-	--tertiary-container-left: rgba(255, 182, 133, 1);
-	--on-tertiary-container: #281900;
+	--tertiary-container: #00e4ea;
+	--on-tertiary-container: #00141a;
 	--error: #ba1a1a;
 	--error-container: #ffdad6;
 	--on-error: #ffffff;
@@ -38,7 +33,6 @@ body.light {
 	--surface-tint: #bf002e;
 	--surface-tint-color: #bf002e;
 }
-:root,
 body.dark {
 	/* dark */
 	--primary: #ffb3b3;
@@ -76,7 +70,6 @@ body.dark {
 	--shadow: #000000;
 	--surface-tint: #ffb3b3;
 	--surface-tint-color: #ffb3b3;
-
 	--primary: #ff1744;
 	--on-primary: #ffffff;
 	--secondary-container: #1b242e;
@@ -307,17 +300,27 @@ button {
 	/* color: var(--on-primary); */
 	padding: 0 1.3rem;
 	/* background-color: var(--primary); */
-	border-radius: 2rem;
+	border-radius: 1rem;
 	transition: var(--speed3) transform, var(--speed3) border-radius, var(--speed3) padding;
 	user-select: none;
 	gap: 1rem;
 	box-shadow: var(--elevate1) !important;
 }
+a,
+button,
+.button {
+	transition: scale ease 0.25ms;
+}
 button:focus,
 .button:focus,
 a:focus {
 	outline: 0;
-	box-shadow: 0 0 0 2px var(--on-primary) !important;
+	box-shadow: 0 0 0 2px var(--on-surface) !important;
+}
+button:active,
+.button:active,
+a:active {
+	scale: 0.98 !important;
 }
 .wave:after,
 .wave.light:after,

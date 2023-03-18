@@ -10,10 +10,10 @@
 
 	<div class="scroll row">
 		{#each rain as { probability, date }}
-			<article class:tertiary-container={probability >= 20}>
+			<div class:tertiary-container={probability >= 20} class="weather-card padding">
 				<p>{date}</p>
 				<p><i>rainy</i>{probability}%</p>
-			</article>
+			</div>
 		{/each}
 	</div>
 	<dib class="medium-space" />
@@ -21,8 +21,8 @@
 </Container>
 
 <style>
-	h5 {
-		margin: 0;
+	.weather-card {
+		border-radius: 0.2rem;
 	}
 	h4 > i {
 		margin-right: 0.8rem;
@@ -30,11 +30,8 @@
 	p > i {
 		margin-right: 0.4rem;
 	}
-	article,
-	a {
+	.button {
+		margin: 0;
 		margin-top: 1rem;
-	}
-	.row {
-		padding: 1rem;
 	}
 </style>

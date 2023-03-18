@@ -14,11 +14,14 @@
 </script>
 
 <!-- on:click={()=>setOpenAccordian(id)} -->
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <article
-	class="collapsible-header padding secondary-container"
+	class="collapsible-header padding secondary-container row small-elevate"
 	on:click={() => dispatch('accordionSelected', id)}
 >
-	<slot name="title" />
+	<div class="max">
+		<slot name="title" />
+	</div>
 	<Icon name="chevron-down" {direction} />
 </article>
 
@@ -31,13 +34,7 @@
 <style>
 	.collapsible-header {
 		cursor: pointer;
-		padding: 2rem 1rem;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		border-bottom: 1px solid var(--plain-invert);
-		border-radius: 0.4rem;
+		border-radius: 1rem;
 	}
 	.collapsible-body {
 		display: block;

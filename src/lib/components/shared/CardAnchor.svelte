@@ -20,6 +20,7 @@
 
 <style>
 	a {
-		border-radius: 0.4rem;
+		border-radius: 1rem;
+		box-shadow: var(--elevate1);
 	}
 </style>
