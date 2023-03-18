@@ -1,5 +1,6 @@
 <script>
 	import About from '$lib/components/fragments/homepage/About.svelte';
+	import Actions from '$lib/components/fragments/homepage/Actions.svelte';
 	import Forecast from '$lib/components/fragments/homepage/Forecast.svelte';
 	import Hero from '$lib/components/fragments/homepage/Hero.svelte';
 	import Links from '$lib/components/fragments/homepage/Links.svelte';
@@ -14,6 +15,7 @@
 <Hero />
 <Ongoing {classes} />
 <Forecast {Headline} {rain} />
+<!-- <Actions /> -->
 <Links />
 <About />
 <MadeWith />
