@@ -1,10 +1,7 @@
-<script context="module">
+<script>
 	import { fly } from 'svelte/transition';
 	import { aMOrPM } from '$lib/time/date';
 	import { getName, getTitle } from '$lib/courses';
-</script>
-
-<script>
 	export let exam;
 	let { code, date } = exam;
 	export let startTime;

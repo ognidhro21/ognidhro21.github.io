@@ -45,7 +45,7 @@
 		<Tabs {items} {selected} on:tabChanged={tabChanged}>
 			{#if selected === 'Up next'}
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-				<div id="panel-1" class="page active left" role="tabpanel" tabindex={0}>
+				<div id="panel-1" role="tabpanel" tabindex={0}>
 					<!-- <h5>Up Next ({upNext.length})</h5> -->
 					<div>
 						{#each upNext as exam (exam.code)}
@@ -55,7 +55,7 @@
 				</div>
 			{:else if selected === 'Completed'}
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-				<div id="panel-2" class="page active left" role="tabpanel" tabindex={1}>
+				<div id="panel-2" role="tabpanel" tabindex={1}>
 					<!-- <h5>Completed ({expired.length})</h5> -->
 					<div>
 						{#each expired as exam (exam.code)}

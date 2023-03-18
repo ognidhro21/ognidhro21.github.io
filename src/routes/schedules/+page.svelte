@@ -5,7 +5,6 @@
 	import InfoImg from '$lib/images/update_info_undraw.svg';
 	import DATA from '$lib/stores/PersistantInfo';
 	import { onMount } from 'svelte';
-	import SEO from '$lib/components/shared/SEO/index.svelte';
 	import Tabs from '$lib/components/shared/Tabs.svelte';
 	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 	export let data;

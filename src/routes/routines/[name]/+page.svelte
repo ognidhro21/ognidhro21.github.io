@@ -14,6 +14,12 @@
 	let section = 1;
 	let group = 2;
 
+	/**
+    Sets the current day based on the current time and weekday.
+    If the current time is past 4pm, sets the day as next day.
+    If the current day is Friday, sets the next day as Sunday.
+    @returns {void}
+    */
 	function setDay() {
 		// set next day as default if current time is greater than 5 pm
 		let dayIndex;

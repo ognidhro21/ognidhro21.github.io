@@ -3,6 +3,13 @@
 
 	export let classes;
 
+	/**
+	 * Returns an array of ongoing classes for the current day.
+	 *
+	 * @async
+	 * @function
+	 * @returns {Promise<Array>} A promise that resolves to an array of objects representing the ongoing classes for the current day, with each object containing information about the class schedule, section/group name, and whether it is a practical class.
+	 */
 	async function getOngoingClasses() {
 		// Get the current time in milliseconds
 		const date = new Date();
