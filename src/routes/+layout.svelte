@@ -32,16 +32,16 @@
 </script>
 
 <Analytics />
-<body class:dark={$dark}>
+<div class:dark={$dark}>
 	<div class="layout">
 		<Navbar />
 		<slot />
 	</div>
-</body>
+</div>
 
 <style>
 	.layout {
-		min-height: 100vh;
+		min-height: 100dvh;
 		position: relative;
 		margin-bottom: 4rem;
 	}
