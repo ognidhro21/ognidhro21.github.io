@@ -4,7 +4,6 @@
 
 <div class="hero-container responsive center-align middle-align">
 	<div class="hero ">
-		<div class="medium-space" />
 		<img src={logo} alt="" />
 		<div class="medium-space" />
 		<div class="fixer center-align middle-align ">
@@ -62,6 +61,11 @@
 			background-size: 64px 128px;
 		}
 	}
+	.hero {
+		position: relative;
+		isolation: isolate;
+	}
+
 	.hero a {
 		z-index: 4;
 	}

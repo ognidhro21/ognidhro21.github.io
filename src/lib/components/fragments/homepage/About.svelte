@@ -3,6 +3,9 @@
 	import IMG from '$lib/images/taking_notes_undraw.svg';
 </script>
 
+<div class="blurred">
+	<section class="img-bg" />
+</div>
 <Container fluid bgColor="var(--plain)">
 	<div class="contents">
 		<div class="text">
@@ -26,10 +29,50 @@
 	.contents {
 		box-sizing: border-box;
 		display: flex;
+		position: relative;
 		width: 100%;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	.blurred {
+		position: relative;
+		isolation: isolate;
+		overflow: visible;
+	}
+	.img-bg {
+		position: absolute;
+		height: 26rem;
+		width: 26rem;
+		right: 0;
+		top: 0;
+		border-radius: 9999px;
+		filter: blur(50px);
+		transition-property: all;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 0.15s;
+		background-color: #32e4ccc9;
+		z-index: -1;
+		animation: pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite, color 5s linear infinite;
+	}
+	@keyframes pulse {
+		50% {
+			transform: scale(1.5);
+		}
+	}
+	@keyframes color {
+		0% {
+			background-color: #42e480a4;
+		}
+		33% {
+			background-color: #fc8383d2;
+		}
+		66% {
+			background-color: #32e4ccc9;
+		}
+		100% {
+			background-color: #42e480a4;
+		}
 	}
 	img {
 		width: 100%;
