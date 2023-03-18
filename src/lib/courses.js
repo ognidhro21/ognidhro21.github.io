@@ -160,43 +160,45 @@ export const courses = [
 	}
 ];
 
+/**
+ * Returns the title of a course with a given code and title ID.
+ *
+ * @param {string} code - The code of the course to retrieve.
+ * @param {string} id - The ID of the course title to retrieve.
+ * @returns {string} The title of the specified course, or an error message if the course or title is not found.
+ */
 function getCourseTitle(code, id) {
-	// make code lowercase
-	// in case input is not lower case
-	code = code.toLowerCase();
-
-	const course = courses.find((c) => c.code === code);
+	const course = courses.find((c) => c.code.toLowerCase() === code);
 	if (!course) return 'Course not found, add it';
 	const title = course.titles.find((t) => t.id === id);
 	if (!title) return 'Course title not found, add it';
 	return title.title;
 }
 
+/**
+ * Returns the name of a course given its code.
+ *
+ * @param {string} code - The code of the course to look up.
+ * @returns {string} The name of the course with the given code, or a message indicating that the course was not found.
+ */
 function getCourseName(code) {
-	// make code lowercase
-	// in case input is not lower case
-	code = code.toLowerCase();
-
-	const course = courses.find((c) => c.code === code);
+	const course = courses.find((c) => c.code.toLowerCase() === code);
 	if (!course) return 'Course not found, add it';
 	return course.name;
 }
+
 /**
+ * Returns the code of a course given its title.
  *
- * @param {String} courseTitle
- * @returns
+ * @param {string} courseTitle - The title of the course to look up.
+ * @returns {string} The code of the course with the given title, or an empty string if the course is hidden or not found.
  */
 function getCourseCode(courseTitle) {
-	let k = '';
-	courses.forEach((element, i) => {
-		element.titles.forEach((mel, j) => {
-			if (mel.title === courseTitle) {
-				if (!courses[i].hideCode) k = courses[i].code;
-				else k = '';
-			}
-		});
+	const course = courses.find((course) => {
+		const title = course.titles.find((title) => title.title === courseTitle);
+		return title !== undefined && !course.hideCode;
 	});
-	return k;
+	return course ? course.code : '';
 }
 
 /**
@@ -204,6 +206,7 @@ function getCourseCode(courseTitle) {
  * @param {string} id
  * @param {string} code
  * @param {boolean} practical
+ * @returns {string} The full code of the specified course in the specfied semester
  */
 function getFullCourseCode(id, code, practical) {
 	if (code === 'meeting') return 'MEETING';
@@ -221,4 +224,4 @@ export {
 	getFullCourseCode as getFullCode
 };
 
-// console.log(getCourseTitle('STT', 'L2S1'));
+console.log(getCourseCode('Fundamentals of Statistics'));
