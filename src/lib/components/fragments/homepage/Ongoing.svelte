@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Container from '$lib/components/shared/Container.svelte';
+	import Skeleton from '$lib/components/shared/Skeleton.svelte';
 
 	export let classes;
 
@@ -64,7 +65,8 @@
 
 <Container>
 	{#await promise}
-		<h5>Checking ongoing classes...</h5>
+		<h4>Checking</h4>
+		<Skeleton />
 	{:then sch}
 		{#if sch.length !== 0}
 			<h4>Ongoing</h4>
@@ -92,8 +94,6 @@
 					</div>
 				{/each}
 			</div>
-		{:else}
-			<h5>No classes are in progress</h5>
 		{/if}
 	{/await}
 </Container>

@@ -7,6 +7,7 @@
 	import { onMount } from 'svelte';
 	import Tabs from '$lib/components/shared/Tabs.svelte';
 	import PageContainer from '$lib/components/shared/PageContainer.svelte';
+	import Skeleton from '$lib/components/shared/Skeleton.svelte';
 	export let data;
 	let items = [
 		{
@@ -82,9 +83,7 @@
 
 <PageContainer title="Schedules" icon="event">
 	{#await prom}
-		<div class="middle-align">
-			<h2>Loading</h2>
-		</div>
+		<Skeleton />
 	{:then ok}
 		{#if saved}
 			<!-- <button mode="primary mb12" isRounded on:click={resetInfo}>Change Default Group</button> -->
