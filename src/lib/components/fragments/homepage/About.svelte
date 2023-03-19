@@ -3,9 +3,9 @@
 	import IMG from '$lib/images/taking_notes_undraw.svg';
 </script>
 
-<div class="blurred">
+<!-- <div class="blurred">
 	<section class="img-bg" />
-</div>
+</div> -->
 <Container fluid bgColor="var(--plain)">
 	<div class="contents">
 		<div class="text">
