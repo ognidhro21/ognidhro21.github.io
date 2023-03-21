@@ -7,7 +7,8 @@
 			path: '/classification',
 			title: 'Hall of Fame',
 			details: 'Results of previous semesters',
-			color: 'primary'
+			color: 'primary',
+			icon: 'leaderboard'
 		},
 		// {
 		// 	path: '/brand-guidelines',
@@ -21,14 +22,22 @@
 			title: 'Find us on Facebook',
 			details: 'Like us on Facebook to keep up with the updates!',
 			target: '_blank',
-			color: 'tertiary'
+			color: 'tertiary',
+			icon: 'thumb_up'
 		},
+		// {
+		// 	path: 'https://github.com/ognidhro21/ognidhro21.github.io',
+		// 	title: 'Source Code',
+		// 	details: 'The code of this site',
+		// 	target: '_blank',
+		// 	color: 'secondary'
+		// }
 		{
-			path: 'https://github.com/ognidhro21/ognidhro21.github.io',
-			title: 'Source Code',
-			details: 'The code of this site',
-			target: '_blank',
-			color: 'secondary'
+			path: '/materials',
+			title: 'Study Materials',
+			details: 'Some helpful guides and notes',
+			color: 'primary',
+			icon: 'book'
 		}
 	];
 </script>
@@ -38,6 +47,9 @@
 		{#each links as link}
 			<CardAnchor href={link.path} target={link.target}>
 				<span slot="title">
+					{#if link.icon}
+						<i>{link.icon}</i>
+					{/if}
 					{link.title}
 				</span>
 				<span slot="subtitle">
@@ -60,5 +72,9 @@
 	}
 	.grid {
 		margin-block: 1rem;
+	}
+	.materials {
+		padding-block: 4rem;
+		background-color: var(--secondary);
 	}
 </style>
