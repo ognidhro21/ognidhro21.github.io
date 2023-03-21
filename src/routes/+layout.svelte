@@ -22,7 +22,12 @@
 	export let data;
 
 	onMount(() => {
-		let mode = window.ui('theme', $OGDATA.theme);
+		const theme = $OGDATA.theme;
+		if (theme === '#ff1744') {
+			document.body.removeAttribute('style');
+		} else {
+			let mode = window.ui('theme', $OGDATA.theme);
+		}
 	});
 </script>
 

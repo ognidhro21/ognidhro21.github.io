@@ -1,12 +1,12 @@
 <script>
+	import { browser } from '$app/environment';
 	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 	import Skeleton from '$lib/components/shared/Skeleton.svelte';
-
 	const themes = [
 		{ name: 'Ognidhro Red', color: '#ff1744', onButton: 'white' },
-		{ name: 'Wonderous Blue', color: '#0077ff', onButton: 'white' },
-		{ name: 'Tommorow Green', color: '#248000', onButton: 'white' },
-		{ name: 'Thriving Yellow', color: '#deee06', onButton: 'black' }
+		{ name: 'Wonderous Blue', color: '#0083d5', onButton: 'white' },
+		{ name: 'Tommorow Green', color: '#009323', onButton: 'white' },
+		{ name: 'Thriving Yellow', color: '#eacf00', onButton: 'black' }
 	];
 
 	import OGDATA from '$lib/stores/Ognidhro_data';
@@ -37,8 +37,13 @@
 		return $OGDATA.class;
 	}
 	function changeTheme(e) {
-		let mode = window.ui('theme', e.target.value);
-		$OGDATA.theme = e.target.value;
+		const theme = e.target.value;
+		if (theme === '#ff1744') {
+			if (browser) document.body.removeAttribute('style');
+		} else {
+			let mode = window.ui('theme', theme);
+		}
+		$OGDATA.theme = theme;
 	}
 	let prom = loadData();
 </script>
@@ -75,6 +80,6 @@
 	.theme-button {
 		max-width: 1rem !important;
 		height: 4rem;
-		margin-bottom: 1rem;
+		margin: 0 1rem 1rem 0;
 	}
 </style>
