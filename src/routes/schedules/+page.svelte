@@ -3,7 +3,7 @@
 	import TabExams from '$lib/components/shared/schedules/tabs/TabExams.svelte';
 	import TabEvents from '$lib/components/shared/schedules/tabs/TabEvents.svelte';
 	import InfoImg from '$lib/images/update_info_undraw.svg';
-	import DATA from '$lib/stores/PersistantInfo';
+	import OGDATA from '$lib/stores/Ognidhro_data';
 	import { onMount } from 'svelte';
 	import Tabs from '$lib/components/shared/Tabs.svelte';
 	import PageContainer from '$lib/components/shared/PageContainer.svelte';
@@ -40,13 +40,13 @@
 	};
 	$: saved = false;
 	onMount(async () => {
-		if ($DATA) {
-			info.section = $DATA[0].section;
-			info.group = $DATA[0].group;
-			info.saved = $DATA[0].saved;
+		if ($OGDATA) {
+			info.section = $OGDATA.class.section;
+			info.group = $OGDATA.class.group;
+			info.saved = $OGDATA.class.saved;
 			saved = info.saved;
 		} else {
-			$DATA[0] = info;
+			$OGDATA.class = info;
 		}
 	});
 	async function loadData() {
@@ -67,7 +67,7 @@
 	function saveInfo() {
 		info.saved = true;
 		saved = true;
-		$DATA[0] = info;
+		$OGDATA.class = info;
 	}
 	function resetInfo() {
 		info = {
@@ -76,7 +76,7 @@
 			saved: false
 		};
 		saved = false;
-		$DATA[0] = info;
+		$OGDATA.class = info;
 	}
 	let prom = loadData();
 </script>

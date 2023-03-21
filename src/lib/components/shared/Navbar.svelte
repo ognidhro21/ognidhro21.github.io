@@ -6,7 +6,8 @@
 		{ path: '/', title: 'Home', icon: 'home' },
 		{ title: 'Schedules', path: '/schedules', icon: 'event' },
 		{ title: 'Courses', path: '/courses', icon: 'info' },
-		{ title: 'Materials', path: '/materials', icon: 'collections_bookmark' }
+		// { title: 'Materials', path: '/materials', icon: 'collections_bookmark' }
+		{ title: 'Settings', path: '/preferences', icon: 'settings' }
 	];
 </script>
 

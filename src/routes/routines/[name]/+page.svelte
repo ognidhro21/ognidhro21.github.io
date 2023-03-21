@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import RoutineCard from '$lib/components/shared/schedules/RoutineCard.svelte';
 	import SEO from '$lib/components/shared/SEO/index.svelte';
-	import DATA from '$lib//stores/PersistantInfo';
+	import OGDATA from '$lib/stores/Ognidhro_data';
 	import AddToHome from '$lib/components/shared/AddToHome.svelte';
 	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 
@@ -43,9 +43,9 @@
 	}
 	onMount(() => {
 		setDay();
-		if ($DATA[0].saved === true) {
-			section = $DATA[0].section;
-			group = $DATA[0].group;
+		if ($OGDATA.class.saved === true) {
+			section = $OGDATA.class.section;
+			group = $OGDATA.class.group;
 		}
 	});
 	// injecting practical class to true as these are from groups

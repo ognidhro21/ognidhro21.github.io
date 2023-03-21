@@ -1,6 +1,6 @@
 <script>
-	import GROUP from '$lib/stores/PersistantInfo';
 	import website from '$lib/config/website';
+	import GROUP from '$lib/stores/PersistantInfo';
 	// --------------------re/setting default group--------------------
 	const groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
 	let toast = false;

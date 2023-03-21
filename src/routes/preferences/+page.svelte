@@ -1,0 +1,80 @@
+<script>
+	import PageContainer from '$lib/components/shared/PageContainer.svelte';
+	import Skeleton from '$lib/components/shared/Skeleton.svelte';
+
+	const themes = [
+		{ name: 'Ognidhro Red', color: '#ff1744', onButton: 'white' },
+		{ name: 'Wonderous Blue', color: '#0077ff', onButton: 'white' },
+		{ name: 'Tommorow Green', color: '#248000', onButton: 'white' },
+		{ name: 'Thriving Yellow', color: '#deee06', onButton: 'black' }
+	];
+
+	import OGDATA from '$lib/stores/Ognidhro_data';
+
+	// --------------------re/setting default group--------------------
+	const groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+	let info = { section: 1, group: 2, saved: true };
+	let selectedGroup = grpToId($OGDATA.class.group, $OGDATA.class.section);
+
+	function grpToId(grp, section) {
+		return 3 * section + grp;
+	}
+	function save(e) {
+		const grp = Number(e.target.value);
+		if (grp <= 2) {
+			info.section = 0;
+			info.group = grp;
+		} else if (grp <= 5) {
+			info.section = 1;
+			info.group = grp - 3;
+		} else {
+			info.section = 2;
+			info.group = grp - 6;
+		}
+		$OGDATA = { ...$OGDATA, class: info };
+	}
+	async function loadData() {
+		return $OGDATA.class;
+	}
+	function changeTheme(e) {
+		let mode = window.ui('theme', e.target.value);
+		$OGDATA.theme = e.target.value;
+	}
+	let prom = loadData();
+</script>
+
+<PageContainer title="Preferences" icon="cloud">
+	{#await prom}
+		<Skeleton />
+	{:then d}
+		<h5>Change Group</h5>
+		<div class="inputs">
+			<div class="field suffix">
+				<select name="groups" id="groups" on:input={save} value={selectedGroup}>
+					{#each groups as group, i}
+						<option value={i}>Group {group}</option>
+					{/each}
+				</select>
+				<i>arrow_drop_down</i>
+			</div>
+		</div>
+		<h5>Theme</h5>
+
+		{#each themes as { name, color, onButton } (name)}
+			<button
+				style="background-color: {color} !important; color: {onButton}"
+				class="theme-button"
+				value={color}
+				on:click={changeTheme}
+			/>
+		{/each}
+	{/await}
+</PageContainer>
+
+<style>
+	.theme-button {
+		max-width: 1rem !important;
+		height: 4rem;
+		margin-bottom: 1rem;
+	}
+</style>

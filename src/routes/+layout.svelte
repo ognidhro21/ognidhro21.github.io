@@ -3,10 +3,9 @@
 	import { navigating } from '$app/stores';
 	import '$lib/styles/overrides.min.css';
 	import Navbar from '$lib/components/shared/Navbar.svelte';
-	import DATA from '$lib/stores/NoticeInfo';
-	import dark from '$lib/stores/DarkMode';
 	import { onMount } from 'svelte';
 	import Analytics from '$lib/components/shared/Analytics.svelte';
+	import OGDATA from '$lib/stores/Ognidhro_data';
 
 	NProgress.configure({
 		minimum: 0.16,
@@ -22,17 +21,13 @@
 	}
 	export let data;
 
-	let newlyAdded = [];
 	onMount(() => {
-		newlyAdded = data.noticeList.filter((notice) => {
-			return !$DATA.shownIds.includes(notice.meta.id);
-		});
-		$DATA.newlyAdded = newlyAdded;
+		let mode = window.ui('theme', $OGDATA.theme);
 	});
 </script>
 
 <Analytics />
-<div class:dark={$dark}>
+<div>
 	<div class="layout">
 		<Navbar />
 		<slot />
