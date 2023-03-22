@@ -6,6 +6,7 @@
 	import { onMount } from 'svelte';
 	import Analytics from '$lib/components/shared/Analytics.svelte';
 	import OGDATA from '$lib/stores/Ognidhro_data';
+	import { browser } from '$app/environment';
 
 	NProgress.configure({
 		minimum: 0.16,
@@ -21,14 +22,17 @@
 	}
 	export let data;
 
-	onMount(() => {
+	if (browser) {
 		const theme = $OGDATA.theme;
 		if (theme === '#ff1744') {
 			document.body.removeAttribute('style');
 		} else {
 			let mode = window.ui('theme', $OGDATA.theme);
 		}
-	});
+		const mode = $OGDATA.mode;
+		const modeText = mode ? 'dark' : 'light';
+		let m = window.ui('mode', modeText);
+	}
 </script>
 
 <Analytics />
