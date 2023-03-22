@@ -2,6 +2,7 @@
 	import { browser } from '$app/environment';
 	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 	import Skeleton from '$lib/components/shared/Skeleton.svelte';
+
 	const themes = [
 		{ name: 'Ognidhro Red', color: '#ff1744', onButton: 'white' },
 		{ name: 'Wonderous Blue', color: '#0083d5', onButton: 'white' },
@@ -59,8 +60,8 @@
 		<Skeleton />
 	{:then d}
 		<div class="list">
-			<h5>Change Group</h5>
-			<div class="inputs">
+			<div class="inputs row">
+				<p class="max">Change Group</p>
 				<div class="field suffix">
 					<select name="groups" id="groups" on:input={save} value={selectedGroup}>
 						{#each groups as group, i}
@@ -72,7 +73,7 @@
 			</div>
 		</div>
 		<div class="row list">
-			<h5 class="max">Dark mode</h5>
+			<p class="max">Dark Mode</p>
 			<label for="drkmd" class="switch">
 				<input type="checkbox" name="drkmd" id="drkmd" bind:checked={mode} on:change={changeMode} />
 				<span>
@@ -81,7 +82,7 @@
 			</label>
 		</div>
 		<div class="list">
-			<h5>Theme</h5>
+			<p>Theme</p>
 			{#each themes as { name, color, onButton } (name)}
 				<button
 					style="background-color: {color} !important; color: {onButton}"
