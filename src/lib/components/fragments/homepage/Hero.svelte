@@ -29,23 +29,23 @@
 		background: linear-gradient(
 				135deg,
 				var(--body) 21px,
-				#ff1744 22px,
-				#ff1744 24px,
+				var(--primary) 22px,
+				var(--primary) 24px,
 				transparent 24px,
 				transparent 67px,
-				#ff1744 67px,
-				#ff1744 69px,
+				var(--primary) 67px,
+				var(--primary) 69px,
 				transparent 69px
 			),
 			linear-gradient(
 					225deg,
 					var(--body) 21px,
-					#ff1744 22px,
-					#ff1744 24px,
+					var(--primary) 22px,
+					var(--primary) 24px,
 					transparent 24px,
 					transparent 67px,
-					#ff1744 67px,
-					#ff1744 69px,
+					var(--primary) 67px,
+					var(--primary) 69px,
 					transparent 69px
 				)
 				0 64px;

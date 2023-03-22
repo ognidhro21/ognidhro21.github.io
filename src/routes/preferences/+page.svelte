@@ -55,7 +55,7 @@
 	}
 </script>
 
-<PageContainer title="Preferences" icon="cloud">
+<PageContainer title="Preferences" icon="settings">
 	{#await prom}
 		<Skeleton />
 	{:then d}
