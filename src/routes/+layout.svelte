@@ -23,11 +23,10 @@
 	export let data;
 
 	if (browser) {
-		const mode = $OGDATA.mode;
+		const { mode, theme } = $OGDATA;
 		const modeText = mode ? 'dark' : 'light';
 		let m = window.ui('mode', modeText);
 
-		const theme = $OGDATA.theme;
 		if (theme === '#ff1744') {
 			document.body.removeAttribute('style');
 		} else {
