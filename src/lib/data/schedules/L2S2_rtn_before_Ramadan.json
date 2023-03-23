@@ -1,0 +1,903 @@
+{
+    "name": "L2S2",
+    "detailedname": "Level 2, Semester 2",
+    "sections": [
+        {
+            "name": "Section 1",
+            "days": [
+                {
+                    "name": "Sunday",
+                    "schedules": [
+                        {
+                            "code": "agr",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "stt",
+                            "start": "11:15",
+                            "end": "12:05"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "12:10",
+                            "end": "13:00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Monday",
+                    "schedules": [
+                        {
+                            "code": "ent",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "agb",
+                            "start": "11:15",
+                            "end": "12:05"
+                        },
+                        {
+                            "code": "gpb",
+                            "start": "12:10",
+                            "end": "13:00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tuesday",
+                    "schedules": [
+                        {
+                            "code": "stt",
+                            "start": "9:00",
+                            "end": "10:00"
+                        },
+                        {
+                            "code": "plp",
+                            "start": "10:30",
+                            "end": "11:30"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "12:00",
+                            "end": "13:00"
+                        },
+                        {
+                            "code": "ent",
+                            "start": "14:30",
+                            "end": "15:30"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "16:00",
+                            "end": "17:00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Wednesday",
+                    "schedules": [
+                        {
+                            "code": "gpb",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "plp",
+                            "start": "11:15",
+                            "end": "12:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Thursday",
+                    "schedules": [
+                        {
+                            "code": "agb",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "stt",
+                            "start": "11:15",
+                            "end": "12:05"
+                        }
+                    ]
+                }
+            ],
+            "groups": [
+                {
+                    "name": "A",
+                    "days": [
+                        {
+                            "name": "Sunday",
+                            "schedules": [
+                                {
+                                    "code": "plp",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "gpb",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Monday",
+                            "schedules": [
+                                {
+                                    "code": "ent",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "ssc",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tuesday",
+                            "schedules": []
+                        },
+                        {
+                            "name": "Wednesday",
+                            "schedules": [
+                                {
+                                    "code": "stt",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "agr",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Thursday",
+                            "schedules": [
+                                {
+                                    "code": "agb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "B",
+                    "days": [
+                        {
+                            "name": "Sunday",
+                            "schedules": [
+                                {
+                                    "code": "stt",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "ssc",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Monday",
+                            "schedules": [
+                                {
+                                    "code": "plp",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "agr",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tuesday",
+                            "schedules": []
+                        },
+                        {
+                            "name": "Wednesday",
+                            "schedules": [
+                                {
+                                    "code": "agb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "ent",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Thursday",
+                            "schedules": [
+                                {
+                                    "code": "gpb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "C",
+                    "days": [
+                        {
+                            "name": "Sunday",
+                            "schedules": [
+                                {
+                                    "code": "agb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "agr",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Monday",
+                            "schedules": [
+                                {
+                                    "code": "stt",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "ent",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tuesday",
+                            "schedules": []
+                        },
+                        {
+                            "name": "Wednesday",
+                            "schedules": [
+                                {
+                                    "code": "gpb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "plp",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Thursday",
+                            "schedules": [
+                                {
+                                    "code": "ssc",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Section 2",
+            "days": [
+                {
+                    "name": "Sunday",
+                    "schedules": [
+                        {
+                            "code": "ent",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "agb",
+                            "start": "11:15",
+                            "end": "12:05"
+                        },
+                        {
+                            "code": "stt",
+                            "start": "12:10",
+                            "end": "13:00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Monday",
+                    "schedules": [
+                        {
+                            "code": "plp",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "gpb",
+                            "start": "11:15",
+                            "end": "12:05"
+                        },
+                        {
+                            "code": "stt",
+                            "start": "12:10",
+                            "end": "13:00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tuesday",
+                    "schedules": [
+                        {
+                            "code": "stt",
+                            "start": "9:00",
+                            "end": "10:00"
+                        },
+                        {
+                            "code": "plp",
+                            "start": "10:30",
+                            "end": "11:30"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "12:00",
+                            "end": "13:00"
+                        },
+                        {
+                            "code": "ent",
+                            "start": "14:30",
+                            "end": "15:30"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "16:00",
+                            "end": "17:00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Wednesday",
+                    "schedules": [
+                        {
+                            "code": "agb",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "11:15",
+                            "end": "12:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Thursday",
+                    "schedules": [
+                        {
+                            "code": "gpb",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "11:15",
+                            "end": "12:05"
+                        }
+                    ]
+                }
+            ],
+            "groups": [
+                {
+                    "name": "D",
+                    "days": [
+                        {
+                            "name": "Sunday",
+                            "schedules": [
+                                {
+                                    "code": "gpb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "ent",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Monday",
+                            "schedules": [
+                                {
+                                    "code": "agb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "plp",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tuesday",
+                            "schedules": []
+                        },
+                        {
+                            "name": "Wednesday",
+                            "schedules": [
+                                {
+                                    "code": "ssc",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "stt",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Thursday",
+                            "schedules": [
+                                {
+                                    "code": "agr",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "E",
+                    "days": [
+                        {
+                            "name": "Sunday",
+                            "schedules": [
+                                {
+                                    "code": "ssc",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "plp",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Monday",
+                            "schedules": [
+                                {
+                                    "code": "gpb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "stt",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tuesday",
+                            "schedules": []
+                        },
+                        {
+                            "name": "Wednesday",
+                            "schedules": [
+                                {
+                                    "code": "agr",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "agb",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Thursday",
+                            "schedules": [
+                                {
+                                    "code": "ent",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "F",
+                    "days": [
+                        {
+                            "name": "Sunday",
+                            "schedules": [
+                                {
+                                    "code": "agr",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "stt",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Monday",
+                            "schedules": [
+                                {
+                                    "code": "ssc",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "agb",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tuesday",
+                            "schedules": []
+                        },
+                        {
+                            "name": "Wednesday",
+                            "schedules": [
+                                {
+                                    "code": "ent",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "gpb",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Thursday",
+                            "schedules": [
+                                {
+                                    "code": "plp",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Section 3",
+            "days": [
+                {
+                    "name": "Sunday",
+                    "schedules": [
+                        {
+                            "code": "plp",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "gpb",
+                            "start": "11:15",
+                            "end": "12:05"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "12:10",
+                            "end": "13:00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Monday",
+                    "schedules": [
+                        {
+                            "code": "stt",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "11:15",
+                            "end": "12:05"
+                        },
+                        {
+                            "code": "agb",
+                            "start": "12:10",
+                            "end": "13:00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Tuesday",
+                    "schedules": [
+                        {
+                            "code": "stt",
+                            "start": "9:00",
+                            "end": "10:00"
+                        },
+                        {
+                            "code": "plp",
+                            "start": "10:30",
+                            "end": "11:30"
+                        },
+                        {
+                            "code": "agr",
+                            "start": "12:00",
+                            "end": "13:00"
+                        },
+                        {
+                            "code": "ent",
+                            "start": "14:30",
+                            "end": "15:30"
+                        },
+                        {
+                            "code": "ssc",
+                            "start": "16:00",
+                            "end": "17:00"
+                        }
+                    ]
+                },
+                {
+                    "name": "Wednesday",
+                    "schedules": [
+                        {
+                            "code": "gpb",
+                            "start": "10:20",
+                            "end": "11:10"
+                        },
+                        {
+                            "code": "stt",
+                            "start": "11:15",
+                            "end": "12:05"
+                        }
+                    ]
+                },
+                {
+                    "name": "Thursday",
+                    "schedules": [
+                        {
+                            "code": "ent",
+                            "start": "11:15",
+                            "end": "12:05"
+                        },
+                        {
+                            "code": "agb",
+                            "start": "12:10",
+                            "end": "13:00"
+                        }
+                    ]
+                }
+            ],
+            "groups": [
+                {
+                    "name": "G",
+                    "days": [
+                        {
+                            "name": "Sunday",
+                            "schedules": [
+                                {
+                                    "code": "ent",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "agb",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Monday",
+                            "schedules": [
+                                {
+                                    "code": "agr",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "gpb",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tuesday",
+                            "schedules": []
+                        },
+                        {
+                            "name": "Wednesday",
+                            "schedules": [
+                                {
+                                    "code": "plp",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "ssc",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Thursday",
+                            "schedules": [
+                                {
+                                    "code": "stt",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "H",
+                    "days": [
+                        {
+                            "name": "Sunday",
+                            "schedules": [
+                                {
+                                    "code": "plp",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "gpb",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Monday",
+                            "schedules": [
+                                {
+                                    "code": "ent",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "ssc",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tuesday",
+                            "schedules": []
+                        },
+                        {
+                            "name": "Wednesday",
+                            "schedules": [
+                                {
+                                    "code": "stt",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "agr",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Thursday",
+                            "schedules": [
+                                {
+                                    "code": "agb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "I",
+                    "days": [
+                        {
+                            "name": "Sunday",
+                            "schedules": [
+                                {
+                                    "code": "stt",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "ssc",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Monday",
+                            "schedules": [
+                                {
+                                    "code": "plp",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "agr",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Tuesday",
+                            "schedules": []
+                        },
+                        {
+                            "name": "Wednesday",
+                            "schedules": [
+                                {
+                                    "code": "agb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                },
+                                {
+                                    "code": "ent",
+                                    "start": "14:30",
+                                    "end": "16:15"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Thursday",
+                            "schedules": [
+                                {
+                                    "code": "gpb",
+                                    "start": "8:30",
+                                    "end": "10:15"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
