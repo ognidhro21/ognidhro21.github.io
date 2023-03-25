@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@300;400&family=Roboto&display=swap');
 
 :root,
 body.light {
@@ -228,9 +228,8 @@ h3,
 h4,
 h5,
 h6,
-button,
 .button {
-	font-weight: 600 !important;
+	font-weight: 300 !important;
 }
 * + h1,
 * + h2,
