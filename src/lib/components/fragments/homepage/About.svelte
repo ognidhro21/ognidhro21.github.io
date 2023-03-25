@@ -28,69 +28,24 @@
 <style>
 	.contents {
 		box-sizing: border-box;
+		position: relative;
+		width: 100%;
 		display: flex;
-		position: relative;
-		width: 100%;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	.blurred {
-		position: relative;
-		isolation: isolate;
-		overflow: visible;
-	}
-	.img-bg {
-		position: absolute;
-		height: 26rem;
-		width: 26rem;
-		right: 0;
-		top: 0;
-		border-radius: 9999px;
-		filter: blur(50px);
-		transition-property: all;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		transition-duration: 0.15s;
-		background-color: #32e4ccc9;
-		z-index: -1;
-		animation: pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite, color 5s linear infinite;
-	}
-	@keyframes pulse {
-		50% {
-			transform: scale(1.5);
-		}
-	}
-	@keyframes color {
-		0% {
-			background-color: #42e480a4;
-		}
-		33% {
-			background-color: #fc8383d2;
-		}
-		66% {
-			background-color: #32e4ccc9;
-		}
-		100% {
-			background-color: #42e480a4;
-		}
-	}
-	img {
-		width: 100%;
+		flex-direction: row;
+		align-items: flex-end;
+		flex-wrap: wrap;
 	}
 	h2 {
 		line-height: 1.2;
 	}
 	.text {
-		width: 100%;
+		flex-grow: 1;
+		flex-basis: 360px;
+	}
+	.img {
+		flex-grow: 1;
+		flex-basis: 460px;
 	}
 
 	/* media for tablet */
-	@media (min-width: 768px) {
-		.contents {
-			flex-direction: row;
-		}
-		.text {
-			width: 40%;
-		}
-	}
 </style>

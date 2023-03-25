@@ -30,6 +30,7 @@
 		"prettier-plugin-svelte": "^2.7.0",
 		"sharp": "^0.30.7",
 		"svelte": "latest",
+		"svelte-parallax": "^0.6.0",
 		"svelte-vertical-timeline": "^0.0.2",
 		"vite": "latest"
 	},
