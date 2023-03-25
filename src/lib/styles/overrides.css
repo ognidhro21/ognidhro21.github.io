@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;600&family=Roboto&display=swap');
 
 :root,
 body.light {
@@ -211,7 +211,7 @@ img {
 }
 
 body {
-	font-family: 'Roboto', 'Nunito Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Roboto', 'Play', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.75;
 	font-weight: 400;
 }
@@ -221,7 +221,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Nunito Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+	font-family: 'Play', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 h2,
 h3,
@@ -242,7 +242,6 @@ button,
 }
 h1 {
 	font-size: 4.209rem;
-	font-weight: 700;
 }
 
 h2 {
