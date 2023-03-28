@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@300;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 
 :root,
 body.light {
@@ -211,7 +211,7 @@ img {
 }
 
 body {
-	font-family: 'Roboto', 'Play', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.75;
 	font-weight: 400;
 }
@@ -220,16 +220,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-	font-family: 'Play', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-}
-h2,
-h3,
-h4,
-h5,
 h6,
+button,
 .button {
-	font-weight: 300 !important;
+	font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+	font-weight: 500 !important;
 }
 * + h1,
 * + h2,
