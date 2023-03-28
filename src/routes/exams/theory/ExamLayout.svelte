@@ -24,10 +24,6 @@
 			name: 'Completed',
 			icon: 'done'
 		}
-		// {
-		// 	name: 'Events',
-		// 	icon: 'table'
-		// }
 	];
 	let selected = items[0].name;
 	function tabChanged(e) {
@@ -35,6 +31,7 @@
 	}
 	$: if (expired.length === exams.length) {
 		selected = items[1].name;
+		items = items.filter((e) => e.name !== 'Up next');
 	}
 </script>
 
@@ -46,7 +43,6 @@
 			{#if selected === 'Up next'}
 				<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 				<div id="panel-1" role="tabpanel" tabindex={0}>
-					<!-- <h5>Up Next ({upNext.length})</h5> -->
 					<div>
 						{#each upNext as exam (exam.code)}
 							<ExamCard {exam} {startTime} {endTime} credit={exam.credit} {year} id={name} />
