@@ -17,5 +17,5 @@
 <Forecast {Headline} {rain} />
 <!-- <Actions /> -->
 <Links />
-<About />
+<!-- <About /> -->
 <MadeWith />

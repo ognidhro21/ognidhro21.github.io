@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Container from '$lib/components/shared/Container.svelte';
 	import Skeleton from '$lib/components/shared/Skeleton.svelte';
-
+	import OG21 from '$lib/stores/Ognidhro_data';
 	export let classes;
 
 	/**
@@ -59,13 +59,27 @@
 
 		return schedules;
 	}
-
 	let promise = getOngoingClasses();
+
+	const { section, group, saved } = $OG21.class;
+	function getGroupIndexByName(groupName = 'Group F') {
+		const groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
+		const index = groupName.slice(6, 7);
+		return groups.indexOf(index);
+	}
+	function getSectionIndexByName(sectionName = 'Section 2') {
+		const index = sectionName.slice(8, 9);
+		return Number(index) - 1;
+	}
+	function isClassOfPreferred(practical, classOf) {
+		if (!saved) return false;
+		if (practical) return getGroupIndexByName(classOf) === 3 * section + group;
+		return getSectionIndexByName(classOf) === section;
+	}
 </script>
 
 <Container>
 	{#await promise}
-		<h4>Checking</h4>
 		<Skeleton />
 	{:then sch}
 		{#if sch.length !== 0}
@@ -73,7 +87,10 @@
 			<div class="grid">
 				{#each sch as { code, start, end, classOf, practical }}
 					<!-- <RoutineCard {schedule} {day} id="L2S2" /> -->
-					<div class="row s6 m4 l3 small-divider">
+					<div
+						class="class-chip row s6 m4 l3 small-divider"
+						class:tertiary-container={isClassOfPreferred(practical, classOf)}
+					>
 						<div class="max">
 							<p>{classOf}</p>
 							<h5 class="upper">
@@ -99,6 +116,10 @@
 </Container>
 
 <style>
+	.class-chip {
+		padding-inline: 0.5rem;
+		border-radius: 0.2rem;
+	}
 	.small-divider {
 		margin: 0 !important;
 		border-bottom: none !important;
