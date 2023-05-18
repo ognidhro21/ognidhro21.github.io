@@ -3,20 +3,20 @@
 </script>
 
 <div class="hero-container responsive center-align middle-align">
-	<div class="hero ">
+	<div class="hero">
 		<img src={logo} alt="" />
 		<div class="medium-space" />
-		<div class="fixer center-align middle-align ">
-			<!-- <nav class="no-space">
+		<div class="fixer center-align middle-align">
+			<nav class="no-space">
 				<span class="small-padding border left-round bold">
-					<span>L2S1</span>
-				</span> -->
-			<a href="routines/L2S2" class="button primary small-elevate ">L2S2 Class Routine</a>
-			<!-- <a href="/exams/theory/final/L2S1" class="button primary ">L2S1 Final Exam</a> -->
-			<!-- <a href="/exams/theory/mid/L2S1" class="button border primary-border right-round">
+					<span>L2S2</span>
+				</span>
+				<a href="routines/L2S2" class="button primary small-elevate">Classes</a>
+				<!-- <a href="/exams/theory/final/L2S1" class="button primary ">L2S1 Final Exam</a> -->
+				<a href="/exams/theory/mid/L2S2" class="button border primary-border right-round">
 					Mid Schedules
 				</a>
-			</nav> -->
+			</nav>
 		</div>
 	</div>
 </div>
