@@ -1,1 +1,83 @@
-{"name":"L2S2","detailedname":"Level 2, Semester 2","schedules":{"mid":{"startTime":12,"endTime":13,"year":"2023","exams":[{"code":"AGB","date":"14 May"},{"code":"GPB","date":"15 May"},{"code":"STT","date":"17 May"},{"code":"SSC","date":"18 May"},{"code":"ENT","date":"21 May"},{"code":"AGR","date":"22 Nov"},{"code":"PLP","date":"24 Nov"}]},"final":{"message":"Later","startTime":10,"year":"2023","exams":[{"code":"ENT","date":"2 Jan","credit":2},{"code":"STT","date":"8 Jan","credit":2},{"code":"ARD","date":"11 Jan","credit":2},{"code":"AGB","date":"18 Jan","credit":2},{"code":"PLP","date":"22 Jan","credit":2},{"code":"BCM","date":"25 Jan","credit":2},{"code":"AGR","date":"29 Jan","credit":2}]}}}
+{
+    "name": "L2S2",
+    "detailedname": "Level 2, Semester 2",
+    "schedules": {
+        "mid": {
+            "startTime": 12,
+            "endTime": 13,
+            "year": "2023",
+            "exams": [
+                
+                {
+                    "code": "GPB",
+                    "date": "15 May"
+                },
+                {
+                    "code": "STT",
+                    "date": "17 May"
+                },
+                {
+                    "code": "SSC",
+                    "date": "18 May"
+                },
+                {
+                    "code": "ENT",
+                    "date": "21 May"
+                },
+                {
+                    "code": "AGR",
+                    "date": "22 May"
+                },
+                {
+                    "code": "PLP",
+                    "date": "24 May"
+                },{
+                    "code": "AGB",
+                    "date": "25 May"
+                }
+            ]
+        },
+        "final": {
+            "message": "Later",
+            "startTime": 10,
+            "year": "2023",
+            "exams": [
+                {
+                    "code": "ENT",
+                    "date": "2 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "STT",
+                    "date": "8 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "ARD",
+                    "date": "11 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "AGB",
+                    "date": "18 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "PLP",
+                    "date": "22 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "BCM",
+                    "date": "25 Jan",
+                    "credit": 2
+                },
+                {
+                    "code": "AGR",
+                    "date": "29 Jan",
+                    "credit": 2
+                }
+            ]
+        }
+    }
+}
