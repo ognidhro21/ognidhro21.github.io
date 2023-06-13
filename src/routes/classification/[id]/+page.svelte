@@ -2,21 +2,21 @@
 	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 
 	export let data;
-	const { ranks, info } = data.results.default;
+	const { results, info } = data.results.default;
 </script>
 
-<PageContainer title="{info.detailedname} Classification">
-	{#each ranks as { ID, GPA }, index}
-		<div class="one row justify-between " class:tertiary-container={index === 0}>
+<PageContainer title="{info.title} Classification">
+	{#each results as { position, students, gpa }, index}
+		<div class="one row justify-between" class:tertiary-container={position === 1}>
 			<div class="max">
-				<h6>{index + 1}</h6>
-				{#each ID as id, index (id)}
+				<h6>{position}</h6>
+				{#each students as { id }}
 					<div class="row">
 						<h5>{id}</h5>
 					</div>
 				{/each}
 			</div>
-			<p>{GPA}</p>
+			<p>{gpa}</p>
 		</div>
 	{/each}
 </PageContainer>
