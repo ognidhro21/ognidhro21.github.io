@@ -34,5 +34,8 @@
 		"svelte-vertical-timeline": "^0.0.2",
 		"vite": "latest"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"svelte-frappe-charts": "^1.10.0"
+	}
 }
