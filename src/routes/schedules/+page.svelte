@@ -24,7 +24,7 @@
 		// }
 	];
 
-	let selected = items[0].name;
+	let selected = items[1].name;
 	function tabChanged(e) {
 		selected = e.detail;
 	}
@@ -98,7 +98,7 @@
 				{/if}
 			</Tabs>
 		{:else}
-			<div class="grid  middle-align">
+			<div class="grid middle-align">
 				<div class="l6 s12">
 					<img src={InfoImg} alt="" />
 				</div>
