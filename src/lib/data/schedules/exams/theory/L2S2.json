@@ -38,43 +38,42 @@
             ]
         },
         "final": {
-            "message": "Later",
             "startTime": 10,
             "year": "2023",
             "exams": [
                 {
-                    "code": "ENT",
-                    "date": "2 Jan",
-                    "credit": 2
-                },
-                {
-                    "code": "STT",
-                    "date": "8 Jan",
-                    "credit": 2
-                },
-                {
-                    "code": "ARD",
-                    "date": "11 Jan",
+                    "code": "GPB",
+                    "date": "10 Aug",
                     "credit": 2
                 },
                 {
                     "code": "AGB",
-                    "date": "18 Jan",
+                    "date": "14 Aug",
                     "credit": 2
                 },
                 {
                     "code": "PLP",
-                    "date": "22 Jan",
+                    "date": "17 Aug",
                     "credit": 2
                 },
                 {
-                    "code": "BCM",
-                    "date": "25 Jan",
-                    "credit": 2
+                    "code": "STT",
+                    "date": "21 Aug",
+                    "credit": 3
                 },
                 {
                     "code": "AGR",
-                    "date": "29 Jan",
+                    "date": "24 Aug",
+                    "credit": 2
+                },
+                {
+                    "code": "ENT",
+                    "date": "28 Aug",
+                    "credit": 2
+                },
+                {
+                    "code": "SSC",
+                    "date": "31 Aug",
                     "credit": 2
                 }
             ]
