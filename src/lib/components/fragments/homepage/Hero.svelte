@@ -12,7 +12,7 @@
 					<span>L2S2</span>
 				</span>
 				<a href="routines/L2S2" class="button secondary no-round">Classes</a>
-				<a href="/exams/theory/final/L2S1" class="button primary righ-round">L2S2 Final Exam</a>
+				<a href="/exams/theory/final/L2S1" class="button primary right-round">L2S2 Final Exam</a>
 				<!-- <a href="/exams/theory/mid/L2S2" class="button primary right-round">Mid Schedules</a> -->
 			</nav>
 		</div>
