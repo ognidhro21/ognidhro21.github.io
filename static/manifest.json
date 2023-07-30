@@ -1,7 +1,7 @@
 {
   "name": "Ognidhro 21",
   "short_name": "Ognidhro 21",
-  "start_url": "/index.html",
+  "start_url": "/",
   "background_color": "#ffebee",
   "theme_color": "#ff1744",
   "display": "standalone",
