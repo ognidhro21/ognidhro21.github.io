@@ -5,7 +5,7 @@ export async function GET() {
 			'content-type': 'application/json'
 		}
 	};
-	let classes = await import('$lib/data/schedules/routines/L2S2.json');
+	let classes = await import('$lib/data/schedules/routines/L3S1.json');
 
 	return new Response(JSON.stringify(classes), responseOptions);
 }
