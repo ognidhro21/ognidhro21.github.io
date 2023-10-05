@@ -70,7 +70,7 @@ export const courses = [
 		name: 'Agricultural Extension and Rural Development',
 		titles: [
 			{ id: 'L2S1', title: 'Fundamentals of Agricultural Extension', onlytheory: true },
-			{ id: 'L3S1', title: 'Extension Teaching and Communication' },
+			{ id: 'L3S1', title: 'Communication and Teaching Methods in Communication' },
 			{ id: 'L3S2', title: 'Rural Development' },
 			{ id: 'L4S1', title: 'Extension Management and Training' },
 			{ id: 'L4S2', title: 'Extension Program Building and Technology Transfer' }
