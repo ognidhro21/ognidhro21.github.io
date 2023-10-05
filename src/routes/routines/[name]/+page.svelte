@@ -26,7 +26,7 @@
 		const d = new Date();
 		const today = d.getDay();
 		const hour = d.getHours();
-		if (hour >= 16) {
+		if (hour >= 17) {
 			const nextDay = today + 1;
 			dayIndex = nextDay;
 			if (nextDay >= 5) {
