@@ -5,7 +5,6 @@
 	import { Accordions, Accordion } from '$lib/components/shared/Accordion';
 	import PageContainer from '$lib/components/shared/PageContainer.svelte';
 	export let data;
-	const current = 'L2S2';
 	let items = [
 		{
 			name: 'Semester',
@@ -21,7 +20,7 @@
 		selected = e.detail;
 	}
 	// opened Accordion
-	let openedAccordion = 2;
+	let openedAccordion = 3;
 	const toggleAccordion = (e) => (openedAccordion = e.detail);
 </script>
 
