@@ -11,8 +11,8 @@
 				<span class="small-padding border left-round bold">
 					<span>L3S1</span>
 				</span>
-				<a href="routines/L3S1" class="button primary right-round">Classes</a>
-				<!-- <a href="/exams/theory/final/L3S1" class="button primary right-round">L3S1 Final Exam</a> -->
+				<a href="routines/L3S1" class="button secondary no-round">Classes</a>
+				<a href="/exams/theory/final/L3S1" class="button primary right-round">Final Exam</a>
 				<!-- <a href="/exams/theory/mid/L3S1" class="button primary right-round">Mid Schedules</a> -->
 			</nav>
 		</div>
@@ -24,7 +24,8 @@
 		min-height: 50vh;
 	}
 	.hero-container {
-		background: linear-gradient(
+		background:
+			linear-gradient(
 				135deg,
 				var(--body) 21px,
 				var(--primary) 22px,

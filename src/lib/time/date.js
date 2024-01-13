@@ -13,17 +13,16 @@ const months = [
 	'December'
 ];
 function convertToAMOrPM(time) {
-	// time is in this format: hh
-	if (time > 12) {
-		return time - 12 + 'PM';
-	} else if (time == 12) {
-		return time + 'PM';
-	} else if (time == 0) {
-		return 12 + 'AM';
+	var hour = Math.floor(time / 100);
+	var minute = time % 100;
+
+	if (hour >= 12) {
+		return (hour === 12 ? 12 : hour - 12) + ':' + (minute < 10 ? '0' : '') + minute + 'PM';
 	} else {
-		return time + 'AM';
+		return (hour === 0 ? 12 : hour) + ':' + (minute < 10 ? '0' : '') + minute + 'AM';
 	}
 }
+
 function convertTo12(time) {
 	// time is in this format: hh:mm
 	var hour = time.split(':')[0];

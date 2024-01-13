@@ -11,7 +11,7 @@
 	export let credit;
 	$: name = getName(code);
 	$: title = getTitle(code, id);
-	$: endTime = endTime === undefined ? startTime + credit : endTime;
+	$: endTime = endTime === undefined ? startTime + credit * 100 : endTime;
 </script>
 
 <div class="row padding" class:completed transition:fly>
