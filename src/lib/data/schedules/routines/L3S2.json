@@ -491,7 +491,7 @@
                             "name": "Monday",
                             "schedules": [
                                 {
-                                    "code": "ard",
+                                    "code": "acm",
                                     "start": "9:15",
                                     "end": "11:00"
                                 }
@@ -501,7 +501,7 @@
                             "name": "Tuesday",
                             "schedules": [
                                 {
-                                    "code": "ent",
+                                    "code": "ard",
                                     "start": "9:15",
                                     "end": "11:00"
                                 }
