@@ -121,6 +121,7 @@ export const courses = [
 		titles: [
 			{ id: 'L1S2', title: 'Ornamental Horticulture' },
 			{ id: 'L3S1', title: 'Spices, Medicinal Plants and Plantation Crops' },
+			{ id: 'L3S2', title: `Don't know the course name`, onlytheory: true },
 			{ id: 'L4S1', title: 'Vegetable Production' },
 			{ id: 'L4S2', title: 'Fruit Production' }
 		]
