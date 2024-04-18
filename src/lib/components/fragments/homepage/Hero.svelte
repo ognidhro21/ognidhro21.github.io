@@ -9,10 +9,10 @@
 		<div class="fixer center-align middle-align">
 			<nav class="no-space">
 				<span class="small-padding border left-round bold">
-					<span>L3S1</span>
+					<span>L3S2</span>
 				</span>
-				<a href="routines/L3S1" class="button secondary no-round">Classes</a>
-				<a href="/exams/theory/final/L3S1" class="button primary right-round">Final Exam</a>
+				<a href="routines/L3S2" class="button secondary right-round">Classes</a>
+				<!-- <a href="/exams/theory/final/L3S2" class="button primary right-round">Final Exam</a> -->
 				<!-- <a href="/exams/theory/mid/L3S1" class="button primary right-round">Mid Schedules</a> -->
 			</nav>
 		</div>
