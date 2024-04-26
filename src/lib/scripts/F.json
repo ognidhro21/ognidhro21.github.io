@@ -1,0 +1,107 @@
+{"name": "F", "days": [
+  {
+    "name": "Monday",
+    "schedules": [
+      {
+        "code": "ENT",
+        "start": "11:05",
+        "end": "12:50"
+      },
+      {
+        "code": "ACM-PRACTICAL",
+        "start": "09:15",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "name": "Sunday",
+    "schedules": [
+      {
+        "code": "ARD",
+        "start": "11:05",
+        "end": "12:50"
+      },
+      {
+        "code": "GPB-PRACTICAL",
+        "start": "09:15",
+        "end": "11:00"
+      },
+      {
+        "code": "AGF-PRACTICAL",
+        "start": "15:10",
+        "end": "16:55"
+      }
+    ]
+  },
+  {
+    "name": "Thursday",
+    "schedules": [
+      {
+        "code": "GPB",
+        "start": "11:05",
+        "end": "12:50"
+      },
+      {
+        "code": "ACM",
+        "start": "14:15",
+        "end": "16:00"
+      },
+      {
+        "code": "ENT",
+        "start": "16:05",
+        "end": "16:55"
+      },
+      {
+        "code": "ENT-PRACTICAL",
+        "start": "09:15",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "name": "Tuesday",
+    "schedules": [
+      {
+        "code": "AGR",
+        "start": "11:05",
+        "end": "12:50"
+      },
+      {
+        "code": "HRT",
+        "start": "14:15",
+        "end": "15:05"
+      },
+      {
+        "code": "ARD-PRACTICAL",
+        "start": "09:15",
+        "end": "11:00"
+      }
+    ]
+  },
+  {
+    "name": "Wednesday",
+    "schedules": [
+      {
+        "code": "HRT",
+        "start": "11:05",
+        "end": "12:50"
+      },
+      {
+        "code": "AGF",
+        "start": "14:15",
+        "end": "16:00"
+      },
+      {
+        "code": "GPB",
+        "start": "16:05",
+        "end": "16:55"
+      },
+      {
+        "code": "AGR-PRACTICAL",
+        "start": "09:15",
+        "end": "11:00"
+      }
+    ]
+  }
+]}
