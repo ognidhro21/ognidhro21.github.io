@@ -17,7 +17,7 @@ export const courses = [
 		titles: [
 			{ id: 'L1S2', title: 'Organic Chemistry' },
 			{ id: 'L3S1', title: 'Chemistry of Fertilizers and Pesticides', onlytheory: true },
-			{ id: 'L3S2', title: 'Agro-Analytical Chemistry' },
+			{ id: 'L3S2', title: 'Agroanalytical Chemistry' },
 			{ id: 'L4S1', title: 'Chemistry and Technology of Agricultural Products' }
 		]
 	},
@@ -121,7 +121,7 @@ export const courses = [
 		titles: [
 			{ id: 'L1S2', title: 'Ornamental Horticulture' },
 			{ id: 'L3S1', title: 'Spices, Medicinal Plants and Plantation Crops' },
-			{ id: 'L3S2', title: `Don't know the course name`, onlytheory: true },
+			{ id: 'L3S2', title: `Horticultural Seed and Postharvest Management`, onlytheory: true },
 			{ id: 'L4S1', title: 'Vegetable Production' },
 			{ id: 'L4S2', title: 'Fruit Production' }
 		]
