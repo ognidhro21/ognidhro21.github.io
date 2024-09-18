@@ -1,0 +1,84 @@
+{
+  "name": "L3S1",
+  "detailedname": "Level 3, Semester 1",
+  "schedules": {
+    "mid": {
+      "startTime": 1200,
+      "endTime": 1300,
+      "year": "2024",
+      "exams": [
+        {
+          "code": "ENT",
+          "date": "5 Sep"
+        },
+        {
+          "code": "GPB",
+          "date": "8 Sep"
+        },
+        {
+          "code": "HRT",
+          "date": "9 Sep"
+        },
+        {
+          "code": "AGF",
+          "date": "10 Sep"
+        },
+        {
+          "code": "AGR",
+          "date": "11 Sep"
+        },
+        {
+          "code": "ACM",
+          "date": "12 Sep"
+        },
+        {
+          "code": "ARD",
+          "date": "17 Sep",
+          "overrideTime":1430,
+          "overrideEndTime":1530
+        }
+      ]
+    },
+    "final": {
+      "startTime": 1400,
+      "year": "2024",
+      "exams": [
+        {
+          "code": "HRT",
+          "date": "23 Sep",
+          "credit": 3
+        },
+        {
+          "code": "AGF",
+          "date": "26 Sep",
+          "credit": 2
+        },
+        {
+          "code": "ENT",
+          "date": "30 Sep",
+          "credit": 3
+        },
+        {
+          "code": "ACM",
+          "date": "3 Oct",
+          "credit": 2
+        },
+        {
+          "code": "ARD",
+          "date": "7 Oct",
+          "credit": 3
+        },
+        {
+          "code": "GPB",
+          "date": "21 Oct",
+          "credit": 3
+        },
+        {
+          "code": "AGR",
+          "date": "24 Oct",
+          "credit": 2
+        }
+      ]
+    }
+  }
+}
