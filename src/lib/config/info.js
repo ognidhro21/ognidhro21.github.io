@@ -1,3 +1,3 @@
-export const currentSemester = 'L3S2';
+export const currentSemester = 'L4S1';
 // edit src/routes/api/ongoing/+server.js too
-export const semesterState = 'final'; // class, mid, final
+export const semesterState = 'class'; // class, mid, final

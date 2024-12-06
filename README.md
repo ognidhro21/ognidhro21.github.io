@@ -1,4 +1,5 @@
 # Table of Contents
+
 - [Table of Contents](#table-of-contents)
 - [OGNIDHRO EKUSH](#ognidhro-ekush)
 - [DOCUMENTATION](#documentation)
@@ -6,6 +7,7 @@
   - [Adding new routine](#adding-new-routine)
 
 # OGNIDHRO EKUSH
+
 Source code of website of Ognidhro Ekush
 
 - Language: markdown
@@ -14,15 +16,13 @@ Source code of website of Ognidhro Ekush
 ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=ognidhro21&style=for-the-badge&logo=false)
 
 ---
-# DOCUMENTATION 
+
+# DOCUMENTATION
 
 ## Changing the default tab in the schedules page
 
 ```javascript
-// change the array index in src/routes/schedules/+page.svelte
-// 0 for classes, 1 for exams, 2 for events
-let selected = items[0].name; // sett the default tab to classes
-
+// change data in /src/lib/config/info.js
 ```
 
 ## Adding new routine
@@ -33,9 +33,9 @@ let selected = items[0].name; // sett the default tab to classes
 
 ```json
 {
-    "name":"L2S2",
-    "detailedname":"Level 2, Semester 2"
+	"name": "L2S2",
+	"detailedname": "Level 2, Semester 2"
 }
-``` 
-- Refer to *src/data/schedules/routines* to add rest of the data.
-   
+```
+
+- Refer to _src/data/schedules/routines_ to add rest of the data.
